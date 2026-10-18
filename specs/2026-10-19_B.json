@@ -1,0 +1,89 @@
+{
+ "id": "2026-10-19_B_local",
+ "tag": "LOCAL *SPOTS*",
+ "source": "The Montclair Girl, updated May 2026",
+ "slides": [
+  {
+   "type": "cover",
+   "eyebrow": "Moving to Montclair?",
+   "lines": [
+    "YOUR NEW",
+    "FAVORITE COFFEE",
+    "~IS ON",
+    "~THIS LIST"
+   ],
+   "sub": "3 local spots to know before your first weekend in town."
+  },
+  {
+   "type": "place",
+   "num": "1",
+   "kind": "Coffee",
+   "title": "Paper Plane Coffee Co.",
+   "meta": "61 N Fullerton Ave",
+   "chips": [
+    "Open daily",
+    "Beans to go"
+   ],
+   "body": "Seasonal drinks and beans to take home. Popular with Montclair State students.",
+   "scene": "coffee",
+   "variant": 0
+  },
+  {
+   "type": "place",
+   "num": "2",
+   "kind": "Coffee",
+   "title": "Eagle Rock Cafe",
+   "meta": "202 Bellevue Ave",
+   "chips": [
+    "Remote-work friendly"
+   ],
+   "body": "A friendly neighborhood cafe with good coffee. A solid pick for a remote-work morning.",
+   "scene": "coffee",
+   "variant": 1
+  },
+  {
+   "type": "place",
+   "num": "3",
+   "kind": "Coffee + food",
+   "title": "The Corner",
+   "meta": "115 Grove St",
+   "chips": [
+    "Breakfast",
+    "Lunch",
+    "Fresh juices"
+   ],
+   "body": "Coffee and pastries, plus fresh juices and a breakfast and lunch menu.",
+   "scene": "coffee",
+   "variant": 2
+  },
+  {
+   "type": "route",
+   "eyebrow": "Save the route",
+   "title": "Your Montclair coffee stops",
+   "stops": [
+    {
+     "name": "Paper Plane Coffee Co.",
+     "where": "N Fullerton Ave"
+    },
+    {
+     "name": "Eagle Rock Cafe",
+     "where": "Bellevue Ave"
+    },
+    {
+     "name": "The Corner",
+     "where": "Grove St at Walnut St"
+    }
+   ],
+   "tip": "Before you make an offer, spend a Saturday morning in town. Walk a few blocks and time your commute."
+  },
+  {
+   "type": "cta",
+   "title": [
+    "THINKING ABOUT",
+    "~BUYING IN",
+    "~MONTCLAIR?"
+   ]
+  }
+ ],
+ "caption": "Moving to Montclair? Your new favorite coffee is on this list.\n\nPaper Plane Coffee Co. on N Fullerton Ave, Eagle Rock Cafe on Bellevue Ave, and The Corner on Grove St. Then walk a few blocks and time your commute before you make an offer.\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #MontclairNJ #EssexCountyNJ\n\nTherm The Realtor | eXp Realty"
+}
