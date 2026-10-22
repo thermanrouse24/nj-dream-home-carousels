@@ -245,6 +245,22 @@ ONLY for Slot B local place cards about that kind of place. Never put a storefro
 about money, loans or the buying process. The renderer blocks it, and the Quality gate checks it. Same 5 content slides + business card.
 Any other day may also use it, but never fewer than 2 per week.
 
+## Motion slides (Therm approved, Oct 22 2026)
+
+Every `stat` slide (a big number, like "3.5% DOWN") also gets a moving version:
+`python3 animate_stat.py specs/<file>.json <slide number> posts/YYYY-MM-DD/<id>_<n>of6.mp4`
+The label slides in, the number counts up, the gold line draws, the body fades in, then it holds
+(4.5 seconds, same look as the still). Open the MP4's last frame and check it matches the still.
+Push the MP4s with the images.
+
+How it posts:
+- Instagram, Threads and Facebook: one carousel, in slide order, using the MP4 in place of that
+  slide's JPG. If Metricool rejects a mixed photo + video carousel, schedule the all-JPG version
+  instead and say so in the log and the next approval email. Never skip a post over this.
+- TikTok: a SEPARATE Metricool post with the 6 JPGs only (TikTok photo posts cannot hold video).
+- Instagram Story frames stay JPG.
+- The approval email links each MP4 under its preview sheet ("Motion slide 2: <raw GitHub URL>").
+
 ## Grammar and voice pass
 
 After the Researcher and before rendering, every slide and caption gets a grammar review and a
