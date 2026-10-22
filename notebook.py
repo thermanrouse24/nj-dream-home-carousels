@@ -158,7 +158,6 @@ def slide(s, i, n, src, seed):
     W, H = 1080, 1350
     img = paper(W, H, seed).convert("RGBA")
     d = ImageDraw.Draw(img)
-    brand(d, W)
     t = s["type"]
     if t == "cover":
         y = 300
@@ -214,8 +213,7 @@ def quote(text, out_prefix):
     for kind, (W, H) in (("story", (1080, 1920)), ("square", (1080, 1080))):
         img = paper(W, H, seed=len(text)).convert("RGBA")
         d = ImageDraw.Draw(img)
-        brand(d, W)
-        size = 72 if kind == "story" else 60
+            size = 72 if kind == "story" else 60
         f = HAND(size)
         probe = wrap_tokens(d, tokens(text), f, W - 290)
         block = len(probe) * int(size * 1.3)
