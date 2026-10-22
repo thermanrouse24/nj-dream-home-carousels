@@ -325,6 +325,19 @@ How it posts:
 - Instagram Story frames stay JPG.
 - The approval email links each MP4 under its preview sheet ("Motion slide 2: <raw GitHub URL>").
 
+## Notebook style (Therm's rule, Oct 22 2026)
+
+Handwritten notebook paper, like Therm's hook-bank reference pages: lined paper, red margin,
+punched holes, blue handwriting, circled numbers, yellow highlighter. Made by notebook.py.
+- Carousels: every Monday and Thursday, Slot C's spec has "style": "notebook". It fits numbered
+  lists best (mistakes, checklists, steps, myths), so pick a list-friendly Top 10 angle those days.
+  Wrap the key words in [[double brackets]] to highlight them, 1 or 2 highlights per slide, never
+  a whole paragraph. The business card is still the last slide.
+- Quote stories: about 1 in 4 quotes each month use it. In the Quote Bank, set Photo to
+  "notebook" and put [[ ]] around the 2 to 4 words that matter most. Render with
+  `python3 notebook.py quote "<quote>" quotes/YYYY-MM/<Quote ID>` (same _story / _square files).
+- Never put notebook and cartoon style on the same day.
+
 ## Grammar and voice pass
 
 After the Researcher and before rendering, every slide and caption gets a grammar review and a

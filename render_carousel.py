@@ -474,6 +474,11 @@ def render(spec, out_dir):
     set_style(spec.get("style"))
     slides = [s for s in spec["slides"] if s["type"] not in ("cta", "card", "logo_cta")]
     slides.append({"type": "card"})  # permanent rule: last slide is always the business card
+    if spec.get("style") == "notebook":
+        import notebook
+        def card_fn():
+            img = base(); return s_card(img, ImageDraw.Draw(img), {}, len(slides), len(slides), None) or img
+        return notebook.render(spec, slides, out_dir, card_fn)
     n = len(slides); paths = []
     for i, s in enumerate(slides, 1):
         img = base(); d = ImageDraw.Draw(img)
