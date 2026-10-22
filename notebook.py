@@ -213,7 +213,7 @@ def quote(text, out_prefix):
     for kind, (W, H) in (("story", (1080, 1920)), ("square", (1080, 1080))):
         img = paper(W, H, seed=len(text)).convert("RGBA")
         d = ImageDraw.Draw(img)
-            size = 72 if kind == "story" else 60
+        size = 72 if kind == "story" else 60
         f = HAND(size)
         probe = wrap_tokens(d, tokens(text), f, W - 290)
         block = len(probe) * int(size * 1.3)
