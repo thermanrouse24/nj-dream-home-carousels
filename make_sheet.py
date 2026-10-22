@@ -7,7 +7,7 @@ import glob, sys
 from PIL import Image
 
 prefix = sys.argv[1]
-files = sorted(glob.glob(prefix + "_*of*.jpg"), key=lambda f: int(f.rsplit("_", 1)[1].split("of")[0]))
+files = sorted(glob.glob(prefix + "_[0-9]*of*.jpg"), key=lambda f: int(f.rsplit("_", 1)[1].split("of")[0]))
 w, h, gap = 540, 675, 12
 cols = 3
 rows = (len(files) + cols - 1) // cols
