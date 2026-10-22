@@ -19,10 +19,13 @@ Spec format:
      "photo": "optional path to Therm's OWN photo of the place (never a downloaded photo)"},
     {"type": "text", "title": "Heading", "body": "Paragraph", "source": "..."},
     {"type": "list", "title": "Heading", "items": ["a", "b", "c"]},
-    {"type": "cta", "title": ["WANT MY FREE", "~FIRST-TIME BUYER", "~GUIDE?"],
-     "steps": ["Tap the link in my bio", "Fill out the quick form", "My team responds within 24 hours"]}
-  ]
+    {"type": "card"}                  # optional: the business card is ALWAYS added as the last slide
+  ],
+  "style": "brand | cartoon"          # cartoon = cream background, highlight bar, flat scene on cover,
+                                      # button; cover takes "scene" and "variant" like place cards
 }
+Rule: the last slide is always Therm's business card (business_card.jpg) with the
+"CLICK THE LINK IN MY BIO" button. Any "cta" slide in a spec is replaced by it.
 """
 import json, os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -72,7 +75,21 @@ def para(draw, x, y, text, font, fill, maxw, lh):
         draw.text((x, y), ln, font=font, fill=fill); y += lh
     return y
 
+STYLE = "brand"  # "brand" (dark forest template) or "cartoon" (cream, highlight bar, flat scene)
+HILITE = (214, 52, 44)  # cartoon highlight bar (red, white text), per Therm's reference
+
+def set_style(style):
+    """Swap the palette for the illustrated cartoon style. Every draw call reads these globals."""
+    global STYLE, CREAM, BRONZE, MUTED
+    STYLE = style or "brand"
+    if STYLE == "cartoon":
+        CREAM, BRONZE, MUTED = (22, 30, 24), (196, 122, 44), (98, 104, 96)
+    else:
+        CREAM, BRONZE, MUTED = (245, 236, 215), (225, 183, 133), (170, 178, 168)
+
 def base():
+    if STYLE == "cartoon":
+        return Image.new("RGB", (W, H), (247, 240, 226))
     return Image.open(os.path.join(HERE, "background.png")).convert("RGB").copy()
 
 def header(img, d, tag):
@@ -126,15 +143,45 @@ def headline_block(d, lines, y, max_size=118, maxw=W - 2 * M, gap=0.98):
         size -= 2
     f = HEAD(size)
     for raw in lines:
-        col = BRONZE if raw.startswith("~") else CREAM
-        d.text((M - 4, y), raw.lstrip("~"), font=f, fill=col)
+        txt = raw.lstrip("~")
+        if STYLE == "cartoon" and raw.startswith("~"):
+            bb = d.textbbox((M - 4, y), txt, font=f)
+            d.rectangle((bb[0] - 14, bb[1] - int(size * 0.02), bb[2] + 14, bb[3] + int(size * 0.14)), fill=HILITE)
+            col = (255, 255, 255)
+        else:
+            col = BRONZE if raw.startswith("~") else CREAM
+        d.text((M - 4, y), txt, font=f, fill=col)
         y += int(size * gap)
     return y
 
 def eyebrow(d, y, text):
     tracked(d, (M, y), text.upper(), BOLD(30), BRONZE, 4)
 
+def s_cover_cartoon(img, d, s, i, n, src):
+    """Cartoon style cover: one flat illustrated scene, bold headline with highlight bar, button."""
+    import scenes
+    x0, y0, iw, ih = M, 205, W - 2 * M, 340
+    tmp = f"/tmp/_cover_{os.getpid()}.png"
+    scenes.render_scene(s.get("scene", "default"), int(s.get("variant", 0)), tmp, w=iw, h=ih)
+    _photo_block(img, tmp, x0, y0, iw, ih)
+    d = ImageDraw.Draw(img)
+    y = y0 + ih + 44
+    if s.get("eyebrow"):
+        eyebrow(d, y, s["eyebrow"]); y += 58
+    y = headline_block(d, s["lines"], y, max_size=92, gap=1.02)
+    if s.get("sub"):
+        y = para(d, M, y + 24, s["sub"], BODY(34), CREAM, W - 2 * M, 44)
+    fb = HEAD(32); label = "SWIPE TO SEE"
+    tw = tracked_len(d, label, fb, 2); bw = int(tw + 80)
+    y = min(y + 30, 1120)
+    d.rounded_rectangle((M, y, M + bw, y + 76), radius=14, fill=HILITE)
+    tracked(d, (M + 40, y + 21), label, fb, (255, 255, 255), 2)
+    footer(d, i, n, None)
+    return img
+
 def s_cover(img, d, s, i, n, src):
+    if STYLE == "cartoon":
+        return s_cover_cartoon(img, d, s, i, n, src)
     lines = s["lines"]
     # vertical layout centered in the open area
     y = 290 if len(lines) <= 4 else 250
@@ -303,6 +350,23 @@ def s_cta(img, d, s, i, n, src):
     footer(d, i, n, None)
     return img
 
+def s_card(img, d, s, i, n, src):
+    """Therm's business card. Permanent rule: this is ALWAYS the last slide of every carousel."""
+    bg = Image.open(os.path.join(HERE, "background.png")).convert("RGB")
+    img.paste(bg, (0, 0))
+    card = Image.open(os.path.join(HERE, "business_card.jpg")).convert("RGB").resize((W, W), Image.LANCZOS)
+    img.paste(card, (0, 0))
+    d = ImageDraw.Draw(img)
+    # The only call to action Therm uses. Fixed text on purpose; specs cannot change it.
+    cta = "CLICK THE LINK IN MY BIO"
+    fb = HEAD(40)
+    tw = tracked_len(d, cta, fb, 2)
+    bw, bh = int(tw + 2 * 44), 96
+    x, y = (W - bw) // 2, W + (H - W - bh) // 2
+    d.rounded_rectangle((x, y, x + bw, y + bh), radius=48, fill=(225, 183, 133))
+    tracked(d, (x + 44, y + 26), cta, fb, DARK, 2)
+    return img
+
 # ---------- local "place card" and "route" slides ----------
 GLOW = (225, 183, 133)
 
@@ -396,15 +460,18 @@ def s_route(img, d, s, i, n, src):
         para(d, M + 32, y + 66, s["tip"], BODY(34), CREAM, W - 2 * M - 64, 46)
     footer(d, i, n, s.get("source", src))
 
-RENDER = {"cover": s_cover, "stat": s_stat, "point": s_point, "text": s_text, "list": s_list, "cta": s_cta, "place": s_place, "route": s_route}
+RENDER = {"cover": s_cover, "stat": s_stat, "point": s_point, "text": s_text, "list": s_list, "cta": s_card, "card": s_card, "logo_cta": s_cta, "place": s_place, "route": s_route}
 
 def render(spec, out_dir):
     os.makedirs(out_dir, exist_ok=True)
-    n = len(spec["slides"]); paths = []
-    for i, s in enumerate(spec["slides"], 1):
+    set_style(spec.get("style"))
+    slides = [s for s in spec["slides"] if s["type"] not in ("cta", "card", "logo_cta")]
+    slides.append({"type": "card"})  # permanent rule: last slide is always the business card
+    n = len(slides); paths = []
+    for i, s in enumerate(slides, 1):
         img = base(); d = ImageDraw.Draw(img)
         t = s["type"]
-        if t != "cta":
+        if t != "card":
             header(img, d, spec.get("tag", "NJ DREAM HOME"))
         if t in ("stat", "point", "text", "list"):
             # draw body content on a layer, then center it vertically in the open area

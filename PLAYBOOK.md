@@ -5,6 +5,18 @@ Every day, Monday through Sunday, it makes three carousel posts in the NJ Dream 
 template, gets them fact-checked, sends them to Therm for approval, and schedules ONLY the
 approved posts in Metricool. Nothing is ever scheduled or posted without Therm's approval.
 
+## The team (one scheduled run plays all four roles)
+
+| Agent | Job | Deadline (Eastern) |
+|---|---|---|
+| Brain | Reads this playbook, HOOKS.md, the Reel Brain docs and the Content Log; picks tomorrow's 3 topics and hooks; writes the slide copy and captions. | 4:30 PM |
+| Researcher | Verifies every fact against a source read that day. Drops anything it cannot confirm. | 5:00 PM |
+| Designer | Renders the slides, story frames and preview sheets; pushes them to GitHub. | 5:30 PM |
+| Execution | Runs the Quality gate (a separate checker that did not write the posts), emails Therm the approval package with an image preview of every post, logs the posts. After approval, schedules them in Metricool. | Email by 7:45 PM |
+
+Every carousel must rate 9 or 10 out of 10 at the Quality gate. Anything lower is rewritten,
+re-rendered and re-checked before Therm sees it.
+
 ## The three daily slots
 
 | Slot | Bucket | Pill tag |
@@ -44,8 +56,7 @@ goes to TikTok as a regular photo post only.
 
 ## Approval timing
 
-The preview email must be in Therm's inbox before 8:15 PM ET every evening; he approves at
-8:15 PM. Approved posts must be scheduled in Metricool before 4:45 AM the next morning.
+The approval package must be in Therm's inbox by 7:45 PM ET every evening. Approved posts must be scheduled in Metricool before 4:45 AM the next morning.
 
 ## Approval rules
 
@@ -95,7 +106,8 @@ Any failure is fixed and re-checked before Therm sees it.
   young couples / families / professionals, desirable, up-and-coming, any religion or ethnicity.
 - No unverifiable superlatives: say "3 coffee spots to try", never "the best coffee in NJ".
 - No school rankings. No crime statistics.
-- No photos of businesses or people (copyright and privacy). Text slides only.
+- No photos of businesses or people (copyright and privacy). The one exception is Therm's own
+  business card on the last slide.
 
 ## Slot A: fun fact or education bank
 
@@ -116,6 +128,11 @@ programs | homestead / ANCHOR property tax relief basics | home warranty basics 
 fun NJ real-estate history facts (e.g., oldest towns, housing stock age) when sourced.
 
 ## Slot B: local "top 3" in one town
+
+MORRIS COUNTY FOCUS (Therm's rule): from October 21 through November 19, 2026, every Slot B post
+is about a Morris County town. "Morris County by train" (NJ Transit lines, stations, scheduled
+NYC ride times) is a recurring topic about once a week, not every post. After November 19, go
+back to the statewide rotation below.
 
 Pick a town that has not been featured in the last 30 days. Rotate counties. Formats rotate
 in this order, one per day: coffee spots | brunch spots | parks and trails | pizza spots |
@@ -177,6 +194,10 @@ Rotate in order 1 to 10, then repeat with a new angle each cycle.
 
 ## Hook formulas (cover slide eyebrow + headline)
 
+START FROM HOOKS.md (Therm's 30-hook bank). Every cover hook uses one of those 30 openers,
+finished with a true NJ payoff. Log the hook number in the Content Log. The formulas below are
+extra structure guidance.
+
 Built from the structures in Tat Londono's and Brian Mark's top-performing shorts (see Reel
 Brain: What the Six Videos Taught). Use the structure only; never copy their wording.
 - Condition hook: name the viewer's situation in the eyebrow, then the payoff.
@@ -199,8 +220,23 @@ Never open a local post with "Touring homes in...".
 
 1. `cover`: eyebrow, 3 to 4 headline lines (bronze `~` on the last 1 to 2 lines), one-sentence sub.
 2 to 5. `stat`, `point`, `text` or `list` slides. One idea per slide, under 35 words of body.
-6. `cta`: title only, e.g. "READY TO BUY / ~YOUR FIRST / ~NJ HOME?" (Slot B: "THINKING ABOUT /
-   ~BUYING IN / ~<TOWN>?"). The renderer adds the button "CLICK THE LINK IN MY BIO" itself.
+6. Business card (PERMANENT RULE): the last slide is always Therm's business card
+   (business_card.jpg) with the "CLICK THE LINK IN MY BIO" button under it. The renderer adds it
+   automatically; do not add a logo or CTA slide. Write 5 slides in the spec; slide 6 is the card.
+
+## Cartoon style (Therm's rule: at least 2 times per week)
+
+Every Tuesday and Friday, Slot A uses `"style": "cartoon"` in its spec: cream background, bold
+headline with a red highlight bar (put `~` on the line to highlight), one flat illustrated scene
+on the cover (`"scene"`: coffee | brunch | bakery | pizza | market | library | park | train |
+default, chosen to fit the topic), and a red button. Same 5 content slides + business card.
+Any other day may also use it, but never fewer than 2 per week.
+
+## Grammar and voice pass
+
+After the Researcher and before rendering, every slide and caption gets a grammar review and a
+"humanize" pass: read it out loud, cut stiff or robotic phrasing, use contractions where a person
+would, keep sentences short. Then check spelling, punctuation and capitalization again.
 
 ## The only call to action
 
@@ -225,7 +261,16 @@ Build run (every evening, for the next day):
 5. Make story frames (make_stories.py) and the preview sheet (make_sheet.py) for each post.
    Commit and push images. Image URL:
    `https://raw.githubusercontent.com/thermanrouse24/nj-dream-home-carousels/main/posts/YYYY-MM-DD/<file>.jpg`
-6. Email Therm the preview and log each post as "Awaiting approval".
+6. Email Therm the approval package and log each post as "Awaiting approval" (with the hook #).
+   The email shows an image preview of EVERY post inline (the preview sheet as an <img> from the
+   raw GitHub URL), then the caption, the sources, and how to reply.
+
+## GitHub errors
+
+The agent pushes through GitHub errors instead of stopping: on a rejected push, run
+`git pull --rebase origin main` and push again; on HTTP 429 wait 10 seconds and retry once; on any
+other failure, upload the preview sheets to the Drive folder "NJ Dream Home Carousels" and put
+those links in the approval email, then say in the email that GitHub failed.
 
 Approval runs (after 8:15 PM, done before 4:45 AM):
 1. Read Therm's replies. Schedule approved posts in Metricool (brand 4459707,
