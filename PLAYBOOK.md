@@ -195,7 +195,8 @@ Rotate in order 1 to 10, then repeat with a new angle each cycle.
 
 ## Hook formulas (cover slide eyebrow + headline)
 
-START FROM HOOKS.md (Therm's 30-hook bank). Every cover hook uses one of those 30 openers,
+START FROM HOOKS.md: first its "WHAT MAKES A HOOK WORK" standard (proof, specific number, stake,
+curiosity gap, real voice), then Therm's 30-hook bank. Every cover hook uses one of those 30 openers,
 finished with a true NJ payoff. Log the hook number in the Content Log. The formulas below are
 extra structure guidance.
 
