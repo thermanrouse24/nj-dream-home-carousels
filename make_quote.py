@@ -123,6 +123,10 @@ def logo(W):
 
 
 def render(quote, photo, out_prefix):
+    if photo == "notebook":  # Quote Bank Photo column says "notebook": handwritten notebook style
+        import notebook
+        return notebook.quote(quote, out_prefix)
+    quote = quote.replace("[[", "").replace("]]", "")  # highlights only exist in notebook style
     path, focus, has_logo = photo_info(photo)
     src = Image.open(path).convert("RGB")
     outs = []
