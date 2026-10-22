@@ -1,0 +1,100 @@
+{
+ "id": "2026-10-23_B_local",
+ "tag": "LOCAL *SPOTS*",
+ "hook": 28,
+ "story_plan": {
+  "type": "multi",
+  "frames": [
+   1,
+   2,
+   3,
+   4
+  ]
+ },
+ "source": "Slice ordering pages for each pizzeria (checked Oct. 22, 2026); NJ Transit, Madison Station",
+ "slides": [
+  {
+   "type": "cover",
+   "eyebrow": "Moving to Madison? Stop scrolling",
+   "lines": [
+    "3 PIZZA SPOTS",
+    "FOR YOUR",
+    "~FIRST FRIDAY",
+    "~IN TOWN"
+   ],
+   "sub": "Three Madison pizzerias to try, with the street for each one.",
+   "source": "Slice, Madison NJ pizzeria pages (Oct. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "1",
+   "kind": "Pizza",
+   "title": "Italian Village Pizza",
+   "meta": "300 Main St",
+   "chips": [
+    "Slices",
+    "Sicilian",
+    "Catering"
+   ],
+   "body": "The menu has slices, grandma and square pies, pasta, subs and catering.",
+   "scene": "pizza",
+   "variant": 0,
+   "source": "Slice, Italian Village Pizza menu page (Oct. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "2",
+   "kind": "Pizza",
+   "title": "Formaggio's Pizzeria",
+   "meta": "36 Main St",
+   "chips": [
+    "Slices",
+    "Latin food",
+    "Catering"
+   ],
+   "body": "The menu runs from pizza by the slice and gourmet pies to pasta, paninis and Latin food.",
+   "scene": "pizza",
+   "variant": 1,
+   "source": "Slice, Formaggio's Pizzeria menu page (Oct. 2026); Morris Focus (July 2023)"
+  },
+  {
+   "type": "place",
+   "num": "3",
+   "kind": "Pizza + Italian",
+   "title": "Romanelli's Pizza & Italian Eatery",
+   "meta": "42 Lincoln Pl",
+   "chips": [
+    "Sicilian",
+    "Vegan menu",
+    "Catering"
+   ],
+   "body": "Pizza on Lincoln Place, plus a vegan menu, paninis, subs and pasta dinners.",
+   "scene": "pizza",
+   "variant": 2,
+   "source": "Slice, Romanelli's Pizza & Italian Eatery menu page (Oct. 2026)"
+  },
+  {
+   "type": "route",
+   "eyebrow": "Save the route",
+   "title": "Your Madison pizza stops",
+   "stops": [
+    {
+     "name": "Italian Village Pizza",
+     "where": "Main St"
+    },
+    {
+     "name": "Formaggio's Pizzeria",
+     "where": "Main St"
+    },
+    {
+     "name": "Romanelli's",
+     "where": "Lincoln Pl"
+    }
+   ],
+   "tip": "Before you make an offer, walk from Madison Station to Main Street one evening.",
+   "source": "Slice pizzeria pages (Oct. 2026); NJ Transit, Madison Station"
+  }
+ ],
+ "caption": "Moving to Madison? Stop scrolling. Here are 3 pizza spots for your first Friday in town.\n\nItalian Village Pizza on Main Street, Formaggio's Pizzeria on Main Street, and Romanelli's Pizza & Italian Eatery on Lincoln Place. Before you make an offer, walk from Madison Station to Main Street one evening. It's one block.\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #MadisonNJ #MorrisCountyNJ\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "Moving to Madison, NJ? 3 pizza spots for your first Friday in town: Italian Village Pizza and Formaggio's on Main Street, and Romanelli's on Lincoln Place.\n\nBefore you make an offer, spend an evening downtown.\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty"
+}

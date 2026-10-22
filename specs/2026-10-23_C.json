@@ -1,0 +1,67 @@
+{
+ "id": "2026-10-23_C_docs",
+ "tag": "BUYER *CHECKLIST*",
+ "hook": 19,
+ "story_plan": {
+  "type": "single",
+  "frames": [
+   1
+  ]
+ },
+ "source": "Fannie Mae, Home Loan Documents: Homebuyer checklist; CFPB, Get a preapproval letter; Therm, confirmed Oct 22 2026",
+ "slides": [
+  {
+   "type": "cover",
+   "eyebrow": "If I had to start over",
+   "lines": [
+    "PREAPPROVAL",
+    "STARTS WITH",
+    "~3 PILES OF",
+    "~PAPERWORK"
+   ],
+   "sub": "I'd stop renting a lot sooner. I rented for over 10 years and paid over $150K in rent. Here's what a lender asks for first.",
+   "source": "Therm's verified story bank (confirmed Oct. 22, 2026)"
+  },
+  {
+   "type": "list",
+   "title": "Pile 1: your income",
+   "items": [
+    "Pay stubs from the last 2 months",
+    "W-2s for the last 2 years",
+    "Tax returns for 2 years if you're self-employed or earn commission or rental income",
+    "1099s if you do contract work"
+   ],
+   "source": "Fannie Mae, Homebuyer checklist (Oct. 2026)"
+  },
+  {
+   "type": "list",
+   "title": "Pile 2: your money",
+   "items": [
+    "Checking and savings statements",
+    "Retirement and investment account statements",
+    "A gift letter if you're using gift money"
+   ],
+   "source": "Fannie Mae, Homebuyer checklist (Oct. 2026)"
+  },
+  {
+   "type": "list",
+   "title": "Pile 3: who you are",
+   "items": [
+    "Photo ID",
+    "Social Security card or ITIN",
+    "Employers and home addresses for the past 2 years",
+    "Proof of rent payments or your lease"
+   ],
+   "source": "Fannie Mae, Homebuyer checklist (Oct. 2026)"
+  },
+  {
+   "type": "text",
+   "eyebrow": "What happens next",
+   "title": "The lender checks your credit",
+   "body": "Lenders look at your income, assets, debts and credit. A preapproval letter usually expires in 30 to 60 days. Ask your lender for their exact list. Talk to a licensed lender for your numbers.",
+   "source": "CFPB, Get a preapproval letter (Oct. 2026)"
+  }
+ ],
+ "caption": "If I had to start over, I'd stop renting a lot sooner. I rented for over 10 years and paid over $150K in rent.\n\nThe first step out is preapproval, and it starts with 3 piles of paperwork: your income (pay stubs, W-2s, tax returns), your money (account statements and a gift letter if you're using gift money), and who you are (photo ID, 2 years of job and address history, proof of rent). A preapproval letter usually expires in 30 to 60 days.\n\nTalk to a licensed lender for your numbers.\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #MortgagePreapproval #HomebuyerChecklist\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "If I had to start over, I'd stop renting a lot sooner. I rented for over 10 years and paid over $150K in rent.\n\nPreapproval starts with 3 piles of paperwork: your income, your money, and who you are.\n\nTalk to a licensed lender for your numbers.\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty"
+}

@@ -45,12 +45,22 @@ higher-value hour (never earlier than 3:15 PM) and must report the change in tha
 
 ## Instagram Stories
 
-Every approved carousel is ALSO scheduled as an Instagram Story at the same time as the feed
-post. Story frames are 9:16 versions of the six slides, made with
-`python3 make_stories.py posts/<date>/<id>` (files `<id>_story_<n>of6.jpg`). Schedule them as one
-Metricool post with instagramData {"type":"STORY"} and media = the 6 story frame URLs in order,
-no text. If Metricool rejects multiple images for a story, schedule one STORY post per frame,
-1 minute apart, in order.
+INSTAGRAM STORY: MIX IT UP (Therm's rule, Oct 22 2026). The Instagram Story does NOT have to show
+every carousel slide each time. Story frames are 9:16 versions of the six slides, made with
+`python3 make_stories.py posts/<date>/<id>` (files `<id>_story_<n>of6.jpg`; it makes all six). The
+Brain gives every spec a "story_plan" field and the Execution agent posts ONLY those frames, at the
+same time as the feed post:
+- {"type": "single", "frames": [1]}: one frame, usually the cover; sometimes the single strongest
+  slide instead (for example the big stat slide).
+- {"type": "multi", "frames": [1, 3, 5]}: 2 to 4 picked frames in order, always starting with the cover (1).
+- {"type": "full", "frames": [1, 2, 3, 4, 5, 6]}: all six, at most once a week.
+Mix rules: each day's 3 carousels never all use the same type (at least one single and at least one
+multi or full); over any 7 days roughly half single and half multi/full; never the same type for the
+same slot 3 days in a row. Check the Content Log "Story plan" column (L) to keep the mix, and log
+each post's plan there (e.g. "single: 1" or "multi: 1, 3, 5").
+Schedule the planned frames as one Metricool post with instagramData {"type":"STORY"} and media =
+the planned story frame URLs in order, no text. If Metricool rejects multiple images for a story,
+schedule one STORY post per frame, 1 minute apart, in order.
 TikTok Stories cannot be scheduled through Metricool (it has no TikTok Story type). The carousel
 goes to TikTok as a regular photo post only.
 

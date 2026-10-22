@@ -177,7 +177,7 @@ def s_cover_cartoon(img, d, s, i, n, src):
         eyebrow(d, y, s["eyebrow"]); y += 58
     y = headline_block(d, s["lines"], y, max_size=92, gap=1.02)
     if s.get("sub"):
-        y = para(d, M, y + 24, s["sub"], BODY(34), CREAM, W - 2 * M, 44)
+        y = para(d, M, y + 48, s["sub"], BODY(34), CREAM, W - 2 * M, 44)
     fb = HEAD(32); label = "SWIPE TO SEE"
     tw = tracked_len(d, label, fb, 2); bw = int(tw + 80)
     y = min(y + 30, 1120)

@@ -1,0 +1,60 @@
+{
+ "id": "2026-10-23_A_101",
+ "tag": "REAL ESTATE *101*",
+ "style": "cartoon",
+ "hook": 12,
+ "story_plan": {
+  "type": "multi",
+  "frames": [
+   1,
+   3,
+   4
+  ]
+ },
+ "source": "CFPB, When can I remove PMI from my loan? (reviewed Aug. 2026); CFPB, What is private mortgage insurance?",
+ "slides": [
+  {
+   "type": "cover",
+   "scene": "savings",
+   "variant": 0,
+   "eyebrow": "This mistake costs more than you think",
+   "lines": [
+    "PAYING PMI",
+    "LONGER THAN",
+    "~YOU HAVE TO"
+   ],
+   "sub": "On a conventional loan, PMI doesn't last forever. Here's when it can come off.",
+   "source": "CFPB, When can I remove PMI from my loan? (Oct. 2026)"
+  },
+  {
+   "type": "text",
+   "eyebrow": "First, what it is",
+   "title": "PMI protects the lender",
+   "body": "Private mortgage insurance protects the lender, not you. On a conventional loan, you'll usually pay it if you put down less than 20%.",
+   "source": "CFPB, What is private mortgage insurance? (Oct. 2026)"
+  },
+  {
+   "type": "stat",
+   "label": "You can ask to cancel at",
+   "value": "80%",
+   "body": "Ask in writing once your balance hits or is scheduled to hit 80% of the original value. You'll need on-time payments, no second mortgage and proof the value hasn't dropped.",
+   "source": "CFPB, When can I remove PMI from my loan? (Oct. 2026)"
+  },
+  {
+   "type": "stat",
+   "label": "It ends on its own at",
+   "value": "78%",
+   "body": "Your servicer has to end PMI once your balance is scheduled to reach 78% of the original value, as long as you're current.",
+   "source": "CFPB, When can I remove PMI from my loan? (Oct. 2026)"
+  },
+  {
+   "type": "text",
+   "eyebrow": "One catch",
+   "title": "FHA and VA are different",
+   "body": "These rules are for conventional loans. FHA and VA loans have different rules, so ask your servicer how yours works. Talk to a licensed lender for your numbers.",
+   "source": "CFPB, When can I remove PMI from my loan? (Oct. 2026)"
+  }
+ ],
+ "caption": "Paying PMI longer than you have to is a mistake that costs more than you think.\n\nPMI protects the lender, not you. On a conventional loan, you can ask in writing to cancel it once your balance hits or is scheduled to hit 80% of the home's original value. You'll need on-time payments, no second mortgage and proof the value hasn't dropped. Your servicer has to end it once your balance is scheduled to reach 78%, as long as you're current. FHA and VA loans have different rules.\n\nTalk to a licensed lender for your numbers.\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #PMI #MortgageTips\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "Paying PMI longer than you have to costs more than you think.\n\nOn a conventional loan, you can ask in writing to cancel PMI at 80% of the home's original value. It ends on its own at 78%, if you're current. FHA and VA work differently.\n\nTalk to a licensed lender for your numbers.\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty"
+}

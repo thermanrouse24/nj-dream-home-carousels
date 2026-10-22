@@ -90,3 +90,27 @@ separately, and a hook under 9 gets rewritten.
 - #16: "The biggest lie you've been told about" / "~20% DOWN"
 - #11: "I wish someone warned me about this" / "~NJ PROPERTY ~TAXES"
 - #25: "If you only remember one thing about" / "~ATTORNEY ~REVIEW"
+
+## Therm's verified story bank (Therm confirmed every line on Oct 22 2026)
+
+Experience hooks 19 to 24 are now cleared for use, but ONLY with these facts. Never add a feeling, belief, number, place or event that is not listed here. If a post needs a personal story that is not here, use a different hook family. Any experience hook used in a post must be one of these facts.
+
+Facts:
+- Rented for well over 10 years before buying his first home, and paid over $150K in rent.
+- Used to believe renting was the safer choice. People told him for years to stop renting and buy, and he ignored that advice.
+- His first home was a 2-family in New Jersey, so he became a landlord too.
+- His landlord mistake: he waited too long to set up online rent payments (e-rent) to track his tenants' rent.
+- Spent 15 years at a Fortune 50 company before real estate. Left because he wanted to make his own money. Has made more money every year since (never give dollar amounts or name the company).
+- 6 years in real estate, investing and sales (never say 15+ years as a Realtor).
+- Client win: a buyer in Burlington County used down payment assistance (DPA) and got $1,800 back at closing. Never name or describe the client; frame it as the plan and the team's work, never as the client struggling. Any post using it ends with "Talk to a licensed lender for your numbers."
+
+Approved hook lines (use as written or lightly adapted to the topic, same facts):
+- #19: "If I had to start over, I'd stop renting a lot sooner. I rented for over 10 years and paid over $150K in rent."
+- #19: "If I had to start over, I'd still leave my Fortune 50 job. I've made more money every year since."
+- #20: "I used to believe renting was the safer choice. Then I added up over $150K in rent."
+- #21: "This is what nobody tells beginners: your first home can be a 2-family."
+- #22: "If I could only give one piece of advice: ask about down payment help before you decide you can't buy. One of my buyers in Burlington County got $1,800 back at closing."
+- #23: "This is the advice I ignored for years: stop renting and buy."
+- #24: "Nobody prepared me for this: when your first home is a 2-family, you're a landlord too. I waited too long to set up online rent payments for my tenants."
+
+The 14-day no-repeat rule and the different-hook-family-per-day rule still apply.
