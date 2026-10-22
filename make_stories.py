@@ -36,5 +36,5 @@ for k, f in enumerate(files, 1):
     ImageDraw.Draw(mask).rounded_rectangle((0, 0, sw, sh_), 28, fill=255)
     frame.paste(slide, (x, y), mask)
     out = f"{prefix}_story_{k}of{n}.jpg"
-    frame.save(out, quality=90)
+    frame.save(out, quality=95, subsampling=0)
     print(out)

@@ -495,7 +495,7 @@ def render(spec, out_dir):
             res = RENDER[t](img, d, s, i, n, spec.get("source"))
             img = res or img
         p = os.path.join(out_dir, f"{spec['id']}_{i}of{n}.jpg")
-        img.save(p, "JPEG", quality=92, optimize=True); paths.append(p)
+        img.save(p, "JPEG", quality=95, subsampling=0, optimize=True); paths.append(p)
     return paths
 
 if __name__ == "__main__":
