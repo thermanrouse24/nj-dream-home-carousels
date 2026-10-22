@@ -1,0 +1,7 @@
+{
+ "note": "Therm's own photos for quote cards. Add new photos here with a focus point (x, y as fractions) on his face. Rotate so the same photo is not used two days in a row.",
+ "photos": [
+  {"file": "therm_waterfront.jpg", "focus": [0.48, 0.24], "desc": "Blue suit, Hudson River waterfront, NYC skyline"},
+  {"file": "therm_street.jpg", "focus": [0.62, 0.24], "has_logo": true, "desc": "Blue blazer, walking on a brick sidewalk, coat over shoulder"}
+ ]
+}

@@ -245,6 +245,42 @@ ONLY for Slot B local place cards about that kind of place. Never put a storefro
 about money, loans or the buying process. The renderer blocks it, and the Quality gate checks it. Same 5 content slides + business card.
 Any other day may also use it, but never fewer than 2 per week.
 
+## Quote stories (Therm's rule, Oct 22 2026)
+
+45 humanized quotes per month, spread through the month, posted as Instagram Stories,
+TikTok and Threads posts. October 2026 is prorated: 13 quotes, Oct 23 to Oct 31.
+
+Researcher (monthly run on the 25th, for the next month): writes 45 quotes into the Google Sheet
+"Carousel Agent: Quote Bank" (id 1gbe91Vu8AvfvKinMwmzdDEuZsqVMbT4xtRwBnzb_ZpQ), one row each:
+Quote ID (Q<YYMM>-<nn>), Post date, Post time (ET), Quote, Photo, Theme, Status, Image links, Planner link.
+- Spread: 1 or 2 per day (about 1.5 a day), never 3. Times: 9:15 AM and 3:45 PM ET, at least
+  2 hours away from any carousel slot time.
+- Written by us, in Therm's plain voice: short, one idea, under 30 words. Not famous quotes,
+  not borrowed lines (no copyright problems, no misattributed quotes).
+- Topics: first-time buyer planning, budget, credit, preapproval, the process, timing, patience.
+  Practical, not motivational or faith-based. No hype, no promises, no em dashes.
+- No numbers, rules or facts that would need a source. No rates, prices or predictions.
+- Fair housing rules apply (no "safe", "family-friendly", etc.).
+- No repeats of any quote already in the sheet.
+- Rotate the Photo column through quote_photos/photos.json so the same photo is never used two
+  days in a row.
+- Status "Awaiting approval".
+
+Designer (daily build): for TOMORROW's quotes in the Quote Bank, run
+`python3 make_quote.py "<quote>" <photo> quotes/YYYY-MM/<Quote ID>` which makes
+`<id>_story.jpg` (1080x1920, Instagram Story + TikTok) and `<id>_square.jpg` (1080x1080, Threads).
+Look at each one. Push them with the carousels. Put them in the nightly approval email under
+"QUOTE STORIES" with the story image inline. Therm approves them with the carousels
+("APPROVE ALL" covers them; "SKIP Q2" skips one).
+
+Scheduling (after approval), at the quote's time:
+- Instagram Story: the _story.jpg (instagramData type STORY, no text).
+- Threads: the _square.jpg, text = the quote.
+- TikTok: the _story.jpg as a one-photo post, text = the quote + "Therm The Realtor | eXp Realty".
+  (Metricool cannot post TikTok Stories, so it goes as a photo post.)
+The like / comment / share icons on the card have NO numbers on purpose: made-up counts would be
+fake social proof.
+
 ## Motion slides (Therm approved, Oct 22 2026)
 
 Every `stat` slide (a big number, like "3.5% DOWN") also gets a moving version:
