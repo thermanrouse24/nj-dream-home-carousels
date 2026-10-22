@@ -352,6 +352,13 @@ no "share with a friend", no "follow for more", in slides or captions.
 
 ## Caption
 
+THREADS LIMIT: Threads rejects posts over 500 characters (Oct 22 2026: the full caption failed
+with "Media container not created"). Every spec has a second field "threads_caption" of 450
+characters or fewer: the hook line, 1 or 2 short lines, the lender/attorney line if the post
+needs one, "Click the link in my bio.", and "Therm The Realtor | eXp Realty". No hashtags.
+Threads always uses threads_caption; Instagram, Facebook and TikTok use the full caption.
+If a spec has no threads_caption, write one before scheduling.
+
 - Line 1: the hook, restated in plain words.
 - 2 to 4 short lines summarizing the carousel.
 - The call to action line, exactly: "Click the link in my bio."
