@@ -276,10 +276,36 @@ Look at each one. Push them with the carousels. Put them in the nightly approval
 Scheduling (after approval), at the quote's time:
 - Instagram Story: the _story.jpg (instagramData type STORY, no text).
 - Threads: the _square.jpg, text = the quote.
-- TikTok: the _story.jpg as a one-photo post, text = the quote + "Therm The Realtor | eXp Realty".
+- TikTok: the _story.jpg as a one-photo post, text = the quote + "Therm The Realtor | eXp Realty",
+  autoAddMusic true.
   (Metricool cannot post TikTok Stories, so it goes as a photo post.)
 The like / comment / share icons on the card have NO numbers on purpose: made-up counts would be
 fake social proof.
+
+## Business card stories (Therm's rule, Oct 22 2026)
+
+The Brain requires it and the Execution agent does it: Therm's business card posts as a story
+on each platform 3 times every week, Monday, Wednesday and Friday at 7:15 AM ET (2.5 hours
+after Slot A, 2 hours before the first quote).
+- Instagram Story: business_card_story.jpg (instagramData type STORY, no text).
+- TikTok: business_card_story.jpg as a one-photo post (Metricool cannot post TikTok Stories),
+  text: "Buying your first home in New Jersey? Click the link in my bio." + blank line +
+  "Therm The Realtor | eXp Realty". autoAddMusic true.
+- Threads: business_card.jpg, same text.
+Therm approved the card image and this schedule on Oct 22 2026, so these do NOT need nightly
+approval. The approval agent keeps the next 7 days of card posts scheduled on every run
+(check getScheduledPosts first, never duplicate). If business_card.jpg is ever replaced, rebuild
+business_card_story.jpg and show Therm before posting it.
+
+## Music
+
+Instagram's API (and so Metricool) cannot add music to Stories or feed carousels; music only
+works on Reels. So:
+- TikTok posts (carousels, quotes, business card): tiktokData autoAddMusic true, so TikTok adds a
+  track from its own licensed library.
+- Instagram Stories and Threads post without music.
+- Never bake a song into a file unless it is royalty-free audio Therm supplies and has the
+  rights to use.
 
 ## Motion slides (Therm approved, Oct 22 2026)
 
