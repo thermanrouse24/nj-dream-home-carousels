@@ -316,9 +316,11 @@ The label slides in, the number counts up, the gold line draws, the body fades i
 Push the MP4s with the images.
 
 How it posts:
-- Instagram, Threads and Facebook: one carousel, in slide order, using the MP4 in place of that
-  slide's JPG. If Metricool rejects a mixed photo + video carousel, schedule the all-JPG version
-  instead and say so in the log and the next approval email. Never skip a post over this.
+- Instagram ONLY: one carousel, in slide order, using the MP4 in place of that slide's JPG.
+  (Tested Oct 22 2026: Instagram published the mixed photo + video carousel fine.)
+- Threads and Facebook: a separate post with the 6 JPGs only. (Tested Oct 22 2026: Threads
+  failed with "Media container not created" and Facebook failed with an unknown error on the
+  mixed carousel; the all-JPG version is the fix.)
 - TikTok: a SEPARATE Metricool post with the 6 JPGs only (TikTok photo posts cannot hold video).
 - Instagram Story frames stay JPG.
 - The approval email links each MP4 under its preview sheet ("Motion slide 2: <raw GitHub URL>").
