@@ -162,7 +162,14 @@ def s_cover_cartoon(img, d, s, i, n, src):
     import scenes
     x0, y0, iw, ih = M, 205, W - 2 * M, 340
     tmp = f"/tmp/_cover_{os.getpid()}.png"
-    scenes.render_scene(s.get("scene", "default"), int(s.get("variant", 0)), tmp, w=iw, h=ih)
+    from home_scenes import HOME_KINDS
+    # Cartoon covers are for home-buying topics, so the picture must be a home-buying scene.
+    # A storefront (coffee, brunch, pizza...) never goes on a cover about money or the process.
+    scene = s.get("scene", "home")
+    if scene not in HOME_KINDS:
+        print(f"WARNING: cover scene '{scene}' is not a home-buying scene; using 'home'", file=sys.stderr)
+        scene = "home"
+    scenes.render_scene(scene, int(s.get("variant", 0)), tmp, w=iw, h=ih)
     _photo_block(img, tmp, x0, y0, iw, ih)
     d = ImageDraw.Draw(img)
     y = y0 + ih + 44

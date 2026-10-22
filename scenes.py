@@ -6,7 +6,8 @@ a train platform), drawn from scratch. They never depict or claim to be the actu
 Every scene carries a small "ILLUSTRATION" tag.
 
 Usage from Python:  render_scene(kind, variant, out_png, w=920, h=560)
-kind:    coffee | brunch | bakery | pizza | market | library | park | train | events | default
+kind:    LOCAL places only: coffee | brunch | bakery | pizza | market | library | park | train | events | default
+         HOME-BUYING topics: home | savings | keys | documents | calendar | inspection | taxes (see home_scenes.py)
 variant: 0, 1, 2 (changes awning/facade colors so three cards in a row look different)
 """
 import io
@@ -158,7 +159,10 @@ def train_svg(v, w, h):
 
 
 def render_scene(kind, variant, out_png, w=920, h=560):
-    if kind == "park":
+    from home_scenes import HOME_KINDS, home_svg
+    if kind in HOME_KINDS:
+        svg = home_svg(kind, variant, w, h)
+    elif kind == "park":
         svg = park_svg(variant, w, h)
     elif kind == "train":
         svg = train_svg(variant, w, h)

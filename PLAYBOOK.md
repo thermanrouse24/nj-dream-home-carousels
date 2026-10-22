@@ -75,6 +75,7 @@ A separate checker (a subagent that did not write the post) reviews every slide 
 2. Spelling, grammar, punctuation and capitalization are correct; no em dashes.
 3. Compliance rules below are met.
 4. Every slide image is opened and looked at: nothing cut off, overlapping or misaligned.
+5. Every picture matches what its slide is about (a down payment post shows savings, not a café).
 Any failure is fixed and re-checked before Therm sees it.
 
 ## Audience and voice
@@ -228,8 +229,20 @@ Never open a local post with "Touring homes in...".
 
 Every Tuesday and Friday, Slot A uses `"style": "cartoon"` in its spec: cream background, bold
 headline with a red highlight bar (put `~` on the line to highlight), one flat illustrated scene
-on the cover (`"scene"`: coffee | brunch | bakery | pizza | market | library | park | train |
-default, chosen to fit the topic), and a red button. Same 5 content slides + business card.
+on the cover, and a red button.
+
+THE PICTURE MUST MATCH THE TOPIC. Cartoon covers use only the home-buying scenes in
+home_scenes.py. Pick by topic:
+- savings: down payment, 20% myth, closing costs, assistance programs, budgeting
+- documents: preapproval, contracts, attorney review, checklists, paperwork
+- calendar: timelines, deadlines, "how long does it take"
+- inspection: home inspection, appraisal, radon, oil tanks
+- taxes: property taxes, transfer fee / mansion tax, ANCHOR, homestead
+- keys: offer accepted, closing day, final walk-through, first home
+- home: anything else about buying
+Storefront scenes (coffee, brunch, bakery, pizza, market, library) and park/train scenes are
+ONLY for Slot B local place cards about that kind of place. Never put a storefront on a cover
+about money, loans or the buying process. The renderer blocks it, and the Quality gate checks it. Same 5 content slides + business card.
 Any other day may also use it, but never fewer than 2 per week.
 
 ## Grammar and voice pass
