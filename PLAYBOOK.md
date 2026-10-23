@@ -300,10 +300,12 @@ The Brain requires it and the Execution agent does it: Therm's business card pos
 on each platform 3 times every week, Monday, Wednesday and Friday at 7:15 AM ET (2.5 hours
 after Slot A, 2 hours before the first quote).
 - Instagram Story: business_card_story.jpg (instagramData type STORY, no text).
-- TikTok: business_card_story.jpg as a one-photo post (Metricool cannot post TikTok Stories),
-  text: "Buying your first home in New Jersey? Click the link in my bio." + blank line +
+- TikTok: business_card_story_tiktok.jpg (button reads DM ME "HOME"; see "TikTok call to action")
+  as a one-photo post (Metricool cannot post TikTok Stories),
+  text: "Buying your first home in New Jersey? DM me \"HOME\" to get started." + blank line +
   "Therm The Realtor | eXp Realty". autoAddMusic true.
-- Threads: business_card.jpg, same text.
+- Threads: business_card.jpg, text: "Buying your first home in New Jersey? Click the link in my bio."
+  + blank line + "Therm The Realtor | eXp Realty".
 Therm approved the card image and this schedule on Oct 22 2026, so these do NOT need nightly
 approval. The approval agent keeps the next 7 days of card posts scheduled on every run
 (check getScheduledPosts first, never duplicate). If business_card.jpg is ever replaced, rebuild
@@ -442,6 +444,22 @@ would, keep sentences short. Then check spelling, punctuation and capitalization
 "Click the link in my bio." Nothing else, ever: no comment keywords, no "DM me", no "save this",
 no "share with a friend", no "follow for more", in slides or captions.
 
+### TikTok call to action (Therm's rule, Oct 23 2026)
+
+TikTok has no clickable link for this account: the bio link needs 1,000 followers or a Business
+account, and TikTok captions never have clickable links. So on TikTok ONLY, the call to action is:
+'DM me "HOME" to get started.' (never "Click the link in my bio" on TikTok). This is the one
+exception to the rule above, and only on TikTok. Instagram, Facebook and Threads keep
+"Click the link in my bio." Switch TikTok back once Therm says his TikTok bio link is live.
+- TikTok caption: the full caption with the line "Click the link in my bio." replaced by
+  'DM me "HOME" to get started.'
+- TikTok images: slide 6 (the business card) says CLICK THE LINK IN MY BIO, so TikTok uses a
+  copy with a DM ME "HOME" button: python3 make_card_tiktok.py posts/YYYY-MM-DD/<id> writes
+  <id>_6of6_tiktok.jpg. TikTok media = slides 1 to 5 + <id>_6of6_tiktok.jpg.
+- Business card on TikTok: business_card_story_tiktok.jpg (python3 make_card_tiktok.py with no
+  argument rebuilds it from business_card_story.jpg).
+- Quote stories on TikTok have no call to action line, so nothing changes there.
+
 ## Caption
 
 THREADS LIMIT: Threads rejects posts over 500 characters (Oct 22 2026: the full caption failed
@@ -453,7 +471,7 @@ If a spec has no threads_caption, write one before scheduling.
 
 - Line 1: the hook, restated in plain words.
 - 2 to 4 short lines summarizing the carousel.
-- The call to action line, exactly: "Click the link in my bio."
+- The call to action line, exactly: "Click the link in my bio." (TikTok: 'DM me "HOME" to get started.' instead; see "TikTok call to action")
 - 5 hashtags: #NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes + 2 specific (town / topic).
 - Last line: "Therm The Realtor | eXp Realty"
 
