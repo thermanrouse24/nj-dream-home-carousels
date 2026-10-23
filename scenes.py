@@ -126,20 +126,38 @@ def storefront_svg(kind, v, w, h):
 
 
 def park_svg(v, w, h):
+    """Park scene. variant 0 = midday, 1 = late afternoon (mirrored layout), 2 = night with moon and stars."""
+    v = int(v) % 3
     ground = h * 0.62
+    skies = (("#6F9BC4", "#CFE0E8"), ("#2A3549", "#C98B5A"), ("#0E1424", "#2A3549"))
+    sun = ((w*0.22, h*0.24, h*0.1, "#FFF1C9", 1), (w*0.62, h*0.5, h*0.13, "#F5D9A8", .9), (w*0.5, h*0.2, h*0.08, "#E9ECF2", 1))[v]
+    stars = ""
+    if v == 2:
+        for i, (sx, sy) in enumerate(((0.12,0.1),(0.3,0.18),(0.42,0.08),(0.66,0.14),(0.8,0.07),(0.9,0.2),(0.2,0.3),(0.72,0.32))):
+            stars += f'<circle cx="{w*sx}" cy="{h*sy}" r="{3 if i % 2 else 2}" fill="#F5ECD7"/>'
     trees = ""
-    for (x, r, c) in ((w*0.1, h*0.22, "#2F5A3F"), (w*0.28, h*0.17, "#3D7350"), (w*0.78, h*0.24, "#2F5A3F"), (w*0.93, h*0.17, "#3D7350")):
-        trees += f'<rect x="{x-7}" y="{ground-r*0.6}" width="14" height="{r*0.9}" fill="#3A2A20"/><circle cx="{x}" cy="{ground-r}" r="{r}" fill="{c}"/>'
+    tree_cols = ("#2F5A3F", "#3D7350") if v < 2 else ("#1E3A2A", "#264A35")
+    for (x, r, c) in ((w*0.1, h*0.22, 0), (w*0.28, h*0.17, 1), (w*0.78, h*0.24, 0), (w*0.93, h*0.17, 1)):
+        trees += f'<rect x="{x-7}" y="{ground-r*0.6}" width="14" height="{r*0.9}" fill="#3A2A20"/><circle cx="{x}" cy="{ground-r}" r="{r}" fill="{tree_cols[c]}"/>'
+    flip = f' transform="translate({w},0) scale(-1,1)"' if v == 1 else ""
+    lamp = ""
+    if v == 2:
+        lamp = (f'<line x1="{w*0.36}" y1="{ground+30}" x2="{w*0.36}" y2="{h*0.42}" stroke="#151A17" stroke-width="8"/>'
+                f'<circle cx="{w*0.36}" cy="{h*0.41}" r="12" fill="#FFE7B8"/><circle cx="{w*0.36}" cy="{h*0.41}" r="{h*0.1}" fill="#FFE7B8" opacity=".18"/>')
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">
-<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2A3549"/><stop offset="1" stop-color="#C98B5A"/></linearGradient>
-<linearGradient id="grass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2F5A3F"/><stop offset="1" stop-color="#13241A"/></linearGradient></defs>
+<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{skies[v][0]}"/><stop offset="1" stop-color="{skies[v][1]}"/></linearGradient>
+<linearGradient id="grass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{"#2F5A3F" if v < 2 else "#1B3324"}"/><stop offset="1" stop-color="#13241A"/></linearGradient></defs>
 <rect width="{w}" height="{h}" fill="url(#sky)"/>
-<circle cx="{w*0.62}" cy="{h*0.5}" r="{h*0.13}" fill="#F5D9A8" opacity=".9"/>
+{stars}
+<circle cx="{sun[0]}" cy="{sun[1]}" r="{sun[2]}" fill="{sun[3]}" opacity="{sun[4]}"/>
+<g{flip}>
 <path d="M0,{ground} Q{w*0.3},{ground-40} {w*0.55},{ground-10} T{w},{ground-20} V{h} H0 Z" fill="url(#grass)"/>
 {trees}
-<path d="M{w*0.42},{h} Q{w*0.5},{h*0.8} {w*0.56},{ground} L{w*0.6},{ground} Q{w*0.58},{h*0.8} {w*0.66},{h} Z" fill="#C9A577" opacity=".85"/>
+<path d="M{w*0.42},{h} Q{w*0.5},{h*0.8} {w*0.56},{ground} L{w*0.6},{ground} Q{w*0.58},{h*0.8} {w*0.66},{h} Z" fill="#C9A577" opacity="{.85 if v < 2 else .5}"/>
 <g fill="#3A2A20"><rect x="{w*0.68}" y="{h*0.74}" width="{w*0.14}" height="10"/><rect x="{w*0.68}" y="{h*0.69}" width="{w*0.14}" height="8"/>
 <rect x="{w*0.69}" y="{h*0.74}" width="8" height="34"/><rect x="{w*0.8}" y="{h*0.74}" width="8" height="34"/></g>
+{lamp}
+</g>
 </svg>'''
 
 

@@ -21,7 +21,7 @@ def story_bg():
     return out
 
 prefix = sys.argv[1]
-files = sorted(glob.glob(prefix + "_[0-9]*of*.jpg"), key=lambda f: int(f.rsplit("_", 1)[1].split("of")[0]))
+files = sorted([f for f in glob.glob(prefix + "_[0-9]*of*.jpg") if f.rsplit("_", 1)[1].split("of")[0].isdigit() and f.endswith("of6.jpg")], key=lambda f: int(f.rsplit("_", 1)[1].split("of")[0]))
 n = len(files)
 sw, sh_ = 920, 1150  # slide size inside the frame
 x, y = (SW - sw) // 2, 330
