@@ -1,0 +1,78 @@
+{
+ "id": "2026-10-24_C_rentbuy",
+ "tag": "RENT *VS. BUY*",
+ "hook": 20,
+ "lesson": "Hormozi 2027 strategy video, whole-truth story carousel (mistake first, lesson second)",
+ "story_plan": {
+  "type": "single",
+  "frames": [
+   1
+  ]
+ },
+ "music": {
+  "ig_audio": "Autumn Journey - Andrea Vanzo",
+  "ig_audio_source": "https://socialpilot.co/blog/instagram-reels-trends/",
+  "ig_audio_backup": "October - Adrián Berenguer",
+  "tiktok": "auto"
+ },
+ "source": "Therm, confirmed Oct 22 2026; HUD; Fannie Mae; CFPB",
+ "slides": [
+  {
+   "type": "cover",
+   "eyebrow": "I used to think renting was safer",
+   "lines": [
+    "THEN I",
+    "ADDED UP",
+    "~OVER $150K",
+    "~IN RENT"
+   ],
+   "sub": "Here's what I'd compare now, before you sign another lease.",
+   "source": "Therm, confirmed Oct 22 2026"
+  },
+  {
+   "type": "stat",
+   "label": "What I paid in rent",
+   "value": "$150K+",
+   "body": "I rented for well over 10 years. People told me for years to stop renting and buy. I ignored that advice.",
+   "source": "Therm, confirmed Oct 22 2026"
+  },
+  {
+   "type": "list",
+   "title": "Renting: what goes in the math",
+   "items": [
+    "Your monthly rent",
+    "Renter's insurance",
+    "Rent increases at renewal",
+    "Security deposit and utilities"
+   ],
+   "source": "HUD Counselor Study Guide 2.1; Fannie Mae, Rent vs. Buy (Oct. 2026)"
+  },
+  {
+   "type": "list",
+   "title": "Buying: what goes in the math",
+   "items": [
+    "Down payment and closing costs",
+    "Mortgage, property taxes and homeowners insurance",
+    "PMI or HOA fees, if they apply",
+    "Repairs and upkeep"
+   ],
+   "source": "HUD, Housing Counselor Study Guide 2.1 (Oct. 2026)"
+  },
+  {
+   "type": "text",
+   "eyebrow": "The lesson",
+   "title": "How long will you stay?",
+   "body": "Buying has big upfront costs, and equity builds slowly in the first years. That's why how long you'll stay matters. Run both lists with real numbers. Talk to a licensed lender for your numbers.",
+   "source": "CFPB, Making the decision to rent or buy (Oct. 2026)"
+  }
+ ],
+ "caption": "I used to believe renting was the safer choice. Then I added up over $150K in rent.\n\nI rented for well over 10 years. People told me for years to buy, and I ignored them. Here's what I'd compare now. Renting: rent, renter's insurance, rent increases, the deposit and utilities. Buying: down payment, closing costs, the mortgage with taxes and insurance, PMI or HOA fees, and upkeep. Then ask how long you'll stay.\n\nTalk to a licensed lender for your numbers.\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #RentVsBuy #NJRenters\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "I used to believe renting was the safer choice. Then I added up over $150K in rent.\n\nBefore you sign another lease, put the full cost of renting next to the full cost of buying. Then ask how long you'll stay.\n\nTalk to a licensed lender for your numbers.\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://hudhousingcounselors.hud.gov/sites/default/files/study_pdfs/Module%202.1_202511%20-%20Copy.pdf",
+  "https://yourhome.fanniemae.com/buy/rent-vs-buy-whats-right-you",
+  "https://consumerfinance.gov/about-us/blog/making-decision-rent-or-buy/",
+  "https://files.consumerfinance.gov/f/documents/cfpb_ymyg-servicemembers-tool_buying-or-renting-a-home.pdf",
+  "https://myhome.freddiemac.com/blog/homebuying/rent-or-buy-which-option-right-you"
+ ]
+}

@@ -1,0 +1,109 @@
+{
+ "id": "2026-10-24_B_local",
+ "tag": "LOCAL *SPOTS*",
+ "hook": 26,
+ "story_plan": {
+  "type": "multi",
+  "frames": [
+   1,
+   2,
+   3,
+   4
+  ]
+ },
+ "music": {
+  "ig_audio": "Hello October - Sugar Lime Blue",
+  "ig_audio_source": "https://socialpilot.co/blog/instagram-reels-trends/",
+  "ig_audio_backup": "My October - The Folks",
+  "tiktok": "auto"
+ },
+ "source": "Randolph Township, Special Events (randolphnj.org/400/Special-Events)",
+ "slides": [
+  {
+   "type": "cover",
+   "eyebrow": "Living in Randolph?",
+   "lines": [
+    "YOU DON'T NEED",
+    "A BIG PLAN",
+    "~THIS SATURDAY,",
+    "~JUST ONE PARK"
+   ],
+   "sub": "3 Halloween events at one Randolph park on Sat., Oct. 24, from noon to 9 PM.",
+   "source": "Randolph Township, Special Events page (Oct. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "1",
+   "kind": "Event",
+   "title": "Trail of Treats",
+   "meta": "Veterans Community Park, 100 Calais Rd",
+   "chips": [
+    "Noon to 2 PM",
+    "Low-scare",
+    "Rain date Oct. 25"
+   ],
+   "body": "A daytime, low-scare trail made for sensory-sensitive guests. Local businesses hand out candy along the way. Paid per child.",
+   "scene": "park",
+   "variant": 0,
+   "source": "Randolph Township, Special Events page (Oct. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "2",
+   "kind": "Event",
+   "title": "Trunk or Treat",
+   "meta": "Veterans Community Park, 100 Calais Rd",
+   "chips": [
+    "2:30 to 4:30 PM",
+    "Games",
+    "Rain date Oct. 25"
+   ],
+   "body": "Come in costume and trick-or-treat from decorated car trunks. There are games and photo spots too. Paid per vehicle.",
+   "scene": "park",
+   "variant": 1,
+   "source": "Randolph Township, Special Events page (Oct. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "3",
+   "kind": "Event",
+   "title": "Haunted Trail: US Legends",
+   "meta": "Veterans Community Park, 100 Calais Rd",
+   "chips": [
+    "6 to 9 PM",
+    "Oct. 23 and 24",
+    "Rain date Oct. 25"
+   ],
+   "body": "An evening haunted trail at the same park, from 6 to 9 PM. The township lists it as a 250th Celebration event.",
+   "scene": "park",
+   "variant": 2,
+   "source": "Randolph Township, Special Events page (Oct. 2026)"
+  },
+  {
+   "type": "route",
+   "eyebrow": "Save the plan",
+   "title": "Your Randolph Saturday",
+   "stops": [
+    {
+     "name": "Trail of Treats",
+     "where": "Noon"
+    },
+    {
+     "name": "Trunk or Treat",
+     "where": "2:30 PM"
+    },
+    {
+     "name": "Haunted Trail",
+     "where": "6 PM"
+    }
+   ],
+   "tip": "Thinking about buying here? Spend a Saturday in town and drive your weekday commute too.",
+   "source": "Randolph Township, Special Events page (Oct. 2026)"
+  }
+ ],
+ "caption": "Living in Randolph? You don't need a big plan this Saturday, just one park.\n\nVeterans Community Park, 100 Calais Rd, has 3 Halloween events on Sat., Oct. 24. Trail of Treats runs noon to 2 PM. Trunk or Treat runs 2:30 to 4:30 PM. The Haunted Trail runs 6 to 9 PM. The rain date is Oct. 25. Check the township's Special Events page for fees and details.\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #RandolphNJ #MorrisCountyNJ\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "Living in Randolph? You don't need a big plan this Saturday, just one park.\n\nVeterans Community Park has 3 Halloween events on Oct. 24: Trail of Treats (noon to 2 PM), Trunk or Treat (2:30 to 4:30 PM) and the Haunted Trail (6 to 9 PM). Rain date is Oct. 25.\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://www.randolphnj.org/400/Special-Events"
+ ]
+}

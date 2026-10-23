@@ -1,0 +1,70 @@
+{
+ "id": "2026-10-24_A_flood",
+ "tag": "REAL ESTATE *101*",
+ "hook": 6,
+ "lesson": "Hormozi 2027 strategy video, numbered-process carousel",
+ "story_plan": {
+  "type": "single",
+  "frames": [
+   1
+  ]
+ },
+ "music": {
+  "ig_audio": "October - Adrián Berenguer",
+  "ig_audio_source": "https://socialpilot.co/blog/instagram-reels-trends/",
+  "ig_audio_backup": "Autumn Journey - Andrea Vanzo",
+  "tiktok": "auto"
+ },
+ "source": "FEMA, Flood Maps and Zones Explained; FEMA FloodSmart; FEMA Flood Map Service Center; NJ DCA flood risk disclosure",
+ "slides": [
+  {
+   "type": "cover",
+   "eyebrow": "The part listing photos never show you",
+   "lines": [
+    "CHECK THE",
+    "FLOOD ZONE",
+    "~BEFORE YOU",
+    "~MAKE AN OFFER"
+   ],
+   "sub": "3 steps to check any NJ address, and why it can change your monthly cost.",
+   "source": "FEMA, Flood Maps and Zones Explained (Oct. 2026)"
+  },
+  {
+   "type": "stat",
+   "label": "High-risk flood area",
+   "value": "1 in 4",
+   "body": "A home in a high-risk flood area has at least a 1 in 4 chance of flooding during a 30-year mortgage.",
+   "source": "FEMA, Flood Maps and Zones Explained (Oct. 2026)"
+  },
+  {
+   "type": "point",
+   "num": "1",
+   "title": "Look up the address",
+   "body": "Type the address into FEMA's Flood Map Service Center at msc.fema.gov. Zones that start with A or V are high-risk areas.",
+   "source": "FEMA Flood Map Service Center; FEMA, Flood Maps and Zones Explained (Oct. 2026)"
+  },
+  {
+   "type": "point",
+   "num": "2",
+   "title": "Read the seller's flood disclosure",
+   "body": "NJ sellers have to tell you if the home's in a FEMA flood area and about flood damage they know of. Talk to a real estate attorney about your situation.",
+   "source": "NJ DCA, Flood risk disclosure tools announcement (Oct. 2026)"
+  },
+  {
+   "type": "point",
+   "num": "3",
+   "title": "Get a flood insurance quote early",
+   "body": "Most homeowners policies don't cover floods. If the home's in a high-risk area and your lender is federally regulated or insured, flood insurance is required. Talk to a licensed lender for your numbers.",
+   "source": "FEMA FloodSmart; FEMA, Flood Maps and Zones Explained (Oct. 2026)"
+  }
+ ],
+ "caption": "This is the part listing photos never show you: the flood zone.\n\nA home in a high-risk flood area has at least a 1 in 4 chance of flooding during a 30-year mortgage. Before you make an offer, look up the address on FEMA's flood map. Read the seller's flood disclosure. Get a flood insurance quote early. Most homeowners policies don't cover floods.\n\nTalk to a licensed lender for your numbers.\nTalk to a real estate attorney about your situation.\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #FloodZone #HomebuyerTips\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "This is the part listing photos never show you: the flood zone.\n\nA home in a high-risk flood area has at least a 1 in 4 chance of flooding during a 30-year mortgage. Check FEMA's flood map, read the seller's flood disclosure and get an insurance quote early.\n\nTalk to a licensed lender for your numbers.\nTalk to a real estate attorney about your situation.\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://fema.gov/blog/fema-flood-maps-and-zones-explained",
+  "https://www.floodsmart.gov/",
+  "https://msc.fema.gov/portal",
+  "https://www.nj.gov/dca/news/news/2023/20231221.shtml",
+  "https://content.govdelivery.com/accounts/NJDEP/bulletins/3955f65"
+ ]
+}
