@@ -21,6 +21,8 @@ Spec format:
     {"type": "list", "title": "Heading", "items": ["a", "b", "c"]},
     {"type": "card"}                  # optional: the business card is ALWAYS added as the last slide
   ],
+  "music": {"ig_audio": "Song - Artist", "ig_audio_source": "URL", "ig_audio_backup": "Song - Artist", "tiktok": "auto"},
+                                      # Brain's trending Instagram audio for the Reel version (see PLAYBOOK "Music")
   "style": "brand | cartoon"          # cartoon = cream background, highlight bar, flat scene on cover,
                                       # button; cover takes "scene" and "variant" like place cards
 }

@@ -71,7 +71,8 @@ The approval package must be in Therm's inbox by 7:45 PM ET every evening. Appro
 ## Approval rules
 
 - Every post goes to Therm as a preview email before it is scheduled.
-- He replies with: APPROVE ALL | APPROVE A C | SKIP B | FIX B: <what to change>.
+- He replies with: APPROVE ALL | APPROVE A C | SKIP B | FIX B: <what to change> | MANUAL A (post
+  slot A's Instagram carousel by hand with the listed song; see Music).
 - Only explicitly approved slots are scheduled. A FIX is applied, re-checked and re-sent for
   approval. No reply = no post.
 - If approval arrives after a slot's time has passed (or less than 20 minutes before it),
@@ -308,13 +309,47 @@ approval. The approval agent keeps the next 7 days of card posts scheduled on ev
 (check getScheduledPosts first, never duplicate). If business_card.jpg is ever replaced, rebuild
 business_card_story.jpg and show Therm before posting it.
 
-## Music
+## Music (Therm's rule, Oct 23 2026: the Brain picks the music)
 
-Instagram's API (and so Metricool) cannot add music to Stories or feed carousels; music only
-works on Reels. So:
-- TikTok posts (carousels, quotes, business card): tiktokData autoAddMusic true, so TikTok adds a
-  track from its own licensed library.
+Instagram's API (and so Metricool) can only attach music to Reels, never to a photo carousel or
+a Story. Therm chose BOTH of the options below, so every carousel gets music two ways.
+
+BRAIN, for every carousel:
+1. Pick one TRENDING Instagram audio for the post. Check this week's trending-audio lists the
+   same day (search "trending Instagram Reels audio this week"; good sources: Metricool
+   metricool.com/trending-instagram-songs, SocialPilot "Instagram Reels Trends", SocialBee
+   "Trending Instagram Songs This Week"). Use a list published or updated in the last 14 days.
+   Pick a song whose mood fits the post (upbeat for local spots, calm or steady for money and
+   process posts). No explicit lyrics, nothing political, religious or sad, and no lyric that
+   clashes with the post. Do not use the same song twice in 7 days (Content Log column M).
+2. Write it into the spec:
+   "music": {"ig_audio": "<Song title> - <Artist>", "ig_audio_source": "<URL of the trending list>",
+             "ig_audio_backup": "<a second trending song> - <Artist>", "tiktok": "auto"}
+3. TikTok music is ALWAYS TikTok-generated: tiktokData autoAddMusic true, so TikTok adds a track
+   from its own licensed library. The Brain does not pick a TikTok song.
+
+DESIGNER: after make_stories.py, run `python3 make_reel.py posts/YYYY-MM-DD/<id>`. It makes
+`<id>_reel.mp4` (1080x1920, all six story frames, about 19 seconds, silent audio track). Watch a
+frame from the start, middle and end. Push it with the images. Never bake a song into the file.
+
+EXECUTION (approval email): for each slot show "IG audio: <song> - <artist> (backup: <song>)",
+the trending-list link, and the Reel link ("Reel: <raw GitHub URL of _reel.mp4>"). Say that the
+song is also there if Therm wants to post the photo carousel by hand with music.
+
+EXECUTION (scheduling, after approval), per approved carousel:
+- Instagram Reel: a SEPARATE Metricool post 1 hour after the slot time, media = the _reel.mp4,
+  instagramData {"type": "REEL", "showReelOnFeed": true, "audioConfiguration": {"audioId":
+  "<ig_audio>"}} and the full caption. If Metricool rejects the audioId because it matches
+  several songs, retry with the exact numeric id from the candidates it returns; if it matches
+  none, try ig_audio_backup; if both fail, schedule the Reel without audio and say so in the
+  next email. (Requires the Instagram Business account connected to a Facebook Page.)
+- Instagram photo carousel: posts automatically as before, without music (the API cannot add it).
+  If Therm replies "MANUAL A" (or B, C), schedule that slot's Instagram carousel with
+  autoPublish false instead, so Metricool sends him a phone reminder to add the listed song in
+  the Instagram app and publish it himself.
+- TikTok (carousels, quotes, business card): autoAddMusic true.
 - Instagram Stories and Threads post without music.
+- Log the song in the Content Log column M ("IG audio").
 - Never bake a song into a file unless it is royalty-free audio Therm supplies and has the
   rights to use.
 
@@ -382,7 +417,8 @@ Build run (every evening, for the next day):
 2. Research and write the three specs (JSON) in `specs/YYYY-MM-DD_<slot>.json`.
 3. Render with `python3 render_carousel.py specs/<file>.json posts/YYYY-MM-DD/`.
 4. Run the Quality gate. Fix and re-render until it passes.
-5. Make story frames (make_stories.py) and the preview sheet (make_sheet.py) for each post.
+5. Make story frames (make_stories.py), the Reel version (make_reel.py) and the preview sheet
+   (make_sheet.py) for each post.
    Commit and push images. Image URL:
    `https://raw.githubusercontent.com/thermanrouse24/nj-dream-home-carousels/main/posts/YYYY-MM-DD/<file>.jpg`
 6. Email Therm the approval package and log each post as "Awaiting approval" (with the hook #).
