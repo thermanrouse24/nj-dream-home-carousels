@@ -1,6 +1,6 @@
 # Lessons from videos
 
-The Researcher adds takeaways here after watching a video with the /watch skill (PLAYBOOK.md "Researcher video skill"). Newest first. The Brain reads this every run. Structure only, never another creator's wording.
+The Researcher or the Brain adds takeaways here after watching a video with the /watch skill (PLAYBOOK.md "Video skill"). Newest first. The Brain reads this every run. Structure only, never another creator's wording.
 
 Format:
 ## YYYY-MM-DD: <title> (<link>)

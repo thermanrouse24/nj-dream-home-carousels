@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# One-step setup for the Researcher's /watch video skill (PLAYBOOK.md "Researcher video skill").
+# One-step setup for the Researcher's /watch video skill (PLAYBOOK.md "Video skill").
 # Each scheduled run starts on a fresh cloud machine, so this runs at the start of every run.
 # Therm's saved choices: local engine (frames + captions), no speech-to-text fallback, balanced detail.
 set -e

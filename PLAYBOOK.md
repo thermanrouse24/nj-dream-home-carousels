@@ -9,7 +9,7 @@ approved posts in Metricool. Nothing is ever scheduled or posted without Therm's
 
 | Agent | Job | Deadline (Eastern) |
 |---|---|---|
-| Brain | Reads this playbook, HOOKS.md, the Reel Brain docs and the Content Log; picks tomorrow's 3 topics and hooks; writes the slide copy and captions. | 4:30 PM |
+| Brain | Reads this playbook, HOOKS.md, LESSONS.md, the Reel Brain docs and the Content Log; can watch videos with the /watch skill to learn formats; picks tomorrow's 3 topics and hooks; writes the slide copy and captions. | 4:30 PM |
 | Researcher | Verifies every fact against a source read that day, and watches videos with the /watch skill when a source or Therm's request is a video. Drops anything it cannot confirm. | 5:00 PM |
 | Designer | Renders the slides, story frames and preview sheets; pushes them to GitHub. | 5:30 PM |
 | Execution | Runs the Quality gate (a separate checker that did not write the posts), emails Therm the approval package with an image preview of every post, logs the posts. After approval, schedules them in Metricool. | Email by 7:45 PM |
@@ -384,10 +384,10 @@ punched holes, blue handwriting, circled numbers, yellow highlighter. Made by no
   `python3 notebook.py quote "<quote>" quotes/YYYY-MM/<Quote ID>` (same _story / _square files).
 - Never put notebook and cartoon style on the same day.
 
-## Researcher video skill: /watch (Therm's rule, Oct 23 2026)
+## Video skill: /watch for the Researcher AND the Brain (Therm's rule, Oct 23 2026)
 
-The Researcher has the watch skill (Skill tool, skill "watch:watch") so it can watch a video and
-learn from it: frames plus the video's own captions, read by the Researcher itself (Therm chose the
+The Researcher and the Brain both have the watch skill (Skill tool, skill "watch:watch") so they
+can watch a video and learn from it: frames plus the video's own captions, read by the Researcher itself (Therm chose the
 free "frames + captions" engine: no API key, no speech-to-text for videos without captions).
 
 Setup is automatic and takes about 10 seconds: every run starts with
@@ -410,6 +410,14 @@ When the Researcher uses it:
 3. Researching a format or hook: deconstruct a high-performing short per the Reel Brain
    instructions (hook, format, subject, template).
 The Brain reads LESSONS.md every run.
+
+How the Brain uses it (Therm's rule, Oct 23 2026):
+- Before writing, the Brain may watch any video in the repo's videos/ folder or any video Therm
+  sent with WATCH that fits tomorrow's topic or format, to study the hook, pacing, beat order and
+  on-screen text, then write the carousel using that structure (never the wording).
+- When the Brain learns something new it adds it to LESSONS.md the same way the Researcher does
+  (date, link, "Learned by: Brain"), so it is kept for every future run.
+- The Brain never takes a fact from a video for a slide; facts still go through the Researcher.
 
 Limits (tested Oct 23 2026):
 - This cloud environment's network policy blocks youtube.com, tiktok.com, instagram.com and
