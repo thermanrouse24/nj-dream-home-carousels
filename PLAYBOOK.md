@@ -23,10 +23,11 @@ Source videos are Therm's finished edits in the Drive folders "Edits" (id 1nyFIN
 camera file names: probe first, read the town from the frames) and "Content (Edits)"
 (id 1DjzQZHcW8a8AzHosWdrOjy-wU3saklu4, named "Address, Town | $Price | N Beds | N Baths").
 The Designer only replaces the edit's "SINGLE FAMILY / HOME" label with the town/county title (town big,
-county small; Therm, Oct 24 2026: remove SINGLE FAMILY), redraws the cover on a forest-green panel
-in one style (v5, Therm approved Oct 24 2026): TOWN, COUNTY, "N BEDS | N BATHS" only (cover_facts; the NYC
-commute goes in the caption), the price in a clean sans (cover_price) with a gold label saying what it is
-(cover_price_note, e.g. "3.5% down payment"; never show a down payment without its label), and NJ DREAM HOME,
+county small; Therm, Oct 24 2026: remove SINGLE FAMILY), redraws the cover over a soft blurred band
+in one style (v6, Therm's pick Oct 24 2026): TOWN, COUNTY, the facts line as on his cover (cover_facts, e.g.
+"35 Mins to NYC | 5 Beds | 5 Baths"), the price in Playfair Display (cover_price) with a gold label saying
+what it is (cover_price_note, e.g. "down payment"; never show a down payment without its label), and
+NJ DREAM HOME. The whole block is on screen 2.5 to 3 seconds only,
 and adds the business card end frame with tours/make_tour.py (run by the "Render home tour" workflow); never re-cut his edit.
 Caption: describe the home, price, beds, baths, town and county only (fair housing rules apply; no
 "family-friendly", "safe", schools, etc.), plus "Click the link in my bio." (TikTok: DM me "HOME"),

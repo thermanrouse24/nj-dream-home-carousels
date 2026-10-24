@@ -67,7 +67,7 @@ def town_layer(text, max_w, max_h=330):
     """Render the town big, then squeeze it horizontally (tall condensed look). Returns RGBA."""
     size = 420
     while True:
-        f = vfont(TOWN_FONT, size, 900, 6)   # low optical size = thicker hairlines on a phone
+        f = vfont(TOWN_FONT, size, 900, 28)
         tmp = Image.new("L", (10, 10))
         bb = ImageDraw.Draw(tmp).textbbox((0, 0), text, font=f)
         w, h = bb[2] - bb[0], bb[3] - bb[1]
@@ -120,8 +120,10 @@ def price_block(img, price, facts, top, price_note=None):
         img = tracked_text(img, facts.upper(), vfont(COUNTY_FONT, 36, 500), y, 6)
         y += 70
     if price:   # clean sans so the number reads instantly (Therm, Oct 24 2026: the serif price wasn't legible)
-        img = tracked_text(img, price, vfont(COUNTY_FONT, 112, 600), y - 6, 4, fill=TOWN_COLOR + (255,))
-        y += 140
+        # Playfair Display: an elegant high-contrast serif with clear, open numerals (Therm, Oct 24 2026:
+        # "a bit more luxurious" but still easy to read)
+        img = tracked_text(img, price, vfont(PRICE_FONT, 118, 700), y - 14, 3, fill=TOWN_COLOR + (255,))
+        y += 152
         if price_note:   # says what the number is, e.g. "3.5% DOWN PAYMENT"
             img = tracked_text(img, price_note.upper(), vfont(COUNTY_FONT, 34, 600), y, 8, fill=(225, 183, 133, 255))
             y += 62
@@ -132,6 +134,7 @@ def price_block(img, price, facts, top, price_note=None):
     return tracked_text(img, "NJ DREAM HOME", vfont(COUNTY_FONT, 52, 400), y + 26, 18)
 
 
+PRICE_FONT = "PlayfairDisplay.ttf"
 PANEL_COLOR = (16, 34, 24)   # NJ Dream Home forest green
 
 
@@ -295,7 +298,8 @@ def main():
     ap.add_argument("--keep-label", action="store_true", help="don't replace the edit's SINGLE FAMILY / HOME label")
     ap.add_argument("--price", default="", help="the price shown on the edit's cover, e.g. $37,625 (redrawn in the title style)")
     ap.add_argument("--facts", default="", help="the edit's facts line, e.g. '5 Beds | 5 Baths'")
-    ap.add_argument("--price-note", default="", help="what the price is, e.g. '3.5% down payment'")
+    ap.add_argument("--price-note", default="", help="what the price is, e.g. 'down payment'")
+    ap.add_argument("--panel", action="store_true", help="solid forest-green panel instead of the blurred band")
     a = ap.parse_args()
     dur, has_audio = probe(a.src)
     if dur <= 1:
@@ -305,10 +309,12 @@ def main():
     ov = os.path.join(tmp, "title.png")
     box = None if a.keep_label else LABEL_BOX
     until = label_end(a.src, box) if box else None
+    if until is not None:   # Therm: the title block is on screen 2.5 to 3 seconds, never longer
+        until = min(max(until, 2.5), 3.0)
     if until is None:        # no SINGLE FAMILY / HOME label found: title at the top, nothing blurred
         box, until = None, TITLE_SECONDS
     title_overlay(a.town, a.county, ov, box, a.price.strip() or None, a.facts.strip() or None,
-                  a.price_note.strip() or None, BLOCK_BOX if box else None)
+                  a.price_note.strip() or None, BLOCK_BOX if (box and a.panel) else None)
     boxes = [BLOCK_BOX] if box else []
     build(a.src, os.path.join(ROOT, "business_card_story.jpg"), ov, a.out_prefix + "_ig.mp4", has_audio, dur, until=until, boxes=boxes)
     build(a.src, os.path.join(ROOT, "business_card_story_tiktok.jpg"), ov, a.out_prefix + "_tiktok.mp4", has_audio, dur, until=until, boxes=boxes)
