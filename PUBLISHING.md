@@ -94,9 +94,14 @@ Security: tokens live only in GitHub Actions secrets (encrypted, never in the re
 
 ## Home Tour Reels (Therm's rule, Oct 24 2026: one a day, 9:45 AM)
 
-Source: Therm's edited tours in the shared drive folder **Content (Edits)**
-(https://drive.google.com/drive/folders/1DjzQZHcW8a8AzHosWdrOjy-wU3saklu4), named like
-`204 Hoover Pl, Union | $1,075,000 | 5 Beds | 5 Baths`. Keep naming new tours that way.
+Sources (Therm's edited tours, in his shared drives):
+- **Edits** (https://drive.google.com/drive/folders/1nyFINVXnZdmoDl6t4dPEaPTIqSDover1), the
+  folder Therm pointed to on Oct 24 2026. Its files have camera names (no address), so the robot
+  first saves 9 frames from the video (`tours/probes/`) and the Designer reads the town from the
+  footage. If the town can't be read, the email asks Therm to rename the file "Address, Town".
+- **Content (Edits)** (https://drive.google.com/drive/folders/1DjzQZHcW8a8AzHosWdrOjy-wU3saklu4),
+  named like `204 Hoover Pl, Union | $1,075,000 | 5 Beds | 5 Baths` (best: no guessing needed).
+Naming new tours "Address, Town | $Price | N Beds | N Baths" is always the fastest path.
 
 1. Daily build (2:47 PM): the Designer picks the next tour not yet used (newest first), the Researcher
    confirms the town and county (and whether the home is still listed), the Brain writes the caption,
@@ -108,9 +113,9 @@ Source: Therm's edited tours in the shared drive folder **Content (Edits)**
 3. The approval email shows it as slot **T**. Reply APPROVE T (or APPROVE ALL).
 4. It posts at 9:45 AM as an Instagram Reel, a Facebook Reel and a TikTok video (DM HOME).
 
-One-time setup for tours: the robot must be able to download from that folder. EITHER set the
+One-time setup for tours: the robot must be able to download from those folders. EITHER set each
 folder's sharing to "Anyone with the link: Viewer" (simplest), OR create a Google Cloud service
-account with the Drive API enabled, share the folder with its email, and save its JSON key as the
+account with the Drive API enabled, share both folders with its email, and save its JSON key as the
 GitHub secret `GDRIVE_SA_JSON`.
 
 NJ advertising rule to know: N.J.A.C. 11:5-6.1(n) says a licensee may not advertise the

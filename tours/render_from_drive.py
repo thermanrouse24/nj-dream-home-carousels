@@ -49,8 +49,43 @@ def download(file_id, out):
                            "or add the GDRIVE_SA_JSON secret (see PUBLISHING.md, Home Tours)")
 
 
+def probe(p, spec):
+    """For videos whose file name doesn't say the town: save 9 frames so the Designer can read the
+    address/town from the footage (on-screen text, street signs) before the real render."""
+    from PIL import Image
+    tmp = tempfile.mkdtemp()
+    src = os.path.join(tmp, "source.mp4")
+    download(spec["drive_file_id"], src)
+    dur = float(sh(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", src]).strip() or 0)
+    shots = []
+    for i in range(9):
+        t = dur * (i + 0.5) / 9
+        f = os.path.join(tmp, f"p{i}.jpg")
+        sh(["ffmpeg", "-y", "-loglevel", "error", "-ss", f"{t:.2f}", "-i", src, "-frames:v", "1", "-vf", "scale=360:-2", f])
+        shots.append(Image.open(f).convert("RGB"))
+    w, h = shots[0].size
+    sheet = Image.new("RGB", (w * 9 + 80, h + 16), (16, 22, 18))
+    for i, im in enumerate(shots):
+        sheet.paste(im.resize((w, h)), (8 + i * (w + 9), 8))
+    os.makedirs(os.path.join(HERE, "probes"), exist_ok=True)
+    out = os.path.join(HERE, "probes", f"{spec['id']}_frames.jpg")
+    sheet.save(out, quality=85)
+    spec.update({"status": "probed", "frames": os.path.relpath(out, ROOT), "source_duration_s": round(dur, 1)})
+
+
 def main():
     specs = sorted(glob.glob(os.path.join(HERE, "specs", "*.json")))
+    for p in specs:  # probe pass first
+        spec = json.load(open(p))
+        if spec.get("status") != "probe":
+            continue
+        try:
+            probe(p, spec)
+            print("probed", spec["id"])
+        except Exception as e:
+            spec["status"], spec["error"] = "probe_failed", str(e)[:800]
+        with open(p, "w") as fh:
+            json.dump(spec, fh, indent=1, ensure_ascii=False); fh.write("\n")
     todo = [p for p in specs if json.load(open(p)).get("status") == "new"]
     if not todo:
         print("no new tour specs"); return
