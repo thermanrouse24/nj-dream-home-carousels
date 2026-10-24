@@ -7,6 +7,8 @@ Only the approval agent runs this, and only for posts Therm approved.
     python3 publisher/enqueue.py carousel specs/2026-10-24_A.json --time 04:45 [--date 2026-10-24] [--reel] [--manual-ig]
   Quote story (IG Story + Threads + TikTok):
     python3 publisher/enqueue.py quote Q2610-03 --date 2026-10-24 --time 09:15 --text "The quote"
+  Home Tour Reel (after the tour-render workflow set the spec to "rendered"):
+    python3 publisher/enqueue.py tour tours/specs/2026-10-25_T.json [--time 09:45]
   Business card story (pre-approved, Mon/Wed/Fri 7:15 AM):
     python3 publisher/enqueue.py card --date 2026-10-26 --time 07:15
 
@@ -148,6 +150,31 @@ def card(a):
     return items
 
 
+def tour(a):
+    """Home Tour Reel (Therm's rule, Oct 24 2026): IG Reel + Facebook Reel + TikTok video, 9:45 AM."""
+    spec = json.load(open(os.path.join(ROOT, a.spec)))
+    if spec.get("status") != "rendered":
+        sys.exit(f"tour {spec.get('id')} is not rendered yet (status {spec.get('status')})")
+    date = a.date or spec["date"]
+    t = at(date, a.time)
+    p = f"{date}_T"
+    caption = spec["caption"]
+    tk = spec.get("tiktok_caption") or caption.replace(CTA, TIKTOK_CTA)
+    if TIKTOK_CTA not in tk:
+        tk = tk.replace(FOOTER, f"{TIKTOK_CTA}\n\n{FOOTER}") if FOOTER in tk else f"{tk}\n\n{TIKTOK_CTA}"
+    items = []
+    if "instagram" in a.platforms:
+        items.append({"id": f"{p}_ig_reel", "platform": "instagram", "type": "reel", "publish_at": t,
+                      "media": [spec["ig_url"]], "caption": caption, "tour": spec["id"]})
+    if "facebook" in a.platforms:
+        items.append({"id": f"{p}_fb_reel", "platform": "facebook", "type": "reel", "publish_at": t,
+                      "media": [spec["ig_url"]], "caption": caption, "tour": spec["id"]})
+    if "tiktok" in a.platforms:
+        items.append({"id": f"{p}_tiktok", "platform": "tiktok", "type": "video", "publish_at": t,
+                      "media": [spec["tiktok_url"]], "caption": tk, "tour": spec["id"]})
+    return items
+
+
 def main():
     ap = argparse.ArgumentParser()
     sub = ap.add_subparsers(dest="kind", required=True)
@@ -156,11 +183,14 @@ def main():
     q = sub.add_parser("quote"); q.add_argument("quote_id"); q.add_argument("--date", required=True)
     q.add_argument("--time", required=True); q.add_argument("--text", required=True)
     k = sub.add_parser("card"); k.add_argument("--date", required=True); k.add_argument("--time", default="07:15")
-    for s in (c, q, k):
+    tr = sub.add_parser("tour"); tr.add_argument("spec"); tr.add_argument("--date"); tr.add_argument("--time", default="09:45")
+    for s in (c, q, k, tr):
         s.add_argument("--platforms", default=",".join(ALL)); s.add_argument("--replace", action="store_true")
     a = ap.parse_args()
     a.platforms = [x.strip() for x in a.platforms.split(",") if x.strip()]
-    items = {"carousel": carousel, "quote": quote, "card": card}[a.kind](a)
+    if a.kind == "tour" and a.platforms == ALL:
+        a.platforms = ["instagram", "facebook", "tiktok"]   # Therm: IG Reel + TikTok + Facebook
+    items = {"carousel": carousel, "quote": quote, "card": card, "tour": tour}[a.kind](a)
     now = dt.datetime.now(NY)
     for it in items:
         if dt.datetime.fromisoformat(it["publish_at"]) < now + dt.timedelta(minutes=5):

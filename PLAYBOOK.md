@@ -16,6 +16,19 @@ by make_reel.py are optional now (the API cannot attach licensed music); queue o
 asks (`--reel`). TikTok: EVERY TikTok post (carousels, quotes, business card, home tours) uses
 'DM me "HOME" to get started.' and never "link in my bio".
 
+## Home Tour Reels (Therm's rule, Oct 24 2026)
+
+One Home Tour Reel a day at 9:45 AM ET: Instagram Reel, Facebook Reel, TikTok video (DM HOME).
+Source videos are Therm's finished edits in the Drive folder "Content (Edits)"
+(id 1DjzQZHcW8a8AzHosWdrOjy-wU3saklu4), named "Address, Town | $Price | N Beds | N Baths".
+The Designer only adds the town/county title (town big, county small, first 2.5 s) and the business
+card end frame with tours/make_tour.py (run by the "Render home tour" workflow); never re-cut his edit.
+Caption: describe the home, price, beds, baths, town and county only (fair housing rules apply; no
+"family-friendly", "safe", schools, etc.), plus "Click the link in my bio." (TikTok: DM me "HOME"),
+3 to 5 hashtags and "Therm The Realtor | eXp Realty". Never say "for sale" unless the Researcher
+confirmed today that it is still listed; if it sold, skip it or say "recently listed at". Full flow in
+PUBLISHING.md ("Home Tour Reels").
+
 ## The team (one scheduled run plays all four roles)
 
 | Agent | Job | Deadline (Eastern) |

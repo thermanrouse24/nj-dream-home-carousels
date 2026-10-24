@@ -84,12 +84,38 @@ def platform_ready(p):
 
 
 def local_path(url):
-    """Map a raw GitHub URL of this repo to the checked-out file (used for video uploads)."""
+    """A local copy of a video for direct upload: the checked-out repo file for raw GitHub URLs,
+    otherwise (e.g. home tour videos in the GitHub release) a downloaded temp file."""
     if url.startswith(RAW_PREFIX):
         p = os.path.join(ROOT, url[len(RAW_PREFIX):])
         if os.path.exists(p):
             return p
+    if url.lower().endswith(".mp4"):
+        import tempfile
+        p = os.path.join(tempfile.mkdtemp(), "video.mp4")
+        try:
+            with requests.get(url, stream=True, timeout=300, allow_redirects=True) as r:
+                r.raise_for_status()
+                with open(p, "wb") as fh:
+                    for chunk in r.iter_content(1 << 20):
+                        fh.write(chunk)
+        except requests.RequestException as e:
+            raise PublishError(f"could not download video {url}: {type(e).__name__}")
+        return p
     return None
+
+
+def rupload(upload_url, token, path):
+    size = os.path.getsize(path)
+    with open(path, "rb") as f:
+        r = requests.post(upload_url, data=f.read(), timeout=600, headers={
+            "Authorization": f"OAuth {token}", "offset": "0", "file_size": str(size)})
+    try:
+        ok = r.status_code < 400 and r.json().get("success")
+    except ValueError:
+        ok = False
+    if not ok:
+        raise PublishError(redact(f"video upload failed {r.status_code}: {r.text[:400]}"))
 
 
 SECRET_VALUES = [v for k, v in os.environ.items() if v and len(v) > 8 and k.endswith(("TOKEN", "KEY", "PAT"))]
@@ -169,16 +195,7 @@ def ig_video_container(ig, token, url, media_type, extra):
         d = api("POST", f"{GRAPH}/{ig}/media", token,
                 data={"media_type": media_type, "upload_type": "resumable", **extra})
         cid, uri = d["id"], d.get("uri") or f"https://rupload.facebook.com/ig-api-upload/{GRAPH.rsplit('/', 1)[1]}/{d['id']}"
-        size = os.path.getsize(path)
-        with open(path, "rb") as f:
-            r = requests.post(uri, data=f.read(), timeout=300, headers={
-                "Authorization": f"OAuth {token}", "offset": "0", "file_size": str(size)})
-        try:
-            okay = r.status_code < 400 and r.json().get("success")
-        except ValueError:
-            okay = False
-        if not okay:
-            raise PublishError(redact(f"Instagram video upload failed {r.status_code}: {r.text[:400]}"))
+        rupload(uri, token, path)
         return cid
     d = api("POST", f"{GRAPH}/{ig}/media", token,
             data={"media_type": media_type, "video_url": url, **extra})
@@ -242,8 +259,23 @@ def instagram(item):
 
 # ---------------- Facebook ----------------
 
+def facebook_reel(item, token, page):
+    """Facebook Reel (home tours): start, upload the file, then publish."""
+    path = local_path(item["media"][0])
+    d = api("POST", f"{GRAPH}/{page}/video_reels", token, data={"upload_phase": "start"})
+    vid = d["video_id"]
+    rupload(d.get("upload_url") or f"https://rupload.facebook.com/video-upload/{GRAPH.rsplit('/', 1)[1]}/{vid}", token, path)
+    mark_publishing(item, fb_video_id=vid)
+    api("POST", f"{GRAPH}/{page}/video_reels", token, data={
+        "upload_phase": "finish", "video_id": vid, "video_state": "PUBLISHED",
+        "description": item.get("caption", "")})
+    return {"fb_reel_id": vid}
+
+
 def facebook(item):
     token, page = env("META_PAGE_TOKEN"), env("FB_PAGE_ID")
+    if item["type"] == "reel":
+        return facebook_reel(item, token, page)
     photos = [u for u in item["media"] if not u.lower().endswith(".mp4")]
     if not photos:
         raise PublishError("Facebook post needs photos")

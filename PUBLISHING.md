@@ -91,3 +91,29 @@ Without it, make a new Threads token every 60 days.
 - Post one item now (testing): Actions > "Publish approved posts" > Run workflow > item id.
 
 Security: tokens live only in GitHub Actions secrets (encrypted, never in the repo or the logs).
+
+## Home Tour Reels (Therm's rule, Oct 24 2026: one a day, 9:45 AM)
+
+Source: Therm's edited tours in the shared drive folder **Content (Edits)**
+(https://drive.google.com/drive/folders/1DjzQZHcW8a8AzHosWdrOjy-wU3saklu4), named like
+`204 Hoover Pl, Union | $1,075,000 | 5 Beds | 5 Baths`. Keep naming new tours that way.
+
+1. Daily build (2:47 PM): the Designer picks the next tour not yet used (newest first), the Researcher
+   confirms the town and county (and whether the home is still listed), the Brain writes the caption,
+   and the spec goes to `tours/specs/<date>_T.json` with status "new".
+2. GitHub Actions "Render home tour" downloads it, adds Therm's title for the first 2.5 seconds
+   (TOWN big in a tall serif, COUNTY small and spaced underneath, his reference style) and his
+   business card as the last 3 seconds (TikTok copy says DM ME "HOME"). His edit is otherwise
+   untouched. The MP4s go to the repo's "tours" release; cover and preview images to `tours/previews/`.
+3. The approval email shows it as slot **T**. Reply APPROVE T (or APPROVE ALL).
+4. It posts at 9:45 AM as an Instagram Reel, a Facebook Reel and a TikTok video (DM HOME).
+
+One-time setup for tours: the robot must be able to download from that folder. EITHER set the
+folder's sharing to "Anyone with the link: Viewer" (simplest), OR create a Google Cloud service
+account with the Drive API enabled, share the folder with its email, and save its JSON key as the
+GitHub secret `GDRIVE_SA_JSON`.
+
+NJ advertising rule to know: N.J.A.C. 11:5-6.1(n) says a licensee may not advertise the
+availability of a specific property exclusively listed by another broker without that broker's
+prior written consent. The approval email reminds Therm of this for each tour; approving T means
+it is his listing or he has that consent.
