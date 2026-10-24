@@ -1,0 +1,30 @@
+{
+ "id": "2026-10-24_T_union",
+ "date": "2026-10-24",
+ "drive_file_id": "1ALQgs6bcAn6glZwVc-fvxLmQX26ItirQ",
+ "drive_title": "204 Hoover Pl, Union | $1,075,000 | 5 Beds | 5 Baths",
+ "address": "204 Hoover Pl",
+ "town": "Union",
+ "county": "Union",
+ "price": "$1,075,000",
+ "beds": 5,
+ "baths": 5,
+ "cover_facts": "35 Mins to NYC | 5 Beds | 5 Baths",
+ "cover_price": "$37,625",
+ "cover_price_note": "down payment",
+ "caption": "Home tour in Union, Union County.\n\n5 beds | 5 baths | listed at $1,075,000\n\n$37,625 is a 3.5% down payment on the list price. Talk to a licensed lender for your numbers.\n\nWatch for the hardwood floors, the built-in mudroom bench and the glass walk-in shower.\n\nListed by Keller Williams Realty.\n\nClick the link in my bio.\n\n#NJRealEstate #UnionNJ #UnionCountyNJ #HomeTour\n\nTherm The Realtor | eXp Realty",
+ "tiktok_caption": "Home tour in Union, Union County.\n\n5 beds | 5 baths | listed at $1,075,000\n\n$37,625 is a 3.5% down payment on the list price. Talk to a licensed lender for your numbers.\n\nWatch for the hardwood floors, the built-in mudroom bench and the glass walk-in shower.\n\nListed by Keller Williams Realty.\n\nDM me \"HOME\" to get started.\n\n#NJRealEstate #UnionNJ #UnionCountyNJ #HomeTour\n\nTherm The Realtor | eXp Realty",
+ "music": {
+  "ig_audio": "Girls on Film (2010 Remaster) - Duran Duran",
+  "ig_audio_backup": "Last Train to London - Rikas",
+  "ig_audio_source": "https://socialpilot.co/blog/instagram-reels-trends/",
+  "tiktok": "pick any trending sound in the TikTok app"
+ },
+ "listing_check": "Active, $1,075,000, 5 bd / 5 ba, MLS 4058679, listing brokerage Keller Williams Realty (newjerseyrealestatenetwork.com, updated 10/17/2026; checked Oct 24 2026)",
+ "status": "manual_post",
+ "note": "Therm chose to post this himself on Oct 24 2026 so he can add a song in the Instagram and TikTok apps. Uses the sample_union render.",
+ "ig_url": "https://github.com/thermanrouse24/nj-dream-home-carousels/releases/download/tours/sample_union_ig.mp4",
+ "tiktok_url": "https://github.com/thermanrouse24/nj-dream-home-carousels/releases/download/tours/sample_union_tiktok.mp4",
+ "cover": "tours/previews/sample_union_cover.jpg",
+ "preview": "tours/previews/sample_union_preview.jpg"
+}
