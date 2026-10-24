@@ -104,8 +104,8 @@ def title_overlay(town, county, out_png):
     x, y = (W - mask.width) // 2, 470
     # shadow
     sh = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    sh.paste((0, 0, 0, 120), (x + 4, y + 8), mask)
-    sh = sh.filter(ImageFilter.GaussianBlur(14))
+    sh.paste((0, 0, 0, 175), (x + 4, y + 8), mask)
+    sh = sh.filter(ImageFilter.GaussianBlur(10))
     img = Image.alpha_composite(img, sh)
     img.paste(TOWN_COLOR + (255,), (x, y), mask)
     # county: thin, tracked
