@@ -29,19 +29,19 @@
     "~A SKY-HIGH",
     "~TAX BILL"
    ],
-   "sub": "Rahway, in Union County, has 2 train lines to New York Penn. Here are 4 numbers I'd check first.",
+   "sub": "Rahway's average tax bill is about $2,100 under the Union County average, with 2 train lines to New York Penn. After 6 years in real estate, these are the 4 numbers I'd check.",
    "source": "NJ Division of Taxation; NJ Transit (Oct. 2026)"
   },
   {
    "type": "stat",
-   "label": "Average 2025 tax bill",
+   "label": "1. Average 2025 tax bill",
    "value": "$10,435",
    "body": "Rahway's 2025 average residential tax bill. That's about $2,100 under the Union County average ($12,536) and close to the NJ average ($10,340).",
    "source": "NJ Division of Taxation, 2025 Average Residential Tax Statistics"
   },
   {
    "type": "stat",
-   "label": "Median sale price",
+   "label": "2. Median sale price",
    "value": "$562,128",
    "body": "Rahway's median sale price in August 2026, per Redfin. That's up 7.1% from a year earlier. Homes sold in a median of 32 days.",
    "source": "Redfin, Rahway Housing Market (Aug. 2026 data)"

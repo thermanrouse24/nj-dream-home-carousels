@@ -20,12 +20,12 @@
    "type": "cover",
    "eyebrow": "If you only remember one thing...",
    "lines": [
-    "MOVING TO",
-    "CHATHAM? START",
-    "~WITH THESE 3",
+    "CHATHAM? MAKE",
+    "IT THESE 3",
+    "~MAIN STREET",
     "~BAKE SHOPS"
    ],
-   "sub": "Three Main Street spots for croissants and fresh bagels. Main Street is a block from the train.",
+   "sub": "One of them just opened in September. Main Street is a block from the train.",
    "source": "Business pages; Shop Morris County (Oct. 2026)"
   },
   {
@@ -67,18 +67,18 @@
    "title": "Chatham Bagels",
    "meta": "260 Main St",
    "chips": [
-    "Open daily",
+    "Opens 6 AM",
     "Bagels",
     "Breakfast"
    ],
-   "body": "A Main Street bagel shop with egg sandwiches, breakfast wraps and spreads, open every day from 6 AM to 2 PM.",
+   "body": "A Main Street bagel shop with egg sandwiches, breakfast wraps and spreads. It opens at 6 AM.",
    "scene": "bakery",
    "variant": 2,
-   "source": "Chatham Bagels ordering page, Postmates (Oct. 2026)"
+   "source": "Chatham Bagels on Postmates and MapQuest (Oct. 2026)"
   },
   {
    "type": "route",
-   "eyebrow": "Save the route",
+   "eyebrow": "Plan the route",
    "title": "Your Chatham bake shop stops",
    "stops": [
     {
@@ -98,7 +98,7 @@
    "source": "Business pages (Oct. 2026); NJ Transit, Chatham Station"
   }
  ],
- "caption": "If you only remember one thing about Chatham, make it these 3 bake shops on Main Street.\n\nFleur de Sel Patisserie & Bistro at 265 Main St bakes French pastry from scratch every day. The Bagelry at 459 Main St opened in September 2026 with hand-rolled bagels baked on site. Chatham Bagels at 260 Main St is open daily. Before you make an offer, walk Main Street from Chatham station on a Saturday morning.\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #ChathamNJ #MorrisCountyNJ\n\nTherm The Realtor | eXp Realty",
+ "caption": "If you only remember one thing about Chatham, make it these 3 bake shops on Main Street.\n\nFleur de Sel Patisserie & Bistro at 265 Main St bakes everything from scratch in its on-site kitchen (closed Mondays). The Bagelry at 459 Main St opened in September 2026 with hand-rolled bagels baked on site. Chatham Bagels at 260 Main St opens at 6 AM with egg sandwiches and breakfast wraps. Before you make an offer, walk Main Street from Chatham station on a Saturday morning.\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #ChathamNJ #MorrisCountyNJ\n\nTherm The Realtor | eXp Realty",
  "threads_caption": "If you only remember one thing about Chatham, NJ: these 3 bake shops on Main Street. Fleur de Sel (265 Main), The Bagelry (459 Main) and Chatham Bagels (260 Main).\n\nBefore you make an offer, walk Main Street from the train station on a Saturday morning.\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
  "sources": [
   "https://www.fleurdeselchathamnj.com/about-us",
