@@ -101,7 +101,7 @@ def title_overlay(town, county, out_png):
             mask.paste(p, ((mw - p.width) // 2, yy)); yy += p.height - 60
     else:
         mask = town_layer(town_txt, W - 100)
-    x, y = (W - mask.width) // 2, 470
+    x, y = (W - mask.width) // 2, 130   # top of the frame: Therm's edits put their own text in the lower half
     # shadow
     sh = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     sh.paste((0, 0, 0, 175), (x + 4, y + 8), mask)
