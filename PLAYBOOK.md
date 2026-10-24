@@ -22,8 +22,8 @@ One Home Tour Reel a day at 9:45 AM ET: Instagram Reel, Facebook Reel, TikTok vi
 Source videos are Therm's finished edits in the Drive folders "Edits" (id 1nyFINVXnZdmoDl6t4dPEaPTIqSDover1,
 camera file names: probe first, read the town from the frames) and "Content (Edits)"
 (id 1DjzQZHcW8a8AzHosWdrOjy-wU3saklu4, named "Address, Town | $Price | N Beds | N Baths").
-The Designer only adds the town/county title (town big, county small, first 2.5 s) and the business
-card end frame with tours/make_tour.py (run by the "Render home tour" workflow); never re-cut his edit.
+The Designer only replaces the edit's "SINGLE FAMILY / HOME" label with the town/county title (town big,
+county small; Therm, Oct 24 2026: remove SINGLE FAMILY) and adds the business card end frame with tours/make_tour.py (run by the "Render home tour" workflow); never re-cut his edit.
 Caption: describe the home, price, beds, baths, town and county only (fair housing rules apply; no
 "family-friendly", "safe", schools, etc.), plus "Click the link in my bio." (TikTok: DM me "HOME"),
 3 to 5 hashtags and "Therm The Realtor | eXp Realty". Never say "for sale" unless the Researcher

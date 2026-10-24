@@ -81,7 +81,12 @@ def town_layer(text, max_w, max_h=330):
     return layer
 
 
-def title_overlay(town, county, out_png):
+# Therm's edit template puts "SINGLE FAMILY / HOME" here (x, y, w, h on the 1080x1920 frame).
+# Therm (Oct 24 2026): remove that label and put the TOWN / COUNTY title in its place.
+LABEL_BOX = (0, 954, 1080, 346)   # label sits about y 990 to 1260; the extra rows are the soft edges
+
+
+def title_overlay(town, county, out_png, box=None):
     """Transparent 1080x1920 PNG in Therm's reference style: the TOWN huge (tall condensed serif),
     the COUNTY small and widely spaced underneath. A soft shadow keeps it readable on any footage."""
     img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
@@ -100,8 +105,14 @@ def title_overlay(town, county, out_png):
         for p in parts:
             mask.paste(p, ((mw - p.width) // 2, yy)); yy += p.height - 60
     else:
-        mask = town_layer(town_txt, W - 100)
-    x, y = (W - mask.width) // 2, 130   # top of the frame: Therm's edits put their own text in the lower half
+        mask = town_layer(town_txt, W - 100, (box[3] - 95) if box else 330)
+    if box and mask.height > box[3] - 70:   # two-line names: shrink to fit the label box
+        r = (box[3] - 70) / mask.height
+        mask = mask.resize((int(mask.width * r), int(mask.height * r)), Image.LANCZOS)
+    if box:
+        x, y = (W - mask.width) // 2, box[1] + 20
+    else:
+        x, y = (W - mask.width) // 2, 130   # top of the frame: Therm's edits put their own text in the lower half
     # shadow
     sh = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     sh.paste((0, 0, 0, 175), (x + 4, y + 8), mask)
@@ -131,11 +142,53 @@ def title_overlay(town, county, out_png):
     img.save(out_png)
 
 
-def build(src, card_jpg, overlay_png, out_mp4, has_audio, dur):
-    """[tour scaled/padded to 9:16 + title overlay for 2.5 s] then [3 s business card], one file."""
-    vf_main = (f"[0:v]scale={W}:{H}:force_original_aspect_ratio=decrease,pad={W}:{H}:(ow-iw)/2:(oh-ih)/2:color=black,"
-               f"setsar=1,fps=30,format=yuv420p[base];"
-               f"[1:v]format=rgba[ov];[base][ov]overlay=0:0:shortest=1:enable='lt(t,{TITLE_SECONDS})'[v0];"
+def label_end(src, box, max_s=6.0):
+    """Seconds until the edit's own label leaves the box: the box's share of near-black / near-white
+    pixels (the label's text and outline) drops below half of what it was at the start."""
+    tmp = tempfile.mkdtemp()
+    x, y, w, h = box
+    run(["ffmpeg", "-y", "-loglevel", "error", "-t", str(max_s), "-i", src, "-vf",
+         f"scale={W}:{H}:force_original_aspect_ratio=decrease,pad={W}:{H}:(ow-iw)/2:(oh-ih)/2,crop={w}:{h}:{x}:{y},fps=10,scale=255:-2",
+         os.path.join(tmp, "c%03d.png")])
+    files = sorted(f for f in os.listdir(tmp) if f.endswith(".png"))
+    def score(f):
+        im = Image.open(os.path.join(tmp, f)).convert("L")
+        hist = im.histogram()
+        return (sum(hist[:25]) + sum(hist[236:])) / max(1, sum(hist))
+    if not files:
+        return TITLE_SECONDS
+    base = max(score(f) for f in files[:4])
+    if base < 0.08:          # no label in this edit
+        return None
+    for i, f in enumerate(files):
+        if i >= 5 and score(f) < base * 0.5:
+            return round(i / 10 + 0.1, 2)
+    return min(max_s, TITLE_SECONDS)
+
+
+def feather_mask(w, h, out_png, edge=45):
+    """White box with soft edges, so the blurred patch melts into the footage instead of a hard rectangle."""
+    m = Image.new("L", (w, h + 2 * edge), 0)       # full width; only top and bottom fade
+    ImageDraw.Draw(m).rectangle((-10, edge + 12, w + 10, h + edge - 12), fill=255)
+    m = m.filter(ImageFilter.GaussianBlur(edge / 3)).crop((0, edge, w, h + edge))
+    m.save(out_png)
+
+
+def build(src, card_jpg, overlay_png, out_mp4, has_audio, dur, box=None, until=TITLE_SECONDS):
+    """[tour 9:16 (+ label box blurred) + title overlay] then [3 s business card], one file."""
+    scale = (f"[0:v]scale={W}:{H}:force_original_aspect_ratio=decrease,pad={W}:{H}:(ow-iw)/2:(oh-ih)/2:color=black,"
+             f"setsar=1,fps=30,format=yuv420p")
+    if box:
+        x, y, w, h = box
+        mask_png = os.path.join(tempfile.mkdtemp(), "mask.png")
+        feather_mask(w, h, mask_png)
+        scale += (f",split[b0][b1];[b1]crop={w}:{h}:{x}:{y},boxblur=luma_radius=80:luma_power=3:chroma_radius=40:chroma_power=3,eq=brightness=-0.10,format=rgba[bl];"
+                  f"movie={mask_png},format=gray[mk];[bl][mk]alphamerge[blur];"
+                  f"[b0][blur]overlay={x}:{y}:enable='lt(t,{until})'[base];")
+    else:
+        scale += "[base];"
+    vf_main = (scale +
+               f"[1:v]format=rgba[ov];[base][ov]overlay=0:0:shortest=1:enable='lt(t,{until})'[v0];"
                f"[2:v]scale={W}:{H},setsar=1,fps=30,format=yuv420p,trim=duration={CARD_SECONDS}[v1];")
     if has_audio:
         a0 = "[0:a]aresample=44100,aformat=channel_layouts=stereo[a0];"
@@ -171,6 +224,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("src"); ap.add_argument("out_prefix")
     ap.add_argument("--town", required=True); ap.add_argument("--county", required=True)
+    ap.add_argument("--keep-label", action="store_true", help="don't replace the edit's SINGLE FAMILY / HOME label")
     a = ap.parse_args()
     dur, has_audio = probe(a.src)
     if dur <= 1:
@@ -178,13 +232,17 @@ def main():
     os.makedirs(os.path.dirname(os.path.abspath(a.out_prefix)), exist_ok=True)
     tmp = tempfile.mkdtemp()
     ov = os.path.join(tmp, "title.png")
-    title_overlay(a.town, a.county, ov)
-    build(a.src, os.path.join(ROOT, "business_card_story.jpg"), ov, a.out_prefix + "_ig.mp4", has_audio, dur)
-    build(a.src, os.path.join(ROOT, "business_card_story_tiktok.jpg"), ov, a.out_prefix + "_tiktok.mp4", has_audio, dur)
+    box = None if a.keep_label else LABEL_BOX
+    until = label_end(a.src, box) if box else None
+    if until is None:        # no SINGLE FAMILY / HOME label found: title at the top, nothing blurred
+        box, until = None, TITLE_SECONDS
+    title_overlay(a.town, a.county, ov, box)
+    build(a.src, os.path.join(ROOT, "business_card_story.jpg"), ov, a.out_prefix + "_ig.mp4", has_audio, dur, box, until)
+    build(a.src, os.path.join(ROOT, "business_card_story_tiktok.jpg"), ov, a.out_prefix + "_tiktok.mp4", has_audio, dur, box, until)
     total = dur + CARD_SECONDS
     times = [0.8, dur * 0.25, dur * 0.5, dur * 0.75, max(dur - 0.5, 0), total - 1.0]
     frames(a.out_prefix + "_ig.mp4", times, a.out_prefix + "_preview.jpg", a.out_prefix + "_cover.jpg")
-    info = {"duration_s": round(total, 1), "source_duration_s": round(dur, 1), "source_has_audio": has_audio,
+    info = {"title_until_s": until, "duration_s": round(total, 1), "source_duration_s": round(dur, 1), "source_has_audio": has_audio,
             "ig_mb": round(os.path.getsize(a.out_prefix + "_ig.mp4") / 1e6, 1),
             "tiktok_mb": round(os.path.getsize(a.out_prefix + "_tiktok.mp4") / 1e6, 1)}
     print(json.dumps(info))
