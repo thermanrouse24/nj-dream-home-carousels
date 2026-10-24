@@ -67,7 +67,7 @@ def town_layer(text, max_w, max_h=330):
     """Render the town big, then squeeze it horizontally (tall condensed look). Returns RGBA."""
     size = 420
     while True:
-        f = vfont(TOWN_FONT, size, 900, 28)
+        f = vfont(TOWN_FONT, size, 900, 6)   # low optical size = thicker hairlines on a phone
         tmp = Image.new("L", (10, 10))
         bb = ImageDraw.Draw(tmp).textbbox((0, 0), text, font=f)
         w, h = bb[2] - bb[0], bb[3] - bb[1]
@@ -112,7 +112,7 @@ def tracked_text(img, text, font_obj, cy, track, fill=(255, 255, 255, 255)):
     return img
 
 
-def price_block(img, price, facts, top):
+def price_block(img, price, facts, top, price_note=None):
     """Under the town/county: the facts line (thin spaced sans), the price in the town's tall serif,
     a thin bronze rule, and NJ DREAM HOME in the county's thin spaced sans."""
     y = top
@@ -121,16 +121,36 @@ def price_block(img, price, facts, top):
         y += 70
     if price:   # clean sans so the number reads instantly (Therm, Oct 24 2026: the serif price wasn't legible)
         img = tracked_text(img, price, vfont(COUNTY_FONT, 112, 600), y - 6, 4, fill=TOWN_COLOR + (255,))
-        y += 168
+        y += 140
+        if price_note:   # says what the number is, e.g. "3.5% DOWN PAYMENT"
+            img = tracked_text(img, price_note.upper(), vfont(COUNTY_FONT, 34, 600), y, 8, fill=(225, 183, 133, 255))
+            y += 62
+        else:
+            y += 28
     d = ImageDraw.Draw(img)
     d.line([((W - 300) / 2, y), ((W + 300) / 2, y)], fill=(225, 183, 133, 255), width=3)
     return tracked_text(img, "NJ DREAM HOME", vfont(COUNTY_FONT, 52, 400), y + 26, 18)
 
 
-def title_overlay(town, county, out_png, box=None, price=None, facts=None):
+PANEL_COLOR = (16, 34, 24)   # NJ Dream Home forest green
+
+
+def brand_panel(box):
+    """A clean forest-green panel over the (blurred) old cover block, fading softly at top and bottom."""
+    x, y, w, h = box
+    edge = 60
+    a = Image.new("L", (w, h + 2 * edge), 0)
+    ImageDraw.Draw(a).rectangle((-10, edge + 20, w + 10, h + edge - 20), fill=232)
+    a = a.filter(ImageFilter.GaussianBlur(18)).crop((0, edge, w, h + edge))
+    panel = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    panel.paste(Image.new("RGBA", (w, h), PANEL_COLOR + (255,)), (x, y), a)
+    return panel
+
+
+def title_overlay(town, county, out_png, box=None, price=None, facts=None, price_note=None, panel_box=None):
     """Transparent 1080x1920 PNG in Therm's reference style: the TOWN huge (tall condensed serif),
     the COUNTY small and widely spaced underneath. A soft shadow keeps it readable on any footage."""
-    img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    img = brand_panel(panel_box) if panel_box else Image.new("RGBA", (W, H), (0, 0, 0, 0))
     town_txt = town.upper()
     county_txt = county.upper()
     if "COUNTY" not in county_txt:
@@ -181,7 +201,7 @@ def title_overlay(town, county, out_png, box=None, price=None, facts=None):
     for c, wdt in zip(county_txt, widths):
         d.text((xx, cy), c, font=f, fill=(255, 255, 255, 255)); xx += wdt + track
     if box:
-        img = price_block(img, price, facts, int(cy + 85))
+        img = price_block(img, price, facts, int(cy + 85), price_note)
     img.save(out_png)
 
 
@@ -274,7 +294,8 @@ def main():
     ap.add_argument("--town", required=True); ap.add_argument("--county", required=True)
     ap.add_argument("--keep-label", action="store_true", help="don't replace the edit's SINGLE FAMILY / HOME label")
     ap.add_argument("--price", default="", help="the price shown on the edit's cover, e.g. $37,625 (redrawn in the title style)")
-    ap.add_argument("--facts", default="", help="the edit's facts line, e.g. '35 Mins to NYC | 5 Beds | 5 Baths'")
+    ap.add_argument("--facts", default="", help="the edit's facts line, e.g. '5 Beds | 5 Baths'")
+    ap.add_argument("--price-note", default="", help="what the price is, e.g. '3.5% down payment'")
     a = ap.parse_args()
     dur, has_audio = probe(a.src)
     if dur <= 1:
@@ -286,7 +307,8 @@ def main():
     until = label_end(a.src, box) if box else None
     if until is None:        # no SINGLE FAMILY / HOME label found: title at the top, nothing blurred
         box, until = None, TITLE_SECONDS
-    title_overlay(a.town, a.county, ov, box, a.price.strip() or None, a.facts.strip() or None)
+    title_overlay(a.town, a.county, ov, box, a.price.strip() or None, a.facts.strip() or None,
+                  a.price_note.strip() or None, BLOCK_BOX if box else None)
     boxes = [BLOCK_BOX] if box else []
     build(a.src, os.path.join(ROOT, "business_card_story.jpg"), ov, a.out_prefix + "_ig.mp4", has_audio, dur, until=until, boxes=boxes)
     build(a.src, os.path.join(ROOT, "business_card_story_tiktok.jpg"), ov, a.out_prefix + "_tiktok.mp4", has_audio, dur, until=until, boxes=boxes)
