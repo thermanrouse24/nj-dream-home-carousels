@@ -119,14 +119,9 @@ def price_block(img, price, facts, top):
     if facts:
         img = tracked_text(img, facts.upper(), vfont(COUNTY_FONT, 36, 500), y, 6)
         y += 70
-    if price:
-        mask = town_layer(price, W - 300, 140)
-        px = (W - mask.width) // 2
-        sh = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-        sh.paste((0, 0, 0, 175), (px + 3, y + 6), mask)
-        img = Image.alpha_composite(img, sh.filter(ImageFilter.GaussianBlur(8)))
-        img.paste(TOWN_COLOR + (255,), (px, y), mask)
-        y += mask.height + 10
+    if price:   # clean sans so the number reads instantly (Therm, Oct 24 2026: the serif price wasn't legible)
+        img = tracked_text(img, price, vfont(COUNTY_FONT, 112, 600), y - 6, 4, fill=TOWN_COLOR + (255,))
+        y += 168
     d = ImageDraw.Draw(img)
     d.line([((W - 300) / 2, y), ((W + 300) / 2, y)], fill=(225, 183, 133, 255), width=3)
     return tracked_text(img, "NJ DREAM HOME", vfont(COUNTY_FONT, 52, 400), y + 26, 18)
