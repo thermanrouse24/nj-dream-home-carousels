@@ -5,6 +5,17 @@ Every day, Monday through Sunday, it makes three carousel posts in the NJ Dream 
 template, gets them fact-checked, sends them to Therm for approval, and schedules ONLY the
 approved posts in Metricool. Nothing is ever scheduled or posted without Therm's approval.
 
+## Publishing: free publisher, not Metricool (Therm's decision, Oct 23 2026)
+
+Metricool's free plan allows about 20 published posts a month, far below our volume, so nothing is
+scheduled in Metricool any more. Approved posts are written to `queue/` with `publisher/enqueue.py`
+and posted by GitHub Actions through Meta's free APIs (Instagram feed carousels with motion
+slides, Stories, Facebook, Threads) and Buffer's free API (TikTok). See PUBLISHING.md. Wherever this
+playbook says "schedule in Metricool", read "queue with publisher/enqueue.py". Instagram Reels made
+by make_reel.py are optional now (the API cannot attach licensed music); queue one only when Therm
+asks (`--reel`). TikTok: EVERY TikTok post (carousels, quotes, business card, home tours) uses
+'DM me "HOME" to get started.' and never "link in my bio".
+
 ## The team (one scheduled run plays all four roles)
 
 | Agent | Job | Deadline (Eastern) |
@@ -458,7 +469,7 @@ exception to the rule above, and only on TikTok. Instagram, Facebook and Threads
   <id>_6of6_tiktok.jpg. TikTok media = slides 1 to 5 + <id>_6of6_tiktok.jpg.
 - Business card on TikTok: business_card_story_tiktok.jpg (python3 make_card_tiktok.py with no
   argument rebuilds it from business_card_story.jpg).
-- Quote stories on TikTok have no call to action line, so nothing changes there.
+- Quote stories on TikTok also end with 'DM me "HOME" to get started.' (Therm, Oct 23 2026: all TikTok content).
 
 ## Caption
 
