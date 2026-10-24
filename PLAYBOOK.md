@@ -27,7 +27,8 @@ county small; Therm, Oct 24 2026: remove SINGLE FAMILY), redraws the cover over 
 in one style (v6, Therm's pick Oct 24 2026): TOWN, COUNTY, the facts line as on his cover (cover_facts, e.g.
 "35 Mins to NYC | 5 Beds | 5 Baths"), the price in Playfair Display (cover_price) with a gold label saying
 what it is (cover_price_note, e.g. "down payment"; never show a down payment without its label), and
-NJ DREAM HOME. The whole block is on screen 2.5 to 3 seconds only,
+NJ DREAM HOME. The 5 lines of text show for 1.5 seconds at the front of the video only (the blur under
+them stays until the edit's own label is gone),
 and adds the business card end frame with tours/make_tour.py (run by the "Render home tour" workflow); never re-cut his edit.
 Caption: describe the home, price, beds, baths, town and county only (fair housing rules apply; no
 "family-friendly", "safe", schools, etc.), plus "Click the link in my bio." (TikTok: DM me "HOME"),

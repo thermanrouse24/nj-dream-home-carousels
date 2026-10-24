@@ -240,7 +240,11 @@ def feather_mask(w, h, out_png, edge=45):
     m.save(out_png)
 
 
-def build(src, card_jpg, overlay_png, out_mp4, has_audio, dur, box=None, until=TITLE_SECONDS, boxes=None):
+TEXT_SECONDS = 1.5   # Therm, Oct 24 2026: the 5 lines of text show for 1.5 s at the front of the video only
+
+
+def build(src, card_jpg, overlay_png, out_mp4, has_audio, dur, box=None, until=TITLE_SECONDS, boxes=None,
+          text_until=None):
     """[tour 9:16 (+ label box blurred) + title overlay] then [3 s business card], one file."""
     scale = (f"[0:v]scale={W}:{H}:force_original_aspect_ratio=decrease,pad={W}:{H}:(ow-iw)/2:(oh-ih)/2:color=black,"
              f"setsar=1,fps=30,format=yuv420p")
@@ -259,7 +263,7 @@ def build(src, card_jpg, overlay_png, out_mp4, has_audio, dur, box=None, until=T
     else:
         scale += "[base];"
     vf_main = (scale +
-               f"[1:v]format=rgba[ov];[base][ov]overlay=0:0:shortest=1:enable='lt(t,{until})'[v0];"
+               f"[1:v]format=rgba[ov];[base][ov]overlay=0:0:shortest=1:enable='lt(t,{text_until or until})'[v0];"
                f"[2:v]scale={W}:{H},setsar=1,fps=30,format=yuv420p,trim=duration={CARD_SECONDS}[v1];")
     if has_audio:
         a0 = "[0:a]aresample=44100,aformat=channel_layouts=stereo[a0];"
@@ -309,19 +313,20 @@ def main():
     ov = os.path.join(tmp, "title.png")
     box = None if a.keep_label else LABEL_BOX
     until = label_end(a.src, box) if box else None
-    if until is not None:   # Therm: the title block is on screen 2.5 to 3 seconds, never longer
-        until = min(max(until, 2.5), 3.0)
+    # the blur stays until the edit's own label is gone (so it never peeks through); the new text
+    # itself shows only for TEXT_SECONDS
+    text_until = TEXT_SECONDS
     if until is None:        # no SINGLE FAMILY / HOME label found: title at the top, nothing blurred
         box, until = None, TITLE_SECONDS
     title_overlay(a.town, a.county, ov, box, a.price.strip() or None, a.facts.strip() or None,
                   a.price_note.strip() or None, BLOCK_BOX if (box and a.panel) else None)
     boxes = [BLOCK_BOX] if box else []
-    build(a.src, os.path.join(ROOT, "business_card_story.jpg"), ov, a.out_prefix + "_ig.mp4", has_audio, dur, until=until, boxes=boxes)
-    build(a.src, os.path.join(ROOT, "business_card_story_tiktok.jpg"), ov, a.out_prefix + "_tiktok.mp4", has_audio, dur, until=until, boxes=boxes)
+    build(a.src, os.path.join(ROOT, "business_card_story.jpg"), ov, a.out_prefix + "_ig.mp4", has_audio, dur, until=until, boxes=boxes, text_until=text_until)
+    build(a.src, os.path.join(ROOT, "business_card_story_tiktok.jpg"), ov, a.out_prefix + "_tiktok.mp4", has_audio, dur, until=until, boxes=boxes, text_until=text_until)
     total = dur + CARD_SECONDS
     times = [0.8, dur * 0.25, dur * 0.5, dur * 0.75, max(dur - 0.5, 0), total - 1.0]
     frames(a.out_prefix + "_ig.mp4", times, a.out_prefix + "_preview.jpg", a.out_prefix + "_cover.jpg")
-    info = {"title_until_s": until, "duration_s": round(total, 1), "source_duration_s": round(dur, 1), "source_has_audio": has_audio,
+    info = {"text_until_s": text_until, "blur_until_s": until, "duration_s": round(total, 1), "source_duration_s": round(dur, 1), "source_has_audio": has_audio,
             "ig_mb": round(os.path.getsize(a.out_prefix + "_ig.mp4") / 1e6, 1),
             "tiktok_mb": round(os.path.getsize(a.out_prefix + "_tiktok.mp4") / 1e6, 1)}
     print(json.dumps(info))
