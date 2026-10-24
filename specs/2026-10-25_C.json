@@ -1,0 +1,73 @@
+{
+ "id": "2026-10-25_C_rahway",
+ "tag": "TOWN *BREAKDOWN*",
+ "hook": 13,
+ "lesson": "Hormozi 2027 strategy video, tension cover + one action per slide",
+ "story_plan": {
+  "type": "multi",
+  "frames": [
+   1,
+   2,
+   3,
+   4
+  ]
+ },
+ "music": {
+  "ig_audio": "My October - The Folks",
+  "ig_audio_source": "https://socialpilot.co/blog/instagram-reels-trends/",
+  "ig_audio_backup": "Hello October - Sugar Lime Blue",
+  "tiktok": "auto"
+ },
+ "source": "NJ Division of Taxation; Redfin; NJ Transit; NJHMFA",
+ "slides": [
+  {
+   "type": "cover",
+   "eyebrow": "This might trigger you, but...",
+   "lines": [
+    "NOT EVERY NJ",
+    "TRAIN TOWN HAS",
+    "~A SKY-HIGH",
+    "~TAX BILL"
+   ],
+   "sub": "Rahway, in Union County, has 2 train lines to New York Penn. Here are 4 numbers I'd check first.",
+   "source": "NJ Division of Taxation; NJ Transit (Oct. 2026)"
+  },
+  {
+   "type": "stat",
+   "label": "Average 2025 tax bill",
+   "value": "$10,435",
+   "body": "Rahway's 2025 average residential tax bill. That's about $2,100 under the Union County average ($12,536) and close to the NJ average ($10,340).",
+   "source": "NJ Division of Taxation, 2025 Average Residential Tax Statistics"
+  },
+  {
+   "type": "stat",
+   "label": "Median sale price",
+   "value": "$562,128",
+   "body": "Rahway's median sale price in August 2026, per Redfin. That's up 7.1% from a year earlier. Homes sold in a median of 32 days.",
+   "source": "Redfin, Rahway Housing Market (Aug. 2026 data)"
+  },
+  {
+   "type": "point",
+   "num": "3",
+   "title": "2 train lines to New York Penn",
+   "body": "Rahway station is on NJ Transit's Northeast Corridor and North Jersey Coast lines. Service is reduced through Nov. 14 for Portal Bridge work, so check your schedule.",
+   "source": "NJ Transit, Rahway Station; Portal Cutover (Oct. 2026)"
+  },
+  {
+   "type": "point",
+   "num": "4",
+   "title": "Up to $15,000 in down payment help",
+   "body": "NJHMFA offers eligible first-time buyers up to $15,000 in Union County: no interest, no monthly payments, forgiven after 5 years in the home. Talk to a licensed lender for your numbers.",
+   "source": "NJHMFA, First-Time Homebuyer fact sheet (updated June 2026)"
+  }
+ ],
+ "caption": "This might trigger you, but not every NJ train town has a sky-high tax bill. Rahway's 2025 average residential tax bill was $10,435. That's about $2,100 under the Union County average and close to the NJ average of $10,340.\n\nRahway's median sale price was $562,128 in August 2026 (Redfin). The station is on 2 NJ Transit lines to New York Penn. And NJHMFA offers eligible first-time buyers up to $15,000 in down payment help in Union County.\n\nTalk to a licensed lender for your numbers.\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #RahwayNJ #UnionCountyNJ\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "This might trigger you, but not every NJ train town has a sky-high tax bill. Rahway's 2025 average residential tax bill was $10,435, close to the NJ average of $10,340.\n\nMedian sale price: $562,128 (Redfin, Aug. 2026). 2 NJ Transit lines to New York Penn.\n\nTalk to a licensed lender for your numbers.\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://www.nj.gov/treasury/taxation/pdf/lpt/class4/2025AvgResStat.pdf",
+  "https://www.redfin.com/city/15819/NJ/Rahway/housing-market",
+  "https://www.njtransit.com/station/rahway-station",
+  "https://njtransit.com/PortalCutover",
+  "https://www.nj.gov/dca/hmfa/homebuyers-and-renters/docs/FTHB-ConsumerFactSheet.pdf"
+ ]
+}

@@ -1,0 +1,72 @@
+{
+ "id": "2026-10-25_A_radon",
+ "tag": "REAL ESTATE *101*",
+ "hook": 1,
+ "lesson": "Hormozi 2027 strategy video, numbered-process carousel (one action per slide)",
+ "story_plan": {
+  "type": "multi",
+  "frames": [
+   1,
+   2,
+   3
+  ]
+ },
+ "music": {
+  "ig_audio": "My Own Universe - PattiJ North",
+  "ig_audio_source": "https://socialpilot.co/blog/instagram-reels-trends/",
+  "ig_audio_backup": "we fell in love in october - girl in red",
+  "tiktok": "auto"
+ },
+ "source": "EPA; NJDEP Radon Section",
+ "slides": [
+  {
+   "type": "cover",
+   "eyebrow": "No one talks about this on a home tour",
+   "lines": [
+    "YOU CAN'T SEE",
+    "OR SMELL IT.",
+    "~TEST FOR",
+    "~RADON"
+   ],
+   "sub": "After 6 years in real estate, here are the 3 radon checks I'd make before any NJ closing.",
+   "source": "EPA, Radon (Oct. 2026)"
+  },
+  {
+   "type": "stat",
+   "label": "EPA radon action level",
+   "value": "4",
+   "body": "That's 4 pCi/L (picocuries per liter). EPA says to fix a home at 4 or higher, and to consider fixing it between 2 and 4.",
+   "source": "EPA, What is EPA's Action Level for Radon (Oct. 2026)"
+  },
+  {
+   "type": "point",
+   "num": "1",
+   "title": "Ask for the seller's radon records",
+   "body": "In NJ, if the home was tested, the seller has to give you the results and proof of any mitigation when you sign the contract.",
+   "source": "NJDEP, Radon & Real Estate; N.J.S.A. 26:2D-73"
+  },
+  {
+   "type": "point",
+   "num": "2",
+   "title": "Test during your inspection",
+   "body": "Only state-certified companies can test for radon in NJ. Ask your inspector if they're certified, or hire a certified tester.",
+   "source": "NJDEP, Radon & Real Estate; N.J.A.C. 7:28-27.3"
+  },
+  {
+   "type": "point",
+   "num": "3",
+   "title": "If it's high, ask about mitigation",
+   "body": "A certified mitigation company installs a fan that vents radon outside. NJDEP says these systems typically cut exposure by more than 90%. Talk to a real estate attorney about your situation.",
+   "source": "NJDEP, Radon & Real Estate"
+  }
+ ],
+ "caption": "No one talks about this on a home tour: radon. You can't see it or smell it, so the only way to know is to test.\n\nEPA recommends fixing a home at 4 pCi/L or higher. In New Jersey, ask for the seller's radon records, test during your inspection with a state-certified company, and if the number is high, ask about mitigation before you close.\n\nTalk to a real estate attorney about your situation.\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #RadonTesting #HomeInspection\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "No one talks about this on a home tour: radon. You can't see it or smell it, so test.\n\nEPA recommends fixing a home at 4 pCi/L or higher. In NJ, ask for the seller's radon records and test with a state-certified company during inspection.\n\nTalk to a real estate attorney about your situation.\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://www.epa.gov/radon",
+  "https://www.epa.gov/radon/what-epas-action-level-radon-and-what-does-it-mean",
+  "https://deptest.nj.gov/rpp/radon/radon-real-estate/",
+  "https://www.nj.gov/dep/rpp/RPRP_Rules/radon.pdf",
+  "https://regulations.justia.com/states/new-jersey/title-7/chapter-28/subchapter-27/section-7-28-27-3/"
+ ]
+}

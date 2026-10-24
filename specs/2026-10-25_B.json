@@ -1,0 +1,111 @@
+{
+ "id": "2026-10-25_B_local",
+ "tag": "LOCAL *SPOTS*",
+ "hook": 25,
+ "story_plan": {
+  "type": "single",
+  "frames": [
+   1
+  ]
+ },
+ "music": {
+  "ig_audio": "Last Train to London - Rikas",
+  "ig_audio_source": "https://socialpilot.co/blog/instagram-reels-trends/",
+  "ig_audio_backup": "Girls on Film (2010 Remaster) - Duran Duran",
+  "tiktok": "auto"
+ },
+ "source": "Business pages; Shop Morris County (Oct. 2026)",
+ "slides": [
+  {
+   "type": "cover",
+   "eyebrow": "If you only remember one thing...",
+   "lines": [
+    "MOVING TO",
+    "CHATHAM? START",
+    "~WITH THESE 3",
+    "~BAKE SHOPS"
+   ],
+   "sub": "Three Main Street spots for croissants and fresh bagels. Main Street is a block from the train.",
+   "source": "Business pages; Shop Morris County (Oct. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "1",
+   "kind": "Pastry",
+   "title": "Fleur de Sel Patisserie & Bistro",
+   "meta": "265 Main St",
+   "chips": [
+    "French pastry",
+    "Croissants",
+    "Closed Mon"
+   ],
+   "body": "A French bakery and bistro. Its on-site kitchen bakes everything from scratch daily, from croissants to macarons.",
+   "scene": "bakery",
+   "variant": 0,
+   "source": "Fleur de Sel, About Us (Oct. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "2",
+   "kind": "Bagels",
+   "title": "The Bagelry",
+   "meta": "459 Main St",
+   "chips": [
+    "Hand-rolled",
+    "Baked on site",
+    "New in 2026"
+   ],
+   "body": "Opened Sept. 19, 2026. The bagels are rolled by hand, then boiled and baked on site.",
+   "scene": "bakery",
+   "variant": 1,
+   "source": "Shop Morris County, Sept. 19, 2026"
+  },
+  {
+   "type": "place",
+   "num": "3",
+   "kind": "Bagels",
+   "title": "Chatham Bagels",
+   "meta": "260 Main St",
+   "chips": [
+    "Open daily",
+    "Bagels",
+    "Breakfast"
+   ],
+   "body": "A Main Street bagel shop with egg sandwiches, breakfast wraps and spreads, open every day from 6 AM to 2 PM.",
+   "scene": "bakery",
+   "variant": 2,
+   "source": "Chatham Bagels ordering page, Postmates (Oct. 2026)"
+  },
+  {
+   "type": "route",
+   "eyebrow": "Save the route",
+   "title": "Your Chatham bake shop stops",
+   "stops": [
+    {
+     "name": "Chatham Bagels",
+     "where": "260 Main St"
+    },
+    {
+     "name": "Fleur de Sel",
+     "where": "265 Main St"
+    },
+    {
+     "name": "The Bagelry",
+     "where": "459 Main St"
+    }
+   ],
+   "tip": "Before you make an offer, walk Main Street from Chatham station on a Saturday morning.",
+   "source": "Business pages (Oct. 2026); NJ Transit, Chatham Station"
+  }
+ ],
+ "caption": "If you only remember one thing about Chatham, make it these 3 bake shops on Main Street.\n\nFleur de Sel Patisserie & Bistro at 265 Main St bakes French pastry from scratch every day. The Bagelry at 459 Main St opened in September 2026 with hand-rolled bagels baked on site. Chatham Bagels at 260 Main St is open daily. Before you make an offer, walk Main Street from Chatham station on a Saturday morning.\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #ChathamNJ #MorrisCountyNJ\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "If you only remember one thing about Chatham, NJ: these 3 bake shops on Main Street. Fleur de Sel (265 Main), The Bagelry (459 Main) and Chatham Bagels (260 Main).\n\nBefore you make an offer, walk Main Street from the train station on a Saturday morning.\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://www.fleurdeselchathamnj.com/about-us",
+  "https://www.bakerias.com/US/Chatham/289117134949220/Fleur-de-Sel-----Patisserie-.-Bistro",
+  "https://shopmorriscounty.com/the-bagelry-chatham-nj/",
+  "https://postmates.com/store/chatham-bagels/BqHj-HrmUwi4ZndbUbsDhA",
+  "https://www.mapquest.com/us/new-jersey/chatham-bagels-421555755",
+  "https://njtransit.com/station/chatham-station"
+ ]
+}
