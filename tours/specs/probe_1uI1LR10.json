@@ -2,7 +2,8 @@
  "id": "probe_1uI1LR10",
  "drive_file_id": "1uI1LR108a1tgRdc_UpE2KMt5h9VbPOXg",
  "drive_title": "1AB9A363-0B71-4D7A-B0D3-EDE4D98A9DDB.mp4",
- "status": "probed",
+ "status": "needs_name",
  "frames": "tours/probes/probe_1uI1LR10_frames.jpg",
- "source_duration_s": 35.1
+ "source_duration_s": 35.1,
+ "read": "Cover: 50 Mins to NYC | 5 Beds | 4 Baths, $26,198 (unlabeled). House number 409 on porch post; no street or town visible."
 }
