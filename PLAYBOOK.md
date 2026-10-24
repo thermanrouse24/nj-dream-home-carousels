@@ -23,7 +23,9 @@ Source videos are Therm's finished edits in the Drive folders "Edits" (id 1nyFIN
 camera file names: probe first, read the town from the frames) and "Content (Edits)"
 (id 1DjzQZHcW8a8AzHosWdrOjy-wU3saklu4, named "Address, Town | $Price | N Beds | N Baths").
 The Designer only replaces the edit's "SINGLE FAMILY / HOME" label with the town/county title (town big,
-county small; Therm, Oct 24 2026: remove SINGLE FAMILY) and adds the business card end frame with tours/make_tour.py (run by the "Render home tour" workflow); never re-cut his edit.
+county small; Therm, Oct 24 2026: remove SINGLE FAMILY), redraws the edit's facts line, price and
+"NJ DREAM HOME" in the same fonts (spec fields cover_facts and cover_price, read from the probe frames),
+and adds the business card end frame with tours/make_tour.py (run by the "Render home tour" workflow); never re-cut his edit.
 Caption: describe the home, price, beds, baths, town and county only (fair housing rules apply; no
 "family-friendly", "safe", schools, etc.), plus "Click the link in my bio." (TikTok: DM me "HOME"),
 3 to 5 hashtags and "Therm The Realtor | eXp Realty". Never say "for sale" unless the Researcher

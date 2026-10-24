@@ -84,9 +84,55 @@ def town_layer(text, max_w, max_h=330):
 # Therm's edit template puts "SINGLE FAMILY / HOME" here (x, y, w, h on the 1080x1920 frame).
 # Therm (Oct 24 2026): remove that label and put the TOWN / COUNTY title in its place.
 LABEL_BOX = (0, 954, 1080, 346)   # label sits about y 990 to 1260; the extra rows are the soft edges
+# Therm (Oct 24 2026): restyle the edit's price and "NJ DREAM HOME" to match the town/county title.
+# One band covers the edit's whole cover block (label, facts line, price, NJ DREAM HOME) and all of it
+# is redrawn in one style, so nothing from the old fonts peeks through.
+BLOCK_BOX = (0, 954, 1080, 790)
 
 
-def title_overlay(town, county, out_png, box=None):
+def tracked_text(img, text, font_obj, cy, track, fill=(255, 255, 255, 255)):
+    """Centered, letter-spaced text with a soft shadow. Returns the composited image."""
+    d = ImageDraw.Draw(img)
+    widths = [d.textlength(c, font=font_obj) for c in text]
+    total = sum(widths) + track * (len(text) - 1)
+    while total > W - 120 and track > 4:
+        track -= 2
+        total = sum(widths) + track * (len(text) - 1)
+    cx = (W - total) / 2
+    shadow = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    sd = ImageDraw.Draw(shadow)
+    xx = cx
+    for c, wdt in zip(text, widths):
+        sd.text((xx + 2, cy + 3), c, font=font_obj, fill=(0, 0, 0, 150)); xx += wdt + track
+    img = Image.alpha_composite(img, shadow.filter(ImageFilter.GaussianBlur(4)))
+    d = ImageDraw.Draw(img)
+    xx = cx
+    for c, wdt in zip(text, widths):
+        d.text((xx, cy), c, font=font_obj, fill=fill); xx += wdt + track
+    return img
+
+
+def price_block(img, price, facts, top):
+    """Under the town/county: the facts line (thin spaced sans), the price in the town's tall serif,
+    a thin bronze rule, and NJ DREAM HOME in the county's thin spaced sans."""
+    y = top
+    if facts:
+        img = tracked_text(img, facts.upper(), vfont(COUNTY_FONT, 36, 500), y, 6)
+        y += 70
+    if price:
+        mask = town_layer(price, W - 300, 140)
+        px = (W - mask.width) // 2
+        sh = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        sh.paste((0, 0, 0, 175), (px + 3, y + 6), mask)
+        img = Image.alpha_composite(img, sh.filter(ImageFilter.GaussianBlur(8)))
+        img.paste(TOWN_COLOR + (255,), (px, y), mask)
+        y += mask.height + 10
+    d = ImageDraw.Draw(img)
+    d.line([((W - 300) / 2, y), ((W + 300) / 2, y)], fill=(225, 183, 133, 255), width=3)
+    return tracked_text(img, "NJ DREAM HOME", vfont(COUNTY_FONT, 52, 400), y + 26, 18)
+
+
+def title_overlay(town, county, out_png, box=None, price=None, facts=None):
     """Transparent 1080x1920 PNG in Therm's reference style: the TOWN huge (tall condensed serif),
     the COUNTY small and widely spaced underneath. A soft shadow keeps it readable on any footage."""
     img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
@@ -139,6 +185,8 @@ def title_overlay(town, county, out_png, box=None):
     xx = cx
     for c, wdt in zip(county_txt, widths):
         d.text((xx, cy), c, font=f, fill=(255, 255, 255, 255)); xx += wdt + track
+    if box:
+        img = price_block(img, price, facts, int(cy + 85))
     img.save(out_png)
 
 
@@ -174,17 +222,22 @@ def feather_mask(w, h, out_png, edge=45):
     m.save(out_png)
 
 
-def build(src, card_jpg, overlay_png, out_mp4, has_audio, dur, box=None, until=TITLE_SECONDS):
+def build(src, card_jpg, overlay_png, out_mp4, has_audio, dur, box=None, until=TITLE_SECONDS, boxes=None):
     """[tour 9:16 (+ label box blurred) + title overlay] then [3 s business card], one file."""
     scale = (f"[0:v]scale={W}:{H}:force_original_aspect_ratio=decrease,pad={W}:{H}:(ow-iw)/2:(oh-ih)/2:color=black,"
              f"setsar=1,fps=30,format=yuv420p")
-    if box:
-        x, y, w, h = box
-        mask_png = os.path.join(tempfile.mkdtemp(), "mask.png")
-        feather_mask(w, h, mask_png)
-        scale += (f",split[b0][b1];[b1]crop={w}:{h}:{x}:{y},boxblur=luma_radius=80:luma_power=3:chroma_radius=40:chroma_power=3,eq=brightness=-0.10,format=rgba[bl];"
-                  f"movie={mask_png},format=gray[mk];[bl][mk]alphamerge[blur];"
-                  f"[b0][blur]overlay={x}:{y}:enable='lt(t,{until})'[base];")
+    boxes = boxes or ([box] if box else [])
+    if boxes:
+        scale += f",split={len(boxes) + 1}" + "".join(f"[s{i}]" for i in range(len(boxes) + 1)) + ";"
+        prev = "s0"
+        for i, (x, y, w, h) in enumerate(boxes):
+            mask_png = os.path.join(tempfile.mkdtemp(), "mask.png")
+            feather_mask(w, h, mask_png)
+            scale += (f"[s{i + 1}]crop={w}:{h}:{x}:{y},boxblur=luma_radius=80:luma_power=3:chroma_radius=40:chroma_power=3,"
+                      f"eq=brightness=-0.10,format=rgba[bl{i}];movie={mask_png},format=gray[mk{i}];[bl{i}][mk{i}]alphamerge[blur{i}];"
+                      f"[{prev}][blur{i}]overlay={x}:{y}:enable='lt(t,{until})'[o{i}];")
+            prev = f"o{i}"
+        scale = scale[:-(len(prev) + 3)] + "[base];"
     else:
         scale += "[base];"
     vf_main = (scale +
@@ -225,6 +278,8 @@ def main():
     ap.add_argument("src"); ap.add_argument("out_prefix")
     ap.add_argument("--town", required=True); ap.add_argument("--county", required=True)
     ap.add_argument("--keep-label", action="store_true", help="don't replace the edit's SINGLE FAMILY / HOME label")
+    ap.add_argument("--price", default="", help="the price shown on the edit's cover, e.g. $37,625 (redrawn in the title style)")
+    ap.add_argument("--facts", default="", help="the edit's facts line, e.g. '35 Mins to NYC | 5 Beds | 5 Baths'")
     a = ap.parse_args()
     dur, has_audio = probe(a.src)
     if dur <= 1:
@@ -236,9 +291,10 @@ def main():
     until = label_end(a.src, box) if box else None
     if until is None:        # no SINGLE FAMILY / HOME label found: title at the top, nothing blurred
         box, until = None, TITLE_SECONDS
-    title_overlay(a.town, a.county, ov, box)
-    build(a.src, os.path.join(ROOT, "business_card_story.jpg"), ov, a.out_prefix + "_ig.mp4", has_audio, dur, box, until)
-    build(a.src, os.path.join(ROOT, "business_card_story_tiktok.jpg"), ov, a.out_prefix + "_tiktok.mp4", has_audio, dur, box, until)
+    title_overlay(a.town, a.county, ov, box, a.price.strip() or None, a.facts.strip() or None)
+    boxes = [BLOCK_BOX] if box else []
+    build(a.src, os.path.join(ROOT, "business_card_story.jpg"), ov, a.out_prefix + "_ig.mp4", has_audio, dur, until=until, boxes=boxes)
+    build(a.src, os.path.join(ROOT, "business_card_story_tiktok.jpg"), ov, a.out_prefix + "_tiktok.mp4", has_audio, dur, until=until, boxes=boxes)
     total = dur + CARD_SECONDS
     times = [0.8, dur * 0.25, dur * 0.5, dur * 0.75, max(dur - 0.5, 0), total - 1.0]
     frames(a.out_prefix + "_ig.mp4", times, a.out_prefix + "_preview.jpg", a.out_prefix + "_cover.jpg")
