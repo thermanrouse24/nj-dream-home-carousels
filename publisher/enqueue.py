@@ -1,0 +1,172 @@
+#!/usr/bin/env python3
+"""Put APPROVED posts into queue/ for the free publisher (publisher/publish.py).
+
+Only the approval agent runs this, and only for posts Therm approved.
+
+  Carousel (all networks at the slot time; Reel 1 hour later only with --reel):
+    python3 publisher/enqueue.py carousel specs/2026-10-24_A.json --time 04:45 [--date 2026-10-24] [--reel] [--manual-ig]
+  Quote story (IG Story + Threads + TikTok):
+    python3 publisher/enqueue.py quote Q2610-03 --date 2026-10-24 --time 09:15 --text "The quote"
+  Business card story (pre-approved, Mon/Wed/Fri 7:15 AM):
+    python3 publisher/enqueue.py card --date 2026-10-26 --time 07:15
+
+Options: --platforms instagram,facebook,threads,tiktok (default: all four), --replace to rewrite
+items that are still queued (published items are never touched).
+Then commit and push queue/ ; GitHub Actions posts each item at its time.
+"""
+import argparse, datetime as dt, glob, json, os, re, sys
+from zoneinfo import ZoneInfo
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(HERE)
+RAW = "https://raw.githubusercontent.com/thermanrouse24/nj-dream-home-carousels/main/"
+NY = ZoneInfo("America/New_York")
+CTA = "Click the link in my bio."
+TIKTOK_CTA = 'DM me "HOME" to get started.'
+FOOTER = "Therm The Realtor | eXp Realty"
+ALL = ["instagram", "facebook", "threads", "tiktok"]
+
+
+def at(date, hhmm, plus_min=0):
+    d = dt.datetime.strptime(f"{date} {hhmm}", "%Y-%m-%d %H:%M").replace(tzinfo=NY)
+    return (d + dt.timedelta(minutes=plus_min)).isoformat()
+
+
+def need(path):
+    full = os.path.join(ROOT, path)
+    if not os.path.exists(full):
+        sys.exit(f"missing file: {path} (render it and push it first)")
+    return RAW + path
+
+
+def write(items, replace):
+    out = []
+    for it in items:
+        it.setdefault("status", "queued")
+        it["approved_by"] = "Therm"
+        it["queued_at"] = dt.datetime.now(NY).isoformat(timespec="seconds")
+        folder = os.path.join(ROOT, "queue", it["publish_at"][:10])
+        os.makedirs(folder, exist_ok=True)
+        f = os.path.join(folder, it["id"] + ".json")
+        if os.path.exists(f):
+            old = json.load(open(f))
+            if old.get("status") not in ("queued", "retry", "invalid") or not replace:
+                print(f"skip {it['id']} (already in queue: {old.get('status')})")
+                continue
+        with open(f, "w") as fh:
+            json.dump(it, fh, indent=1, ensure_ascii=False)
+            fh.write("\n")
+        out.append(os.path.relpath(f, ROOT))
+        print("queued", it["id"], it["publish_at"])
+    return out
+
+
+def carousel(a):
+    spec = json.load(open(os.path.join(ROOT, a.spec)))
+    sid = spec["id"]                          # e.g. 2026-10-24_A_flood
+    date = a.date or sid[:10]
+    slot = sid.split("_")[1]
+    base = f"posts/{sid[:10]}/{sid}"     # files live under the spec's own date
+    jpgs = [need(f"{base}_{n}of6.jpg") for n in range(1, 7)]
+    ig_media = []
+    for n in range(1, 7):                     # motion MP4 replaces a stat slide on Instagram only
+        mp4 = f"{base}_{n}of6.mp4"
+        ig_media.append(RAW + mp4 if os.path.exists(os.path.join(ROOT, mp4)) else jpgs[n - 1])
+    plan = (spec.get("story_plan") or {}).get("frames") or [1]
+    stories = [need(f"{base}_story_{n}of6.jpg") for n in plan]
+    tiktok_last = f"{base}_6of6_tiktok.jpg"
+    tiktok_media = jpgs[:5] + [need(tiktok_last)]
+    caption = spec["caption"]
+    short = spec.get("threads_caption") or ""
+    if not short or sum(len(c.encode()) if ord(c) > 0xFFFF else 1 for c in short) > 500:
+        sys.exit("spec needs a threads_caption of 500 characters or fewer")
+    tk_caption = caption.replace(CTA, TIKTOK_CTA)
+    if TIKTOK_CTA not in tk_caption:      # Therm's rule: every TikTok post says DM me "HOME"
+        tk_caption = tk_caption.replace(FOOTER, f"{TIKTOK_CTA}\n\n{FOOTER}") if FOOTER in tk_caption else f"{tk_caption}\n\n{TIKTOK_CTA}"
+    t = at(date, a.time)
+    p = f"{date}_{slot}"
+    items = []
+    if "instagram" in a.platforms:
+        if a.manual_ig:
+            print("MANUAL: Instagram feed carousel left for Therm to post by hand (song: %s)" % spec.get("music", {}).get("ig_audio"))
+        else:
+            items.append({"id": f"{p}_ig_feed", "platform": "instagram", "type": "carousel", "publish_at": t,
+                          "media": ig_media, "caption": caption})
+        items.append({"id": f"{p}_ig_story", "platform": "instagram", "type": "story", "publish_at": t,
+                      "media": stories, "story_plan": spec.get("story_plan")})
+        if a.reel:
+            reel = f"{base}_reel.mp4"
+            if os.path.exists(os.path.join(ROOT, reel)):
+                items.append({"id": f"{p}_ig_reel", "platform": "instagram", "type": "reel",
+                              "publish_at": at(date, a.time, 60), "media": [RAW + reel], "caption": caption,
+                              "note": "API cannot attach licensed music; posts with the file's own (silent) audio"})
+    if "facebook" in a.platforms:
+        items.append({"id": f"{p}_fb", "platform": "facebook", "type": "photos", "publish_at": t,
+                      "media": jpgs, "caption": caption})
+    if "threads" in a.platforms:
+        items.append({"id": f"{p}_threads", "platform": "threads", "type": "carousel", "publish_at": t,
+                      "media": jpgs, "caption": short})
+    if "tiktok" in a.platforms:
+        items.append({"id": f"{p}_tiktok", "platform": "tiktok", "type": "photos", "publish_at": t,
+                      "media": tiktok_media, "caption": tk_caption})
+    return items
+
+
+def quote(a):
+    month = a.date[:7]
+    story = need(f"quotes/{month}/{a.quote_id}_story.jpg")
+    square = need(f"quotes/{month}/{a.quote_id}_square.jpg")
+    text = re.sub(r"\[\[|\]\]", "", a.text).strip()
+    t = at(a.date, a.time)
+    p = f"{a.date}_{a.quote_id}"
+    items = []
+    if "instagram" in a.platforms:
+        items.append({"id": f"{p}_ig_story", "platform": "instagram", "type": "story", "publish_at": t, "media": [story]})
+    if "threads" in a.platforms:
+        items.append({"id": f"{p}_threads", "platform": "threads", "type": "image", "publish_at": t, "media": [square], "caption": text})
+    if "tiktok" in a.platforms:
+        items.append({"id": f"{p}_tiktok", "platform": "tiktok", "type": "photos", "publish_at": t, "media": [story],
+                      "caption": f"{text}\n\n{TIKTOK_CTA}\n\n{FOOTER}"})
+    return items
+
+
+def card(a):
+    t = at(a.date, a.time)
+    p = f"{a.date}_card"
+    items = []
+    if "instagram" in a.platforms:
+        items.append({"id": f"{p}_ig_story", "platform": "instagram", "type": "story", "publish_at": t,
+                      "media": [need("business_card_story.jpg")]})
+    if "threads" in a.platforms:
+        items.append({"id": f"{p}_threads", "platform": "threads", "type": "image", "publish_at": t,
+                      "media": [need("business_card.jpg")],
+                      "caption": f"Buying your first home in New Jersey? {CTA}\n\n{FOOTER}"})
+    if "tiktok" in a.platforms:
+        items.append({"id": f"{p}_tiktok", "platform": "tiktok", "type": "photos", "publish_at": t,
+                      "media": [need("business_card_story_tiktok.jpg")],
+                      "caption": f"Buying your first home in New Jersey? {TIKTOK_CTA}\n\n{FOOTER}"})
+    return items
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    sub = ap.add_subparsers(dest="kind", required=True)
+    c = sub.add_parser("carousel"); c.add_argument("spec"); c.add_argument("--date"); c.add_argument("--time", required=True)
+    c.add_argument("--reel", action="store_true"); c.add_argument("--manual-ig", action="store_true")
+    q = sub.add_parser("quote"); q.add_argument("quote_id"); q.add_argument("--date", required=True)
+    q.add_argument("--time", required=True); q.add_argument("--text", required=True)
+    k = sub.add_parser("card"); k.add_argument("--date", required=True); k.add_argument("--time", default="07:15")
+    for s in (c, q, k):
+        s.add_argument("--platforms", default=",".join(ALL)); s.add_argument("--replace", action="store_true")
+    a = ap.parse_args()
+    a.platforms = [x.strip() for x in a.platforms.split(",") if x.strip()]
+    items = {"carousel": carousel, "quote": quote, "card": card}[a.kind](a)
+    now = dt.datetime.now(NY)
+    for it in items:
+        if dt.datetime.fromisoformat(it["publish_at"]) < now + dt.timedelta(minutes=5):
+            sys.exit(f"{it['id']} time {it['publish_at']} is in the past or too close; pick a later time")
+    write(items, a.replace)
+
+
+if __name__ == "__main__":
+    main()

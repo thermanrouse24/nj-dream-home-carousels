@@ -1,0 +1,54 @@
+name: Publish approved posts
+
+# Free auto-publisher (replaces Metricool). Runs every 10 minutes, posts queue items whose time
+# has come (and waits for ones due in the next ~11 minutes so they go out on the minute).
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "Publish just this queue item id now (testing)"
+        required: false
+  push:
+    paths:
+      - "queue/**"
+
+concurrency:
+  group: publisher
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main          # the latest queue, not the commit the schedule fired on
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: Publish due posts
+        env:
+          META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+          THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+          BUFFER_TIKTOK_CHANNEL_ID: ${{ secrets.BUFFER_TIKTOK_CHANNEL_ID }}
+          ONLY: ${{ github.event.inputs.only }}
+        run: |
+          git config user.name "nj-dream-home-publisher"
+          git config user.email "publisher@users.noreply.github.com"
+          if [ -n "$ONLY" ]; then
+            python3 publisher/publish.py --only "$ONLY" --force
+          else
+            python3 publisher/publish.py
+          fi
