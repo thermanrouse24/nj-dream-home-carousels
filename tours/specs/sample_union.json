@@ -6,5 +6,16 @@
  "drive_title": "204 Hoover Pl, Union | $1,075,000 | 5 Beds | 5 Baths",
  "town": "Union",
  "county": "Union",
- "status": "new"
+ "status": "rendered",
+ "ig_url": "https://github.com/thermanrouse24/nj-dream-home-carousels/releases/download/tours/sample_union_ig.mp4",
+ "tiktok_url": "https://github.com/thermanrouse24/nj-dream-home-carousels/releases/download/tours/sample_union_tiktok.mp4",
+ "cover": "tours/previews/sample_union_cover.jpg",
+ "preview": "tours/previews/sample_union_preview.jpg",
+ "render_info": {
+  "duration_s": 33.1,
+  "source_duration_s": 30.1,
+  "source_has_audio": false,
+  "ig_mb": 27.0,
+  "tiktok_mb": 27.0
+ }
 }
