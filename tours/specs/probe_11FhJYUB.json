@@ -2,7 +2,8 @@
  "id": "probe_11FhJYUB",
  "drive_file_id": "11FhJYUB73XTNBzLa3w1PRyYCGmr-W2ok",
  "drive_title": "BEF6A652-80C9-44D9-9BDB-5BC6BAFE3992.mp4",
- "status": "probed",
+ "status": "needs_name",
  "frames": "tours/probes/probe_11FhJYUB_frames.jpg",
- "source_duration_s": 35.9
+ "source_duration_s": 35.9,
+ "read": "Cover: 90 Mins to NYC | 5 Beds | 3 Baths, $26,250 (unlabeled). No house number, street or town visible."
 }

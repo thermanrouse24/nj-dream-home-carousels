@@ -2,7 +2,8 @@
  "id": "probe_1yD3rTAJ",
  "drive_file_id": "1yD3rTAJqWw24QnVm36il8CMaI4xzvfSd",
  "drive_title": "FE5548A9-7C43-4B96-92CC-43BC2A196B43.mp4",
- "status": "probed",
+ "status": "needs_name",
  "frames": "tours/probes/probe_1yD3rTAJ_frames.jpg",
- "source_duration_s": 34.0
+ "source_duration_s": 34.0,
+ "read": "Cover: 44 Mins to NYC | 5 Beds | 4 Baths, $45,500 (unlabeled). House number 1586 by the door; no street or town visible."
 }
