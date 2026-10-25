@@ -10,5 +10,6 @@
  "status": "expired",
  "approved_by": "Therm",
  "queued_at": "2026-10-24T14:45:02-04:00",
- "error": "not posted: more than 3 h late"
+ "error": "not posted: more than 3 h late",
+ "reported": true
 }
