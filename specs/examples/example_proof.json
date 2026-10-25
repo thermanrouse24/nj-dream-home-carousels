@@ -1,0 +1,44 @@
+{
+ "id": "example_proof",
+ "tag": "DOWN PAYMENT *HELP*",
+ "style": "proof",
+ "source": "Therm, confirmed Oct 22 2026 (story bank)",
+ "slides": [
+  {
+   "type": "cover",
+   "lines": [
+    "ONE OF MY BUYERS",
+    "~GOT $1,800 BACK",
+    "AT CLOSING"
+   ],
+   "photo": "therm_waterfront.jpg",
+   "sub": "Here's the plan we used."
+  },
+  {
+   "type": "proof_card",
+   "kicker": "A Burlington County buyer...",
+   "lead": "used down payment assistance.",
+   "scene": "savings",
+   "punch": "And got $1,800 back at closing."
+  },
+  {
+   "type": "proof_big",
+   "lines": [
+    "$1,800 back",
+    "~at closing."
+   ],
+   "body": "The plan: ask about down payment help before you decide you can't buy. Talk to a licensed lender for your numbers.",
+   "photo": "therm_street.jpg"
+  },
+  {
+   "type": "text",
+   "title": "Ask first",
+   "body": "Ask your lender which down payment programs you qualify for before you rule yourself out."
+  },
+  {
+   "type": "text",
+   "title": "Talk to a lender",
+   "body": "Talk to a licensed lender for your numbers."
+  }
+ ]
+}

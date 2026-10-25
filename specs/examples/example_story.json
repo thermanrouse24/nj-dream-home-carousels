@@ -1,0 +1,50 @@
+{
+ "id": "example_story",
+ "tag": "MY *STORY*",
+ "style": "story",
+ "source": "Therm, confirmed Oct 22 2026 (story bank)",
+ "slides": [
+  {
+   "type": "cover",
+   "eyebrow": "If I had to start over...",
+   "text": "I'd stop renting a lot sooner.",
+   "photo": "therm_waterfront.jpg"
+  },
+  {
+   "type": "story",
+   "text": "I rented for well over 10 years.",
+   "photo": "therm_street.jpg",
+   "zoom": 1.15
+  },
+  {
+   "type": "story",
+   "text": "I paid over $150K in rent before I bought my first home.",
+   "photo": "therm_waterfront.jpg",
+   "zoom": 1.35,
+   "focus": [
+    0.48,
+    0.3
+   ]
+  },
+  {
+   "type": "story",
+   "text": "People told me for years to stop renting and buy. I ignored them.",
+   "photo": "therm_street.jpg",
+   "zoom": 1.4,
+   "focus": [
+    0.6,
+    0.3
+   ]
+  },
+  {
+   "type": "story",
+   "text": "My first home was a 2-family in New Jersey. So I became a landlord too.",
+   "photo": "therm_waterfront.jpg",
+   "zoom": 1.2,
+   "focus": [
+    0.45,
+    0.45
+   ]
+  }
+ ]
+}

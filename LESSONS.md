@@ -10,6 +10,23 @@ Format:
 - Use for us:
 - Do not copy:
 
+## 2026-10-25: Brian Mark, "NEW Instagram Algorithm Update Favours Carousels" (videos/2026-10-25_brianmark_carousels.mp4, Therm's screen recording of the Reel)
+Learned by: Brain, Researcher and Designer (Therm sent it on Oct 25 2026). 10 seconds, watched frame by frame (2 per second) with the burned-in captions. Structure only, never his wording.
+
+- Hook: one sticky headline in a white box at the top for the whole Reel ("algorithm update favours carousels"), talking head below. The claim is his; we never repeat it as fact.
+- Format and beats: the same sentence three times, each with a different wall of carousel examples behind it:
+  1. "Post carousels like these and you'll build connection": STORY carousels. Each slide is a still of the creator (a paused-video look) with ONE short subtitle line in white sentence case, low and centered ("My mom kicked me out", "when I was 8 years old..."). Cliffhanger ellipses pull the swipe.
+  2. "...you'll warm your audience up": VALUE / HOW-TO carousels. Cover = photo of the creator, huge condensed all-caps headline, one line in yellow, a 3D icon above it, "Swipe to learn how ->". Inside = an orange step label ("MONDAY AM:"), a bold white title, and a REAL screenshot on a white card with a red hand-drawn circle around the exact button or number, sometimes a curved arrow. Page counter top right.
+  3. "...your audience will want to buy from you": PROOF carousels. A white card like a screenshot (name in caps, a one-line setup, a picture, a punchline) and a dark slide with big numbers line by line plus a "results are not typical" disclaimer.
+  4. "Carousels are the top performing format" + comment-keyword offer.
+- On-screen text: subtitle-style captions, heavy condensed caps with one yellow line, orange step labels, red marker circles.
+- Use for us (built into formats.py, see PLAYBOOK "Carousel jobs"):
+  1. "style": "story" = CONNECTION. Therm's own photos only, one Verified Story Bank fact per slide, subtitle style. Pairs with hooks 19 to 24.
+  2. "style": "bold" = WARM-UP. Condensed headline cover on Therm's photo + "Swipe to learn how"; "step" slides with a real screenshot of the OFFICIAL source page (tools/shoot.py through the "Screenshot official pages" robot) circled in red. The screenshot doubles as the source proof.
+  3. "style": "proof" = BUY. Only the story-bank client win (Burlington County, DPA, $1,800 back at closing), no names, no client photo (illustration only), disclaimer "Results vary. Every buyer's situation is different." and "Talk to a licensed lender for your numbers."
+  4. Run all three jobs every week, so the feed builds trust, teaches, then shows proof.
+- Do not copy: his captions or headlines, "comment GAME" or any comment keyword (our only CTA is "Click the link in my bio."), his income claims or client results, his photos, third-party profile screenshots, faith lines from his story slides, or the "algorithm update" claim (unverified).
+
 ## 2026-10-22: Alex Hormozi, "My Actual Social Media Strategy For 2027 - The Algorithm" (https://www.youtube.com/watch?v=ZTSI3DDP_4A)
 Learned by: Researcher. Structure only, never his wording. Watched via the video's own captions (16:01 long) plus a frame check; Therm asked for it on Oct 22 2026.
 

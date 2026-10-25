@@ -36,6 +36,36 @@ Caption: describe the home, price, beds, baths, town and county only (fair housi
 confirmed today that it is still listed; if it sold, skip it or say "recently listed at". Full flow in
 PUBLISHING.md ("Home Tour Reels").
 
+## Carousel jobs: story, bold, proof (Therm's rule, Oct 25 2026)
+
+From the Brian Mark carousel Reel Therm sent (LESSONS.md, Oct 25 2026). Every carousel does one of
+three jobs, and the week must cover all three. The Designer builds them with formats.py through
+render_carousel.py ("style" in the spec; full field list in the formats.py docstring; examples and
+previews in specs/examples/; step-by-step in .claude/skills/carousel-formats/SKILL.md).
+- CONNECTION, "style": "story": Therm's own photo full-bleed on every slide (quote_photos/, vary
+  "zoom" and "focus" so no two slides look the same), one subtitle sentence per slide, cover may add a
+  small "eyebrow". Verified Story Bank facts ONLY (hooks 19 to 24). At least 1 a week.
+- WARM-UP, "style": "bold": cover = Therm's photo, huge condensed headline (white, "~" line in
+  yellow), optional red "badge", automatic "Swipe to learn how". Inside = "step" slides (orange
+  label, bold title, short body) and, when a page shows the answer, a real screenshot of the
+  OFFICIAL source page with a red hand-drawn circle on the exact line. stat slides keep the brand
+  look and still get motion MP4s. At least 2 a week.
+  Screenshots: the sandbox can't open most sites, so write shots/requests/<date>_<slot>_<n>.json
+  {"url", "find": "<text to circle>", "status": "new"}, push, and git pull every minute (up to 10
+  minutes) until it says "done": the robot saves shots/<name>.png and the "circle" to paste into the
+  slide. Primary sources only (nj.gov, fema.gov, epa.gov, njtransit.com, county and town sites). Never
+  a person's profile, a listing photo, a business's photos, or anything behind a login. If it fails,
+  drop the "shot" and keep the step as text.
+- BUY, "style": "proof": "proof_card" (white card: kicker, one-line setup, an ILLUSTRATION from
+  home_scenes, punchline) and "proof_big" (big numbers line by line on Therm's photo, disclaimer
+  added automatically). Only the story-bank client win, never named or described; ends with "Talk
+  to a licensed lender for your numbers." At most 1 a week, about every 7 to 10 days.
+- Never on the same carousel as cartoon or notebook style, and never for Slot B (place cards stay as
+  they are). Cartoon (Tue/Fri Slot A) and notebook (Mon/Thu Slot C) rules still win on their days.
+- Log the job in the Content Log Bucket column (e.g. "Real estate 101 (bold)").
+- Quality gate adds: every story-style slide shows Therm's face clearly and the subtitle is readable;
+  the red circle sits on the exact text; no screenshot shows anything but an official page.
+
 ## The team (one scheduled run plays all four roles)
 
 | Agent | Job | Deadline (Eastern) |

@@ -1,0 +1,54 @@
+{
+ "id": "example_bold",
+ "tag": "REAL ESTATE *101*",
+ "style": "bold",
+ "source": "EPA (Oct. 2026)",
+ "slides": [
+  {
+   "type": "cover",
+   "badge": "NJ buyers",
+   "lines": [
+    "YOU CAN'T SEE IT.",
+    "YOU CAN'T SMELL IT.",
+    "~TEST FOR RADON"
+   ],
+   "photo": "therm_street.jpg",
+   "zoom": 1.1
+  },
+  {
+   "type": "step",
+   "label": "Step 1:",
+   "title": "Find EPA's action level",
+   "shot": "shots/sample_epa_radon.png",
+   "circle": [
+    0.301,
+    0.47,
+    0.666,
+    0.155
+   ],
+   "body": "Fix the home at 4 pCi/L or higher.",
+   "source": "EPA, Radon action level (Oct. 2026)"
+  },
+  {
+   "type": "step",
+   "label": "Step 2:",
+   "title": "Ask for the seller's radon records",
+   "body": "In NJ, if the home was tested, the seller has to give you the results and proof of any mitigation when you sign the contract.",
+   "source": "NJDEP, Radon & Real Estate"
+  },
+  {
+   "type": "stat",
+   "label": "EPA radon action level",
+   "value": "4",
+   "body": "That's 4 pCi/L (picocuries per liter).",
+   "source": "EPA"
+  },
+  {
+   "type": "step",
+   "label": "Step 3:",
+   "title": "Test with a certified company",
+   "body": "Only state-certified companies can test for radon in NJ.",
+   "source": "NJDEP"
+  }
+ ]
+}

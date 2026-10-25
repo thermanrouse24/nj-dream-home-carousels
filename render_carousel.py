@@ -23,7 +23,7 @@ Spec format:
   ],
   "music": {"ig_audio": "Song - Artist", "ig_audio_source": "URL", "ig_audio_backup": "Song - Artist", "tiktok": "auto"},
                                       # Brain's trending Instagram audio for the Reel version (see PLAYBOOK "Music")
-  "style": "brand | cartoon"          # cartoon = cream background, highlight bar, flat scene on cover,
+  "style": "brand | cartoon | notebook | story | bold | proof"  # story/bold/proof: see formats.py          # cartoon = cream background, highlight bar, flat scene on cover,
                                       # button; cover takes "scene" and "variant" like place cards
 }
 Rule: the last slide is always Therm's business card (business_card.jpg) with the
@@ -481,6 +481,12 @@ def render(spec, out_dir):
         def card_fn():
             img = base(); return s_card(img, ImageDraw.Draw(img), {}, len(slides), len(slides), None) or img
         return notebook.render(spec, slides, out_dir, card_fn)
+    if spec.get("style") in ("story", "bold", "proof"):
+        import formats  # Therm's 3 carousel jobs (Oct 25 2026): connection, warm-up, buy
+        set_style("brand")
+        def card_fn():
+            img = base(); return s_card(img, ImageDraw.Draw(img), {}, len(slides), len(slides), None) or img
+        return formats.render(spec, slides, out_dir, card_fn)
     n = len(slides); paths = []
     for i, s in enumerate(slides, 1):
         img = base(); d = ImageDraw.Draw(img)
