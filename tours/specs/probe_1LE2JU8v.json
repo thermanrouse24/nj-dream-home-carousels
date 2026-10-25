@@ -2,7 +2,8 @@
  "id": "probe_1LE2JU8v",
  "drive_file_id": "1LE2JU8vtdLc9s1syrINr8ba_6L_-YUYn",
  "drive_title": "99CB5525-DE81-4A55-937C-CE7F23FF6D66.mp4",
- "status": "probed",
+ "status": "needs_name",
  "frames": "tours/probes/probe_1LE2JU8v_frames.jpg",
- "source_duration_s": 32.0
+ "source_duration_s": 32.0,
+ "read": "Cover: 47 Mins to NYC | 4 Beds | 4 Baths, $37,625 (unlabeled). House number 46 on the porch; no street or town visible."
 }

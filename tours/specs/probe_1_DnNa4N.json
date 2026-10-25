@@ -2,7 +2,8 @@
  "id": "probe_1_DnNa4N",
  "drive_file_id": "1_DnNa4N1Vai9yi2cSFEBnGJSbSHEDOWE",
  "drive_title": "0FC0BC27-87EC-49FA-8EE9-DE9FEE14C73C.mp4",
- "status": "probed",
+ "status": "needs_name",
  "frames": "tours/probes/probe_1_DnNa4N_frames.jpg",
- "source_duration_s": 26.0
+ "source_duration_s": 26.0,
+ "read": "Cover: 50 Mins to NYC | 3 Beds | 4 Baths, $29,746 (unlabeled). No street or town visible."
 }
