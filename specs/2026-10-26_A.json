@@ -1,0 +1,70 @@
+{
+ "id": "2026-10-26_A_oiltank",
+ "tag": "REAL ESTATE *101*",
+ "hook": 7,
+ "lesson": "Hormozi 2027 strategy video, one action per slide (Use for us #5)",
+ "story_plan": {
+  "type": "single",
+  "frames": [
+   1
+  ]
+ },
+ "music": {
+  "ig_audio": "Blue Moon - Zara Larsson",
+  "ig_audio_source": "https://socialbee.com/blog/trending-instagram-songs-this-week/",
+  "ig_audio_backup": "we fell in love in october - girl in red",
+  "tiktok": "auto"
+ },
+ "source": "NJDEP",
+ "slides": [
+  {
+   "type": "cover",
+   "eyebrow": "Never, ever skip this on an older NJ home",
+   "lines": [
+    "A BURIED OIL",
+    "TANK CAN",
+    "~TURN INTO",
+    "~YOUR CLEANUP"
+   ],
+   "sub": "After 6 years in NJ real estate, these are the 3 checks I'd make before an older home is mine.",
+   "source": "NJDEP UHOT Homeowner's Guide (Oct. 2026)"
+  },
+  {
+   "type": "text",
+   "eyebrow": "Why it matters",
+   "title": "Older homes, hidden tanks",
+   "body": "Older NJ homes may have a heating oil tank, some buried underground. Old tanks can rust and leak. If one leaks, the tank owner must hire a certified pro to clean it up.",
+   "source": "NJDEP, UHOT Homeowner's Guide (Oct. 2026)"
+  },
+  {
+   "type": "point",
+   "num": "1",
+   "title": "Ask the seller in writing",
+   "body": "Ask if there's an oil tank now, or if one was removed. Ask for the paperwork. If a tank ever leaked, ask for the NJDEP No Further Action letter.",
+   "source": "NJDEP, UHOT FAQs (Oct. 2026)"
+  },
+  {
+   "type": "point",
+   "num": "2",
+   "title": "Ask your inspector to check",
+   "body": "Ask your home inspector how to check for a buried tank. Do it inside your inspection window, so you still have time to act on what you find.",
+   "source": "NJ DOBI, Oil Tanks (Oct. 2026)"
+  },
+  {
+   "type": "point",
+   "num": "3",
+   "title": "Found one? Sort it out before closing",
+   "body": "NJDEP says a tank with no sign of a leak doesn't have to be removed. Many buyers still ask for removal before closing. Talk to a real estate attorney about your situation.",
+   "source": "NJDEP, UHOT FAQs (Oct. 2026)"
+  }
+ ],
+ "caption": "Never, ever skip the oil tank check on an older NJ home. A buried tank you didn't know about can turn into your cleanup.\n\nOlder NJ homes may have a heating oil tank, and some are buried underground. Old tanks can rust and leak. If one leaks, the tank owner has to hire a certified pro to clean it up. Ask the seller in writing about any tank, current or removed, and ask for the paperwork. If a tank ever leaked, ask for the NJDEP No Further Action letter. Ask your home inspector how to check for a buried tank, inside your inspection window. NJDEP doesn't require removing a tank with no sign of a leak, but many buyers still ask for removal before closing.\n\nTalk to a real estate attorney about your situation.\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #OilTank #HomeInspection\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "Never, ever skip the oil tank check on an older NJ home.\n\nAsk the seller in writing about any tank. Ask your home inspector how to check for a buried one, inside your inspection window. Then sort out any tank before closing.\n\nTalk to a real estate attorney about your situation.\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://deptest.nj.gov/srp/?p=5587",
+  "https://deptest.nj.gov/srp/?p=5594",
+  "https://www.nj.gov/dep/srp/community/notices/heatingoil.htm",
+  "https://www.nj.gov/dobi/division_consumers/insurance/oiltanks.htm",
+  "https://www.nj.gov/dca/codes/publications/pdf_bulletins/b_95_1B.pdf"
+ ]
+}

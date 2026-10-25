@@ -1,0 +1,117 @@
+{
+ "id": "2026-10-26_B_local",
+ "tag": "LOCAL *SPOTS*",
+ "hook": 3,
+ "story_plan": {
+  "type": "full",
+  "frames": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ]
+ },
+ "music": {
+  "ig_audio": "we fell in love in october - girl in red",
+  "ig_audio_source": "https://socialpilot.co/blog/instagram-reels-trends/",
+  "ig_audio_backup": "Blue Moon - Zara Larsson",
+  "tiktok": "auto"
+ },
+ "source": "Farm websites (Oct. 2026)",
+ "slides": [
+  {
+   "type": "cover",
+   "eyebrow": "This will change your Chester weekends",
+   "lines": [
+    "3 FARM STOPS",
+    "WITH A",
+    "~CHESTER",
+    "~ADDRESS"
+   ],
+   "sub": "All 3 are open this week. One closes for the season on Nov. 1.",
+   "source": "Farm websites (Oct. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "1",
+   "kind": "Farm",
+   "title": "Alstede Farms",
+   "meta": "1 Alstede Farms Ln",
+   "chips": [
+    "Open daily",
+    "Pick-your-own",
+    "Cider donuts"
+   ],
+   "body": "A working farm with a farm store, pick-your-own fields and a cider mill. Buy pick-your-own tickets online before you go.",
+   "scene": "market",
+   "variant": 0,
+   "source": "Alstede Farms, Hours (updated Oct. 13, 2026)"
+  },
+  {
+   "type": "place",
+   "num": "2",
+   "kind": "Farm market",
+   "title": "Stony Hill Farms",
+   "meta": "15 North Rd",
+   "chips": [
+    "Open daily",
+    "U-pick",
+    "Corn maze"
+   ],
+   "body": "A farm market with U-pick apples and pumpkins in season and a corn maze this fall. Open daily, 10 AM to 6 PM, through Dec. 23.",
+   "scene": "market",
+   "variant": 1,
+   "source": "Stony Hill Farms, Location & Hours (Oct. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "3",
+   "kind": "Orchard",
+   "title": "Riamede Farm",
+   "meta": "122 Oakdale Rd",
+   "chips": [
+    "Apple picking",
+    "Pumpkin patch",
+    "Closed Tue"
+   ],
+   "body": "A pick-your-own apple orchard with a pumpkin patch and wagon rides. Its 2026 fall season ends Nov. 1.",
+   "scene": "market",
+   "variant": 2,
+   "source": "Riamede Farm, 2026 admission page (Oct. 2026)"
+  },
+  {
+   "type": "route",
+   "eyebrow": "Plan the route",
+   "title": "Your Chester farm stops",
+   "stops": [
+    {
+     "name": "Alstede Farms",
+     "where": "1 Alstede Farms Ln"
+    },
+    {
+     "name": "Stony Hill Farms",
+     "where": "15 North Rd"
+    },
+    {
+     "name": "Riamede Farm",
+     "where": "122 Oakdale Rd"
+    }
+   ],
+   "tip": "Before you make an offer in Chester, drive your weekday commute from the house at rush hour.",
+   "source": "Farm websites (Oct. 2026)"
+  }
+ ],
+ "caption": "This will change your Chester weekends: 3 farm stops, all with a Chester address.\n\nAlstede Farms at 1 Alstede Farms Ln has a farm store open daily, pick-your-own fields (buy tickets online first) and cider donuts. Stony Hill Farms at 15 North Rd has a farm market, U-pick apples and pumpkins in season and a corn maze, open daily through Dec. 23. Riamede Farm at 122 Oakdale Rd is a pick-your-own apple orchard with a pumpkin patch. Its 2026 fall season ends Nov. 1, and it's closed Tuesdays.\n\nBefore you make an offer in Chester, drive your weekday commute from the house at rush hour.\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #ChesterNJ #MorrisCountyNJ\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "This will change your Chester, NJ weekends: 3 farm stops. Alstede Farms (1 Alstede Farms Ln), Stony Hill Farms (15 North Rd) and Riamede Farm (122 Oakdale Rd, season ends Nov. 1).\n\nBefore you make an offer, drive your weekday commute from the house at rush hour.\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://www.alstedefarms.com/hours-of-operation/",
+  "https://www.alstedefarms.com/fall-is-in-full-swing-at-alstede-farms/",
+  "https://www.alstedefarms.com/plan-your-visit/",
+  "https://stonyhillfarms.com/farm-market/location-hours/",
+  "https://stonyhillfarms.com/",
+  "https://tickets.riamedefarm.com/admission-2026",
+  "https://www.riamedefarm.com/"
+ ]
+}

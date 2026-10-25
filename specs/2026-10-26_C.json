@@ -1,0 +1,77 @@
+{
+ "id": "2026-10-26_C_rates",
+ "tag": "MARKET *EXPLAINER*",
+ "style": "notebook",
+ "hook": 18,
+ "lesson": "Hormozi 2027 strategy video, tension cover (Use for us #1)",
+ "story_plan": {
+  "type": "multi",
+  "frames": [
+   1,
+   3,
+   5
+  ]
+ },
+ "music": {
+  "ig_audio": "Girls on Film (2010 Remaster) - Duran Duran",
+  "ig_audio_source": "https://socialpilot.co/blog/instagram-reels-trends/",
+  "ig_audio_backup": "Blue Moon - Zara Larsson",
+  "tiktok": "auto"
+ },
+ "source": "Federal Reserve; CFPB",
+ "slides": [
+  {
+   "type": "cover",
+   "eyebrow": "The uncomfortable truth about mortgage rates:",
+   "lines": [
+    "THE FED",
+    "DOESN'T SET",
+    "~YOUR RATE"
+   ],
+   "sub": "One camp says wait for the Fed. The other says rates are out of your hands. The truth is in the middle.",
+   "source": "Federal Reserve; CFPB (Oct. 2026)"
+  },
+  {
+   "type": "text",
+   "title": "What the Fed sets",
+   "body": "The Fed sets a target range for the [[federal funds rate]], what banks charge each other overnight. It doesn't directly set your mortgage rate. Changes to it influence other interest rates.",
+   "source": "Federal Reserve, Policy Rate (Oct. 2026)"
+  },
+  {
+   "type": "list",
+   "title": "What's in your hands",
+   "items": [
+    "Your [[credit score]]. Higher scores generally get lower rates.",
+    "Your down payment. A bigger one generally means a lower rate.",
+    "Your loan type: conventional, FHA, VA or USDA. Rates differ by type."
+   ],
+   "source": "CFPB, 7 factors that determine your rate (Oct. 2026)"
+  },
+  {
+   "type": "list",
+   "title": "3 more that move it",
+   "items": [
+    "Loan term. Shorter terms, like 15 years, generally have lower rates than 30 years.",
+    "Rate type. A fixed rate stays the same. An adjustable rate can change.",
+    "Home price, loan amount and location. Rates can differ by state."
+   ],
+   "source": "CFPB, 7 factors that determine your rate (Oct. 2026)"
+  },
+  {
+   "type": "text",
+   "title": "Do this before you shop",
+   "body": "Check your credit reports at AnnualCreditReport.com. You can view them free every week. Then get Loan Estimates from more than one lender and [[compare them]]. Talk to a licensed lender for your numbers.",
+   "source": "CFPB (Oct. 2026)"
+  }
+ ],
+ "caption": "The uncomfortable truth about mortgage rates: the Fed doesn't set yours.\n\nThe Fed sets a target range for the federal funds rate, what banks charge each other overnight. Changes to it influence other interest rates. But your mortgage rate also depends on things on your side of the table: your credit score, down payment, loan type, loan term, interest rate type, home price, loan amount and home location. Check your credit reports at AnnualCreditReport.com. You can view them free every week. Then compare Loan Estimates from more than one lender.\n\nTalk to a licensed lender for your numbers.\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #MortgageRates #NJHomeBuyer\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "The uncomfortable truth about mortgage rates: the Fed doesn't set yours.\n\nThe Fed sets a target range for the federal funds rate. Your rate also depends on your credit score, down payment, loan type, loan term and more. Compare Loan Estimates from more than one lender.\n\nTalk to a licensed lender for your numbers.\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://www.federalreserve.gov/economy-at-a-glance-policy-rate.htm",
+  "https://www.federalreserve.gov/faqs/money_12856.htm",
+  "https://www.consumerfinance.gov/archive/blog/7-factors-determine-your-mortgage-interest-rate/",
+  "https://www.consumerfinance.gov/owning-a-home/explore/understand-the-different-kinds-of-loans-available/",
+  "https://www.consumerfinance.gov/ask-cfpb/how-do-i-get-a-free-copy-of-my-credit-reports-en-5/",
+  "https://www.consumerfinance.gov/owning-a-home/compare/"
+ ]
+}
