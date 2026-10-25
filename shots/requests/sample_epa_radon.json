@@ -1,1 +1,14 @@
-{"url": "https://www.epa.gov/radon/what-epas-action-level-radon-and-what-does-it-mean", "find": "4 pCi/L", "width": 1100, "height": 800, "status": "new"}
+{
+ "url": "https://www.epa.gov/radon/what-epas-action-level-radon-and-what-does-it-mean",
+ "find": "4 pCi/L",
+ "width": 1100,
+ "height": 800,
+ "status": "done",
+ "shot": "shots/sample_epa_radon.png",
+ "circle": [
+  0.301,
+  0.47,
+  0.666,
+  0.155
+ ]
+}
