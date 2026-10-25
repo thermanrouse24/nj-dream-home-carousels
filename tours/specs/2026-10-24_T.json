@@ -21,10 +21,18 @@
   "tiktok": "pick any trending sound in the TikTok app"
  },
  "listing_check": "Active, $1,075,000, 5 bd / 5 ba, MLS 4058679, listing brokerage Keller Williams Realty (newjerseyrealestatenetwork.com, updated 10/17/2026; checked Oct 24 2026)",
- "status": "manual_post",
+ "status": "published",
  "note": "Therm chose to post this himself on Oct 24 2026 so he can add a song in the Instagram and TikTok apps. Uses the sample_union render.",
  "ig_url": "https://github.com/thermanrouse24/nj-dream-home-carousels/releases/download/tours/sample_union_ig.mp4",
  "tiktok_url": "https://github.com/thermanrouse24/nj-dream-home-carousels/releases/download/tours/sample_union_tiktok.mp4",
  "cover": "tours/previews/sample_union_cover.jpg",
- "preview": "tours/previews/sample_union_preview.jpg"
+ "preview": "tours/previews/sample_union_preview.jpg",
+ "published": {
+  "instagram": "https://www.instagram.com/reel/De7PFcxk-ef/",
+  "facebook": "https://facebook.com/reel/1151681454215141",
+  "tiktok": "Metricool post 405822190 (phone-reminder mode, Metricool reports Published)",
+  "at": "2026-10-25 1:22 PM ET",
+  "via": "Metricool (Therm's direct instruction, Oct 25 2026)",
+  "ig_audio": "Picture Perfect - Adam Griffith (Instagram API catalog, id 368350258920455)"
+ }
 }
