@@ -23,14 +23,14 @@
  "slides": [
   {
    "type": "cover",
-   "eyebrow": "This will change your Chester weekends",
+   "eyebrow": "This will change your fall in Chester",
    "lines": [
     "3 FARM STOPS",
-    "WITH A",
-    "~CHESTER",
-    "~ADDRESS"
+    "TO HIT",
+    "~BEFORE ONE",
+    "~CLOSES NOV. 1"
    ],
-   "sub": "All 3 are open this week. One closes for the season on Nov. 1.",
+   "sub": "All 3 are open this week. One ends its season Nov. 1.",
    "source": "Farm websites (Oct. 2026)"
   },
   {
@@ -44,7 +44,7 @@
     "Pick-your-own",
     "Cider donuts"
    ],
-   "body": "A working farm with a farm store, pick-your-own fields and a cider mill. Buy pick-your-own tickets online before you go.",
+   "body": "A farm with a farm store, pick-your-own fields and a cider mill. Buy pick-your-own tickets online before you go.",
    "scene": "market",
    "variant": 0,
    "source": "Alstede Farms, Hours (updated Oct. 13, 2026)"
@@ -60,7 +60,7 @@
     "U-pick",
     "Corn maze"
    ],
-   "body": "A farm market with U-pick apples and pumpkins in season and a corn maze this fall. Open daily, 10 AM to 6 PM, through Dec. 23.",
+   "body": "A farm market with U-pick apples and pumpkins in season, plus a corn maze. Open 10 AM to 6 PM daily through Dec. 23, closed Thanksgiving.",
    "scene": "market",
    "variant": 1,
    "source": "Stony Hill Farms, Location & Hours (Oct. 2026)"
@@ -76,9 +76,9 @@
     "Pumpkin patch",
     "Closed Tue"
    ],
-   "body": "A pick-your-own apple orchard with a pumpkin patch and wagon rides. Its 2026 fall season ends Nov. 1.",
-   "scene": "market",
-   "variant": 2,
+   "body": "A pick-your-own apple orchard with a pumpkin patch and weekend wagon rides. Its 2026 fall season ends Nov. 1.",
+   "scene": "park",
+   "variant": 1,
    "source": "Riamede Farm, 2026 admission page (Oct. 2026)"
   },
   {
@@ -103,8 +103,8 @@
    "source": "Farm websites (Oct. 2026)"
   }
  ],
- "caption": "This will change your Chester weekends: 3 farm stops, all with a Chester address.\n\nAlstede Farms at 1 Alstede Farms Ln has a farm store open daily, pick-your-own fields (buy tickets online first) and cider donuts. Stony Hill Farms at 15 North Rd has a farm market, U-pick apples and pumpkins in season and a corn maze, open daily through Dec. 23. Riamede Farm at 122 Oakdale Rd is a pick-your-own apple orchard with a pumpkin patch. Its 2026 fall season ends Nov. 1, and it's closed Tuesdays.\n\nBefore you make an offer in Chester, drive your weekday commute from the house at rush hour.\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #ChesterNJ #MorrisCountyNJ\n\nTherm The Realtor | eXp Realty",
- "threads_caption": "This will change your Chester, NJ weekends: 3 farm stops. Alstede Farms (1 Alstede Farms Ln), Stony Hill Farms (15 North Rd) and Riamede Farm (122 Oakdale Rd, season ends Nov. 1).\n\nBefore you make an offer, drive your weekday commute from the house at rush hour.\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "caption": "This will change your fall in Chester: 3 farm stops with a Chester address, and one ends its season Nov. 1.\n\nAlstede Farms at 1 Alstede Farms Ln has a farm store open daily, pick-your-own fields (buy tickets online first) and cider donuts. Stony Hill Farms at 15 North Rd has a farm market, U-pick apples and pumpkins in season and a corn maze, open daily through Dec. 23, except Thanksgiving. Riamede Farm at 122 Oakdale Rd is a pick-your-own apple orchard with a pumpkin patch. Its 2026 fall season ends Nov. 1, and it's closed Tuesdays.\n\nBefore you make an offer in Chester, drive your weekday commute from the house at rush hour.\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #ChesterNJ #MorrisCountyNJ\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "This will change your fall in Chester, NJ: 3 farm stops. Alstede Farms (1 Alstede Farms Ln), Stony Hill Farms (15 North Rd) and Riamede Farm (122 Oakdale Rd, season ends Nov. 1).\n\nBefore you make an offer, drive your weekday commute from the house at rush hour.\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
  "sources": [
   "https://www.alstedefarms.com/hours-of-operation/",
   "https://www.alstedefarms.com/fall-is-in-full-swing-at-alstede-farms/",
