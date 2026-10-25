@@ -1,0 +1,40 @@
+name: Screenshot official pages
+
+# The daily build writes shots/requests/<name>.json (status "new") and pushes. This takes a real
+# screenshot of that official page (for "bold" step slides, formats.py) and commits shots/<name>.png.
+on:
+  push:
+    paths:
+      - "shots/requests/**"
+  workflow_dispatch:
+
+concurrency:
+  group: shots
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  shoot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install playwright && python -m playwright install --with-deps chromium
+      - run: python3 tools/shoot_requests.py
+      - name: Save results
+        if: always()
+        run: |
+          git config user.name "nj-dream-home-publisher"
+          git config user.email "publisher@users.noreply.github.com"
+          git add shots
+          git diff --cached --quiet && exit 0
+          git commit -q -m "shots: $(date -u +%F)"
+          for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin HEAD:main && break; sleep 5; done
