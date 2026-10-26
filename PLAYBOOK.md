@@ -67,6 +67,20 @@ previews in specs/examples/; step-by-step in .claude/skills/carousel-formats/SKI
 - Quality gate adds: every story-style slide shows Therm's face clearly and the subtitle is readable;
   the red circle sits on the exact text; no screenshot shows anything but an official page.
 
+## Variety rules (Therm, Oct 26 2026: the feed must not look templated)
+
+A week of covers showed 13 of 15 in the same dark-green template and the business card about 30 times a
+week on Instagram alone. From now on:
+- Mix the looks every day: the 3 carousels use 3 DIFFERENT looks, picked from: the classic dark-green
+  template (at most 1 a day), "story", "bold", "proof" (formats.py), "notebook" and "cartoon". Never the
+  same look two posts in a row across days (Slot C yesterday vs Slot A today counts).
+- "After 6 years in real estate" (or any "6 years" line) appears at most ONCE a week across all posts.
+- Business card stories: Wednesday only (see "Business card stories").
+- Carousel last slide: still the business card for now (the renderer adds it); a photo-of-Therm ending
+  for 2 of every 3 carousels is planned once the renderer supports it.
+- Quote cards: rotate every photo in quote_photos/; ask Therm for more photos in the approval email
+  until there are at least 6.
+
 ## The team (one scheduled run plays all four roles)
 
 | Agent | Job | Deadline (Eastern) |
@@ -359,7 +373,7 @@ fake social proof.
 ## Business card stories (Therm's rule, Oct 22 2026)
 
 The Brain requires it and the Execution agent does it: Therm's business card posts as a story
-on each platform 3 times every week, Monday, Wednesday and Friday at 7:15 AM ET (2.5 hours
+on each platform ONCE a week, Wednesday at 7:15 AM ET (Therm, Oct 26 2026: cut from Mon/Wed/Fri so the feed looks less like an ad) (2.5 hours
 after Slot A, 2 hours before the first quote).
 - Instagram Story: business_card_story.jpg (instagramData type STORY, no text).
 - TikTok: business_card_story_tiktok.jpg (button reads DM ME "HOME"; see "TikTok call to action")
