@@ -1,7 +1,9 @@
 name: Publish approved posts
 
-# Free auto-publisher (replaces Metricool). Runs every 10 minutes, posts queue items whose time
-# has come (and waits for ones due in the next ~11 minutes so they go out on the minute).
+# Free auto-publisher (replaces Metricool). GitHub's own schedule only fires every 2 to 4 hours on this
+# repo, so each run now STAYS ON for about 5.5 hours, checking the queue every 4 minutes (posts go out
+# on the minute), then starts the next run itself. The schedule below is only a backup that restarts
+# the chain if it ever breaks. Only one run works at a time (concurrency), so nothing double-posts.
 on:
   schedule:
     - cron: "*/10 * * * *"
@@ -20,11 +22,12 @@ concurrency:
 
 permissions:
   contents: write
+  actions: write     # lets the run start the next run (keep-alive)
 
 jobs:
   publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 355
     steps:
       - uses: actions/checkout@v4
         with:
@@ -49,6 +52,16 @@ jobs:
           git config user.email "publisher@users.noreply.github.com"
           if [ -n "$ONLY" ]; then
             python3 publisher/publish.py --only "$ONLY" --force
-          else
-            python3 publisher/publish.py
+            exit $?
           fi
+          end=$(( $(date +%s) + 330*60 ))          # stay on ~5.5 h (job limit is 6 h)
+          while [ "$(date +%s)" -lt "$end" ]; do
+            git pull -q --rebase origin main || true  # pick up newly approved posts
+            python3 publisher/publish.py || echo "::warning::some items failed (see queue files)"
+            sleep 240
+          done
+      - name: Start the next run (keep-alive)
+        if: ${{ always() && !github.event.inputs.only }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run publish.yml --ref main --repo "${{ github.repository }}"

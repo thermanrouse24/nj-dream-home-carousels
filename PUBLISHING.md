@@ -14,9 +14,10 @@ How it works:
 1. The daily build makes the posts and emails Therm for approval (unchanged).
 2. When Therm approves, the approval agent runs `publisher/enqueue.py`, which writes one file per
    post into `queue/<date>/`, and pushes. Nothing else ever writes to `queue/`.
-3. GitHub Actions (`.github/workflows/publish.yml`) runs every 10 minutes and posts whatever is due.
-   It waits for the exact minute, but GitHub sometimes starts scheduled runs 5 to 20 minutes late,
-   so a post can go out a few minutes after its slot time. TikTok items are handed to Buffer up to
+3. GitHub Actions (`.github/workflows/publish.yml`) posts whatever is due, on the minute. GitHub's own
+   schedule only fired every 2 to 4 hours here (Oct 2026), so each run stays on for about 5.5 hours,
+   checks the queue every 4 minutes, then starts the next run itself (keep-alive). The schedule is a
+   backup that restarts the chain if it breaks. Free because the repo is public. TikTok items are handed to Buffer up to
    26 hours ahead with their exact time (Buffer posts them on time).
 4. Each queue file is updated with the result and committed, so `queue/` is also the posting log.
    Before touching a platform the item is claimed (`publishing`) and pushed, so a crash can never
