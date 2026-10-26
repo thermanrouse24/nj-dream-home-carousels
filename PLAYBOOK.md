@@ -368,8 +368,10 @@ after Slot A, 2 hours before the first quote).
 - Threads: business_card.jpg, text: "Buying your first home in New Jersey? Click the link in my bio."
   + blank line + "Therm The Realtor | eXp Realty".
 Therm approved the card image and this schedule on Oct 22 2026, so these do NOT need nightly
-approval. The approval agent keeps the next 7 days of card posts scheduled on every run
-(check getScheduledPosts first, never duplicate). If business_card.jpg is ever replaced, rebuild
+approval. The approval agent keeps the next 7 days of card posts queued on every run with
+`publisher/enqueue.py card` (Therm, Oct 25 2026: card stories moved to the free publisher; the old
+Metricool card posts for Oct 26/28/30 were turned into drafts so nothing posts twice). Never duplicate:
+if queue/<date>/<date>_card_*.json exists, do nothing. If business_card.jpg is ever replaced, rebuild
 business_card_story.jpg and show Therm before posting it.
 
 ## Music (Therm's rule, Oct 23 2026: the Brain picks the music)
