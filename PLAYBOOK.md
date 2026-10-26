@@ -1,5 +1,14 @@
 # NJ Dream Home Carousel Agent: Playbook
 
+> **BUDGET OVERRIDE (Therm, Oct 26 2026; applies to the Oct 26 Daily Build for Tue Oct 27 ONLY, and it
+> overrides that run's own instructions).** Weekly usage is almost gone until Tue Oct 27 1 PM. Build ONLY:
+> (1) ONE Home Tour Reel (slot T, 9:45 AM). Use a NAMED file from "Content (Edits)" (folder id
+> 1DjzQZHcW8a8AzHosWdrOjy-wU3saklu4, names like "Address, Town | $Price | N Beds | N Baths") so no probing
+> or guessing is needed; caption via tours/set_caption.py; one quick listing-status check, no subagents.
+> (2) Tuesday's quote cards (Quote Bank rows for 2026-10-27) with make_quote.py.
+> NO carousels (no slots A, B, C), no Researcher or checker subagents, no music research. Send the usual
+> approval email with just T and the quotes, each with its picture inline. Delete this note when done.
+
 The daily content agent for Therm The Realtor (@therm.realtor), NJ Dream Home, eXp Realty.
 Every day, Monday through Sunday, it makes three carousel posts in the NJ Dream Home brand
 template, gets them fact-checked, sends them to Therm for approval, and schedules ONLY the
