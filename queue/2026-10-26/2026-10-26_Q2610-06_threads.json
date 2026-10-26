@@ -7,12 +7,14 @@
   "https://raw.githubusercontent.com/thermanrouse24/nj-dream-home-carousels/main/quotes/2026-10/Q2610-06_square.jpg"
  ],
  "caption": "A home that fits your budget beats a dream home that keeps you up at night.",
- "status": "publishing",
+ "status": "published",
  "approved_by": "Therm",
  "queued_at": "2026-10-25T21:28:19-04:00",
  "claimed_at": "2026-10-26T13:15:22.435322+00:00",
- "publish_called": true,
+ "publish_called": false,
  "result": {
-  "threads_creation_id": "17995238967103833"
- }
+  "threads_creation_id": "17995238967103833",
+  "threads_post_id": "18118570202004746"
+ },
+ "published_at": "2026-10-26T13:15:47.762776+00:00"
 }
