@@ -104,7 +104,7 @@ Sources (Therm's edited tours, in his shared drives):
 Naming new tours "Address, Town | $Price | N Beds | N Baths" is always the fastest path.
 
 1. Daily build (2:47 PM): the Designer picks the next tour not yet used (newest first), the Researcher
-   confirms the town and county (and whether the home is still listed), the Brain writes the caption,
+   confirms the town and county (and whether the home is still listed), the caption is the next of Therm's 3 approved captions (tours/captions.json, via tours/set_caption.py),
    and the spec goes to `tours/specs/<date>_T.json` with status "new".
 2. GitHub Actions "Render home tour" downloads it, adds Therm's title for the first 2.5 seconds
    (TOWN big in a tall serif, COUNTY small and spaced underneath, his reference style) and his

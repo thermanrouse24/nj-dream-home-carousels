@@ -30,9 +30,10 @@ what it is (cover_price_note, e.g. "down payment"; never show a down payment wit
 NJ DREAM HOME. The 5 lines of text show for 1.5 seconds at the front of the video only (the blur under
 them stays until the edit's own label is gone),
 and adds the business card end frame with tours/make_tour.py (run by the "Render home tour" workflow); never re-cut his edit.
-Caption: describe the home, price, beds, baths, town and county only (fair housing rules apply; no
-"family-friendly", "safe", schools, etc.), plus "Click the link in my bio." (TikTok: DM me "HOME"),
-3 to 5 hashtags and "Therm The Realtor | eXp Realty". Never say "for sale" unless the Researcher
+Caption (Therm's rule, Oct 25 2026): use ONLY the 3 approved captions in tours/captions.json, word for
+word, rotating 1, 2, 3 (run `python3 tours/set_caption.py tours/specs/<date>_T.json`; it also sets the
+TikTok version with DM me "HOME"). Never add the town, county, price, beds, baths, listing broker or
+listing agent to the caption, and never write a new tour caption. The cover title is unchanged. Never say "for sale" unless the Researcher
 confirmed today that it is still listed; if it sold, skip it or say "recently listed at". Full flow in
 PUBLISHING.md ("Home Tour Reels").
 
