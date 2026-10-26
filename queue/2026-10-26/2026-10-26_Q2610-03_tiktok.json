@@ -11,5 +11,6 @@
  "approved_by": "Therm",
  "queued_at": "2026-10-26T00:00:38-04:00",
  "claimed_at": "2026-10-26T04:11:27.018747+00:00",
- "publish_called": false
+ "publish_called": true,
+ "result": {}
 }
