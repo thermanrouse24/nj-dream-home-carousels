@@ -12,7 +12,9 @@
    1
   ]
  },
- "status": "queued",
+ "status": "publishing",
  "approved_by": "Therm",
- "queued_at": "2026-10-27T07:39:58-04:00"
+ "queued_at": "2026-10-27T07:39:58-04:00",
+ "claimed_at": "2026-10-27T12:00:58.234911+00:00",
+ "publish_called": false
 }
