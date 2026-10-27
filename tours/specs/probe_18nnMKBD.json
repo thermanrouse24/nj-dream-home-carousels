@@ -2,7 +2,8 @@
  "id": "probe_18nnMKBD",
  "drive_file_id": "18nnMKBDuPoSldZkeEaCPAswygFFSEQvI",
  "drive_title": "0EC1F236-EA1B-47CD-9843-0A330D2BA916.mp4",
- "status": "probed",
+ "status": "needs_name",
  "frames": "tours/probes/probe_18nnMKBD_frames.jpg",
- "source_duration_s": 32.4
+ "source_duration_s": 32.4,
+ "read": "Cover: 50 Mins to NYC | 6 Beds | 4 Baths, $41,125 (unlabeled). No street, house number or town visible."
 }

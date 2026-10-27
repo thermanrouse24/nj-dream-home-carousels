@@ -2,7 +2,8 @@
  "id": "probe_1FL1u5IN",
  "drive_file_id": "1FL1u5INLKH6SSs3g6481FWud922VZZwi",
  "drive_title": "146 Hillside Ave, Piscataway | $774,900 | 3 Beds | 3.1 baths",
- "status": "probed",
+ "status": "probed_used",
  "frames": "tours/probes/probe_1FL1u5IN_frames.jpg",
- "source_duration_s": 29.1
+ "source_duration_s": 29.1,
+ "read": "Cover: 51 Mins to NYC | 3 Beds | 3.1 Baths, $27,122 (= 3.5% of $774,900). House number 146 on the house. Edit's own end card shows 'Call/Text 347-988-8291 Vinny'."
 }

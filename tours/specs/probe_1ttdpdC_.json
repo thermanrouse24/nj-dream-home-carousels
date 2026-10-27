@@ -2,7 +2,8 @@
  "id": "probe_1ttdpdC_",
  "drive_file_id": "1ttdpdC_6rYWbV2q9yBpF5nzVhp4oPRyA",
  "drive_title": "F75668DA-1EBA-47C0-B39B-0EFAD7E8122C.mp4",
- "status": "probed",
+ "status": "needs_name",
  "frames": "tours/probes/probe_1ttdpdC__frames.jpg",
- "source_duration_s": 29.2
+ "source_duration_s": 29.2,
+ "read": "Cover: 48 Mins to NYC | 4 Beds | 4 Baths, $35,000 (unlabeled). House number 119 by the door; no street or town visible."
 }
