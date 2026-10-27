@@ -1,0 +1,22 @@
+{
+ "id": "2026-10-27_C_ig_story",
+ "platform": "instagram",
+ "type": "story",
+ "publish_at": "2026-10-27T17:30:00-04:00",
+ "media": [
+  "https://raw.githubusercontent.com/thermanrouse24/nj-dream-home-carousels/main/posts/2026-10-26/2026-10-26_C_rates_story_1of6.jpg",
+  "https://raw.githubusercontent.com/thermanrouse24/nj-dream-home-carousels/main/posts/2026-10-26/2026-10-26_C_rates_story_3of6.jpg",
+  "https://raw.githubusercontent.com/thermanrouse24/nj-dream-home-carousels/main/posts/2026-10-26/2026-10-26_C_rates_story_5of6.jpg"
+ ],
+ "story_plan": {
+  "type": "multi",
+  "frames": [
+   1,
+   3,
+   5
+  ]
+ },
+ "status": "queued",
+ "approved_by": "Therm",
+ "queued_at": "2026-10-27T07:39:58-04:00"
+}
