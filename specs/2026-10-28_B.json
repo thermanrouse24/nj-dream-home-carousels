@@ -18,7 +18,7 @@
  "slides": [
   {
    "type": "cover",
-   "eyebrow": "Parsippany: you're probably missing this",
+   "eyebrow": "Parsippany? You're probably using just 1",
    "lines": [
     "ONE LIBRARY",
     "CARD.",
@@ -54,7 +54,7 @@
     "Fri-Sat 9 to 5",
     "Closed Sun"
    ],
-   "body": "Open 9 AM to 8 PM Monday to Thursday and 9 AM to 5 PM Friday and Saturday.",
+   "body": "Open 9 to 8 Monday to Thursday and 9 to 5 Friday and Saturday.",
    "scene": "library",
    "variant": 1,
    "source": "Parsippany-Troy Hills Public Library (Oct. 2026)"
@@ -97,12 +97,13 @@
    "source": "Parsippany-Troy Hills Public Library (Oct. 2026)"
   }
  ],
- "caption": "Parsippany: you're probably missing this. One library card, 3 libraries in one town.\n\nThe Main Library at 449 Halsey Rd is open 9 AM to 9 PM Monday to Thursday and 9 AM to 5 PM Friday and Saturday, and it's also open Sundays from September to May. The Lake Hiawatha Branch at 68 Nokomis Ave is open 9 AM to 8 PM Monday to Thursday and 9 AM to 5 PM Friday and Saturday. The Mount Tabor Branch at 31 Trinity Pl keeps shorter hours and is closed Sunday and Monday. Your card also gets you free Wall Street Journal access and museum passes.\n\nWhen you tour homes in Parsippany, time the drive from each house to the places you'd use every week.\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #ParsippanyNJ #MorrisCountyNJ\n\nTherm The Realtor | eXp Realty",
- "threads_caption": "Parsippany: you're probably missing this. There are 3 libraries in one town. Main Library (449 Halsey Rd), Lake Hiawatha Branch (68 Nokomis Ave) and Mount Tabor Branch (31 Trinity Pl).\n\nWhen you tour homes, time the drive from each house to the places you'd use every week.\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "caption": "Living in Parsippany? You're probably only using 1 of these. One library card, 3 libraries in one town.\n\nThe Main Library at 449 Halsey Rd is open 9 AM to 9 PM Monday to Thursday and 9 AM to 5 PM Friday and Saturday, and it's also open Sundays from September to May. The Lake Hiawatha Branch at 68 Nokomis Ave is open 9 AM to 8 PM Monday to Thursday and 9 AM to 5 PM Friday and Saturday. The Mount Tabor Branch at 31 Trinity Pl keeps shorter hours and is closed Sunday and Monday. Your card also gets you free Wall Street Journal access and museum passes.\n\nWhen you tour homes in Parsippany, time the drive from each house to the places you'd use every week.\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #ParsippanyNJ #MorrisCountyNJ\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "Living in Parsippany? You're probably only using 1 of these. There are 3 libraries in one town. Main Library (449 Halsey Rd), Lake Hiawatha Branch (68 Nokomis Ave) and Mount Tabor Branch (31 Trinity Pl).\n\nWhen you tour homes, time the drive from each house to the places you'd use every week.\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
  "sources": [
   "https://parsippanylibrary.org/services/seniors/",
   "https://parsippanylibrary.org/about/hours/",
   "https://parsippanylibrary.org/databases",
-  "https://parsippanylibrary.org/borrow/museums/"
+  "https://parsippanylibrary.org/borrow/museums/",
+  "https://parsippanylibrary.org/borrow/card/"
  ]
 }
