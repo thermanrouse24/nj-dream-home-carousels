@@ -12,12 +12,14 @@
   "https://raw.githubusercontent.com/thermanrouse24/nj-dream-home-carousels/main/posts/2026-10-26/2026-10-26_C_rates_6of6.jpg"
  ],
  "caption": "The uncomfortable truth about mortgage rates: the Fed doesn't set yours.\n\nThe Fed sets a target range for the federal funds rate. Your rate also depends on your credit score, down payment, loan type, loan term and more. Compare Loan Estimates from more than one lender.\n\nTalk to a licensed lender for your numbers.\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
- "status": "publishing",
+ "status": "published",
  "approved_by": "Therm",
  "queued_at": "2026-10-27T07:39:58-04:00",
  "claimed_at": "2026-10-27T21:32:49.559821+00:00",
- "publish_called": true,
+ "publish_called": false,
  "result": {
-  "threads_creation_id": "17995538781103833"
- }
+  "threads_creation_id": "17995538781103833",
+  "threads_post_id": "18081792479369434"
+ },
+ "published_at": "2026-10-27T21:33:41.369114+00:00"
 }
