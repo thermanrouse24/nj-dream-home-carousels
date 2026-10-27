@@ -7,7 +7,9 @@
   "https://raw.githubusercontent.com/thermanrouse24/nj-dream-home-carousels/main/business_card_story_tiktok.jpg"
  ],
  "caption": "Buying your first home in New Jersey? DM me \"HOME\" to get started.\n\nTherm The Realtor | eXp Realty",
- "status": "queued",
+ "status": "publishing",
  "approved_by": "Therm",
- "queued_at": "2026-10-25T23:31:25-04:00"
+ "queued_at": "2026-10-25T23:31:25-04:00",
+ "claimed_at": "2026-10-27T09:15:18.258205+00:00",
+ "publish_called": false
 }
