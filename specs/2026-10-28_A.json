@@ -1,0 +1,86 @@
+{
+ "id": "2026-10-28_A_title",
+ "tag": "REAL ESTATE *101*",
+ "style": "bold",
+ "hook": 2,
+ "story_plan": {
+  "type": "multi",
+  "frames": [
+   1,
+   3,
+   5
+  ]
+ },
+ "lesson": "Brian Mark, \"NEW Instagram Algorithm Update Favours Carousels\", format 2 (bold warm-up with circled official screenshots)",
+ "music": {
+  "ig_audio": "Kiss of Life - Sade",
+  "ig_audio_source": "https://socialbee.com/blog/trending-instagram-songs-this-week/",
+  "ig_audio_backup": "About You - The 1975",
+  "tiktok": "auto"
+ },
+ "source": "CFPB; 12 U.S.C. 2608 (Oct. 2026)",
+ "slides": [
+  {
+   "type": "cover",
+   "badge": "NJ buyers",
+   "lines": [
+    "2 TITLE POLICIES.",
+    "ONLY 1",
+    "~COVERS YOU."
+   ],
+   "sub": "There can be 2 at closing. Here's the difference.",
+   "photo": "therm_street.jpg",
+   "zoom": 1.1
+  },
+  {
+   "type": "step",
+   "label": "Step 1:",
+   "title": "The lender's policy protects the lender",
+   "body": "It's usually required to get a mortgage, and it only covers claims that affect the loan.",
+   "source": "CFPB, What is lender's title insurance? (Oct. 2026)"
+  },
+  {
+   "type": "step",
+   "label": "Step 2:",
+   "title": "It doesn't protect your equity",
+   "body": "If someone sues with a claim against your home, you're the first person responsible.",
+   "shot": "shots/2026-10-28_A_2.png",
+   "circle": [
+    0.02,
+    0.645,
+    0.57,
+    0.05
+   ],
+   "source": "CFPB, What is lender's title insurance? (Oct. 2026)"
+  },
+  {
+   "type": "step",
+   "label": "Step 3:",
+   "title": "Ask about an owner's policy",
+   "body": "To protect your equity if a title problem comes up, the CFPB says you may want one. Talk to a real estate attorney about your situation.",
+   "source": "CFPB, What is lender's title insurance? (Oct. 2026)"
+  },
+  {
+   "type": "step",
+   "label": "Step 4:",
+   "title": "The seller can't force a title company on you",
+   "body": "With a federally related mortgage, the seller can't require a particular title company.",
+   "shot": "shots/2026-10-28_A_4.png",
+   "circle": [
+    0.025,
+    0.573,
+    0.558,
+    0.073
+   ],
+   "source": "CFPB; RESPA, 12 U.S.C. 2608 (Oct. 2026)"
+  }
+ ],
+ "caption": "Here's the truth about title insurance: there can be 2 policies at closing, and only 1 of them covers you.\n\nThe lender's title policy is usually required to get a mortgage. It protects your lender and only covers claims that affect the loan. It doesn't protect your equity.\n\nTo protect your equity if a title problem comes up, ask about an owner's title policy.\n\nOne more: if you're buying with a federally related mortgage, federal law (RESPA) says the seller can't require you to buy title insurance from a particular company.\n\nTalk to a real estate attorney about your situation.\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #TitleInsurance #NJClosing\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "Here's the truth about title insurance: there can be 2 policies at closing, and only 1 covers you.\n\nThe lender's policy protects your lender, not your equity. Ask about an owner's policy. And with a federally related mortgage, the seller can't require you to use a particular title company.\n\nTalk to a real estate attorney about your situation.\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://www.consumerfinance.gov/ask-cfpb/what-is-lenders-title-insurance-en-163/",
+  "https://www.consumerfinance.gov/ask-cfpb/what-is-owners-title-insurance-en-164/",
+  "https://www.consumerfinance.gov/ask-cfpb/the-seller-told-me-i-have-to-purchase-title-insurance-from-a-particular-company-or-they-won146t-sell-me-the-house-can-they-do-this-en-158/",
+  "https://www.govinfo.gov/content/pkg/USCODE-2022-title12/html/USCODE-2022-title12-chap27-sec2608.htm"
+ ]
+}

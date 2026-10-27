@@ -1,0 +1,108 @@
+{
+ "id": "2026-10-28_B_local",
+ "tag": "LOCAL *SPOTS*",
+ "hook": 29,
+ "story_plan": {
+  "type": "single",
+  "frames": [
+   1
+  ]
+ },
+ "music": {
+  "ig_audio": "Upside Down - Diana Ross",
+  "ig_audio_source": "https://socialbee.com/blog/trending-instagram-songs-this-week/",
+  "ig_audio_backup": "Funkytown - Lipps Inc.",
+  "tiktok": "auto"
+ },
+ "source": "Parsippany-Troy Hills Public Library (Oct. 2026)",
+ "slides": [
+  {
+   "type": "cover",
+   "eyebrow": "Parsippany: you're probably missing this",
+   "lines": [
+    "ONE LIBRARY",
+    "CARD.",
+    "~3 LIBRARIES",
+    "~IN ONE TOWN"
+   ],
+   "sub": "Here's where each one is and when it's open."
+  },
+  {
+   "type": "place",
+   "num": "1",
+   "kind": "Library",
+   "title": "Parsippany Main Library",
+   "meta": "449 Halsey Rd",
+   "chips": [
+    "Open to 9 PM Mon-Thu",
+    "Museum passes",
+    "Free WSJ"
+   ],
+   "body": "Open 9 to 9 Monday to Thursday and 9 to 5 Friday and Saturday. Also open Sundays from September to May.",
+   "scene": "library",
+   "variant": 0,
+   "source": "Parsippany-Troy Hills Public Library (Oct. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "2",
+   "kind": "Library",
+   "title": "Lake Hiawatha Branch",
+   "meta": "68 Nokomis Ave",
+   "chips": [
+    "Open to 8 PM Mon-Thu",
+    "Fri-Sat 9 to 5",
+    "Closed Sun"
+   ],
+   "body": "Open 9 AM to 8 PM Monday to Thursday and 9 AM to 5 PM Friday and Saturday.",
+   "scene": "library",
+   "variant": 1,
+   "source": "Parsippany-Troy Hills Public Library (Oct. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "3",
+   "kind": "Library",
+   "title": "Mount Tabor Branch",
+   "meta": "31 Trinity Pl",
+   "chips": [
+    "Wed-Thu to 8 PM",
+    "Closed Mon",
+    "Closed Sun"
+   ],
+   "body": "Shorter hours: Tuesday 9 AM to 1 PM, Wednesday and Thursday 3 to 8 PM, Friday and Saturday 9 AM to 1 PM.",
+   "scene": "library",
+   "variant": 2,
+   "source": "Parsippany-Troy Hills Public Library (Oct. 2026)"
+  },
+  {
+   "type": "route",
+   "eyebrow": "Plan the route",
+   "title": "Your Parsippany library stops",
+   "stops": [
+    {
+     "name": "Main Library",
+     "where": "449 Halsey Rd"
+    },
+    {
+     "name": "Lake Hiawatha Branch",
+     "where": "68 Nokomis Ave"
+    },
+    {
+     "name": "Mount Tabor Branch",
+     "where": "31 Trinity Pl"
+    }
+   ],
+   "tip": "Touring homes here? Time the drive from each house to the places you'd use every week.",
+   "source": "Parsippany-Troy Hills Public Library (Oct. 2026)"
+  }
+ ],
+ "caption": "Parsippany: you're probably missing this. One library card, 3 libraries in one town.\n\nThe Main Library at 449 Halsey Rd is open 9 AM to 9 PM Monday to Thursday and 9 AM to 5 PM Friday and Saturday, and it's also open Sundays from September to May. The Lake Hiawatha Branch at 68 Nokomis Ave is open 9 AM to 8 PM Monday to Thursday and 9 AM to 5 PM Friday and Saturday. The Mount Tabor Branch at 31 Trinity Pl keeps shorter hours and is closed Sunday and Monday. Your card also gets you free Wall Street Journal access and museum passes.\n\nWhen you tour homes in Parsippany, time the drive from each house to the places you'd use every week.\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #ParsippanyNJ #MorrisCountyNJ\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "Parsippany: you're probably missing this. There are 3 libraries in one town. Main Library (449 Halsey Rd), Lake Hiawatha Branch (68 Nokomis Ave) and Mount Tabor Branch (31 Trinity Pl).\n\nWhen you tour homes, time the drive from each house to the places you'd use every week.\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://parsippanylibrary.org/services/seniors/",
+  "https://parsippanylibrary.org/about/hours/",
+  "https://parsippanylibrary.org/databases",
+  "https://parsippanylibrary.org/borrow/museums/"
+ ]
+}
