@@ -22,7 +22,7 @@
    6
   ]
  },
- "status": "publishing",
+ "status": "published",
  "approved_by": "Therm",
  "queued_at": "2026-10-27T07:39:58-04:00",
  "claimed_at": "2026-10-27T16:16:16.915780+00:00",
@@ -42,5 +42,6 @@
   "ig_story_creation_4": "18649010362040252",
   "ig_story_creation_5": "18649010407040252",
   "ig_story_creation_6": "18649010518040252"
- }
+ },
+ "published_at": "2026-10-27T16:17:56.914238+00:00"
 }
