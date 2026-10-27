@@ -2,5 +2,7 @@
  "id": "probe_1FL1u5IN",
  "drive_file_id": "1FL1u5INLKH6SSs3g6481FWud922VZZwi",
  "drive_title": "146 Hillside Ave, Piscataway | $774,900 | 3 Beds | 3.1 baths",
- "status": "probe"
+ "status": "probed",
+ "frames": "tours/probes/probe_1FL1u5IN_frames.jpg",
+ "source_duration_s": 29.1
 }

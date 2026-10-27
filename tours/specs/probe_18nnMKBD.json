@@ -2,5 +2,7 @@
  "id": "probe_18nnMKBD",
  "drive_file_id": "18nnMKBDuPoSldZkeEaCPAswygFFSEQvI",
  "drive_title": "0EC1F236-EA1B-47CD-9843-0A330D2BA916.mp4",
- "status": "probe"
+ "status": "probed",
+ "frames": "tours/probes/probe_18nnMKBD_frames.jpg",
+ "source_duration_s": 32.4
 }
