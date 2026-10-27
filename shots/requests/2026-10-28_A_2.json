@@ -1,5 +1,12 @@
 {
  "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-lenders-title-insurance-en-163/",
- "find": "Lender’s title insurance does not protect your investment in the home",
- "status": "new"
+ "find": "Lender\u2019s title insurance does not protect your investment in the home",
+ "status": "done",
+ "shot": "shots/2026-10-28_A_2.png",
+ "circle": [
+  0.025,
+  0.601,
+  0.558,
+  0.171
+ ]
 }
