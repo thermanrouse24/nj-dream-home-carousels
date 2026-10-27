@@ -20,9 +20,11 @@
  "approved_by": "Therm",
  "queued_at": "2026-10-27T07:39:58-04:00",
  "claimed_at": "2026-10-27T21:31:26.968789+00:00",
- "publish_called": true,
+ "publish_called": false,
  "result": {
-  "ig_story_ids": [],
+  "ig_story_ids": [
+   "18097915322663287"
+  ],
   "ig_story_creation_1": "18649093069040252"
  }
 }
