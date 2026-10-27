@@ -12,10 +12,14 @@
   "https://raw.githubusercontent.com/thermanrouse24/nj-dream-home-carousels/main/posts/2026-10-26/2026-10-26_C_rates_6of6_tiktok.jpg"
  ],
  "caption": "The uncomfortable truth about mortgage rates: the Fed doesn't set yours.\n\nThe Fed sets a target range for the federal funds rate, what banks charge each other overnight. Changes to it influence other interest rates. But your mortgage rate also depends on things on your side of the table: your credit score, down payment, loan type, loan term, interest rate type, home price, loan amount and home location. Check your credit reports at AnnualCreditReport.com. You can view them free every week. Then compare Loan Estimates from more than one lender.\n\nTalk to a licensed lender for your numbers.\n\nDM me \"HOME\" to get started.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #MortgageRates #NJHomeBuyer\n\nTherm The Realtor | eXp Realty",
- "status": "publishing",
+ "status": "scheduled_in_buffer",
  "approved_by": "Therm",
  "queued_at": "2026-10-27T07:39:58-04:00",
  "claimed_at": "2026-10-27T11:43:58.412151+00:00",
- "publish_called": true,
- "result": {}
+ "publish_called": false,
+ "result": {
+  "buffer_post_id": "6ae08e81a21f4739ba9bcbe9",
+  "buffer_due_at": "2026-10-27T21:30:00.000Z"
+ },
+ "published_at": "2026-10-27T11:44:02.043088+00:00"
 }
