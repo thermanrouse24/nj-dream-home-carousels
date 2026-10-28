@@ -23,6 +23,12 @@ records render_info.has_music (source audio louder than -50 dB); enqueue.py refu
 and publish.py rejects any tour item not marked has_music. A silent tour is reported to Therm, never posted.
 (The Oct 28 Piscataway tour went out silent; that is what this rule stops.)
 
+**THERM POSTS TOURS HIMSELF WITH TRENDING MUSIC (Therm, Oct 28 2026).** The APIs cannot add a
+trending song, so an approved tour is never queued. The Execution agent runs `tours/handoff.py`, emails
+Therm the post kit (cover inline, both video links, both captions, a trending-song pick) and puts a
+Calendar event at the post time ("POST HOME TOUR NOW", pop-ups at 0 and 1 min). He posts it in the
+Instagram app (Share to Facebook on) and the TikTok app. enqueue.py tour refuses without --auto.
+
 **THERM'S NUMBER ONLY (Therm, Oct 28 2026).** Every post shows Therm's name and number. The tour edits
 end with someone else's black "Call/Text 347-988-8291 Vinny" bar; make_tour.py finds that bar and covers
 it with "Call/Text 917.843.5290 Therm The Realtor" (same black bar, white serif text). render_info.phone_replaced

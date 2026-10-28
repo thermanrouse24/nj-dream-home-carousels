@@ -112,7 +112,9 @@ Naming new tours "Address, Town | $Price | N Beds | N Baths" is always the faste
    business card as the last 3 seconds (TikTok copy says DM ME "HOME"). His edit is otherwise
    untouched. The MP4s go to the repo's "tours" release; cover and preview images to `tours/previews/`.
 3. The approval email shows it as slot **T**. Reply APPROVE T (or APPROVE ALL).
-4. It posts at 9:45 AM as an Instagram Reel, a Facebook Reel and a TikTok video (DM HOME).
+4. Therm's rule (Oct 28 2026): tours need trending music, which only the apps can add, so the robot does NOT
+   auto-post them. It emails Therm a post kit (tours/handoff.py) and sets a 9:45 AM Calendar alert; he posts
+   it in the Instagram app (Share to Facebook on) and the TikTok app (DM HOME caption) with a trending song.
 
 One-time setup for tours: the robot must be able to download from those folders. EITHER set each
 folder's sharing to "Anyone with the link: Viewer" (simplest), OR create a Google Cloud service

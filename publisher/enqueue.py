@@ -155,7 +155,11 @@ def tour(a):
     spec = json.load(open(os.path.join(ROOT, a.spec)))
     if spec.get("status") != "rendered":
         sys.exit(f"tour {spec.get('id')} is not rendered yet (status {spec.get('status')})")
-    # Therm's rule (Oct 28 2026): never post a home tour without music.
+    # Therm's rule (Oct 28 2026): tours need TRENDING music, which only the apps can add, so Therm
+    # posts them himself from a post kit (tours/handoff.py). Never auto-post a tour.
+    if not a.auto:
+        sys.exit(f"tour {spec.get('id')}: tours are posted by Therm with trending music. "
+                 "Run python3 tours/handoff.py instead (Therm, Oct 28 2026).")
     if not spec.get("render_info", {}).get("has_music"):
         sys.exit(f"tour {spec.get('id')} has NO music (silent video): not queued. Therm's rule: never post tours without music.")
     date = a.date or spec["date"]
@@ -187,6 +191,7 @@ def main():
     q.add_argument("--time", required=True); q.add_argument("--text", required=True)
     k = sub.add_parser("card"); k.add_argument("--date", required=True); k.add_argument("--time", default="07:15")
     tr = sub.add_parser("tour"); tr.add_argument("spec"); tr.add_argument("--date"); tr.add_argument("--time", default="09:45")
+    tr.add_argument("--auto", action="store_true", help="only if Therm explicitly asks to auto-post a tour that already has music")
     for s in (c, q, k, tr):
         s.add_argument("--platforms", default=",".join(ALL)); s.add_argument("--replace", action="store_true")
     a = ap.parse_args()
