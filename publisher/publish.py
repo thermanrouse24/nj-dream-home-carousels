@@ -261,7 +261,15 @@ def instagram(item):
             item.setdefault("result", {})["ig_audio_used"] = f"{hit['title']} - {hit['artist']} ({hit['audio_id']})".replace(" -  (", " (")
         cid = ig_video_container(ig, token, media[0], "REELS", extra)
         ig_wait(cid, token)
-        return {"ig_media_id": ig_publish(ig, token, cid, item)}
+        mid = ig_publish(ig, token, cid, item)
+        out = {"ig_media_id": mid}
+        if "audio_configuration" in extra:   # confirm Instagram kept the song (MUSIC, not ORIGINAL_SOUND)
+            try:
+                out["media_audio_type"] = api("GET", f"{GRAPH}/{mid}", token,
+                                              params={"fields": "media_audio_type"}).get("media_audio_type")
+            except PublishError:
+                out["media_audio_type"] = "unknown"
+        return out
     if kind == "image":
         cid = api("POST", f"{GRAPH}/{ig}/media", token, data={
             "image_url": media[0], "caption": item.get("caption", "")})["id"]
