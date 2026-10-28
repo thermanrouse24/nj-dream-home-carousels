@@ -43,7 +43,11 @@ def search(token, ig_user_id, query=None, audio_type="music", limit=25):
     for name, url, params in variants:
         code, d = _get(url, token, params)
         if code < 400 and "error" not in d:
+            if os.environ.get("AUDIO_DEBUG"):
+                print(f"[{name}] raw: {json.dumps(d)[:1500]}")
             rows = d.get("data", d if isinstance(d, list) else [])
+            if isinstance(rows, dict):          # some responses nest the list one level down
+                rows = next((v for v in rows.values() if isinstance(v, list)), [])
             out = []
             for x in rows:
                 out.append({
