@@ -22,14 +22,14 @@
  "slides": [
   {
    "type": "cover",
-   "eyebrow": "The problem isn't you. It's the car.",
+   "eyebrow": "Moving to Boonton? The problem isn't you.",
    "lines": [
-    "PARK ONCE.",
-    "SEE",
-    "~3 STOPS ON",
-    "~ONE STREET"
+    "IT'S DRIVING",
+    "PAST MAIN ST.",
+    "~PARK ONCE.",
+    "~SEE 3 STOPS"
    ],
-   "sub": "Moving to Boonton? A historic downtown, a waterfall and the train, all on Main Street."
+   "sub": "A historic downtown, a waterfall and the train, all off Main Street."
   },
   {
    "type": "place",
@@ -68,13 +68,13 @@
    "num": "3",
    "kind": "Train",
    "title": "Boonton Station",
-   "meta": "Main St & Myrtle Ave",
+   "meta": "Main St & Rt. 202",
    "chips": [
     "NJ Transit",
     "Montclair-Boonton Line",
     "On Main St"
    ],
-   "body": "NJ Transit's Boonton station sits at Main Street and Myrtle Avenue on the Montclair-Boonton Line.",
+   "body": "NJ Transit's Boonton station is at Main Street and Route 202 on the Montclair-Boonton Line, with parking at Main Street and Myrtle Avenue.",
    "scene": "train",
    "variant": 2,
    "source": "NJ Transit, Boonton Station (Oct. 2026)"
@@ -94,15 +94,15 @@
     },
     {
      "name": "Boonton Station",
-     "where": "Main St & Myrtle Ave"
+     "where": "Main St & Rt. 202"
     }
    ],
    "tip": "Touring homes here? Walk from the house to Main Street and the station before you decide.",
    "source": "NJ HPO; Town of Boonton; NJ Transit (Oct. 2026)"
   }
  ],
- "caption": "Moving to Boonton? The problem isn't you. It's the car. Park once and see 3 stops on one street.\n\nDowntown Boonton's historic district runs along Main, Church, Birch, Cornelia and Cedar Streets and has been on the National Register of Historic Places since 1980. Walk down to Grace Lord Park at West Main Street and Essex Avenue for the falls on the Rockaway River and the start of the Boonton Heritage Trail. Then head to NJ Transit's Boonton station at Main Street and Myrtle Avenue on the Montclair-Boonton Line.\n\nTouring homes in Boonton? Walk from the house to Main Street and the station before you decide.\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #BoontonNJ #MorrisCountyNJ\n\nTherm The Realtor | eXp Realty",
- "threads_caption": "Moving to Boonton? The problem isn't you. It's the car. Park once and see 3 stops on one street: the historic downtown on Main St, Grace Lord Park and Boonton Falls (W Main St & Essex Ave), and NJ Transit's Boonton station (Main St & Myrtle Ave).\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "caption": "Moving to Boonton? The problem isn't you. It's driving past Main Street. Park once and see 3 stops on one street.\n\nDowntown Boonton's historic district runs along Main, Church, Birch, Cornelia and Cedar Streets and has been on the National Register of Historic Places since 1980. Walk down to Grace Lord Park at West Main Street and Essex Avenue for the falls on the Rockaway River and the start of the Boonton Heritage Trail. Then head to NJ Transit's Boonton station at Main Street and Route 202 on the Montclair-Boonton Line.\n\nTouring homes in Boonton? Walk from the house to Main Street and the station before you decide.\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #BoontonNJ #MorrisCountyNJ\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "Moving to Boonton? The problem isn't you. It's driving past Main Street. Park once and see 3 stops on one street: the historic downtown on Main St, Grace Lord Park and Boonton Falls (W Main St & Essex Ave), and NJ Transit's Boonton station (Main St & Rt. 202).\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
  "sources": [
   "https://www.nj.gov/dep/hpo/1identify/nrsr_lists/MORRIS.pdf",
   "https://npgallery.nps.gov/AssetDetail/NRIS/80002509",
