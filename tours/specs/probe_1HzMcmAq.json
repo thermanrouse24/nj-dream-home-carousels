@@ -2,7 +2,8 @@
  "id": "probe_1HzMcmAq",
  "drive_file_id": "1HzMcmAqebbtJwbvnIqzxriB_TPwLX8OJ",
  "drive_title": "1920BFC0-1AFC-4388-A366-637BF0943E21.mp4",
- "status": "probed",
+ "status": "needs_name",
  "frames": "tours/probes/probe_1HzMcmAq_frames.jpg",
- "source_duration_s": 36.1
+ "source_duration_s": 36.1,
+ "note": "Probed Oct 28 2026: cover reads 'SINGLE FAMILY HOME' with no town/address on any frame. Ask Therm to rename 'Address, Town'."
 }
