@@ -7,10 +7,14 @@
   "https://raw.githubusercontent.com/thermanrouse24/nj-dream-home-carousels/main/quotes/2026-10/Q2610-09_story.jpg"
  ],
  "caption": "The process feels big because you're looking at all of it at once. Take the next step, not every step.\n\nDM me \"HOME\" to get started.\n\nTherm The Realtor | eXp Realty",
- "status": "publishing",
+ "status": "scheduled_in_buffer",
  "approved_by": "Therm",
  "queued_at": "2026-10-28T03:25:24-04:00",
  "claimed_at": "2026-10-28T07:27:39.399155+00:00",
- "publish_called": true,
- "result": {}
+ "publish_called": false,
+ "result": {
+  "buffer_post_id": "6ae1a3eef94c111d6ec08dbd",
+  "buffer_due_at": "2026-10-28T13:15:00.000Z"
+ },
+ "published_at": "2026-10-28T07:27:42.804567+00:00"
 }
