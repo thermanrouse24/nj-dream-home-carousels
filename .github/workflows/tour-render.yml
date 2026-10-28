@@ -29,7 +29,7 @@ jobs:
         with:
           python-version: "3.12"
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
-      - run: pip install pillow gdown google-api-python-client google-auth
+      - run: pip install pillow numpy gdown google-api-python-client google-auth
       - name: Render
         env:
           GH_TOKEN: ${{ github.token }}
