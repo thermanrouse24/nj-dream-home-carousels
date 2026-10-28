@@ -12,6 +12,7 @@ Usage:
   python3 tours/make_tour.py INPUT.mp4 OUT_PREFIX --town "Union" --county "Union"
 Makes OUT_PREFIX_ig.mp4, OUT_PREFIX_tiktok.mp4, OUT_PREFIX_cover.jpg, OUT_PREFIX_preview.jpg
 """
+import re
 import argparse, json, os, subprocess, sys, tempfile
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
@@ -42,6 +43,16 @@ def probe(path):
     has_audio = any(s.get("codec_type") == "audio" for s in d.get("streams", []))
     dur = float(d.get("format", {}).get("duration", 0) or 0)
     return dur, has_audio
+
+
+def mean_volume_db(path):
+    """Mean loudness of the source's audio in dB (None if no audio). Under -50 dB counts as silent."""
+    p = subprocess.run(["ffmpeg", "-hide_banner", "-i", path, "-vn", "-af", "volumedetect", "-f", "null", "-"],
+                       capture_output=True, text=True)
+    m = re.search(r"mean_volume: (-?[\d.]+|-inf) dB", p.stderr)
+    if not m:
+        return None
+    return -999.0 if m.group(1) == "-inf" else float(m.group(1))
 
 
 TOWN_FONT = "BodoniModa.ttf"      # tall, high-contrast serif (free Google Font), squeezed to a condensed look
@@ -323,10 +334,12 @@ def main():
     boxes = [BLOCK_BOX] if box else []
     build(a.src, os.path.join(ROOT, "business_card_story.jpg"), ov, a.out_prefix + "_ig.mp4", has_audio, dur, until=until, boxes=boxes, text_until=text_until)
     build(a.src, os.path.join(ROOT, "business_card_story_tiktok.jpg"), ov, a.out_prefix + "_tiktok.mp4", has_audio, dur, until=until, boxes=boxes, text_until=text_until)
+    vol = mean_volume_db(a.src) if has_audio else None
     total = dur + CARD_SECONDS
     times = [0.8, dur * 0.25, dur * 0.5, dur * 0.75, max(dur - 0.5, 0), total - 1.0]
     frames(a.out_prefix + "_ig.mp4", times, a.out_prefix + "_preview.jpg", a.out_prefix + "_cover.jpg")
     info = {"text_until_s": text_until, "blur_until_s": until, "duration_s": round(total, 1), "source_duration_s": round(dur, 1), "source_has_audio": has_audio,
+            "source_mean_volume_db": vol, "has_music": bool(has_audio and vol is not None and vol > -50),
             "ig_mb": round(os.path.getsize(a.out_prefix + "_ig.mp4") / 1e6, 1),
             "tiktok_mb": round(os.path.getsize(a.out_prefix + "_tiktok.mp4") / 1e6, 1)}
     print(json.dumps(info))

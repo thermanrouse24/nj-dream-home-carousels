@@ -155,6 +155,9 @@ def tour(a):
     spec = json.load(open(os.path.join(ROOT, a.spec)))
     if spec.get("status") != "rendered":
         sys.exit(f"tour {spec.get('id')} is not rendered yet (status {spec.get('status')})")
+    # Therm's rule (Oct 28 2026): never post a home tour without music.
+    if not spec.get("render_info", {}).get("has_music"):
+        sys.exit(f"tour {spec.get('id')} has NO music (silent video): not queued. Therm's rule: never post tours without music.")
     date = a.date or spec["date"]
     t = at(date, a.time)
     p = f"{date}_T"
@@ -165,13 +168,13 @@ def tour(a):
     items = []
     if "instagram" in a.platforms:
         items.append({"id": f"{p}_ig_reel", "platform": "instagram", "type": "reel", "publish_at": t,
-                      "media": [spec["ig_url"]], "caption": caption, "tour": spec["id"]})
+                      "media": [spec["ig_url"]], "caption": caption, "tour": spec["id"], "has_music": True})
     if "facebook" in a.platforms:
         items.append({"id": f"{p}_fb_reel", "platform": "facebook", "type": "reel", "publish_at": t,
-                      "media": [spec["ig_url"]], "caption": caption, "tour": spec["id"]})
+                      "media": [spec["ig_url"]], "caption": caption, "tour": spec["id"], "has_music": True})
     if "tiktok" in a.platforms:
         items.append({"id": f"{p}_tiktok", "platform": "tiktok", "type": "video", "publish_at": t,
-                      "media": [spec["tiktok_url"]], "caption": tk, "tour": spec["id"]})
+                      "media": [spec["tiktok_url"]], "caption": tk, "tour": spec["id"], "has_music": True})
     return items
 
 

@@ -18,6 +18,11 @@ asks (`--reel`). TikTok: EVERY TikTok post (carousels, quotes, business card, ho
 
 ## Home Tour Reels (Therm's rule, Oct 24 2026)
 
+**NO MUSIC = NO POST (Therm, Oct 28 2026).** Never post a home tour without music. make_tour.py
+records render_info.has_music (source audio louder than -50 dB); enqueue.py refuses a tour without it
+and publish.py rejects any tour item not marked has_music. A silent tour is reported to Therm, never posted.
+(The Oct 28 Piscataway tour went out silent; that is what this rule stops.)
+
 One Home Tour Reel a day at 9:45 AM ET: Instagram Reel, Facebook Reel, TikTok video (DM HOME).
 Source videos are Therm's finished edits in the Drive folders "Edits" (id 1nyFINVXnZdmoDl6t4dPEaPTIqSDover1,
 camera file names: probe first, read the town from the frames) and "Content (Edits)"

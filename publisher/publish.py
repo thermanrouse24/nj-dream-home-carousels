@@ -453,6 +453,8 @@ def validate(it):
             problems.append("TikTok caption says 'link in my bio' (use DM me \"HOME\")")
         if TIKTOK_CTA not in cap:
             problems.append("TikTok caption must include: " + TIKTOK_CTA)
+    if it.get("tour") and not it.get("has_music"):  # Therm's rule (Oct 28 2026)
+        problems.append("home tour has no music: never post tours without music")
     if not isinstance(it.get("media"), list) or not it.get("media"):
         problems.append("media must be a non-empty list")
     for u in it.get("media") or []:
