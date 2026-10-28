@@ -30,8 +30,9 @@ How it works:
    'DM me "HOME" to get started.' and never "link in my bio". The publisher refuses any TikTok
    item that breaks this.
 
-Instagram Reel music: Instagram's API cannot attach licensed songs, so a Reel posted this way only
-has its own (silent) audio. Reels are OFF by default (`enqueue.py --reel` turns one on).
+Instagram Reel music: since May 2026 the Instagram Audio API can attach licensed songs to Reels
+(publisher/ig_audio.py; test it with the "Check Instagram audio" workflow; verified working for @therm.realtor
+on Oct 28 2026). Reel items with "ig_audio_id" / "ig_audio" get the song; photo posts and Stories cannot. Reels are OFF by default (`enqueue.py --reel` turns one on).
 
 ## One-time setup (Therm, about 30 to 45 minutes)
 

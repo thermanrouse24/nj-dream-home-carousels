@@ -18,12 +18,32 @@ asks (`--reel`). TikTok: EVERY TikTok post (carousels, quotes, business card, ho
 
 ## Home Tour Reels (Therm's rule, Oct 24 2026)
 
+**MUSIC VIA THE INSTAGRAM AUDIO API, NO APPROVAL NEEDED (Therm, Oct 28 2026 evening; replaces the
+"Therm posts tours himself" rule below).** Every home tour gets a licensed Instagram song attached with
+the Instagram Audio API (open to third-party tools since May 2026) and posts as an **Instagram Reel at
+9:45 AM WITHOUT Therm's approval, as long as the music is attached**. How:
+1. The "Render home tour" workflow saves Instagram's current trending music (clean titles, 30 s+) in the
+   tour spec as "audio_candidates" (tours/audio_candidates.py).
+2. The daily build (Brain) picks ONE song from those candidates that fits a home tour (upbeat or warm; no
+   explicit, violent, drug, sexual, sad or religious songs; nothing political) and a backup, and sets
+   "ig_audio_id", "ig_audio" ("Title - Artist") and "ig_audio_backup" in tours/specs/<date>_T.json.
+   It lists the song in the nightly email for Therm's information only.
+3. The tour is queued right away (no reply needed): python3 publisher/enqueue.py tour tours/specs/<date>_T.json --time 09:45
+   This queues ONLY the Instagram Reel (the API can only add music to Instagram Reels). The publisher
+   attaches the song (audio_configuration) and refuses to post if neither song can be found, so a tour
+   is never posted silent. After posting it records media_audio_type (MUSIC = song attached).
+4. Facebook Reel and TikTok cannot get API music, so they are NOT auto-posted; they stay in Therm's post kit
+   (tours/handoff.py) for him to post with a trending song if he wants.
+5. Content Log status for T: "Auto-queued 9:45 AM (no approval needed): IG Reel + <song>".
+Compliance note kept in the email: a tour of another broker's listing still needs that broker's written OK
+(N.J.A.C. 11:5-6.1(n)); Therm chose to auto-post anyway (Oct 28 2026).
+
 **NO MUSIC = NO POST (Therm, Oct 28 2026).** Never post a home tour without music. make_tour.py
 records render_info.has_music (source audio louder than -50 dB); enqueue.py refuses a tour without it
 and publish.py rejects any tour item not marked has_music. A silent tour is reported to Therm, never posted.
 (The Oct 28 Piscataway tour went out silent; that is what this rule stops.)
 
-**THERM POSTS TOURS HIMSELF WITH TRENDING MUSIC (Therm, Oct 28 2026).** The APIs cannot add a
+**(SUPERSEDED Oct 28 2026 evening by the Audio API rule above, kept for Facebook/TikTok only) THERM POSTS TOURS HIMSELF WITH TRENDING MUSIC (Therm, Oct 28 2026).** The APIs cannot add a
 trending song, so an approved tour is never queued. The Execution agent runs `tours/handoff.py`, emails
 Therm the post kit (cover inline, both video links, both captions, a trending-song pick) and puts a
 Calendar event at the post time ("POST HOME TOUR NOW", pop-ups at 0 and 1 min). He posts it in the
