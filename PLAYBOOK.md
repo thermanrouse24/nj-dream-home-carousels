@@ -23,6 +23,11 @@ records render_info.has_music (source audio louder than -50 dB); enqueue.py refu
 and publish.py rejects any tour item not marked has_music. A silent tour is reported to Therm, never posted.
 (The Oct 28 Piscataway tour went out silent; that is what this rule stops.)
 
+**THERM'S NUMBER ONLY (Therm, Oct 28 2026).** Every post shows Therm's name and number. The tour edits
+end with someone else's black "Call/Text 347-988-8291 Vinny" bar; make_tour.py finds that bar and covers
+it with "Call/Text 917.843.5290 Therm The Realtor" (same black bar, white serif text). render_info.phone_replaced
+records it. If a tour still shows another person's name or number in its preview, do not queue it; report it.
+
 One Home Tour Reel a day at 9:45 AM ET: Instagram Reel, Facebook Reel, TikTok video (DM HOME).
 Source videos are Therm's finished edits in the Drive folders "Edits" (id 1nyFINVXnZdmoDl6t4dPEaPTIqSDover1,
 camera file names: probe first, read the town from the frames) and "Content (Edits)"

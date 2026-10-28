@@ -45,6 +45,71 @@ def probe(path):
     return dur, has_audio
 
 
+PHONE_TEXT = "Call/Text 917.843.5290 Therm The Realtor"   # Therm, Oct 28 2026: his name and number on every post
+
+
+def find_phone_box(src, dur, scan_s=10.0):
+    """Find the edit's own black 'Call/Text <number> <name>' bar near the end (e.g. 'Call/Text 347-988-8291 Vinny').
+    Returns (x, y, w, h, t_start, t_end) in 1080x1920 coords, or None."""
+    import numpy as np
+    tmp = tempfile.mkdtemp()
+    start = max(0.0, dur - scan_s)
+    run(["ffmpeg", "-y", "-loglevel", "error", "-ss", f"{start:.2f}", "-i", src,
+         "-vf", f"fps=10,scale={W}:{H}", os.path.join(tmp, "f_%04d.png")])
+    hits = []
+    for f in sorted(os.listdir(tmp)):
+        a = np.asarray(Image.open(os.path.join(tmp, f)).convert("L")) < 30
+        rows = np.where(a.sum(1) > 350)[0]
+        if not len(rows):
+            continue
+        runs = np.split(rows, np.where(np.diff(rows) > 1)[0] + 1)
+        for r in runs:
+            if not (80 <= len(r) <= 220) or r[0] < H * 0.45:     # a solid bar 80-220 px tall, lower half
+                continue
+            band = a[r[0]:r[-1] + 1]
+            cols = np.where(band.mean(0) > 0.6)[0]
+            if len(cols) < 500 or band[:, cols.min():cols.max() + 1].mean() < 0.75:
+                continue
+            t = start + (int(f[2:6]) - 1) / 10.0
+            hits.append((int(cols.min()), int(r[0]), int(cols.max() - cols.min() + 1), int(len(r)), t))
+    if len(hits) < 5:
+        return None
+    x = min(h[0] for h in hits); y = min(h[1] for h in hits)
+    x2 = max(h[0] + h[2] for h in hits); y2 = max(h[1] + h[3] for h in hits)
+    return x, y, x2 - x, y2 - y, min(h[4] for h in hits), max(h[4] for h in hits) + 0.1
+
+
+def phone_patch_png(w, h, out_png):
+    img = Image.new("RGBA", (w + 8, h + 8), (0, 0, 0, 255))
+    d = ImageDraw.Draw(img)
+    size = int(h * 0.48)
+    while size > 20:
+        f = font("InstrumentSerif-Regular.ttf", size)
+        if d.textlength(PHONE_TEXT, font=f) <= w - 60:
+            break
+        size -= 2
+    bb = d.textbbox((0, 0), PHONE_TEXT, font=f)
+    d.text(((w + 8 - (bb[2] - bb[0])) / 2 - bb[0], (h + 8 - (bb[3] - bb[1])) / 2 - bb[1]), PHONE_TEXT,
+           font=f, fill=(255, 255, 255, 255))
+    img.save(out_png)
+
+
+def replace_phone_box(src, dur):
+    """If the edit shows someone else's Call/Text bar, cover it with Therm's. Returns (path, info)."""
+    box = find_phone_box(src, dur)
+    if not box:
+        return src, None
+    x, y, w, h, t0, t1 = box
+    tmp = tempfile.mkdtemp()
+    png = os.path.join(tmp, "phone.png"); out = os.path.join(tmp, "patched.mp4")
+    phone_patch_png(w, h, png)
+    run(["ffmpeg", "-y", "-loglevel", "error", "-i", src, "-i", png, "-filter_complex",
+         f"[0:v]scale={W}:{H},setsar=1[b];[b][1:v]overlay={x - 4}:{y - 4}:enable='between(t,{max(0, t0 - 0.15):.2f},{t1 + 0.2:.2f})'[v]",
+         "-map", "[v]", "-map", "0:a?", "-c:v", "libx264", "-preset", "medium", "-crf", "17", "-pix_fmt", "yuv420p",
+         "-c:a", "copy", out])
+    return out, {"phone_box": [x, y, w, h], "phone_box_s": [round(t0, 1), round(t1, 1)], "phone_text": PHONE_TEXT}
+
+
 def mean_volume_db(path):
     """Mean loudness of the source's audio in dB (None if no audio). Under -50 dB counts as silent."""
     p = subprocess.run(["ffmpeg", "-hide_banner", "-i", path, "-vn", "-af", "volumedetect", "-f", "null", "-"],
@@ -320,6 +385,7 @@ def main():
     if dur <= 1:
         sys.exit("video too short or unreadable")
     os.makedirs(os.path.dirname(os.path.abspath(a.out_prefix)), exist_ok=True)
+    a.src, phone_info = replace_phone_box(a.src, dur)
     tmp = tempfile.mkdtemp()
     ov = os.path.join(tmp, "title.png")
     box = None if a.keep_label else LABEL_BOX
@@ -341,7 +407,8 @@ def main():
     info = {"text_until_s": text_until, "blur_until_s": until, "duration_s": round(total, 1), "source_duration_s": round(dur, 1), "source_has_audio": has_audio,
             "source_mean_volume_db": vol, "has_music": bool(has_audio and vol is not None and vol > -50),
             "ig_mb": round(os.path.getsize(a.out_prefix + "_ig.mp4") / 1e6, 1),
-            "tiktok_mb": round(os.path.getsize(a.out_prefix + "_tiktok.mp4") / 1e6, 1)}
+            "tiktok_mb": round(os.path.getsize(a.out_prefix + "_tiktok.mp4") / 1e6, 1),
+            "phone_replaced": phone_info}
     print(json.dumps(info))
 
 
