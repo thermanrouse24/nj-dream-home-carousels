@@ -16,5 +16,8 @@
  "approved_by": "Therm",
  "queued_at": "2026-10-28T03:25:24-04:00",
  "claimed_at": "2026-10-28T23:00:12.807241+00:00",
- "publish_called": false
+ "publish_called": true,
+ "result": {
+  "ig_creation_id": "18649482280040252"
+ }
 }
