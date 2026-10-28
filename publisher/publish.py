@@ -246,7 +246,17 @@ def instagram(item):
             time.sleep(3)
         return {"ig_story_ids": ids}
     if kind == "reel":
-        cid = ig_video_container(ig, token, media[0], "REELS", {"caption": item.get("caption", "")})
+        extra = {"caption": item.get("caption", "")}
+        if item.get("ig_audio"):  # Instagram Audio API (May 2026): attach a licensed song to the Reel
+            import ig_audio
+            hit = ig_audio.resolve(token, ig, item["ig_audio"], item.get("ig_audio_backup"))
+            if not hit:
+                raise PublishError(f"Instagram audio not found for {item['ig_audio']!r} "
+                                   f"(backup {item.get('ig_audio_backup')!r}); not posting a silent Reel")
+            extra["audio_configuration"] = ig_audio.audio_configuration(
+                hit["audio_id"], item.get("audio_volume"), item.get("video_volume"))
+            item.setdefault("result", {})["ig_audio_used"] = f"{hit['title']} - {hit['artist']} ({hit['audio_id']})"
+        cid = ig_video_container(ig, token, media[0], "REELS", extra)
         ig_wait(cid, token)
         return {"ig_media_id": ig_publish(ig, token, cid, item)}
     if kind == "image":

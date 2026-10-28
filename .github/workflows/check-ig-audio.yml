@@ -1,0 +1,37 @@
+name: Check Instagram audio
+
+# Read-only test (never posts): can our Instagram account search the Instagram Audio API?
+# Run: Actions tab > Check Instagram audio > Run workflow (leave the song blank for trending).
+on:
+  workflow_dispatch:
+    inputs:
+      query:
+        description: "Song or artist (blank = trending)"
+        required: false
+        default: ""
+  push:
+    paths: [".github/audio_check_request.txt"]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - env:
+          META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          Q: ${{ github.event.inputs.query }}
+        run: |
+          python3 publisher/ig_audio.py ${Q:+"$Q"} 2>&1 | tee audio_check.txt || true
+          python3 publisher/ig_audio.py "Upside Down" 2>&1 | tee -a audio_check.txt || true
+      - name: Save the result in the repo
+        run: |
+          mkdir -p publisher/checks && cp audio_check.txt publisher/checks/ig_audio_check.txt
+          git config user.name "audio-check" && git config user.email "actions@github.com"
+          git add publisher/checks/ig_audio_check.txt
+          git commit -m "Instagram audio check result" || exit 0
+          for i in 1 2 3; do git pull --rebase -q origin main && git push -q && break; sleep 5; done
