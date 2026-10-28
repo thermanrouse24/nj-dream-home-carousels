@@ -44,5 +44,147 @@
    "phone_text": "Call/Text 917.843.5290 Therm The Realtor"
   }
  },
- "music_rule": "Instagram Audio API song, auto-post without approval (Therm, Oct 28 2026)"
+ "music_rule": "Instagram Audio API song, auto-post without approval (Therm, Oct 28 2026)",
+ "audio_candidates": [
+  {
+   "audio_id": "4588548731466513",
+   "title": "Saxophone Getting Louder",
+   "artist": "NDIOUGA KÉBÉ RECORDS",
+   "type": "music",
+   "duration_ms": 56999
+  },
+  {
+   "audio_id": "1057321110635519",
+   "title": "The Calm",
+   "artist": "Wiz Khalifa",
+   "type": "music",
+   "duration_ms": 155232
+  },
+  {
+   "audio_id": "504545510323499",
+   "title": "What A Wonderful World",
+   "artist": "Louis Armstrong",
+   "type": "music",
+   "duration_ms": 137146
+  },
+  {
+   "audio_id": "1598176351795390",
+   "title": "Drip",
+   "artist": "ATEEZ",
+   "type": "music",
+   "duration_ms": 181790
+  },
+  {
+   "audio_id": "981955014255121",
+   "title": "Loverboy (Remix) [feat. Ludacris, Da Brat, Shawnna, Twenty II]",
+   "artist": "Mariah Carey",
+   "type": "music",
+   "duration_ms": 270400
+  },
+  {
+   "audio_id": "1085379239199980",
+   "title": "Hala Madrid ...y nada más (feat. RedOne)",
+   "artist": "Real Madrid",
+   "type": "music",
+   "duration_ms": 177031
+  },
+  {
+   "audio_id": "1071006952433334",
+   "title": "My Kinda Love",
+   "artist": "STELLA LEFTY, Bailey Zimmerman",
+   "type": "music",
+   "duration_ms": 220931
+  },
+  {
+   "audio_id": "1064529169619198",
+   "title": "Babydoll",
+   "artist": "Jamie Miller, Antonio Cipriano",
+   "type": "music",
+   "duration_ms": 178822
+  },
+  {
+   "audio_id": "1125699087111585",
+   "title": "Lil Krazy",
+   "artist": "Yeat, Lyfestyle Corporation",
+   "type": "music",
+   "duration_ms": 165000
+  },
+  {
+   "audio_id": "669356189306852",
+   "title": "La Llorona",
+   "artist": "Carmen Goett",
+   "type": "music",
+   "duration_ms": 364367
+  },
+  {
+   "audio_id": "2046011039515379",
+   "title": "Momma's Boy",
+   "artist": "2Paws",
+   "type": "music",
+   "duration_ms": 140880
+  },
+  {
+   "audio_id": "2895738664030116",
+   "title": "Regulate (feat. Nate Dogg)",
+   "artist": "Warren G",
+   "type": "music",
+   "duration_ms": 248887
+  },
+  {
+   "audio_id": "556909836877181",
+   "title": "Lady Love",
+   "artist": "Piero Piccioni",
+   "type": "music",
+   "duration_ms": 117366
+  },
+  {
+   "audio_id": "1397521997525654",
+   "title": "Y Que Fue?",
+   "artist": "Don Miguelo",
+   "type": "music",
+   "duration_ms": 163759
+  },
+  {
+   "audio_id": "1597204805135183",
+   "title": "Always On Time (feat. Ashanti)",
+   "artist": "Ja Rule",
+   "type": "music",
+   "duration_ms": 245866
+  },
+  {
+   "audio_id": "978576956681624",
+   "title": "Life Is Good (feat. Drake)",
+   "artist": "Future",
+   "type": "music",
+   "duration_ms": 237735
+  },
+  {
+   "audio_id": "1040930752295767",
+   "title": "Dear JT",
+   "artist": "Yung Miami",
+   "type": "music",
+   "duration_ms": 192558
+  },
+  {
+   "audio_id": "563383544133902",
+   "title": "Angel (feat. Horace Andy)",
+   "artist": "Massive Attack",
+   "type": "music",
+   "duration_ms": 382666
+  },
+  {
+   "audio_id": "1553657743267123",
+   "title": "her",
+   "artist": "ZVC, JVKE",
+   "type": "music",
+   "duration_ms": 115833
+  },
+  {
+   "audio_id": "1448691239049804",
+   "title": "BTS Cypher 4",
+   "artist": "BTS",
+   "type": "music",
+   "duration_ms": 294463
+  }
+ ]
 }
