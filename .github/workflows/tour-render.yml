@@ -35,6 +35,12 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           GDRIVE_SA_JSON: ${{ secrets.GDRIVE_SA_JSON }}
         run: python3 tours/render_from_drive.py
+      - name: Instagram music candidates
+        if: always()
+        env:
+          META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+        run: pip install requests -q && python3 tours/audio_candidates.py || true
       - name: Save results
         if: always()
         run: |

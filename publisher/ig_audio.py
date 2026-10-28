@@ -45,7 +45,7 @@ def search(token, ig_user_id, query=None, audio_type="music", limit=25):
         if code < 400 and "error" not in d:
             if os.environ.get("AUDIO_DEBUG"):
                 print(f"[{name}] raw: {json.dumps(d)[:1500]}")
-            rows = d.get("data", d if isinstance(d, list) else [])
+            rows = d.get("audio") or d.get("data") or (d if isinstance(d, list) else [])
             if isinstance(rows, dict):          # some responses nest the list one level down
                 rows = next((v for v in rows.values() if isinstance(v, list)), [])
             out = []
@@ -60,6 +60,23 @@ def search(token, ig_user_id, query=None, audio_type="music", limit=25):
             return out, name, errors
         errors.append(f"{name}: {code} {d.get('error', {}).get('message', '')[:200]}")
     return [], None, errors
+
+
+BAD_WORDS = ("fuck", "shit", "bitch", "nigg", "hoe", "pussy", "dick", "damn", "hell", "ass ",
+             "kill", "dead", "die", "drug", "weed", "sex", "drunk", "gun", "blood", "devil", "god",
+             "jesus", "lord", "pray", "church", "allah", "explicit")
+
+
+def clean(r):
+    """Usable on a Realtor's Reel: no profanity, violence, drugs, sex or religion in the title,
+    and long enough for a ~35 second tour."""
+    t = f" {r.get('title', '')} {r.get('artist', '')} ".lower()
+    return not any(w in t for w in BAD_WORDS) and (r.get("duration_ms") or 0) >= 30000
+
+
+def trending(token, ig_user_id, limit=50):
+    res, _, _ = search(token, ig_user_id, None, "music", limit)
+    return [r for r in res if clean(r)]
 
 
 def pick(results, wanted):
@@ -79,8 +96,14 @@ def pick(results, wanted):
 
 
 def resolve(token, ig_user_id, wanted, backup=None):
-    """audio_id for the wanted song, else the backup, else None. Raises nothing."""
+    """The wanted song, else the backup, else (wanted == "auto") the first clean trending track."""
+    if wanted == "auto":
+        t = trending(token, ig_user_id)
+        return t[0] if t else None
     for song in [s for s in (wanted, backup) if s]:
+        if song == "auto":
+            t = trending(token, ig_user_id)
+            return t[0] if t else None
         res, _, _ = search(token, ig_user_id, song.split(" - ")[0])
         hit = pick(res, song)
         if hit and hit["audio_id"]:

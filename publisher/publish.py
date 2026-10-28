@@ -247,15 +247,18 @@ def instagram(item):
         return {"ig_story_ids": ids}
     if kind == "reel":
         extra = {"caption": item.get("caption", "")}
-        if item.get("ig_audio"):  # Instagram Audio API (May 2026): attach a licensed song to the Reel
+        if item.get("ig_audio_id") or item.get("ig_audio"):  # Instagram Audio API (May 2026): licensed song on the Reel
             import ig_audio
-            hit = ig_audio.resolve(token, ig, item["ig_audio"], item.get("ig_audio_backup"))
+            if item.get("ig_audio_id"):
+                hit = {"audio_id": str(item["ig_audio_id"]), "title": item.get("ig_audio", ""), "artist": ""}
+            else:
+                hit = ig_audio.resolve(token, ig, item["ig_audio"], item.get("ig_audio_backup"))
             if not hit:
                 raise PublishError(f"Instagram audio not found for {item['ig_audio']!r} "
                                    f"(backup {item.get('ig_audio_backup')!r}); not posting a silent Reel")
             extra["audio_configuration"] = ig_audio.audio_configuration(
                 hit["audio_id"], item.get("audio_volume"), item.get("video_volume"))
-            item.setdefault("result", {})["ig_audio_used"] = f"{hit['title']} - {hit['artist']} ({hit['audio_id']})"
+            item.setdefault("result", {})["ig_audio_used"] = f"{hit['title']} - {hit['artist']} ({hit['audio_id']})".replace(" -  (", " (")
         cid = ig_video_container(ig, token, media[0], "REELS", extra)
         ig_wait(cid, token)
         return {"ig_media_id": ig_publish(ig, token, cid, item)}

@@ -155,8 +155,19 @@ def tour(a):
     spec = json.load(open(os.path.join(ROOT, a.spec)))
     if spec.get("status") != "rendered":
         sys.exit(f"tour {spec.get('id')} is not rendered yet (status {spec.get('status')})")
-    # Therm's rule (Oct 28 2026): tours need TRENDING music, which only the apps can add, so Therm
-    # posts them himself from a post kit (tours/handoff.py). Never auto-post a tour.
+    # Therm's rule (Oct 28 2026, evening): every tour gets a song through the Instagram Audio API and
+    # posts as an Instagram Reel WITHOUT his approval, as long as the music is attached. Only the
+    # Instagram Reel can carry API music, so only it is queued; Facebook and TikTok stay in his post kit.
+    if spec.get("ig_audio_id") or spec.get("ig_audio"):
+        date = a.date or spec["date"]
+        return [{"id": f"{date}_T_ig_reel", "platform": "instagram", "type": "reel",
+                 "publish_at": at(date, a.time), "media": [spec["ig_url"]], "caption": spec["caption"],
+                 "tour": spec["id"], "has_music": True, "ig_audio_id": spec.get("ig_audio_id"),
+                 "ig_audio": spec.get("ig_audio") or "auto",
+                 "ig_audio_backup": spec.get("ig_audio_backup") or "auto",
+                 "audio_volume": spec.get("audio_volume", 100),
+                 "video_volume": spec.get("video_volume", 0 if not spec.get("render_info", {}).get("source_has_audio") else 30)}]
+    # Older rule (Oct 28 2026 morning): no API music -> Therm posts it himself from a post kit.
     if not a.auto:
         sys.exit(f"tour {spec.get('id')}: tours are posted by Therm with trending music. "
                  "Run python3 tours/handoff.py instead (Therm, Oct 28 2026).")
@@ -196,7 +207,7 @@ def main():
         s.add_argument("--platforms", default=",".join(ALL)); s.add_argument("--replace", action="store_true")
     a = ap.parse_args()
     a.platforms = [x.strip() for x in a.platforms.split(",") if x.strip()]
-    if a.kind == "tour" and a.platforms == ALL:
+    if a.kind == "tour" and a.platforms == ALL:  # (music tours queue Instagram only, see tour())
         a.platforms = ["instagram", "facebook", "tiktok"]   # Therm: IG Reel + TikTok + Facebook
     items = {"carousel": carousel, "quote": quote, "card": card, "tour": tour}[a.kind](a)
     now = dt.datetime.now(NY)
