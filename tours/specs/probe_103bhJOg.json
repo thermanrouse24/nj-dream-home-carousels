@@ -2,5 +2,7 @@
  "id": "probe_103bhJOg",
  "drive_file_id": "103bhJOgFJtp6NWa1L87u3hvaKlh3QqxL",
  "drive_title": "61AA5212-8C19-4B5B-A5EC-942F7498CCFC.mp4",
- "status": "probe"
+ "status": "probed",
+ "frames": "tours/probes/probe_103bhJOg_frames.jpg",
+ "source_duration_s": 35.3
 }

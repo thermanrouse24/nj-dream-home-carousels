@@ -2,5 +2,7 @@
  "id": "probe_1SixzJ5n",
  "drive_file_id": "1SixzJ5nUxqicdpsVu4yEcFeF-O2oGRS3",
  "drive_title": "34 Prospect Ave Plainsboro $979,999 4BR 5BA",
- "status": "probe"
+ "status": "probed",
+ "frames": "tours/probes/probe_1SixzJ5n_frames.jpg",
+ "source_duration_s": 31.0
 }

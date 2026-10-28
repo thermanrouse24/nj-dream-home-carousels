@@ -2,5 +2,7 @@
  "id": "probe_1HzMcmAq",
  "drive_file_id": "1HzMcmAqebbtJwbvnIqzxriB_TPwLX8OJ",
  "drive_title": "1920BFC0-1AFC-4388-A366-637BF0943E21.mp4",
- "status": "probe"
+ "status": "probed",
+ "frames": "tours/probes/probe_1HzMcmAq_frames.jpg",
+ "source_duration_s": 36.1
 }
