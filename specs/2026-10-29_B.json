@@ -1,0 +1,114 @@
+{
+ "id": "2026-10-29_B_local",
+ "tag": "LOCAL *SPOTS*",
+ "hook": 27,
+ "lesson": "",
+ "story_plan": {
+  "type": "multi",
+  "frames": [
+   1,
+   2,
+   3,
+   4
+  ]
+ },
+ "music": {
+  "ig_audio": "WINDOWS in BRAZIL (Sped Up) - VHM4D, ahh",
+  "ig_audio_source": "https://creatordb.app/free-tools/trending-instagram-audio/",
+  "ig_audio_backup": "Jukiar - Clarent, Quevedo",
+  "tiktok": "auto"
+ },
+ "source": "NJ HPO; Town of Boonton; NJ Transit (Oct. 2026)",
+ "slides": [
+  {
+   "type": "cover",
+   "eyebrow": "The problem isn't you. It's the car.",
+   "lines": [
+    "PARK ONCE.",
+    "SEE",
+    "~3 STOPS ON",
+    "~ONE STREET"
+   ],
+   "sub": "Moving to Boonton? A historic downtown, a waterfall and the train, all on Main Street."
+  },
+  {
+   "type": "place",
+   "num": "1",
+   "kind": "Downtown",
+   "title": "Boonton Historic District",
+   "meta": "Main St",
+   "chips": [
+    "National Register",
+    "Listed 1980",
+    "5 streets"
+   ],
+   "body": "Downtown Boonton's historic district runs along Main, Church, Birch, Cornelia and Cedar Streets. It's been on the National Register of Historic Places since 1980.",
+   "scene": "default",
+   "variant": 0,
+   "source": "NJ HPO Morris County register list; NPS NRIS #80002509 (Oct. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "2",
+   "kind": "Park",
+   "title": "Grace Lord Park",
+   "meta": "W Main St & Essex Ave",
+   "chips": [
+    "Boonton Falls",
+    "Rockaway River",
+    "Heritage Trail"
+   ],
+   "body": "Walk down from Main Street to the falls on the Rockaway River. The Boonton Heritage Trail starts here and follows the river through the Boonton Gorge.",
+   "scene": "park",
+   "variant": 1,
+   "source": "Town of Boonton; Morris Focus; NY-NJ Trail Conference (Oct. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "3",
+   "kind": "Train",
+   "title": "Boonton Station",
+   "meta": "Main St & Myrtle Ave",
+   "chips": [
+    "NJ Transit",
+    "Montclair-Boonton Line",
+    "On Main St"
+   ],
+   "body": "NJ Transit's Boonton station sits at Main Street and Myrtle Avenue on the Montclair-Boonton Line.",
+   "scene": "train",
+   "variant": 2,
+   "source": "NJ Transit, Boonton Station (Oct. 2026)"
+  },
+  {
+   "type": "route",
+   "eyebrow": "Plan the route",
+   "title": "Your Main Street walk",
+   "stops": [
+    {
+     "name": "Historic District",
+     "where": "Main St"
+    },
+    {
+     "name": "Grace Lord Park",
+     "where": "W Main St & Essex Ave"
+    },
+    {
+     "name": "Boonton Station",
+     "where": "Main St & Myrtle Ave"
+    }
+   ],
+   "tip": "Touring homes here? Walk from the house to Main Street and the station before you decide.",
+   "source": "NJ HPO; Town of Boonton; NJ Transit (Oct. 2026)"
+  }
+ ],
+ "caption": "Moving to Boonton? The problem isn't you. It's the car. Park once and see 3 stops on one street.\n\nDowntown Boonton's historic district runs along Main, Church, Birch, Cornelia and Cedar Streets and has been on the National Register of Historic Places since 1980. Walk down to Grace Lord Park at West Main Street and Essex Avenue for the falls on the Rockaway River and the start of the Boonton Heritage Trail. Then head to NJ Transit's Boonton station at Main Street and Myrtle Avenue on the Montclair-Boonton Line.\n\nTouring homes in Boonton? Walk from the house to Main Street and the station before you decide.\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #BoontonNJ #MorrisCountyNJ\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "Moving to Boonton? The problem isn't you. It's the car. Park once and see 3 stops on one street: the historic downtown on Main St, Grace Lord Park and Boonton Falls (W Main St & Essex Ave), and NJ Transit's Boonton station (Main St & Myrtle Ave).\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://www.nj.gov/dep/hpo/1identify/nrsr_lists/MORRIS.pdf",
+  "https://npgallery.nps.gov/AssetDetail/NRIS/80002509",
+  "https://www.boonton.org/Facilities",
+  "https://www.trailconference.org/park/print/4252",
+  "https://morrisfocus.com/2020/10/14/officials-cut-the-ribbon-on-boonton-heritage-trail-interpretive-panels/",
+  "https://www.njtransit.com/station/boonton-station"
+ ]
+}

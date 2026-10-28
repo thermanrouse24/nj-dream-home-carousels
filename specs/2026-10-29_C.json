@@ -1,0 +1,65 @@
+{
+ "id": "2026-10-29_C_skip",
+ "tag": "BUYER *MISTAKES*",
+ "style": "notebook",
+ "hook": 5,
+ "lesson": "Hormozi 2027 strategy video, numbered process with one action per slide (Use for us #2 and #5)",
+ "story_plan": {
+  "type": "single",
+  "frames": [
+   1
+  ]
+ },
+ "music": {
+  "ig_audio": "STORM II - GENER8ION, Yung Lean",
+  "ig_audio_source": "https://socialpilot.co/blog/instagram-reels-trends/",
+  "ig_audio_backup": "Goo Goo Muck - The Cramps",
+  "tiktok": "auto"
+ },
+ "source": "CFPB; HUD",
+ "slides": [
+  {
+   "type": "cover",
+   "eyebrow": "Here's what actually happens if you skip",
+   "lines": [
+    "THESE 4 STEPS",
+    "WHEN BUYING",
+    "~IN NJ"
+   ],
+   "sub": "You can lose the offer, buy problems you didn't see, or sign numbers you never checked. Here's what to do instead.",
+   "source": "CFPB; HUD (Oct. 2026)"
+  },
+  {
+   "type": "text",
+   "title": "1. Skip the preapproval",
+   "body": "Sellers often require a preapproval letter before they'll accept your offer. Getting one early also helps you [[spot issues in time]] to fix them.",
+   "source": "CFPB, Get a preapproval letter (Oct. 2026)"
+  },
+  {
+   "type": "text",
+   "title": "2. Skip the inspection",
+   "body": "An appraisal is [[not a home inspection]]. FHA doesn't guarantee a home's value or condition. An inspection tells you about the house before you commit.",
+   "source": "HUD form 92564-CN (Oct. 2026)"
+  },
+  {
+   "type": "text",
+   "title": "3. Skip the Closing Disclosure",
+   "body": "Your lender has to give it to you at least 3 business days before closing. Use those 3 days to [[compare it to your Loan Estimate]]. Talk to a licensed lender for your numbers.",
+   "source": "CFPB, What is a Closing Disclosure? (Oct. 2026)"
+  },
+  {
+   "type": "text",
+   "title": "4. Skip the final walk-through",
+   "body": "Before you sign anything, walk the home one last time. Make sure the [[repairs you agreed on]] got done. If not, speak up before closing.",
+   "source": "CFPB, Close the deal (Oct. 2026)"
+  }
+ ],
+ "caption": "Here's what actually happens if you skip these 4 steps buying a home in NJ.\n\n1. Skip the preapproval: sellers often require a preapproval letter before they'll accept your offer.\n2. Skip the inspection: an appraisal is not a home inspection, and FHA doesn't guarantee a home's value or condition.\n3. Skip the Closing Disclosure: your lender has to give it to you at least 3 business days before closing so you can compare it to your Loan Estimate.\n4. Skip the final walk-through: you won't know if the agreed repairs got done before you sign.\n\nTalk to a licensed lender for your numbers.\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #HomeBuyingTips #NJHomeBuyer\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "Here's what actually happens if you skip these 4 steps buying a home in NJ: no preapproval, no inspection, no Closing Disclosure review, no final walk-through. Each one protects your offer, your money or the house.\n\nTalk to a licensed lender for your numbers.\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://www.consumerfinance.gov/owning-a-home/process/explore/get-a-preapproval-letter/",
+  "https://www.hud.gov/sites/dfiles/OCHCO/documents/92564-CN.pdf",
+  "https://www.consumerfinance.gov/ask-cfpb/what-is-a-closing-disclosure-en-1983",
+  "https://www.consumerfinance.gov/owning-a-home/close/close-the-deal/"
+ ]
+}

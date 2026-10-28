@@ -1,0 +1,71 @@
+{
+ "id": "2026-10-29_A_twofamily",
+ "tag": "MY *STORY*",
+ "style": "story",
+ "hook": 21,
+ "lesson": "Brian Mark, \"NEW Instagram Algorithm Update Favours Carousels\" (LESSONS.md Oct 25 2026), Use for us #1: story carousel (connection)",
+ "story_plan": {
+  "type": "single",
+  "frames": [
+   1
+  ]
+ },
+ "music": {
+  "ig_audio": "Patient Zero - Taylor Swift",
+  "ig_audio_source": "https://creatordb.app/free-tools/trending-instagram-audio/",
+  "ig_audio_backup": "Nicole Kidman - ADÉLA",
+  "tiktok": "auto"
+ },
+ "source": "Therm, confirmed Oct 22 2026 (story bank)",
+ "slides": [
+  {
+   "type": "cover",
+   "eyebrow": "This is what nobody tells beginners:",
+   "text": "Your first home can be a 2-family.",
+   "photo": "therm_waterfront.jpg",
+   "source": "HUD 203(b): 1 to 4 units, principal residence (Oct. 2026)"
+  },
+  {
+   "type": "story",
+   "text": "My first home was a 2-family in New Jersey.",
+   "photo": "therm_street.jpg",
+   "zoom": 1.15
+  },
+  {
+   "type": "story",
+   "text": "So I didn't just become a homeowner. I became a landlord too.",
+   "photo": "therm_waterfront.jpg",
+   "zoom": 1.35,
+   "focus": [
+    0.48,
+    0.3
+   ]
+  },
+  {
+   "type": "story",
+   "text": "My mistake? I waited too long to set up online rent payments.",
+   "photo": "therm_street.jpg",
+   "zoom": 1.4,
+   "focus": [
+    0.6,
+    0.3
+   ]
+  },
+  {
+   "type": "story",
+   "text": "If I did it again, I'd set up online rent payments from day one.",
+   "photo": "therm_waterfront.jpg",
+   "zoom": 1.25,
+   "focus": [
+    0.42,
+    0.2
+   ]
+  }
+ ],
+ "caption": "This is what nobody tells beginners: your first home can be a 2-family.\n\nMy first home was a 2-family in New Jersey, so I became a landlord too. My mistake? I waited too long to set up online rent payments to track my tenants' rent. If I did it again, I'd set that up from day one.\n\nThinking about a 2-family for your first home? Talk to a licensed lender for your numbers.\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #TwoFamilyHome #NJHomeBuyer\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "This is what nobody tells beginners: your first home can be a 2-family.\n\nMine was a 2-family in New Jersey, so I became a landlord too. My mistake? I waited too long to set up online rent payments for my tenants.\n\nTalk to a licensed lender for your numbers.\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "Therm, confirmed Oct 22 2026 (story bank)",
+  "https://www.hud.gov/hud-partners/single-family-sfh203b"
+ ]
+}
