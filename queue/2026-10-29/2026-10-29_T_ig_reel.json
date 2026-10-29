@@ -14,10 +14,10 @@
  "ig_audio_backup": "Saxophone Getting Louder - NDIOUGA KÉBÉ RECORDS",
  "audio_volume": 100,
  "video_volume": 0,
- "status": "retry",
+ "status": "publishing",
  "approved_by": "Therm",
  "queued_at": "2026-10-28T22:16:58-04:00",
- "claimed_at": "2026-10-29T13:45:00.000109+00:00",
+ "claimed_at": "2026-10-29T13:49:39.047206+00:00",
  "publish_called": false,
  "result": {
   "ig_audio_used": "What A Wonderful World - Louis Armstrong (504545510323499)"
