@@ -12,7 +12,7 @@
  "cover_facts": "28 Mins to NYC | 4 Beds | 5 Baths",
  "cover_price": "$34,300",
  "cover_price_note": "down payment",
- "status": "new",
+ "status": "rendered",
  "caption_option": 2,
  "caption": "🏠 STILL PAYING YOUR LANDLORD'S MORTGAGE?\n\nTHEN I ONLY HAVE ONE QUESTION 🙋🏾‍♂️\n\nWHY NOT YOUR OWN ⁉️\n\n👀🚨 THIS ONE IS A MUST SEE 🔥🔥\n\nWhat I do for my clients:\n✔️ Build a game plan before the first showing 📋\n✔️ Catch the costly mistakes early\n✔️ Make buying feel easy, not overwhelming 😌\n\nIt's not just a house. It's your next move.\n\n_____\n\n🔥 READY? HERE'S HOW IT WORKS (3 STEPS):\n\n✅ Step 1: Tap the LINK IN MY BIO and complete the FREE form\n⏱️ Takes 30 seconds, zero commitment\n\n✅ Step 2: I'll contact you within 24 hours 📲\nWe'll book your one-on-one buyer consultation\n\n✅ Step 3: We line you up with the RIGHT home and I fight for your best deal 💪🏾💸\n\nCLICK THE LINK IN MY BIO ✅ CLICK THE LINK IN MY BIO ✅\n\n#NJRealEstate #NJRealtor #NewJerseyHomes #HomeTour\n\nTherm The Realtor | eXp Realty",
  "tiktok_caption": "🏠 STILL PAYING YOUR LANDLORD'S MORTGAGE?\n\nTHEN I ONLY HAVE ONE QUESTION 🙋🏾‍♂️\n\nWHY NOT YOUR OWN ⁉️\n\n👀🚨 THIS ONE IS A MUST SEE 🔥🔥\n\nWhat I do for my clients:\n✔️ Build a game plan before the first showing 📋\n✔️ Catch the costly mistakes early\n✔️ Make buying feel easy, not overwhelming 😌\n\nIt's not just a house. It's your next move.\n\n_____\n\n🔥 READY? HERE'S HOW IT WORKS (3 STEPS):\n\n✅ Step 1: DM me \"HOME\" and I'll send you the FREE form\n⏱️ Takes 30 seconds, zero commitment\n\n✅ Step 2: I'll contact you within 24 hours 📲\nWe'll book your one-on-one buyer consultation\n\n✅ Step 3: We line you up with the RIGHT home and I fight for your best deal 💪🏾💸\n\nDM me \"HOME\" to get started. ✅ DM ME \"HOME\" ✅\n\n#NJRealEstate #NJRealtor #NewJerseyHomes #HomeTour\n\nTherm The Realtor | eXp Realty",
@@ -28,8 +28,8 @@
   "source_has_audio": false,
   "source_mean_volume_db": null,
   "has_music": false,
-  "ig_mb": 27.2,
-  "tiktok_mb": 27.2,
+  "ig_mb": 26.2,
+  "tiktok_mb": 25.8,
   "phone_replaced": {
    "phone_box": [
     11,
@@ -42,6 +42,152 @@
     31.0
    ],
    "phone_text": "Call/Text 917.843.5290 Therm The Realtor"
+  },
+  "text_fixes": {
+   "ig": [
+    {
+     "kind": "save",
+     "box": [
+      0,
+      809,
+      1080,
+      1160
+     ],
+     "t": [
+      8.7,
+      11.7
+     ],
+     "text": "TAKES 30 SECONDS. NO OBLIGATION."
+    },
+    {
+     "kind": "save",
+     "box": [
+      140,
+      969,
+      940,
+      1236
+     ],
+     "t": [
+      8.7,
+      11.7
+     ],
+     "text": "TAKES 30 SECONDS. NO OBLIGATION."
+    },
+    {
+     "kind": "best",
+     "box": [
+      0,
+      889,
+      975,
+      1088
+     ],
+     "t": [
+      13.2,
+      17.1
+     ],
+     "text": "LET'S MAKE YOUR PLAN."
+    }
+   ],
+   "tiktok": [
+    {
+     "kind": "cta",
+     "box": [
+      218,
+      659,
+      865,
+      805
+     ],
+     "t": [
+      3.6,
+      6.9
+     ],
+     "text": "DM ME \"HOME\""
+    },
+    {
+     "kind": "cta",
+     "box": [
+      75,
+      1164,
+      1053,
+      1310
+     ],
+     "t": [
+      8.7,
+      11.7
+     ],
+     "text": "DM ME \"HOME\""
+    },
+    {
+     "kind": "cta",
+     "box": [
+      209,
+      978,
+      811,
+      1100
+     ],
+     "t": [
+      16.4,
+      17.1
+     ],
+     "text": "DM ME \"HOME\""
+    },
+    {
+     "kind": "cta",
+     "box": [
+      0,
+      733,
+      1028,
+      879
+     ],
+     "t": [
+      21.6,
+      25.6
+     ],
+     "text": "DM ME \"HOME\""
+    },
+    {
+     "kind": "save",
+     "box": [
+      0,
+      809,
+      1080,
+      1160
+     ],
+     "t": [
+      8.7,
+      11.7
+     ],
+     "text": "TAKES 30 SECONDS. NO OBLIGATION."
+    },
+    {
+     "kind": "save",
+     "box": [
+      140,
+      969,
+      940,
+      1236
+     ],
+     "t": [
+      8.7,
+      11.7
+     ],
+     "text": "TAKES 30 SECONDS. NO OBLIGATION."
+    },
+    {
+     "kind": "best",
+     "box": [
+      0,
+      889,
+      975,
+      1088
+     ],
+     "t": [
+      13.2,
+      17.1
+     ],
+     "text": "LET'S MAKE YOUR PLAN."
+    }
+   ]
   }
  },
  "music_rule": "Instagram Audio API song, auto-post without approval (Therm, Oct 28 2026)",
