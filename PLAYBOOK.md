@@ -53,6 +53,8 @@ Therm the post kit (cover inline, both video links, both captions, a trending-so
 Calendar event at the post time ("POST HOME TOUR NOW", pop-ups at 0 and 1 min). He posts it in the
 Instagram app (Share to Facebook on) and the TikTok app. enqueue.py tour refuses without --auto.
 
+**TOUR TEXT FIXES (Therm, Oct 29 2026).** tours/text_fix.py (run inside make_tour.py) reads the edit's burned-in text and covers: on the TikTok copy every "CLICK THE LINK IN BIO" with DM ME "HOME"; on every copy "IT ONLY TAKES 30 SECONDS TO SAVE THOUSAND(S)" with "TAKES 30 SECONDS. NO OBLIGATION." and "WE HAVE HELPED HUNDREDS OF CLIENTS / BEST IN BUSINESS" with "LET'S MAKE YOUR PLAN." render_info.text_fixes lists what was covered; check the preview.
+
 **THERM'S NUMBER ONLY (Therm, Oct 28 2026; repeated Oct 29 2026: on ALL tour edits remove VINNY and the 347 number, show THERM and 917).** enqueue.py refuses a tour unless render_info.phone_replaced is set or the spec has "phone_checked": true after someone looked at the preview. Every post shows Therm's name and number. The tour edits
 end with someone else's black "Call/Text 347-988-8291 Vinny" bar; make_tour.py finds that bar and covers
 it with "Call/Text 917.843.5290 Therm The Realtor" (same black bar, white serif text). render_info.phone_replaced

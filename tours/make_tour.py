@@ -6,7 +6,9 @@ Takes one of Therm's already-edited tour videos and adds only:
      COUNTY in small letters (Therm's spec), on a soft dark band so it reads on any footage;
   2. Therm's business card as the last 3 seconds (Instagram/Facebook version says CLICK THE LINK
      IN MY BIO; the TikTok version says DM ME "HOME").
-Everything else in his edit is untouched. Output is 1080x1920, H.264 + AAC, 30 fps.
+It also swaps the edit's Call/Text bar for Therm's (Vinny/347 -> Therm/917) and fixes burned-in text
+(tours/text_fix.py: TikTok copy says DM ME "HOME" instead of "click the link in bio"; the "save thousands"
+and "best in business" lines are covered on every copy). Everything else in his edit is untouched. Output is 1080x1920, H.264 + AAC, 30 fps.
 
 Usage:
   python3 tours/make_tour.py INPUT.mp4 OUT_PREFIX --town "Union" --county "Union"
@@ -386,6 +388,11 @@ def main():
         sys.exit("video too short or unreadable")
     os.makedirs(os.path.dirname(os.path.abspath(a.out_prefix)), exist_ok=True)
     a.src, phone_info = replace_phone_box(a.src, dur)
+    # Therm, Oct 29 2026: fix the edit's burned-in text (TikTok copy: "CLICK THE LINK IN BIO" -> DM ME "HOME";
+    # every copy: the "save thousands" promise and "hundreds of clients / best in business" lines are covered)
+    sys.path.insert(0, HERE)
+    import text_fix
+    src_ig, src_tk, text_info = text_fix.fix(a.src)
     tmp = tempfile.mkdtemp()
     ov = os.path.join(tmp, "title.png")
     box = None if a.keep_label else LABEL_BOX
@@ -398,8 +405,8 @@ def main():
     title_overlay(a.town, a.county, ov, box, a.price.strip() or None, a.facts.strip() or None,
                   a.price_note.strip() or None, BLOCK_BOX if (box and a.panel) else None)
     boxes = [BLOCK_BOX] if box else []
-    build(a.src, os.path.join(ROOT, "business_card_story.jpg"), ov, a.out_prefix + "_ig.mp4", has_audio, dur, until=until, boxes=boxes, text_until=text_until)
-    build(a.src, os.path.join(ROOT, "business_card_story_tiktok.jpg"), ov, a.out_prefix + "_tiktok.mp4", has_audio, dur, until=until, boxes=boxes, text_until=text_until)
+    build(src_ig, os.path.join(ROOT, "business_card_story.jpg"), ov, a.out_prefix + "_ig.mp4", has_audio, dur, until=until, boxes=boxes, text_until=text_until)
+    build(src_tk, os.path.join(ROOT, "business_card_story_tiktok.jpg"), ov, a.out_prefix + "_tiktok.mp4", has_audio, dur, until=until, boxes=boxes, text_until=text_until)
     vol = mean_volume_db(a.src) if has_audio else None
     total = dur + CARD_SECONDS
     times = [0.8, dur * 0.25, dur * 0.5, dur * 0.75, max(dur - 0.5, 0), total - 1.0]
@@ -408,7 +415,7 @@ def main():
             "source_mean_volume_db": vol, "has_music": bool(has_audio and vol is not None and vol > -50),
             "ig_mb": round(os.path.getsize(a.out_prefix + "_ig.mp4") / 1e6, 1),
             "tiktok_mb": round(os.path.getsize(a.out_prefix + "_tiktok.mp4") / 1e6, 1),
-            "phone_replaced": phone_info}
+            "phone_replaced": phone_info, "text_fixes": text_info}
     print(json.dumps(info))
 
 
