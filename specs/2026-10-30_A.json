@@ -1,0 +1,72 @@
+{
+ "id": "2026-10-30_A_smoke",
+ "tag": "REAL ESTATE *101*",
+ "style": "cartoon",
+ "hook": 4,
+ "story_plan": {
+  "type": "multi",
+  "frames": [
+   1,
+   2,
+   5
+  ]
+ },
+ "lesson": "",
+ "music": {
+  "ig_audio": "October - Adrián Berenguer",
+  "ig_audio_source": "https://socialpilot.co/blog/instagram-reels-trends/",
+  "ig_audio_backup": "Autumn Journey - Andrea Vanzo",
+  "tiktok": "auto"
+ },
+ "source": "N.J.A.C. 5:70-2.3 and 5:70-4.19 (NJ Uniform Fire Code)",
+ "slides": [
+  {
+   "type": "cover",
+   "scene": "inspection",
+   "variant": 0,
+   "eyebrow": "A rule you'll wish you knew sooner",
+   "lines": [
+    "THE SELLER",
+    "NEEDS THIS",
+    "~BEFORE YOU",
+    "~MOVE IN"
+   ],
+   "sub": "In NJ, a 1- or 2-family home needs a smoke alarm, CO alarm and fire extinguisher certificate before new people move in.",
+   "source": "N.J.A.C. 5:70-2.3 (Oct. 2026)"
+  },
+  {
+   "type": "text",
+   "eyebrow": "The rule",
+   "title": "It's on the seller",
+   "body": "NJ's fire code says a 1- or 2-family home can't be sold or occupied by someone new until the local fire official issues this certificate.",
+   "source": "N.J.A.C. 5:70-2.3 (Oct. 2026)"
+  },
+  {
+   "type": "text",
+   "eyebrow": "Smoke alarms",
+   "title": "10-year sealed batteries",
+   "body": "Battery smoke alarms have to be the 10-year sealed kind. Hardwired alarms can't be swapped out for battery ones.",
+   "source": "N.J.A.C. 5:70-4.19 (Oct. 2026)"
+  },
+  {
+   "type": "text",
+   "eyebrow": "Carbon monoxide",
+   "title": "A CO alarm near the bedrooms",
+   "body": "Homes with a fuel-burning appliance or an attached garage need a CO alarm within 10 feet of the bedrooms.",
+   "source": "N.J.A.C. 5:70-4.19 (Oct. 2026)"
+  },
+  {
+   "type": "stat",
+   "label": "Fire extinguisher, within",
+   "value": "10 FT",
+   "body": "of the kitchen, rated at least 2-A:10-B:C. Ask when the seller's inspection is booked. Talk to a real estate attorney about your situation.",
+   "source": "N.J.A.C. 5:70-4.19 (Oct. 2026)"
+  }
+ ],
+ "caption": "Here's a rule you'll wish you knew sooner: in NJ, the seller needs a fire safety certificate before you move in.\n\nNJ's fire code says a 1- or 2-family home can't be sold or occupied by someone new until the local fire official issues a smoke alarm, carbon monoxide alarm and fire extinguisher certificate. Battery smoke alarms have to be the 10-year sealed kind. Homes with a fuel-burning appliance or an attached garage need a CO alarm within 10 feet of the bedrooms. And there has to be a fire extinguisher within 10 feet of the kitchen.\n\nAsk when the seller's inspection is booked so it doesn't hold up your move.\n\nTalk to a real estate attorney about your situation.\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #SmokeAlarm #NJHomeBuying\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "Here's a rule you'll wish you knew sooner: in NJ, the seller needs a fire safety certificate before you move in.\n\nIt covers smoke alarms (10-year sealed batteries), a CO alarm near the bedrooms and a fire extinguisher near the kitchen.\n\nTalk to a real estate attorney about your situation.\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-5-70-2-3",
+  "https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-5-70-4-19"
+ ]
+}

@@ -1,0 +1,68 @@
+{
+ "id": "2026-10-30_C_shop",
+ "tag": "MYTH *VS. FACT*",
+ "style": "bold",
+ "hook": 16,
+ "story_plan": {
+  "type": "single",
+  "frames": [
+   1
+  ]
+ },
+ "lesson": "Brian Mark, \"NEW Instagram Algorithm Update Favours Carousels\", format 2 (bold warm-up with a circled official screenshot)",
+ "music": {
+  "ig_audio": "Autumn Journey - Andrea Vanzo",
+  "ig_audio_source": "https://socialpilot.co/blog/instagram-reels-trends/",
+  "ig_audio_backup": "October - Adrián Berenguer",
+  "tiktok": "auto"
+ },
+ "source": "CFPB, What exactly happens when a mortgage lender checks my credit? (reviewed Aug. 2026)",
+ "slides": [
+  {
+   "type": "cover",
+   "badge": "Myth vs. fact",
+   "lines": [
+    "SHOPPING",
+    "LENDERS WON'T",
+    "~WRECK YOUR",
+    "~CREDIT"
+   ],
+   "sub": "The biggest lie you've been told about mortgage shopping: that every credit check sinks your score.",
+   "photo": "therm_waterfront.jpg",
+   "zoom": 1.15
+  },
+  {
+   "type": "step",
+   "label": "The myth:",
+   "title": "Every lender check hurts you again",
+   "body": "So some buyers only talk to one lender and never compare offers.",
+   "source": "CFPB, What exactly happens when a mortgage lender checks my credit? (Oct. 2026)"
+  },
+  {
+   "type": "step",
+   "label": "The fact:",
+   "title": "Checks within 45 days count as one",
+   "body": "Multiple mortgage credit checks show up as a single inquiry, as long as the last one is within 45 days of the first.",
+   "source": "CFPB, What exactly happens when a mortgage lender checks my credit? (Oct. 2026)"
+  },
+  {
+   "type": "stat",
+   "label": "Your shopping window",
+   "value": "45 DAYS",
+   "body": "Line up your lender quotes inside it. The CFPB says an inquiry typically has a small negative effect on your scores.",
+   "source": "CFPB, What exactly happens when a mortgage lender checks my credit? (Oct. 2026)"
+  },
+  {
+   "type": "step",
+   "label": "One more:",
+   "title": "Hold off on other new credit",
+   "body": "The CFPB says to avoid applying for other credit right before or during the mortgage process. Talk to a licensed lender for your numbers.",
+   "source": "CFPB, What exactly happens when a mortgage lender checks my credit? (Oct. 2026)"
+  }
+ ],
+ "caption": "The biggest lie you've been told about mortgage shopping: that every credit check sinks your score.\n\nHere's what the CFPB says. Multiple credit checks from mortgage lenders show up on your credit report as a single inquiry, as long as the last one is within 45 days of the first. An inquiry typically has a small negative effect on your scores. So line up your lender quotes inside that window, and hold off on applying for other credit right before or during the mortgage process.\n\nTalk to a licensed lender for your numbers.\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #CreditScore #MortgageTips\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "The biggest lie you've been told about mortgage shopping: that every credit check sinks your score.\n\nPer the CFPB, mortgage credit checks within 45 days of the first one show up as a single inquiry. Compare lenders inside that window.\n\nTalk to a licensed lender for your numbers.\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://www.consumerfinance.gov/ask-cfpb/what-exactly-happens-when-a-mortgage-lender-checks-my-credit-en-2005/"
+ ]
+}
