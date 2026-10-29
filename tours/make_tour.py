@@ -318,7 +318,8 @@ def feather_mask(w, h, out_png, edge=45):
     m.save(out_png)
 
 
-TEXT_SECONDS = 1.5   # Therm, Oct 24 2026: the 5 lines of text show for 1.5 s at the front of the video only
+TEXT_SECONDS = 1.0   # Therm, Oct 24 2026: the 5 lines of text show only at the front of the video (1.5 s, then 1.0 s from Oct 29 2026)
+BLUR_SECONDS = 1.0   # Therm, Oct 29 2026: the blur is for the 1st second of the tour only
 
 
 def build(src, card_jpg, overlay_png, out_mp4, has_audio, dur, box=None, until=TITLE_SECONDS, boxes=None,
@@ -397,9 +398,10 @@ def main():
     ov = os.path.join(tmp, "title.png")
     box = None if a.keep_label else LABEL_BOX
     until = label_end(a.src, box) if box else None
-    # the blur stays until the edit's own label is gone (so it never peeks through); the new text
-    # itself shows only for TEXT_SECONDS
-    text_until = TEXT_SECONDS
+    if until is not None:    # Therm, Oct 29 2026: blur only the 1st second (no longer until the edit's label is gone)
+        until = BLUR_SECONDS
+    # the new text never outlasts the blur under it
+    text_until = min(TEXT_SECONDS, BLUR_SECONDS)
     if until is None:        # no SINGLE FAMILY / HOME label found: title at the top, nothing blurred
         box, until = None, TITLE_SECONDS
     title_overlay(a.town, a.county, ov, box, a.price.strip() or None, a.facts.strip() or None,

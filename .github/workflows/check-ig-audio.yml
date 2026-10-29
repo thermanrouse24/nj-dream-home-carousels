@@ -9,6 +9,10 @@ on:
         description: "Song or artist (blank = trending)"
         required: false
         default: ""
+      media_id:
+        description: "Optional: an Instagram media id to read media_audio_type for"
+        required: false
+        default: ""
   push:
     paths: [".github/audio_check_request.txt"]
 
@@ -28,9 +32,19 @@ jobs:
           META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           Q: ${{ github.event.inputs.query }}
+          MEDIA_ID: ${{ github.event.inputs.media_id }}
           AUDIO_DEBUG: "1"
         run: |
           python3 publisher/ig_audio.py ${Q:+"$Q"} 2>&1 | tee audio_check.txt || true
+          if [ -n "$MEDIA_ID" ]; then
+            python3 - <<'PY' 2>&1 | tee -a audio_check.txt || true
+          import os, requests
+          r = requests.get(f"https://graph.facebook.com/v23.0/{os.environ['MEDIA_ID']}",
+                           params={"fields": "media_audio_type,media_product_type,timestamp,permalink"},
+                           headers={"Authorization": "Bearer " + os.environ["META_PAGE_TOKEN"]}, timeout=60)
+          print("MEDIA", os.environ["MEDIA_ID"], r.status_code, r.text[:500])
+          PY
+          fi
           python3 publisher/ig_audio.py "Upside Down" 2>&1 | tee -a audio_check.txt || true
           python3 publisher/ig_audio.py --type original_sound 2>&1 | tee -a audio_check.txt || true
       - name: Save the result in the repo

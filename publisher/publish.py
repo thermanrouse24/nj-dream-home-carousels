@@ -187,9 +187,19 @@ def ig_wait(container_id, token, timeout=300):
         time.sleep(15)
 
 
-def ig_video_container(ig, token, url, media_type, extra):
+def ig_video_container(ig, token, url, media_type, extra, prefer_url=False):
     """Create a video container. Uploads the repo file directly (resumable upload), because
-    raw.githubusercontent.com serves MP4s as application/octet-stream; falls back to video_url."""
+    raw.githubusercontent.com serves MP4s as application/octet-stream; falls back to video_url.
+    prefer_url: try video_url first (Meta's Audio API docs only show audio_configuration with
+    video_url), and fall back to the resumable upload if Instagram can't fetch the file."""
+    if prefer_url and not url.startswith(RAW_PREFIX):
+        try:
+            d = api("POST", f"{GRAPH}/{ig}/media", token,
+                    data={"media_type": media_type, "video_url": url, **extra})
+            ig_wait(d["id"], token)
+            return d["id"]
+        except PublishError as e:
+            print(f"  video_url container failed ({e}); trying resumable upload")
     path = local_path(url)
     if path:
         d = api("POST", f"{GRAPH}/{ig}/media", token,
@@ -249,26 +259,33 @@ def instagram(item):
         extra = {"caption": item.get("caption", "")}
         if item.get("ig_audio_id") or item.get("ig_audio"):  # Instagram Audio API (May 2026): licensed song on the Reel
             import ig_audio
-            if item.get("ig_audio_id"):
+            hit = None
+            if item.get("ig_audio_id") and ig_audio.available(token, ig, item["ig_audio_id"]):
                 hit = {"audio_id": str(item["ig_audio_id"]), "title": item.get("ig_audio", ""), "artist": ""}
-            else:
-                hit = ig_audio.resolve(token, ig, item["ig_audio"], item.get("ig_audio_backup"))
+            if not hit and (item.get("ig_audio") or item.get("ig_audio_backup")):   # id gone: search by name, then the backup
+                hit = ig_audio.resolve(token, ig, item.get("ig_audio") or item["ig_audio_backup"], item.get("ig_audio_backup"))
             if not hit:
-                raise PublishError(f"Instagram audio not found for {item['ig_audio']!r} "
+                raise PublishError(f"Instagram audio not found for {item.get('ig_audio') or item.get('ig_audio_id')!r} "
                                    f"(backup {item.get('ig_audio_backup')!r}); not posting a silent Reel")
             extra["audio_configuration"] = ig_audio.audio_configuration(
                 hit["audio_id"], item.get("audio_volume"), item.get("video_volume"))
             item.setdefault("result", {})["ig_audio_used"] = f"{hit['title']} - {hit['artist']} ({hit['audio_id']})".replace(" -  (", " (")
-        cid = ig_video_container(ig, token, media[0], "REELS", extra)
+        item.setdefault("result", {})["audio_configuration_sent"] = extra.get("audio_configuration")
+        cid = ig_video_container(ig, token, media[0], "REELS", extra, prefer_url="audio_configuration" in extra)
         ig_wait(cid, token)
         mid = ig_publish(ig, token, cid, item)
         out = {"ig_media_id": mid}
         if "audio_configuration" in extra:   # confirm Instagram kept the song (MUSIC, not ORIGINAL_SOUND)
-            try:
-                out["media_audio_type"] = api("GET", f"{GRAPH}/{mid}", token,
-                                              params={"fields": "media_audio_type"}).get("media_audio_type")
-            except PublishError:
-                out["media_audio_type"] = "unknown"
+            out["media_audio_type"] = "unknown"
+            for wait in (0, 30, 90):         # the field can lag right after publishing
+                time.sleep(wait)
+                try:
+                    out["media_audio_type"] = api("GET", f"{GRAPH}/{mid}", token,
+                                                  params={"fields": "media_audio_type"}).get("media_audio_type")
+                except PublishError:
+                    continue
+                if out["media_audio_type"] == "MUSIC":
+                    break
         return out
     if kind == "image":
         cid = api("POST", f"{GRAPH}/{ig}/media", token, data={

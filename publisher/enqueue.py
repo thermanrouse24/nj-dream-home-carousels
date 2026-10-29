@@ -176,7 +176,7 @@ def tour(a):
                  "ig_audio": spec.get("ig_audio") or "auto",
                  "ig_audio_backup": spec.get("ig_audio_backup") or "auto",
                  "audio_volume": spec.get("audio_volume", 100),
-                 "video_volume": spec.get("video_volume", 0 if not spec.get("render_info", {}).get("source_has_audio") else 30)}]
+                 "video_volume": spec.get("video_volume", 1 if not spec.get("render_info", {}).get("source_has_audio") else 30)}]
     # Older rule (Oct 28 2026 morning): no API music -> Therm posts it himself from a post kit.
     if not a.auto:
         sys.exit(f"tour {spec.get('id')}: tours are posted by Therm with trending music. "

@@ -39,6 +39,11 @@ the Instagram Audio API (open to third-party tools since May 2026) and posts as 
    (email with both song names, both videos and captions, plus a 9:45 AM Calendar alert). He adds each song
    in the app and posts (about a minute). Never bake a commercial song into a video file.
 5. Content Log status for T: "Auto-queued 9:45 AM (no approval needed): IG Reel + <song>".
+6. Audio API details that matter (fixed Oct 29 2026 after the Plainsboro Reel posted with ORIGINAL_SOUND):
+   audio_volume and video_volume must be 1 to 100 (0 is out of range and the song was dropped; a silent
+   tour uses video_volume 1); Reels with a song are created with video_url first (the only form in Meta's
+   Audio API docs), resumable upload only as fallback; the publisher checks the audio id is still
+   available before posting and re-reads media_audio_type for up to 2 minutes after publishing.
 Compliance note kept in the email: a tour of another broker's listing still needs that broker's written OK
 (N.J.A.C. 11:5-6.1(n)); Therm chose to auto-post anyway (Oct 28 2026).
 
@@ -69,8 +74,8 @@ county small; Therm, Oct 24 2026: remove SINGLE FAMILY), redraws the cover over 
 in one style (v6, Therm's pick Oct 24 2026): TOWN, COUNTY, the facts line as on his cover (cover_facts, e.g.
 "35 Mins to NYC | 5 Beds | 5 Baths"), the price in Playfair Display (cover_price) with a gold label saying
 what it is (cover_price_note, e.g. "down payment"; never show a down payment without its label), and
-NJ DREAM HOME. The 5 lines of text show for 1.5 seconds at the front of the video only (the blur under
-them stays until the edit's own label is gone),
+NJ DREAM HOME. The blur and the 5 lines of text show for the FIRST SECOND of the video only
+(Therm, Oct 29 2026; was 1.5 s text with the blur held until the edit's own label was gone),
 and adds the business card end frame with tours/make_tour.py (run by the "Render home tour" workflow); never re-cut his edit.
 Caption (Therm's rule, Oct 25 2026): use ONLY the 3 approved captions in tours/captions.json, word for
 word, rotating 1, 2, 3 (run `python3 tours/set_caption.py tours/specs/<date>_T.json`; it also sets the
