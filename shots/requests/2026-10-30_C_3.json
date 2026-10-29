@@ -3,5 +3,12 @@
  "find": "within 45 days of the first credit check",
  "width": 1100,
  "height": 800,
- "status": "new"
+ "status": "done",
+ "shot": "shots/2026-10-30_C_3.png",
+ "circle": [
+  0.027,
+  1.123,
+  0.609,
+  0.138
+ ]
 }
