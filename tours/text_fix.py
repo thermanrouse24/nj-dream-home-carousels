@@ -103,32 +103,66 @@ def scan(src):
         if e["kind"] == "cta":          # keep the replacement no bigger than one line of text
             y1 = min(H, min(y1, y0 + 120) + 26)
         else:                           # 2-line claim boxes: cover the whole box and the header above it
-            x0, x1 = min(x0, 140), max(x1, W - 140)
+            x0, x1 = 120, W - 120          # his claim overlays are centred boxes; never paint edge to edge
             y0 = max(0, y0 - (120 if e["kind"] == "save" else 30)); y1 = min(H, y1 + (75 if e["kind"] == "save" else 30))
+            if y1 - y0 > 360:              # OCR noise can stretch it; keep it to the overlay's real size
+                c = (y0 + y1) / 2; y0, y1 = c - 180, c + 180
         e["box"] = [int(x0), int(y0), int(x1), int(y1)]
         e["t0"] = max(0.0, e["t0"] - 0.35); e["t1"] = e["t1"] + 0.4
     return events
 
 
-def patch_png(text, w, h, out):
+def patch_png(texts, w, h, out):
+    """One solid box; each replacement text on its own line (DM line in yellow)."""
     img = Image.new("RGBA", (w, h), (0, 0, 0, 0))
     d = ImageDraw.Draw(img)
-    d.rounded_rectangle((0, 0, w - 1, h - 1), radius=min(28, h // 3), fill=(0, 0, 0, 255))
-    size = int(h * 0.6)
+    d.rounded_rectangle((0, 0, w - 1, h - 1), radius=min(28, h // 4), fill=(0, 0, 0, 255))
+    n = len(texts)
+    size = int(h * 0.6 / n)
     while size > 18:
         f = ImageFont.truetype(os.path.join(ROOT, "fonts", "Montserrat-ExtraBold.ttf"), size)
-        bb = d.textbbox((0, 0), text, font=f)
-        if bb[2] - bb[0] <= w - 50 and bb[3] - bb[1] <= h - 24:
+        bbs = [d.textbbox((0, 0), t, font=f) for t in texts]
+        if max(b[2] - b[0] for b in bbs) <= w - 50 and sum(b[3] - b[1] for b in bbs) + 24 * (n - 1) <= h - 24:
             break
         size -= 2
-    d.text(((w - (bb[2] - bb[0])) / 2 - bb[0], (h - (bb[3] - bb[1])) / 2 - bb[1]), text, font=f,
-           fill=(255, 226, 92, 255) if text.startswith("DM") else (255, 255, 255, 255))
+    total = sum(b[3] - b[1] for b in bbs) + 24 * (n - 1)
+    y = (h - total) / 2
+    for t, b in zip(texts, bbs):
+        d.text(((w - (b[2] - b[0])) / 2 - b[0], y - b[1]), t, font=f,
+               fill=(255, 226, 92, 255) if t.startswith("DM") else (255, 255, 255, 255))
+        y += b[3] - b[1] + 24
     img.save(out)
+
+
+def merge(events):
+    """Overlays that overlap in time AND on screen become one box (no stacked, half-hidden patches)."""
+    ev = [dict(e, texts=[RULES[e["kind"]][1]]) for e in events]
+    changed = True
+    while changed:
+        changed = False
+        for i in range(len(ev)):
+            for j in range(i + 1, len(ev)):
+                a, b = ev[i], ev[j]
+                if a["t0"] > b["t1"] or b["t0"] > a["t1"]:
+                    continue
+                A, B = a["box"], b["box"]
+                if A[0] > B[2] or B[0] > A[2] or A[1] > B[3] + 30 or B[1] > A[3] + 30:
+                    continue
+                top, bot = (a, b) if A[1] <= B[1] else (b, a)
+                texts = [t for t in top["texts"] + bot["texts"]]
+                a.update(box=[min(A[0], B[0]), min(A[1], B[1]), max(A[2], B[2]), max(A[3], B[3])],
+                         t0=min(a["t0"], b["t0"]), t1=max(a["t1"], b["t1"]),
+                         texts=list(dict.fromkeys(texts)), kind=a["kind"] + "+" + b["kind"])
+                ev.pop(j); changed = True
+                break
+            if changed:
+                break
+    return ev
 
 
 def apply(src, events, platform, out):
     """Overlay the replacement boxes that apply to this platform. Returns the list applied."""
-    use = [e for e in events if platform in RULES[e["kind"]][2]]
+    use = merge([e for e in events if platform in RULES[e["kind"]][2]])
     if not use:
         return src, []
     tmp = tempfile.mkdtemp()
@@ -136,7 +170,7 @@ def apply(src, events, platform, out):
     for i, e in enumerate(use):
         x0, y0, x1, y1 = e["box"]
         png = os.path.join(tmp, f"p{i}.png")
-        patch_png(RULES[e["kind"]][1], x1 - x0, y1 - y0, png)
+        patch_png(e["texts"], x1 - x0, y1 - y0, png)
         inputs += ["-i", png]
         fc += f"[{prev}][{i + 1}:v]overlay={x0}:{y0}:enable='between(t,{e['t0']:.2f},{e['t1']:.2f})'[b{i + 1}];"
         prev = f"b{i + 1}"
@@ -144,7 +178,7 @@ def apply(src, events, platform, out):
     run(["ffmpeg", "-y", "-loglevel", "error", "-i", src, *inputs, "-filter_complex", fc, "-map", "[v]", "-map", "0:a?",
          "-c:v", "libx264", "-preset", "medium", "-crf", "17", "-pix_fmt", "yuv420p", "-c:a", "copy", out])
     return out, [{"kind": e["kind"], "box": e["box"], "t": [round(e["t0"], 1), round(e["t1"], 1)],
-                  "text": RULES[e["kind"]][1]} for e in use]
+                  "text": " / ".join(e["texts"])} for e in use]
 
 
 def fix(src):
