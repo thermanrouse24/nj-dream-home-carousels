@@ -189,5 +189,13 @@
  ],
  "ig_audio_id": "504545510323499",
  "ig_audio": "What A Wonderful World - Louis Armstrong",
- "ig_audio_backup": "Saxophone Getting Louder - NDIOUGA KÉBÉ RECORDS"
+ "ig_audio_backup": "Saxophone Getting Louder - NDIOUGA KÉBÉ RECORDS",
+ "handoff": {
+  "time": "09:45",
+  "song": {
+   "instagram": "What A Wonderful World - Louis Armstrong",
+   "facebook": "Hello October - Sugar Lime Blue",
+   "tiktok": "Be OK - Ingrid Michaelson"
+  }
+ }
 }
