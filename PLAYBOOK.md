@@ -32,8 +32,12 @@ the Instagram Audio API (open to third-party tools since May 2026) and posts as 
    This queues ONLY the Instagram Reel (the API can only add music to Instagram Reels). The publisher
    attaches the song (audio_configuration) and refuses to post if neither song can be found, so a tour
    is never posted silent. After posting it records media_audio_type (MUSIC = song attached).
-4. Facebook Reel and TikTok cannot get API music, so they are NOT auto-posted; they stay in Therm's post kit
-   (tours/handoff.py) for him to post with a trending song if he wants.
+4. Facebook Reel and TikTok cannot get library music through their APIs, so they are NOT auto-posted. The
+   Execution agent picks ONE trending Facebook Reels song and ONE trending TikTok sound (this week's lists,
+   clean, different from the Instagram song) and sends Therm the post kit:
+   python3 tours/handoff.py tours/specs/<date>_T.json --time 09:45 --fb-song "<Title - Artist>" --tiktok-song "<Title - Artist>"
+   (email with both song names, both videos and captions, plus a 9:45 AM Calendar alert). He adds each song
+   in the app and posts (about a minute). Never bake a commercial song into a video file.
 5. Content Log status for T: "Auto-queued 9:45 AM (no approval needed): IG Reel + <song>".
 Compliance note kept in the email: a tour of another broker's listing still needs that broker's written OK
 (N.J.A.C. 11:5-6.1(n)); Therm chose to auto-post anyway (Oct 28 2026).

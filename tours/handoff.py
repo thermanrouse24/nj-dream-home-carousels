@@ -22,6 +22,8 @@ ROOT = os.path.dirname(HERE)
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("spec"); ap.add_argument("--time", default="09:45"); ap.add_argument("--song", default="")
+    ap.add_argument("--fb-song", default="", help="Facebook song pick, 'Title - Artist' (Therm adds it in Meta Business Suite)")
+    ap.add_argument("--tiktok-song", default="", help="TikTok trending sound pick (Therm adds it in TikTok)")
     a = ap.parse_args()
     path = os.path.join(ROOT, a.spec)
     s = json.load(open(path))
@@ -37,14 +39,28 @@ def main():
     song = a.song or (s.get("music") or {}).get("ig_audio", "")
     song_line = (f"Suggested trending song: {song} (or any trending sound you like)" if song
                  else "Pick any trending sound in the app.")
-    steps = [
+    ig_auto = bool(s.get("ig_audio_id") or s.get("ig_audio"))
+    if ig_auto:   # Therm, Oct 28 2026: IG posts itself with API music; he only adds the FB and TikTok songs
+        fb, tk = a.fb_song or "a trending Facebook Reels song", a.tiktok_song or "a trending TikTok sound"
+        steps = [
+            f"Facebook: download the IG/FB video, open Meta Business Suite (or the Facebook app), Create Reel, "
+            f"pick the video, tap Add music and search \"{fb}\", paste the caption, Share.",
+            f"TikTok: download the TikTok video, open TikTok, +, Upload, tap Add sound and search \"{tk}\", "
+            "paste the TikTok caption (it says DM me \"HOME\"), Post.",
+        ]
+        song_line = (f"Instagram already posts itself at {t12} with {s.get('ig_audio')}. "
+                     f"Facebook song: {fb}. TikTok sound: {tk}.")
+        song = {"instagram": s.get("ig_audio"), "facebook": fb, "tiktok": tk}
+    else:
+      steps = [
         "Instagram: download the IG video, open Instagram, New Reel, pick the video, tap the music note and "
         "add a trending song, paste the caption, turn on Share to Facebook, Share.",
         "TikTok: download the TikTok video, open TikTok, +, Upload, tap Sounds and add a trending sound, "
         "paste the TikTok caption (it says DM me \"HOME\"), Post.",
-    ]
-    subject = f"POST AT {t12}: home tour {town} (add a trending song)"
-    h = [f"<p><b>Your approved home tour is ready to post at {t12}.</b> {html.escape(song_line)}</p>",
+      ]
+    subject = (f"POST AT {t12}: {town} tour on Facebook + TikTok (songs picked)" if ig_auto
+               else f"POST AT {t12}: home tour {town} (add a trending song)")
+    h = [f"<p><b>Your home tour is ready to post at {t12}.</b> {html.escape(song_line)}</p>",
          '<p><img src="cid:att0" width="300" alt="cover"></p>',
          f'<p>IG / Facebook video: <a href="{s["ig_url"]}">{html.escape(s["ig_url"])}</a><br>'
          f'TikTok video: <a href="{s["tiktok_url"]}">{html.escape(s["tiktok_url"])}</a></p>',
@@ -53,7 +69,7 @@ def main():
          + html.escape(s["caption"]) + "</pre>",
          "<p><b>TikTok caption</b></p><pre style=\"white-space:pre-wrap;font-family:inherit\">"
          + html.escape(s.get("tiktok_caption") or s["caption"]) + "</pre>"]
-    text = "\n\n".join([f"Your approved home tour is ready to post at {t12}. {song_line}",
+    text = "\n\n".join([f"Your home tour is ready to post at {t12}. {song_line}",
                         f"IG / Facebook video: {s['ig_url']}", f"TikTok video: {s['tiktok_url']}",
                         "\n".join(f"{i + 1}. {x}" for i, x in enumerate(steps)),
                         "Instagram / Facebook caption:\n" + s["caption"],
