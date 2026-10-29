@@ -18,9 +18,10 @@
  "approved_by": "Therm",
  "queued_at": "2026-10-28T22:16:58-04:00",
  "claimed_at": "2026-10-29T13:54:17.166802+00:00",
- "publish_called": false,
+ "publish_called": true,
  "result": {
-  "ig_audio_used": "What A Wonderful World - Louis Armstrong (504545510323499)"
+  "ig_audio_used": "What A Wonderful World - Louis Armstrong (504545510323499)",
+  "ig_creation_id": "18649688464040252"
  },
  "attempts": 2,
  "error": "video upload failed 400: {\"debug_info\":{\"retriable\":false,\"type\":\"ProcessingFailedError\",\"message\":\"Request processing failed\"}}"
