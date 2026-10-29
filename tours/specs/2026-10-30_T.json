@@ -12,7 +12,7 @@
  "cover_facts": "50 Mins to NYC | 5 Beds | 2.5 Baths",
  "cover_price": "$1,299,900",
  "cover_price_note": "list price",
- "status": "new",
+ "status": "rendered",
  "caption_option": 3,
  "caption": "STOP SCROLLING 📲\n\nSTART TOURING 🔑\n\nCOULD THIS BE YOURS? 👀🔥\n\n🚨 TAKE A LOOK AT THIS ONE ☝🏾🔥\n\nWhen you work with me:\n✔️ You know what you can afford before you fall in love 💰\n✔️ You avoid the traps that slow buyers down\n✔️ You get a smooth, stress-free process from offer to keys 😌\n\nReal estate is a strategy. Let's build yours.\n\n_____\n\n🔥 GET STARTED IN 3 SIMPLE STEPS:\n\n✅ Step 1: Tap the LINK IN MY BIO and fill out the EZ form\n⏱️ 30 seconds, no strings attached\n\n✅ Step 2: Expect a call or text from me within 24 hours 📲\nWe'll schedule your personal buyer consultation\n\n✅ Step 3: We find the RIGHT fit, negotiate hard 💪🏾\n...and keep more money in your pocket 💸\n\nCLICK THE LINK IN MY BIO ✅ CLICK THE LINK IN MY BIO ✅\n\n#NJRealEstate #NJRealtor #NJHomes #FirstTimeHomeBuyer\n\nTherm The Realtor | eXp Realty",
  "tiktok_caption": "STOP SCROLLING 📲\n\nSTART TOURING 🔑\n\nCOULD THIS BE YOURS? 👀🔥\n\n🚨 TAKE A LOOK AT THIS ONE ☝🏾🔥\n\nWhen you work with me:\n✔️ You know what you can afford before you fall in love 💰\n✔️ You avoid the traps that slow buyers down\n✔️ You get a smooth, stress-free process from offer to keys 😌\n\nReal estate is a strategy. Let's build yours.\n\n_____\n\n🔥 GET STARTED IN 3 SIMPLE STEPS:\n\n✅ Step 1: DM me \"HOME\" and I'll send you the EZ form\n⏱️ 30 seconds, no strings attached\n\n✅ Step 2: Expect a call or text from me within 24 hours 📲\nWe'll schedule your personal buyer consultation\n\n✅ Step 3: We find the RIGHT fit, negotiate hard 💪🏾\n...and keep more money in your pocket 💸\n\nDM me \"HOME\" to get started. ✅ DM ME \"HOME\" ✅\n\n#NJRealEstate #NJRealtor #NJHomes #FirstTimeHomeBuyer\n\nTherm The Realtor | eXp Realty",
@@ -28,8 +28,8 @@
   "source_has_audio": false,
   "source_mean_volume_db": null,
   "has_music": false,
-  "ig_mb": 33.9,
-  "tiktok_mb": 33.1,
+  "ig_mb": 33.8,
+  "tiktok_mb": 33.3,
   "phone_replaced": {
    "phone_box": [
     10,
@@ -51,7 +51,7 @@
       120,
       921,
       960,
-      1177
+      1191
      ],
      "t": [
       11.7,
@@ -63,13 +63,27 @@
      "kind": "best",
      "box": [
       120,
-      896,
+      897,
       960,
-      977
+      1089
      ],
      "t": [
-      17.6,
-      21.4
+      17.9,
+      19.6
+     ],
+     "text": "LET'S MAKE YOUR PLAN."
+    },
+    {
+     "kind": "best",
+     "box": [
+      120,
+      892,
+      960,
+      1090
+     ],
+     "t": [
+      19.9,
+      21.1
      ],
      "text": "LET'S MAKE YOUR PLAN."
     }
@@ -78,13 +92,27 @@
     {
      "kind": "cta",
      "box": [
-      237,
-      662,
-      837,
-      808
+      216,
+      669,
+      864,
+      815
      ],
      "t": [
       5.9,
+      6.7
+     ],
+     "text": "DM ME \"HOME\""
+    },
+    {
+     "kind": "cta",
+     "box": [
+      237,
+      672,
+      840,
+      818
+     ],
+     "t": [
+      6.9,
       9.7
      ],
      "text": "DM ME \"HOME\""
@@ -94,8 +122,8 @@
      "box": [
       78,
       921,
-      998,
-      1327
+      999,
+      1324
      ],
      "t": [
       11.7,
@@ -104,32 +132,46 @@
      "text": "TAKES 30 SECONDS. NO OBLIGATION. / DM ME \"HOME\""
     },
     {
-     "kind": "cta+best",
-     "box": [
-      120,
-      896,
-      960,
-      1120
-     ],
-     "t": [
-      17.6,
-      21.4
-     ],
-     "text": "LET'S MAKE YOUR PLAN. / DM ME \"HOME\""
-    },
-    {
      "kind": "cta",
      "box": [
-      51,
-      741,
+      45,
+      747,
       1027,
-      887
+      893
      ],
      "t": [
-      29.9,
-      34.4
+      29.4,
+      34.6
      ],
      "text": "DM ME \"HOME\""
+    },
+    {
+     "kind": "best",
+     "box": [
+      120,
+      897,
+      960,
+      1089
+     ],
+     "t": [
+      17.9,
+      19.6
+     ],
+     "text": "LET'S MAKE YOUR PLAN."
+    },
+    {
+     "kind": "best",
+     "box": [
+      120,
+      892,
+      960,
+      1090
+     ],
+     "t": [
+      19.9,
+      21.1
+     ],
+     "text": "LET'S MAKE YOUR PLAN."
     }
    ]
   }
