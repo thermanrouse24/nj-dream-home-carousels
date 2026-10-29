@@ -162,7 +162,18 @@ def merge(events):
 
 def apply(src, events, platform, out):
     """Overlay the replacement boxes that apply to this platform. Returns the list applied."""
-    use = merge([e for e in events if platform in RULES[e["kind"]][2]])
+    keep = [e for e in events if platform not in RULES[e["kind"]][2]]     # lines that stay (e.g. link in bio on IG)
+    use = [dict(e, box=list(e["box"])) for e in events if platform in RULES[e["kind"]][2]]
+    for e in use:   # never cut into a line that stays: stop the patch just above or below it
+        for k in keep:
+            if e["t0"] > k["t1"] or k["t0"] > e["t1"]:
+                continue
+            b, kb = e["box"], k["box"]
+            if b[1] < kb[1] < b[3]:
+                b[3] = kb[1] - 4
+            elif b[1] < kb[3] < b[3]:
+                b[1] = kb[3] + 4
+    use = merge([e for e in use if e["box"][3] - e["box"][1] > 40])
     if not use:
         return src, []
     tmp = tempfile.mkdtemp()
