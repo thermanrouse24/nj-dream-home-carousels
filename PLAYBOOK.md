@@ -53,7 +53,7 @@ Therm the post kit (cover inline, both video links, both captions, a trending-so
 Calendar event at the post time ("POST HOME TOUR NOW", pop-ups at 0 and 1 min). He posts it in the
 Instagram app (Share to Facebook on) and the TikTok app. enqueue.py tour refuses without --auto.
 
-**THERM'S NUMBER ONLY (Therm, Oct 28 2026).** Every post shows Therm's name and number. The tour edits
+**THERM'S NUMBER ONLY (Therm, Oct 28 2026; repeated Oct 29 2026: on ALL tour edits remove VINNY and the 347 number, show THERM and 917).** enqueue.py refuses a tour unless render_info.phone_replaced is set or the spec has "phone_checked": true after someone looked at the preview. Every post shows Therm's name and number. The tour edits
 end with someone else's black "Call/Text 347-988-8291 Vinny" bar; make_tour.py finds that bar and covers
 it with "Call/Text 917.843.5290 Therm The Realtor" (same black bar, white serif text). render_info.phone_replaced
 records it. If a tour still shows another person's name or number in its preview, do not queue it; report it.

@@ -158,6 +158,12 @@ def tour(a):
     # Therm's rule (Oct 28 2026, evening): every tour gets a song through the Instagram Audio API and
     # posts as an Instagram Reel WITHOUT his approval, as long as the music is attached. Only the
     # Instagram Reel can carry API music, so only it is queued; Facebook and TikTok stay in his post kit.
+    # Therm (Oct 28-29 2026): every tour shows THERM 917.843.5290, never Vinny / 347-988-8291.
+    # make_tour.py covers the edit's Call/Text bar; if it found no bar, someone must have LOOKED at the
+    # preview and confirmed only Therm's name/number shows ("phone_checked": true in the spec).
+    if not (spec.get("render_info", {}).get("phone_replaced") or spec.get("phone_checked")):
+        sys.exit(f"tour {spec.get('id')}: the Call/Text bar was not replaced with Therm's. Look at "
+                 f"{spec.get('preview')}; if it shows only Therm / 917 (no Vinny / 347), set \"phone_checked\": true.")
     caps = json.load(open(os.path.join(ROOT, "tours", "captions.json")))["captions"]
     if spec.get("caption") not in {c["caption"] for c in caps}:   # Therm: only his 3 captions, ever
         sys.exit(f"tour {spec.get('id')}: caption is not one of Therm's 3 approved captions. "
