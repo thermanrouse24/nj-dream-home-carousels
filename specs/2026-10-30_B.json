@@ -12,21 +12,21 @@
  "music": {
   "ig_audio": "Training Season - Dua Lipa",
   "ig_audio_source": "https://later.com/blog/instagram-reels-trends/",
-  "ig_audio_backup": "Autumn Colors - LuLuMusic",
+  "ig_audio_backup": "Sunshine - Twista",
   "tiktok": "auto"
  },
  "source": "NJ Transit, Denville Station (Oct. 2026)",
  "slides": [
   {
    "type": "cover",
-   "eyebrow": "Struggling to pick a train town? Listen.",
+   "eyebrow": "Moving to Denville? Listen.",
    "lines": [
     "ONE STATION.",
     "2 TRAIN LINES.",
-    "~3 THINGS",
-    "~TO KNOW"
+    "~$4 A DAY",
+    "~TO PARK"
    ],
-   "sub": "Here's what Denville's NJ Transit station gives you before you make the move."
+   "sub": "Here's what the Denville NJ Transit station gives you."
   },
   {
    "type": "place",
@@ -36,7 +36,7 @@
    "meta": "Denville Station, Estling Lake Rd",
    "chips": [
     "NJ Transit",
-    "To New York Penn",
+    "Penn after Nov. 14",
     "To Hoboken"
    ],
    "body": "Denville is on NJ Transit's Morristown Line, with trains to New York Penn Station and Hoboken. Through Nov. 14, weekday Midtown Direct trains end at Hoboken.",
@@ -58,7 +58,7 @@
    "body": "The Montclair-Boonton Line stops at the same station, with service to Hoboken.",
    "scene": "train",
    "variant": 1,
-   "source": "NJ Transit, Denville Station and Montclair-Boonton Line (Oct. 2026)"
+   "source": "NJ Transit, Denville Station (Oct. 2026)"
   },
   {
    "type": "place",
@@ -98,8 +98,8 @@
    "source": "NJ Transit, Denville Station (Oct. 2026)"
   }
  ],
- "caption": "Struggling to pick a Morris County train town? Listen. Denville has one station and 2 NJ Transit lines.\n\nThe Morristown Line stops in Denville with trains to New York Penn Station and Hoboken. Heads up: through Nov. 14, weekday Midtown Direct trains end at Hoboken during NJ Transit's Portal Bridge work. The Montclair-Boonton Line stops at the same station, with service to Hoboken. NJ Transit owns 2 lots on Estling Lake Road. Parking is $4 a day or $150 a quarter with a permit, and evenings and weekends are free.\n\nTouring homes in Denville? Time the drive from the house to the station at rush hour before you decide.\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #DenvilleNJ #MorrisCountyNJ\n\nTherm The Realtor | eXp Realty",
- "threads_caption": "Struggling to pick a Morris County train town? Listen. Denville has one station and 2 NJ Transit lines.\n\nThe Morristown Line runs to New York Penn and Hoboken (weekdays through Nov. 14, Hoboken only). The Montclair-Boonton Line runs to Hoboken. Parking on Estling Lake Road is $4 a day, free on weekends.\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "caption": "Moving to Denville? Listen. One station, 2 NJ Transit lines and $4 a day to park.\n\nThe Morristown Line stops in Denville with trains to New York Penn Station and Hoboken. Heads up: through Nov. 14, weekday Midtown Direct trains end at Hoboken during NJ Transit's Portal Bridge work. The Montclair-Boonton Line stops at the same station, with service to Hoboken. NJ Transit owns 2 lots on Estling Lake Road. Parking is $4 a day or $150 a quarter with a permit, and evenings and weekends are free.\n\nTouring homes in Denville? Time the drive from the house to the station at rush hour before you decide.\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #DenvilleNJ #MorrisCountyNJ\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "Moving to Denville? Listen. One station, 2 NJ Transit lines and $4 a day to park.\n\nThe Morristown Line runs to New York Penn and Hoboken (weekdays through Nov. 14, Hoboken only). The Montclair-Boonton Line runs to Hoboken. Parking on Estling Lake Road is $4 a day, free on weekends.\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
  "sources": [
   "https://njtransit.com/station/denville-station",
   "https://njtransit.com/PortalCutover",
