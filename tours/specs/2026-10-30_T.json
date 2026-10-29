@@ -12,8 +12,268 @@
  "cover_facts": "50 Mins to NYC | 5 Beds | 3 Baths",
  "cover_price": "$45,497",
  "cover_price_note": "down payment",
- "status": "new",
+ "status": "rendered",
  "caption_option": 3,
  "caption": "STOP SCROLLING 📲\n\nSTART TOURING 🔑\n\nCOULD THIS BE YOURS? 👀🔥\n\n🚨 TAKE A LOOK AT THIS ONE ☝🏾🔥\n\nWhen you work with me:\n✔️ You know what you can afford before you fall in love 💰\n✔️ You avoid the traps that slow buyers down\n✔️ You get a smooth, stress-free process from offer to keys 😌\n\nReal estate is a strategy. Let's build yours.\n\n_____\n\n🔥 GET STARTED IN 3 SIMPLE STEPS:\n\n✅ Step 1: Tap the LINK IN MY BIO and fill out the EZ form\n⏱️ 30 seconds, no strings attached\n\n✅ Step 2: Expect a call or text from me within 24 hours 📲\nWe'll schedule your personal buyer consultation\n\n✅ Step 3: We find the RIGHT fit, negotiate hard 💪🏾\n...and keep more money in your pocket 💸\n\nCLICK THE LINK IN MY BIO ✅ CLICK THE LINK IN MY BIO ✅\n\n#NJRealEstate #NJRealtor #NJHomes #FirstTimeHomeBuyer\n\nTherm The Realtor | eXp Realty",
- "tiktok_caption": "STOP SCROLLING 📲\n\nSTART TOURING 🔑\n\nCOULD THIS BE YOURS? 👀🔥\n\n🚨 TAKE A LOOK AT THIS ONE ☝🏾🔥\n\nWhen you work with me:\n✔️ You know what you can afford before you fall in love 💰\n✔️ You avoid the traps that slow buyers down\n✔️ You get a smooth, stress-free process from offer to keys 😌\n\nReal estate is a strategy. Let's build yours.\n\n_____\n\n🔥 GET STARTED IN 3 SIMPLE STEPS:\n\n✅ Step 1: DM me \"HOME\" and I'll send you the EZ form\n⏱️ 30 seconds, no strings attached\n\n✅ Step 2: Expect a call or text from me within 24 hours 📲\nWe'll schedule your personal buyer consultation\n\n✅ Step 3: We find the RIGHT fit, negotiate hard 💪🏾\n...and keep more money in your pocket 💸\n\nDM me \"HOME\" to get started. ✅ DM ME \"HOME\" ✅\n\n#NJRealEstate #NJRealtor #NJHomes #FirstTimeHomeBuyer\n\nTherm The Realtor | eXp Realty"
+ "tiktok_caption": "STOP SCROLLING 📲\n\nSTART TOURING 🔑\n\nCOULD THIS BE YOURS? 👀🔥\n\n🚨 TAKE A LOOK AT THIS ONE ☝🏾🔥\n\nWhen you work with me:\n✔️ You know what you can afford before you fall in love 💰\n✔️ You avoid the traps that slow buyers down\n✔️ You get a smooth, stress-free process from offer to keys 😌\n\nReal estate is a strategy. Let's build yours.\n\n_____\n\n🔥 GET STARTED IN 3 SIMPLE STEPS:\n\n✅ Step 1: DM me \"HOME\" and I'll send you the EZ form\n⏱️ 30 seconds, no strings attached\n\n✅ Step 2: Expect a call or text from me within 24 hours 📲\nWe'll schedule your personal buyer consultation\n\n✅ Step 3: We find the RIGHT fit, negotiate hard 💪🏾\n...and keep more money in your pocket 💸\n\nDM me \"HOME\" to get started. ✅ DM ME \"HOME\" ✅\n\n#NJRealEstate #NJRealtor #NJHomes #FirstTimeHomeBuyer\n\nTherm The Realtor | eXp Realty",
+ "ig_url": "https://github.com/thermanrouse24/nj-dream-home-carousels/releases/download/tours/2026-10-30_T_edison_ig.mp4",
+ "tiktok_url": "https://github.com/thermanrouse24/nj-dream-home-carousels/releases/download/tours/2026-10-30_T_edison_tiktok.mp4",
+ "cover": "tours/previews/2026-10-30_T_edison_cover.jpg",
+ "preview": "tours/previews/2026-10-30_T_edison_preview.jpg",
+ "render_info": {
+  "text_until_s": 1.0,
+  "blur_until_s": 1.0,
+  "duration_s": 41.4,
+  "source_duration_s": 38.4,
+  "source_has_audio": false,
+  "source_mean_volume_db": null,
+  "has_music": false,
+  "ig_mb": 33.9,
+  "tiktok_mb": 33.1,
+  "phone_replaced": {
+   "phone_box": [
+    10,
+    1331,
+    1002,
+    131
+   ],
+   "phone_box_s": [
+    35.2,
+    38.4
+   ],
+   "phone_text": "Call/Text 917.843.5290 Therm The Realtor"
+  },
+  "text_fixes": {
+   "ig": [
+    {
+     "kind": "save",
+     "box": [
+      120,
+      921,
+      960,
+      1177
+     ],
+     "t": [
+      11.7,
+      15.2
+     ],
+     "text": "TAKES 30 SECONDS. NO OBLIGATION."
+    },
+    {
+     "kind": "best",
+     "box": [
+      120,
+      896,
+      960,
+      977
+     ],
+     "t": [
+      17.6,
+      21.4
+     ],
+     "text": "LET'S MAKE YOUR PLAN."
+    }
+   ],
+   "tiktok": [
+    {
+     "kind": "cta",
+     "box": [
+      237,
+      662,
+      837,
+      808
+     ],
+     "t": [
+      5.9,
+      9.7
+     ],
+     "text": "DM ME \"HOME\""
+    },
+    {
+     "kind": "cta+save",
+     "box": [
+      78,
+      921,
+      998,
+      1327
+     ],
+     "t": [
+      11.7,
+      15.2
+     ],
+     "text": "TAKES 30 SECONDS. NO OBLIGATION. / DM ME \"HOME\""
+    },
+    {
+     "kind": "cta+best",
+     "box": [
+      120,
+      896,
+      960,
+      1120
+     ],
+     "t": [
+      17.6,
+      21.4
+     ],
+     "text": "LET'S MAKE YOUR PLAN. / DM ME \"HOME\""
+    },
+    {
+     "kind": "cta",
+     "box": [
+      51,
+      741,
+      1027,
+      887
+     ],
+     "t": [
+      29.9,
+      34.4
+     ],
+     "text": "DM ME \"HOME\""
+    }
+   ]
+  }
+ },
+ "audio_candidates": [
+  {
+   "audio_id": "1008638297531946",
+   "title": "Remember Me (Lullaby)",
+   "artist": "Tat the Musician",
+   "type": "music",
+   "duration_ms": 69838
+  },
+  {
+   "audio_id": "504545510323499",
+   "title": "What A Wonderful World",
+   "artist": "Louis Armstrong",
+   "type": "music",
+   "duration_ms": 137146
+  },
+  {
+   "audio_id": "1599863094669308",
+   "title": "Recuérdame",
+   "artist": "Natalia Lafourcade, Carlos Rivera",
+   "type": "music",
+   "duration_ms": 263080
+  },
+  {
+   "audio_id": "4588548731466513",
+   "title": "Saxophone Getting Louder",
+   "artist": "NDIOUGA KÉBÉ RECORDS",
+   "type": "music",
+   "duration_ms": 56999
+  },
+  {
+   "audio_id": "1064529169619198",
+   "title": "Babydoll",
+   "artist": "Jamie Miller, Antonio Cipriano",
+   "type": "music",
+   "duration_ms": 178822
+  },
+  {
+   "audio_id": "563383544133902",
+   "title": "Angel (feat. Horace Andy)",
+   "artist": "Massive Attack",
+   "type": "music",
+   "duration_ms": 382666
+  },
+  {
+   "audio_id": "470505612679493",
+   "title": "Luminary",
+   "artist": "Joel Sunny",
+   "type": "music",
+   "duration_ms": 190265
+  },
+  {
+   "audio_id": "1397521997525654",
+   "title": "Y Que Fue?",
+   "artist": "Don Miguelo",
+   "type": "music",
+   "duration_ms": 163759
+  },
+  {
+   "audio_id": "1358715284711534",
+   "title": "Crossing the Marigold Bridge",
+   "artist": "Michael Giacchino",
+   "type": "music",
+   "duration_ms": 108733
+  },
+  {
+   "audio_id": "1085379239199980",
+   "title": "Hala Madrid ...y nada más (feat. RedOne)",
+   "artist": "Real Madrid",
+   "type": "music",
+   "duration_ms": 177031
+  },
+  {
+   "audio_id": "981955014255121",
+   "title": "Loverboy (Remix) [feat. Ludacris, Da Brat, Shawnna, Twenty II]",
+   "artist": "Mariah Carey",
+   "type": "music",
+   "duration_ms": 270400
+  },
+  {
+   "audio_id": "1057321110635519",
+   "title": "The Calm",
+   "artist": "Wiz Khalifa",
+   "type": "music",
+   "duration_ms": 155232
+  },
+  {
+   "audio_id": "2895738664030116",
+   "title": "Regulate (feat. Nate Dogg)",
+   "artist": "Warren G",
+   "type": "music",
+   "duration_ms": 248887
+  },
+  {
+   "audio_id": "1071006952433334",
+   "title": "My Kinda Love",
+   "artist": "STELLA LEFTY, Bailey Zimmerman",
+   "type": "music",
+   "duration_ms": 220931
+  },
+  {
+   "audio_id": "4321185548142585",
+   "title": "fantasmas",
+   "artist": "HUMBE",
+   "type": "music",
+   "duration_ms": 287248
+  },
+  {
+   "audio_id": "425548926197040",
+   "title": "La Nostalgia (Solo Guitar Version)",
+   "artist": "Mexican Music Factory, Antonio Garcia Isaac, José Isidoro",
+   "type": "music",
+   "duration_ms": 218396
+  },
+  {
+   "audio_id": "556909836877181",
+   "title": "Lady Love",
+   "artist": "Piero Piccioni",
+   "type": "music",
+   "duration_ms": 117366
+  },
+  {
+   "audio_id": "1125699087111585",
+   "title": "Lil Krazy",
+   "artist": "Yeat, Lyfestyle Corporation",
+   "type": "music",
+   "duration_ms": 165000
+  },
+  {
+   "audio_id": "1627228895519871",
+   "title": "Un Día a la Vez",
+   "artist": "Bago Villain",
+   "type": "music",
+   "duration_ms": 259920
+  },
+  {
+   "audio_id": "2187137531744861",
+   "title": "Luminary",
+   "artist": "Joel Sunny",
+   "type": "music",
+   "duration_ms": 189000
+  }
+ ]
 }
