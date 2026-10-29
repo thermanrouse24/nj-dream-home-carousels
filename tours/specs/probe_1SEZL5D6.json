@@ -2,5 +2,7 @@
  "id": "probe_1SEZL5D6",
  "drive_file_id": "1SEZL5D6VYzMSQDVsEdwbxyf8rwo_F5tb",
  "drive_title": "19 Bradford Rd Edison NJ $1,299,900 5BR 3BA.mp4",
- "status": "probe"
+ "status": "probed",
+ "frames": "tours/probes/probe_1SEZL5D6_frames.jpg",
+ "source_duration_s": 38.4
 }
