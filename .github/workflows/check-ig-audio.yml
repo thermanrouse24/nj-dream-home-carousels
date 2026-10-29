@@ -43,6 +43,10 @@ jobs:
                            params={"fields": "media_audio_type,media_product_type,timestamp,permalink"},
                            headers={"Authorization": "Bearer " + os.environ["META_PAGE_TOKEN"]}, timeout=60)
           print("MEDIA", os.environ["MEDIA_ID"], r.status_code, r.text[:500])
+          r = requests.get(f"https://graph.facebook.com/v23.0/{os.environ['IG_USER_ID']}/media",
+                           params={"fields": "id,media_product_type,media_audio_type,timestamp,permalink", "limit": 8},
+                           headers={"Authorization": "Bearer " + os.environ["META_PAGE_TOKEN"]}, timeout=60)
+          print("RECENT", r.status_code, r.text[:2500])
           PY
           fi
           python3 publisher/ig_audio.py "Upside Down" 2>&1 | tee -a audio_check.txt || true
