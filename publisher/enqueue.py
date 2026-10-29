@@ -158,6 +158,10 @@ def tour(a):
     # Therm's rule (Oct 28 2026, evening): every tour gets a song through the Instagram Audio API and
     # posts as an Instagram Reel WITHOUT his approval, as long as the music is attached. Only the
     # Instagram Reel can carry API music, so only it is queued; Facebook and TikTok stay in his post kit.
+    caps = json.load(open(os.path.join(ROOT, "tours", "captions.json")))["captions"]
+    if spec.get("caption") not in {c["caption"] for c in caps}:   # Therm: only his 3 captions, ever
+        sys.exit(f"tour {spec.get('id')}: caption is not one of Therm's 3 approved captions. "
+                 "Run python3 tours/set_caption.py on the spec first.")
     if spec.get("ig_audio_id") or spec.get("ig_audio"):
         date = a.date or spec["date"]
         return [{"id": f"{date}_T_ig_reel", "platform": "instagram", "type": "reel",

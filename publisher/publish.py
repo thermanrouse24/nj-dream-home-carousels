@@ -474,6 +474,11 @@ def validate(it):
             problems.append("TikTok caption says 'link in my bio' (use DM me \"HOME\")")
         if TIKTOK_CTA not in cap:
             problems.append("TikTok caption must include: " + TIKTOK_CTA)
+    if it.get("tour"):  # Therm's rule (Oct 25 2026, confirmed Oct 29): ONLY his 3 approved captions, word for word
+        caps = json.load(open(os.path.join(ROOT, "tours", "captions.json")))["captions"]
+        ok = {c["caption"] for c in caps} | {c["tiktok_caption"] for c in caps}
+        if cap not in ok:
+            problems.append("home tour caption is not one of Therm's 3 approved captions (tours/captions.json)")
     if it.get("tour") and not it.get("has_music"):  # Therm's rule (Oct 28 2026)
         problems.append("home tour has no music: never post tours without music")
     if not isinstance(it.get("media"), list) or not it.get("media"):
