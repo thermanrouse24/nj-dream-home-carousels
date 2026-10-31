@@ -1,1 +1,14 @@
-{"url": "https://www.consumerfinance.gov/ask-cfpb/what-fees-or-charges-are-paid-when-closing-on-a-mortgage-and-who-pays-them-en-1845/", "find": "Appraisal fees", "width": 1100, "height": 800, "status": "new"}
+{
+ "url": "https://www.consumerfinance.gov/ask-cfpb/what-fees-or-charges-are-paid-when-closing-on-a-mortgage-and-who-pays-them-en-1845/",
+ "find": "Appraisal fees",
+ "width": 1100,
+ "height": 800,
+ "status": "done",
+ "shot": "shots/2026-11-01_C_2.png",
+ "circle": [
+  0.044,
+  0.993,
+  0.605,
+  0.028
+ ]
+}
