@@ -171,6 +171,8 @@ def apply(src, events, platform, out):
             if e["t0"] > k["t1"] or k["t0"] > e["t1"]:
                 continue
             b, kb = e["box"], k["box"]
+            if e["kind"] == "best" and kb[1] < b[1] + 240:   # OCR misread line 2 of the claim as a CTA:
+                continue                                       # it is part of the claim, so cover it too
             if b[1] < kb[1] < b[3]:
                 b[3] = kb[1] - 4
             elif b[1] < kb[3] < b[3]:
