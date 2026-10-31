@@ -2,5 +2,7 @@
  "id": "probe_1yWa_V39",
  "drive_file_id": "1yWa_V39SM01QWGKKelk5yhc8rdJF5QdN",
  "drive_title": "206 Columbia Street, Wood Ridge | $1,299,900 | 5 Beds | 3 Baths",
- "status": "probe"
+ "status": "probed",
+ "frames": "tours/probes/probe_1yWa_V39_frames.jpg",
+ "source_duration_s": 36.2
 }
