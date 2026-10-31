@@ -107,6 +107,8 @@ def scan(src):
             y0 = max(0, y0 - (120 if e["kind"] == "save" else 30)); y1 = min(H, y1 + (75 if e["kind"] == "save" else 30))
             if y1 - y0 > 360:              # OCR noise can stretch it; keep it to the overlay's real size
                 c = (y0 + y1) / 2; y0, y1 = c - 180, c + 180
+            if e["kind"] == "best" and y1 - y0 < 240:   # 2-line claim; OCR sometimes reads only line 1
+                y1 = min(H, y0 + 240)      # (Nov 1 2026: "Work with the best in business." showed under the IG box)
         e["box"] = [int(x0), int(y0), int(x1), int(y1)]
         e["t0"] = max(0.0, e["t0"] - 0.35); e["t1"] = e["t1"] + 0.4
     return events

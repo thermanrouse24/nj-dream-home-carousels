@@ -24,10 +24,10 @@
    "type": "cover",
    "badge": "NJ buyers",
    "lines": [
-    "THE DOWN",
-    "PAYMENT ISN'T",
-    "~THE ONLY",
-    "~CHECK"
+    "3 COSTS",
+    "BESIDES YOUR",
+    "~DOWN",
+    "~PAYMENT"
    ],
    "sub": "Budgeting only for the down payment? That mistake costs more than you think.",
    "photo": "therm_street.jpg",
@@ -63,9 +63,9 @@
    "shot": "shots/2026-11-01_C_5.png",
    "circle": [
     0.02,
-    0.8,
+    0.825,
     0.93,
-    0.15
+    0.1
    ]
   }
  ],
