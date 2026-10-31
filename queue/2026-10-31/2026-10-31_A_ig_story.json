@@ -12,7 +12,7 @@
    1
   ]
  },
- "status": "publishing",
+ "status": "published",
  "approved_by": "Therm",
  "queued_at": "2026-10-31T13:23:38-04:00",
  "claimed_at": "2026-10-31T17:30:48.829757+00:00",
@@ -22,5 +22,6 @@
    "17966439312226959"
   ],
   "ig_story_creation_1": "18650505235040252"
- }
+ },
+ "published_at": "2026-10-31T17:31:15.731343+00:00"
 }
