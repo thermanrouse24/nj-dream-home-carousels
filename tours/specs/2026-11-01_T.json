@@ -12,8 +12,268 @@
  "cover_facts": "25 Mins to NYC | 5 Beds | 3 Baths",
  "cover_price": "$45,497",
  "cover_price_note": "down payment",
- "status": "new",
+ "status": "rendered",
  "caption_option": 1,
  "caption": "WHY KEEP RENTING ⁉️\n\nWHEN YOU COULD OWN 🔑\n\nWHO'S NEXT? 👀🔥\n\n👀👀🚨 YOU HAVE TO SEE THIS ONE 🔥🔥\n\nWATCH TILL THE END ☝🏾\n\nHere's how I help my buyers:\n✔️ Know their numbers before they shop 💰\n✔️ Skip the mistakes that cost first-time buyers\n✔️ Keep the whole process simple and low-stress 😌\n\nBuying a home isn't luck. It's a plan.\n\n_____\n\n🔥 HOW TO GET STARTED (3 EASY STEPS):\n\n✅ Step 1: Tap the LINK IN MY BIO and fill out the quick form\n⏱️ About 30 seconds, no obligation\n\n✅ Step 2: I reach out within 24 hours 📲\nWe'll set up your free buyer consultation\n\n✅ Step 3: We find the RIGHT home, I negotiate for you 💪🏾\n...and we protect your budget the whole way 💸\n\nCLICK THE LINK IN MY BIO ✅ CLICK THE LINK IN MY BIO ✅\n\n#NJRealEstate #NJRealtor #NJHomes #FirstTimeHomeBuyer\n\nTherm The Realtor | eXp Realty",
- "tiktok_caption": "WHY KEEP RENTING ⁉️\n\nWHEN YOU COULD OWN 🔑\n\nWHO'S NEXT? 👀🔥\n\n👀👀🚨 YOU HAVE TO SEE THIS ONE 🔥🔥\n\nWATCH TILL THE END ☝🏾\n\nHere's how I help my buyers:\n✔️ Know their numbers before they shop 💰\n✔️ Skip the mistakes that cost first-time buyers\n✔️ Keep the whole process simple and low-stress 😌\n\nBuying a home isn't luck. It's a plan.\n\n_____\n\n🔥 HOW TO GET STARTED (3 EASY STEPS):\n\n✅ Step 1: DM me \"HOME\" and I'll send you the quick form\n⏱️ About 30 seconds, no obligation\n\n✅ Step 2: I reach out within 24 hours 📲\nWe'll set up your free buyer consultation\n\n✅ Step 3: We find the RIGHT home, I negotiate for you 💪🏾\n...and we protect your budget the whole way 💸\n\nDM me \"HOME\" to get started. ✅ DM ME \"HOME\" ✅\n\n#NJRealEstate #NJRealtor #NJHomes #FirstTimeHomeBuyer\n\nTherm The Realtor | eXp Realty"
+ "tiktok_caption": "WHY KEEP RENTING ⁉️\n\nWHEN YOU COULD OWN 🔑\n\nWHO'S NEXT? 👀🔥\n\n👀👀🚨 YOU HAVE TO SEE THIS ONE 🔥🔥\n\nWATCH TILL THE END ☝🏾\n\nHere's how I help my buyers:\n✔️ Know their numbers before they shop 💰\n✔️ Skip the mistakes that cost first-time buyers\n✔️ Keep the whole process simple and low-stress 😌\n\nBuying a home isn't luck. It's a plan.\n\n_____\n\n🔥 HOW TO GET STARTED (3 EASY STEPS):\n\n✅ Step 1: DM me \"HOME\" and I'll send you the quick form\n⏱️ About 30 seconds, no obligation\n\n✅ Step 2: I reach out within 24 hours 📲\nWe'll set up your free buyer consultation\n\n✅ Step 3: We find the RIGHT home, I negotiate for you 💪🏾\n...and we protect your budget the whole way 💸\n\nDM me \"HOME\" to get started. ✅ DM ME \"HOME\" ✅\n\n#NJRealEstate #NJRealtor #NJHomes #FirstTimeHomeBuyer\n\nTherm The Realtor | eXp Realty",
+ "ig_url": "https://github.com/thermanrouse24/nj-dream-home-carousels/releases/download/tours/2026-11-01_T_wood-ridge_ig.mp4",
+ "tiktok_url": "https://github.com/thermanrouse24/nj-dream-home-carousels/releases/download/tours/2026-11-01_T_wood-ridge_tiktok.mp4",
+ "cover": "tours/previews/2026-11-01_T_wood-ridge_cover.jpg",
+ "preview": "tours/previews/2026-11-01_T_wood-ridge_preview.jpg",
+ "render_info": {
+  "text_until_s": 1.0,
+  "blur_until_s": 1.0,
+  "duration_s": 39.2,
+  "source_duration_s": 36.2,
+  "source_has_audio": false,
+  "source_mean_volume_db": null,
+  "has_music": false,
+  "ig_mb": 23.0,
+  "tiktok_mb": 22.3,
+  "phone_replaced": {
+   "phone_box": [
+    68,
+    1325,
+    944,
+    130
+   ],
+   "phone_box_s": [
+    33.9,
+    36.2
+   ],
+   "phone_text": "Call/Text 917.843.5290 Therm The Realtor"
+  },
+  "text_fixes": {
+   "ig": [
+    {
+     "kind": "save",
+     "box": [
+      120,
+      879,
+      960,
+      1192
+     ],
+     "t": [
+      10.9,
+      15.4
+     ],
+     "text": "TAKES 30 SECONDS. NO OBLIGATION."
+    },
+    {
+     "kind": "best",
+     "box": [
+      120,
+      882,
+      960,
+      973
+     ],
+     "t": [
+      15.9,
+      19.9
+     ],
+     "text": "LET'S MAKE YOUR PLAN."
+    }
+   ],
+   "tiktok": [
+    {
+     "kind": "cta",
+     "box": [
+      246,
+      670,
+      834,
+      777
+     ],
+     "t": [
+      4.7,
+      9.2
+     ],
+     "text": "DM ME \"HOME\""
+    },
+    {
+     "kind": "cta+save",
+     "box": [
+      75,
+      879,
+      998,
+      1324
+     ],
+     "t": [
+      10.9,
+      15.7
+     ],
+     "text": "TAKES 30 SECONDS. NO OBLIGATION. / DM ME \"HOME\""
+    },
+    {
+     "kind": "cta+best",
+     "box": [
+      120,
+      882,
+      960,
+      1123
+     ],
+     "t": [
+      15.9,
+      19.9
+     ],
+     "text": "LET'S MAKE YOUR PLAN. / DM ME \"HOME\""
+    },
+    {
+     "kind": "cta",
+     "box": [
+      40,
+      719,
+      1027,
+      865
+     ],
+     "t": [
+      26.1,
+      31.9
+     ],
+     "text": "DM ME \"HOME\""
+    }
+   ]
+  }
+ },
+ "audio_candidates": [
+  {
+   "audio_id": "504545510323499",
+   "title": "What A Wonderful World",
+   "artist": "Louis Armstrong",
+   "type": "music",
+   "duration_ms": 137146
+  },
+  {
+   "audio_id": "1008638297531946",
+   "title": "Remember Me (Lullaby)",
+   "artist": "Tat the Musician",
+   "type": "music",
+   "duration_ms": 69838
+  },
+  {
+   "audio_id": "39315973268051192",
+   "title": "Gangster Bxtch",
+   "artist": "Additup",
+   "type": "music",
+   "duration_ms": 98561
+  },
+  {
+   "audio_id": "470505612679493",
+   "title": "Luminary",
+   "artist": "Joel Sunny",
+   "type": "music",
+   "duration_ms": 190265
+  },
+  {
+   "audio_id": "1599863094669308",
+   "title": "Recuérdame",
+   "artist": "Natalia Lafourcade, Carlos Rivera",
+   "type": "music",
+   "duration_ms": 263080
+  },
+  {
+   "audio_id": "563383544133902",
+   "title": "Angel (feat. Horace Andy)",
+   "artist": "Massive Attack",
+   "type": "music",
+   "duration_ms": 382666
+  },
+  {
+   "audio_id": "1064529169619198",
+   "title": "Babydoll",
+   "artist": "Jamie Miller, Antonio Cipriano",
+   "type": "music",
+   "duration_ms": 178822
+  },
+  {
+   "audio_id": "918615081860143",
+   "title": "Chand Chhupa Badal Mein",
+   "artist": "Udit Narayan, Alka Yagnik",
+   "type": "music",
+   "duration_ms": 347013
+  },
+  {
+   "audio_id": "1358715284711534",
+   "title": "Crossing the Marigold Bridge",
+   "artist": "Michael Giacchino",
+   "type": "music",
+   "duration_ms": 108733
+  },
+  {
+   "audio_id": "4588548731466513",
+   "title": "Saxophone Getting Louder",
+   "artist": "NDIOUGA KÉBÉ RECORDS",
+   "type": "music",
+   "duration_ms": 56999
+  },
+  {
+   "audio_id": "443475047852046",
+   "title": "San Judas Tadeo",
+   "artist": "Gerardo Diaz y Su Gerarquia",
+   "type": "music",
+   "duration_ms": 216522
+  },
+  {
+   "audio_id": "4321185548142585",
+   "title": "fantasmas",
+   "artist": "HUMBE",
+   "type": "music",
+   "duration_ms": 287248
+  },
+  {
+   "audio_id": "2187137531744861",
+   "title": "Luminary",
+   "artist": "Joel Sunny",
+   "type": "music",
+   "duration_ms": 189000
+  },
+  {
+   "audio_id": "646758872535224",
+   "title": "Dil Deewana",
+   "artist": "Lata Mangeshkar",
+   "type": "music",
+   "duration_ms": 355265
+  },
+  {
+   "audio_id": "1839266259444858",
+   "title": "Mind Playing Tricks on Me",
+   "artist": "Geto Boys",
+   "type": "music",
+   "duration_ms": 305466
+  },
+  {
+   "audio_id": "752836373779734",
+   "title": "For A Reason",
+   "artist": "Karan Aujla, Ikky",
+   "type": "music",
+   "duration_ms": 180000
+  },
+  {
+   "audio_id": "735845993278180",
+   "title": "oui",
+   "artist": "Jeremih",
+   "type": "music",
+   "duration_ms": 238320
+  },
+  {
+   "audio_id": "425548926197040",
+   "title": "La Nostalgia (Solo Guitar Version)",
+   "artist": "Mexican Music Factory, Antonio Garcia Isaac, José Isidoro",
+   "type": "music",
+   "duration_ms": 218396
+  },
+  {
+   "audio_id": "597165332434347",
+   "title": "Santo Patrón",
+   "artist": "Banda MS de Sergio Lizárraga, Fuerza Regida",
+   "type": "music",
+   "duration_ms": 141428
+  },
+  {
+   "audio_id": "196006811194727",
+   "title": "Bole Chudiyan (From \"Kabhi Khushi Kabhie Gham\")",
+   "artist": "Jatin-Lalit, Amit Kumar, Sonu Nigam, Alka Yagnik, Udit Narayan, Kavita Krishnamurthy",
+   "type": "music",
+   "duration_ms": 407709
+  }
+ ]
 }
