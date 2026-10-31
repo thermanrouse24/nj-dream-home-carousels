@@ -1,0 +1,70 @@
+{
+ "id": "2026-11-01_C_costs",
+ "tag": "TRUE COST *OF BUYING*",
+ "style": "bold",
+ "hook": 12,
+ "story_plan": {
+  "type": "multi",
+  "frames": [
+   1,
+   2,
+   5
+  ]
+ },
+ "lesson": "Brian Mark, \"NEW Instagram Algorithm Update Favours Carousels\" (LESSONS.md Oct 25 2026), Use for us #2: bold warm-up with a circled official screenshot",
+ "music": {
+  "ig_audio": "Sunshine (Instrumental) - Twista",
+  "ig_audio_source": "https://socialpilot.co/blog/instagram-reels-trends/",
+  "ig_audio_backup": "Hold On, We're Going Home - Drake and Majid Jordan",
+  "tiktok": "auto"
+ },
+ "source": "CFPB, What fees are paid when closing on a mortgage? (Oct. 2026)",
+ "slides": [
+  {
+   "type": "cover",
+   "badge": "NJ buyers",
+   "lines": [
+    "THE DOWN",
+    "PAYMENT ISN'T",
+    "~THE ONLY",
+    "~CHECK"
+   ],
+   "sub": "Budgeting only for the down payment? That mistake costs more than you think.",
+   "photo": "therm_street.jpg",
+   "zoom": 1.1
+  },
+  {
+   "type": "step",
+   "label": "Cost 1:",
+   "title": "The appraisal fee",
+   "body": "It's on the CFPB's list of fees you can pay when you close on a mortgage.",
+   "source": "CFPB, What fees are paid when closing on a mortgage? (Oct. 2026)"
+  },
+  {
+   "type": "step",
+   "label": "Cost 2:",
+   "title": "Title insurance and government taxes",
+   "body": "Both show up on the same list of common closing costs.",
+   "source": "CFPB, What fees are paid when closing on a mortgage? (Oct. 2026)"
+  },
+  {
+   "type": "step",
+   "label": "Cost 3:",
+   "title": "Prepaids",
+   "body": "Property taxes, homeowners insurance and interest until your first payment is due.",
+   "source": "CFPB, What fees are paid when closing on a mortgage? (Oct. 2026)"
+  },
+  {
+   "type": "step",
+   "label": "The catch:",
+   "title": "Credits still cost you",
+   "body": "A seller credit usually comes with a higher price. A lender credit usually means a bigger loan or a higher rate. Talk to a licensed lender for your numbers.",
+   "source": "CFPB, What fees are paid when closing on a mortgage? (Oct. 2026)"
+  }
+ ],
+ "caption": "Budgeting only for the down payment? That mistake costs more than you think.\n\nWhen you buy a home, you generally pay the costs of the transaction. The CFPB lists common ones: appraisal fees, title insurance, government taxes, and prepaids like property taxes, homeowners insurance and interest until your first payment is due. Depending on the contract or state law, the seller may pay some of them.\n\nThe catch: a seller credit usually comes with a higher price, and a lender credit usually means a bigger loan or a higher rate.\n\nTalk to a licensed lender for your numbers.\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #ClosingCosts #NJHomeBuyer\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "Budgeting only for the down payment? That mistake costs more than you think.\n\nThe CFPB lists appraisal fees, title insurance, government taxes and prepaids (property taxes, insurance, interest) as common closing costs. Seller and lender credits usually cost you somewhere else.\n\nTalk to a licensed lender for your numbers.\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://www.consumerfinance.gov/ask-cfpb/what-fees-or-charges-are-paid-when-closing-on-a-mortgage-and-who-pays-them-en-1845/"
+ ]
+}

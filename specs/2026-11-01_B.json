@@ -1,0 +1,107 @@
+{
+ "id": "2026-11-01_B_local",
+ "tag": "LOCAL *SPOTS*",
+ "hook": 6,
+ "story_plan": {
+  "type": "single",
+  "frames": [
+   1
+  ]
+ },
+ "music": {
+  "ig_audio": "Angel Of My Dreams - JADE",
+  "ig_audio_source": "https://socialpilot.co/blog/instagram-reels-trends/",
+  "ig_audio_backup": "Blue Moon - Zara Larsson",
+  "tiktok": "auto"
+ },
+ "source": "Shop Morris County, Things to Do in Dover (updated Oct. 2026)",
+ "slides": [
+  {
+   "type": "cover",
+   "eyebrow": "Moving to Dover? This is the part listing photos never show you:",
+   "lines": [
+    "WHERE YOU'LL",
+    "GET COFFEE",
+    "~ON A",
+    "~SATURDAY"
+   ],
+   "sub": "3 stops in downtown Dover, 2 of them on the same block.",
+   "source": "Shop Morris County, Things to Do in Dover (updated Oct. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "1",
+   "kind": "Cafe",
+   "title": "Kaprichos Cafe",
+   "meta": "30 W. Blackwell St",
+   "chips": [
+    "Open daily",
+    "Bakery case",
+    "Colombian"
+   ],
+   "body": "A Colombian cafe, bakery and restaurant with specialty coffee and a full breakfast menu. Open 6 AM to 10 PM daily.",
+   "scene": "coffee",
+   "variant": 0,
+   "source": "Shop Morris County, Things to Do in Dover (updated Oct. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "2",
+   "kind": "Breakfast",
+   "title": "Tierras y Sabores",
+   "meta": "33 W. Blackwell St",
+   "chips": [
+    "Colombian",
+    "Breakfast",
+    "Opens 8 AM Sun"
+   ],
+   "body": "A Colombian breakfast spot across the street. It opens at 7 AM Monday to Saturday and 8 AM on Sunday.",
+   "scene": "brunch",
+   "variant": 1,
+   "source": "Shop Morris County, Things to Do in Dover (updated Oct. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "3",
+   "kind": "Coffee",
+   "title": "The Good Bean",
+   "meta": "60 N. Sussex St",
+   "chips": [
+    "Custom roast",
+    "Organic options",
+    "Single origins"
+   ],
+   "body": "Its beans are roasted for the shop, with certified organic and single-origin options. Opens 6:30 AM on weekdays.",
+   "scene": "coffee",
+   "variant": 2,
+   "source": "Shop Morris County, Things to Do in Dover (updated Oct. 2026)"
+  },
+  {
+   "type": "route",
+   "eyebrow": "Plan the route",
+   "title": "Your Dover coffee stops",
+   "stops": [
+    {
+     "name": "Kaprichos Cafe",
+     "where": "30 W. Blackwell St"
+    },
+    {
+     "name": "Tierras y Sabores",
+     "where": "33 W. Blackwell St"
+    },
+    {
+     "name": "The Good Bean",
+     "where": "60 N. Sussex St"
+    }
+   ],
+   "tip": "Before you make an offer, walk Blackwell and Sussex streets on a weekend morning.",
+   "source": "Shop Morris County, Things to Do in Dover (updated Oct. 2026); NJ Transit, Dover Station"
+  }
+ ],
+ "caption": "Moving to Dover? This is the part listing photos never show you: where you'll get coffee on a Saturday.\n\nKaprichos Cafe at 30 W. Blackwell St is a Colombian cafe and bakery with specialty coffee, open 6 AM to 10 PM daily. Tierras y Sabores at 33 W. Blackwell St, across the street, serves Colombian breakfast from 7 AM (8 AM on Sunday). The Good Bean at 60 N. Sussex St roasts its beans for the shop and opens at 6:30 AM on weekdays.\n\nBefore you make an offer, walk Blackwell and Sussex streets on a weekend morning.\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #DoverNJ #MorrisCountyNJ\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "Moving to Dover, NJ? Here's the part listing photos never show you: where you'll get coffee.\n\nKaprichos Cafe (30 W. Blackwell St), Tierras y Sabores (33 W. Blackwell St) and The Good Bean (60 N. Sussex St).\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://shopmorriscounty.com/things-to-do-dover-nj/",
+  "https://www.njtransit.com/station/dover-station"
+ ]
+}

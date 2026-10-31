@@ -1,0 +1,71 @@
+{
+ "id": "2026-11-01_A_inspect",
+ "tag": "REAL ESTATE *101*",
+ "style": "cartoon",
+ "hook": 14,
+ "story_plan": {
+  "type": "multi",
+  "frames": [
+   1,
+   3,
+   5
+  ]
+ },
+ "lesson": "",
+ "music": {
+  "ig_audio": "Everlong - Foo Fighters",
+  "ig_audio_source": "https://socialpilot.co/blog/instagram-reels-trends/",
+  "ig_audio_backup": "Sunshine (Instrumental) - Twista",
+  "tiktok": "auto"
+ },
+ "source": "N.J.A.C. 13:40-15.16, NJ home inspection standards (Oct. 2026)",
+ "slides": [
+  {
+   "type": "cover",
+   "scene": "inspection",
+   "variant": 1,
+   "eyebrow": "Nobody wants to admit this, but",
+   "lines": [
+    "YOUR NJ",
+    "INSPECTION",
+    "~CAN SKIP",
+    "~THESE 4"
+   ],
+   "sub": "NJ's home inspection rules list what the inspector doesn't have to check.",
+   "source": "N.J.A.C. 13:40-15.16, NJ home inspection standards (Oct. 2026)"
+  },
+  {
+   "type": "text",
+   "eyebrow": "Skip 1",
+   "title": "Mold and contaminants",
+   "body": "Inspectors don't have to look for mold, toxins, or soil, water or air contaminants. Those take their own tests.",
+   "source": "N.J.A.C. 13:40-15.16, NJ home inspection standards (Oct. 2026)"
+  },
+  {
+   "type": "text",
+   "eyebrow": "Skip 2",
+   "title": "Underground oil tanks",
+   "body": "The fuel tank part of the inspection leaves out underground storage tanks. Ask about a separate tank sweep.",
+   "source": "N.J.A.C. 13:40-15.16, NJ home inspection standards (Oct. 2026)"
+  },
+  {
+   "type": "text",
+   "eyebrow": "Skip 3",
+   "title": "Well water",
+   "body": "Wells, well pumps and water quality or quantity are left out. If the home has a well, ask about a water test.",
+   "source": "N.J.A.C. 13:40-15.16, NJ home inspection standards (Oct. 2026)"
+  },
+  {
+   "type": "text",
+   "eyebrow": "Skip 4",
+   "title": "Code checks and repair prices",
+   "body": "Inspectors don't have to check code compliance or price out repairs. Get contractor quotes. Talk to a real estate attorney about your situation.",
+   "source": "N.J.A.C. 13:40-15.16, NJ home inspection standards (Oct. 2026)"
+  }
+ ],
+ "caption": "Nobody wants to admit this, but your NJ home inspection can skip things. NJ's home inspection rules list what the inspector doesn't have to check.\n\nHere are 4 of them:\n1. Mold, toxins, and soil, water or air contaminants.\n2. Underground storage tanks. Ask about a separate tank sweep.\n3. Wells, well pumps and water quality. If the home has a well, ask about a water test.\n4. Code compliance and the cost of repairs. Get contractor quotes.\n\nRead your inspection agreement so you know what's covered before inspection day.\n\nTalk to a real estate attorney about your situation.\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #HomeInspection #NJHomeBuying\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "Nobody wants to admit this, but your NJ home inspection can skip things.\n\nUnder NJ's inspection rules, inspectors don't have to check for mold or contaminants, underground oil tanks, well water quality, code compliance or repair costs.\n\nTalk to a real estate attorney about your situation.\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-13-40-15-16"
+ ]
+}
