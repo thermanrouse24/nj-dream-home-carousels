@@ -1,0 +1,114 @@
+{
+ "id": "2026-11-04_B_local",
+ "tag": "LOCAL *SPOTS*",
+ "hook": 28,
+ "story_plan": {
+  "type": "multi",
+  "frames": [
+   1,
+   2,
+   3,
+   4
+  ]
+ },
+ "music": {
+  "ig_audio": "Sunshine (Instrumental) - Twista",
+  "ig_audio_source": "https://socialpilot.co/blog/instagram-reels-trends/",
+  "ig_audio_backup": "Blue Moon - Zara Larsson",
+  "tiktok": "auto"
+ },
+ "source": "Business websites; Morris County Tourism; MapQuest",
+ "slides": [
+  {
+   "type": "cover",
+   "eyebrow": "Stop scrolling if you care about:",
+   "lines": [
+    "A GOOD",
+    "SATURDAY",
+    "~BREAKFAST",
+    "~IN ROCKAWAY"
+   ],
+   "sub": "Moving to Rockaway? 3 stops, all on Main Street.",
+   "source": "Business websites; Morris County Tourism; MapQuest"
+  },
+  {
+   "type": "place",
+   "num": "1",
+   "kind": "Cafe",
+   "title": "Riverside Shoppe",
+   "meta": "26 E. Main St",
+   "chips": [
+    "Breakfast",
+    "Lunch",
+    "Catering"
+   ],
+   "body": "A cafe for breakfast and lunch. Open 7 AM to 2 PM, closed Tuesday.",
+   "scene": "brunch",
+   "variant": 0,
+   "source": "riversideshoppe.com"
+  },
+  {
+   "type": "place",
+   "num": "2",
+   "kind": "Cafe",
+   "title": "Missy's Main Street Cafe",
+   "meta": "181 E. Main St",
+   "chips": [
+    "Since 2015",
+    "Breakfast",
+    "Closed Mon"
+   ],
+   "body": "Opened in 2015 and known for inventive comfort-food breakfasts. Saturday hours are 8 AM to 3 PM.",
+   "scene": "brunch",
+   "variant": 1,
+   "source": "Missy's Main Street Cafe website; Morris County Tourism"
+  },
+  {
+   "type": "place",
+   "num": "3",
+   "kind": "Coffee",
+   "title": "Maximo's Cafe",
+   "meta": "50 W. Main St",
+   "chips": [
+    "Coffee",
+    "Breakfast",
+    "Open weekends"
+   ],
+   "body": "A cafe for coffee and breakfast. Open Saturday and Sunday mornings.",
+   "scene": "coffee",
+   "variant": 2,
+   "source": "MapQuest and Yahoo Local listings"
+  },
+  {
+   "type": "route",
+   "eyebrow": "Plan the route",
+   "title": "Your Rockaway breakfast stops",
+   "stops": [
+    {
+     "name": "Riverside Shoppe",
+     "where": "26 E. Main St"
+    },
+    {
+     "name": "Missy's Main Street Cafe",
+     "where": "181 E. Main St"
+    },
+    {
+     "name": "Maximo's Cafe",
+     "where": "50 W. Main St"
+    }
+   ],
+   "tip": "Before you make an offer, spend a Saturday morning on Main Street.",
+   "source": "Business websites; Morris County Tourism; MapQuest"
+  }
+ ],
+ "caption": "Here are three breakfast spots on Rockaway's Main Street. All three are open Saturday morning. Which one are you trying first?\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #RockawayNJ #MorrisCountyNJ\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "Here are three breakfast spots on Rockaway's Main Street. All three are open Saturday morning. Which one are you trying first?\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://riversideshoppe.com/",
+  "https://missysmainstreetcafe.com/",
+  "https://morristourism.org/top-rated-breakfast-in-morris-county-nj/",
+  "https://www.aaa.com/tripcanvas/restaurant/missys-main-street-cafe-AA92085",
+  "https://www.mapquest.com/us/new-jersey/maximos-cafe-705210911",
+  "https://local.yahoo.com/info-237410422-maximos-rockaway/"
+ ]
+}
