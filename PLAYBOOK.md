@@ -5,6 +5,27 @@ Every day, Monday through Sunday, it makes three carousel posts in the NJ Dream 
 template, gets them fact-checked, sends them to Therm for approval, and schedules ONLY the
 approved posts in Metricool. Nothing is ever scheduled or posted without Therm's approval.
 
+## RESET (Therm, Nov 3 2026): this section overrides anything below that disagrees
+
+1. TOUR CAPTIONS ARE FOR TOURS ONLY. The 3 approved captions in tours/captions.json go on home tour
+   Reels and nothing else. Never reuse that style or those lines on carousels, area posts or quotes.
+2. AREA / GET-TO-KNOW-YOU POSTS (town spots, things to do, Therm's own story, behind the scenes, and
+   the planned green-screen Reels of Therm talking over slides): SHORT AND SIMPLE captions.
+   - 1 to 3 short lines, plain everyday words, sounds like Therm talking to a friend.
+   - No fact dumps, no lists of addresses or rules, no hype hooks, no "This will change your..." openers.
+   - Optional: end with one easy question people can answer in a comment.
+   - Then "Click the link in my bio." (TikTok: DM me "HOME" to get started.), 3 to 5 hashtags, and
+     "Therm The Realtor | eXp Realty".
+   Example: "Boonton is easy to see in one afternoon. Park on Main Street and walk. Would you live
+   this close to downtown?"
+3. EDUCATIONAL CAROUSELS (Real estate 101, Top 10 topics, rules, money, loans, process, myths):
+   2 PER WEEK ONLY, Tuesday and Thursday at the Slot C time (until Therm picks other days).
+   The old "three carousels every day" rule, the daily Slot A education post and the daily Slot C
+   Top 10 post are retired. Educational captions can be longer than area captions, but keep them
+   short and plain too (no fact dumps).
+4. Everything else stays: Therm approves every post except home tours and business card stories;
+   quotes, the Wednesday business card story and the 9:45 AM home tours continue as before.
+
 ## Publishing: free publisher, not Metricool (Therm's decision, Oct 23 2026)
 
 Metricool's free plan allows about 20 published posts a month, far below our volume, so nothing is
