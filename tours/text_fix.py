@@ -104,7 +104,8 @@ def scan(src):
             y1 = min(H, min(y1, y0 + 120) + 26)
         else:                           # 2-line claim boxes: cover the whole box and the header above it
             x0, x1 = 120, W - 120          # his claim overlays are centred boxes; never paint edge to edge
-            y0 = max(0, y0 - (120 if e["kind"] == "save" else 30)); y1 = min(H, y1 + (75 if e["kind"] == "save" else 30))
+            y0 = max(0, y0 - (160 if e["kind"] == "save" else 30)); y1 = min(H, y1 + (75 if e["kind"] == "save" else 30))
+            if e["kind"] == "save": x0 = max(0, x0 - 70)   # also covers the house emoji above-left of the line (Nov 3 2026)
             if y1 - y0 > 360:              # OCR noise can stretch it; keep it to the overlay's real size
                 c = (y0 + y1) / 2; y0, y1 = c - 180, c + 180
             if e["kind"] == "best" and y1 - y0 < 240:   # 2-line claim; OCR sometimes reads only line 1

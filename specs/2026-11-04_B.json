@@ -23,9 +23,8 @@
    "type": "cover",
    "eyebrow": "Stop scrolling if you care about:",
    "lines": [
-    "A GOOD",
-    "SATURDAY",
-    "~BREAKFAST",
+    "3 SATURDAY",
+    "~BREAKFASTS",
     "~IN ROCKAWAY"
    ],
    "sub": "Moving to Rockaway? 3 stops, all on Main Street.",
@@ -34,22 +33,6 @@
   {
    "type": "place",
    "num": "1",
-   "kind": "Cafe",
-   "title": "Riverside Shoppe",
-   "meta": "26 E. Main St",
-   "chips": [
-    "Breakfast",
-    "Lunch",
-    "Catering"
-   ],
-   "body": "A cafe for breakfast and lunch. Open 7 AM to 2 PM, closed Tuesday.",
-   "scene": "brunch",
-   "variant": 0,
-   "source": "riversideshoppe.com"
-  },
-  {
-   "type": "place",
-   "num": "2",
    "kind": "Cafe",
    "title": "Missy's Main Street Cafe",
    "meta": "181 E. Main St",
@@ -65,6 +48,22 @@
   },
   {
    "type": "place",
+   "num": "2",
+   "kind": "Breakfast",
+   "title": "Riverside Shoppe",
+   "meta": "26 E. Main St",
+   "chips": [
+    "Breakfast",
+    "Lunch",
+    "Catering"
+   ],
+   "body": "A breakfast restaurant that also serves lunch. Open 7 AM to 2 PM, closed Tuesday.",
+   "scene": "brunch",
+   "variant": 0,
+   "source": "riversideshoppe.com"
+  },
+  {
+   "type": "place",
    "num": "3",
    "kind": "Coffee",
    "title": "Maximo's Cafe",
@@ -72,9 +71,9 @@
    "chips": [
     "Coffee",
     "Breakfast",
-    "Open weekends"
+    "Open daily"
    ],
-   "body": "A cafe for coffee and breakfast. Open Saturday and Sunday mornings.",
+   "body": "A cafe for coffee and breakfast, open every day.",
    "scene": "coffee",
    "variant": 2,
    "source": "MapQuest and Yahoo Local listings"
@@ -85,12 +84,12 @@
    "title": "Your Rockaway breakfast stops",
    "stops": [
     {
-     "name": "Riverside Shoppe",
-     "where": "26 E. Main St"
-    },
-    {
      "name": "Missy's Main Street Cafe",
      "where": "181 E. Main St"
+    },
+    {
+     "name": "Riverside Shoppe",
+     "where": "26 E. Main St"
     },
     {
      "name": "Maximo's Cafe",
