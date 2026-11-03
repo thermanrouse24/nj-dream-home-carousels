@@ -12,8 +12,268 @@
  "cover_facts": "38 Mins to NYC | 5 Beds | 3.5 Baths",
  "cover_price": "$1,049,000",
  "cover_price_note": "list price",
- "status": "new",
+ "status": "rendered",
  "caption_option": 2,
  "caption": "🏠 STILL PAYING YOUR LANDLORD'S MORTGAGE?\n\nTHEN I ONLY HAVE ONE QUESTION 🙋🏾‍♂️\n\nWHY NOT YOUR OWN ⁉️\n\n👀🚨 THIS ONE IS A MUST SEE 🔥🔥\n\nWhat I do for my clients:\n✔️ Build a game plan before the first showing 📋\n✔️ Catch the costly mistakes early\n✔️ Make buying feel easy, not overwhelming 😌\n\nIt's not just a house. It's your next move.\n\n_____\n\n🔥 READY? HERE'S HOW IT WORKS (3 STEPS):\n\n✅ Step 1: Tap the LINK IN MY BIO and complete the FREE form\n⏱️ Takes 30 seconds, zero commitment\n\n✅ Step 2: I'll contact you within 24 hours 📲\nWe'll book your one-on-one buyer consultation\n\n✅ Step 3: We line you up with the RIGHT home and I fight for your best deal 💪🏾💸\n\nCLICK THE LINK IN MY BIO ✅ CLICK THE LINK IN MY BIO ✅\n\n#NJRealEstate #NJRealtor #NewJerseyHomes #HomeTour\n\nTherm The Realtor | eXp Realty",
- "tiktok_caption": "🏠 STILL PAYING YOUR LANDLORD'S MORTGAGE?\n\nTHEN I ONLY HAVE ONE QUESTION 🙋🏾‍♂️\n\nWHY NOT YOUR OWN ⁉️\n\n👀🚨 THIS ONE IS A MUST SEE 🔥🔥\n\nWhat I do for my clients:\n✔️ Build a game plan before the first showing 📋\n✔️ Catch the costly mistakes early\n✔️ Make buying feel easy, not overwhelming 😌\n\nIt's not just a house. It's your next move.\n\n_____\n\n🔥 READY? HERE'S HOW IT WORKS (3 STEPS):\n\n✅ Step 1: DM me \"HOME\" and I'll send you the FREE form\n⏱️ Takes 30 seconds, zero commitment\n\n✅ Step 2: I'll contact you within 24 hours 📲\nWe'll book your one-on-one buyer consultation\n\n✅ Step 3: We line you up with the RIGHT home and I fight for your best deal 💪🏾💸\n\nDM me \"HOME\" to get started. ✅ DM ME \"HOME\" ✅\n\n#NJRealEstate #NJRealtor #NewJerseyHomes #HomeTour\n\nTherm The Realtor | eXp Realty"
+ "tiktok_caption": "🏠 STILL PAYING YOUR LANDLORD'S MORTGAGE?\n\nTHEN I ONLY HAVE ONE QUESTION 🙋🏾‍♂️\n\nWHY NOT YOUR OWN ⁉️\n\n👀🚨 THIS ONE IS A MUST SEE 🔥🔥\n\nWhat I do for my clients:\n✔️ Build a game plan before the first showing 📋\n✔️ Catch the costly mistakes early\n✔️ Make buying feel easy, not overwhelming 😌\n\nIt's not just a house. It's your next move.\n\n_____\n\n🔥 READY? HERE'S HOW IT WORKS (3 STEPS):\n\n✅ Step 1: DM me \"HOME\" and I'll send you the FREE form\n⏱️ Takes 30 seconds, zero commitment\n\n✅ Step 2: I'll contact you within 24 hours 📲\nWe'll book your one-on-one buyer consultation\n\n✅ Step 3: We line you up with the RIGHT home and I fight for your best deal 💪🏾💸\n\nDM me \"HOME\" to get started. ✅ DM ME \"HOME\" ✅\n\n#NJRealEstate #NJRealtor #NewJerseyHomes #HomeTour\n\nTherm The Realtor | eXp Realty",
+ "ig_url": "https://github.com/thermanrouse24/nj-dream-home-carousels/releases/download/tours/2026-11-04_T_springfield_ig.mp4",
+ "tiktok_url": "https://github.com/thermanrouse24/nj-dream-home-carousels/releases/download/tours/2026-11-04_T_springfield_tiktok.mp4",
+ "cover": "tours/previews/2026-11-04_T_springfield_cover.jpg",
+ "preview": "tours/previews/2026-11-04_T_springfield_preview.jpg",
+ "render_info": {
+  "text_until_s": 1.0,
+  "blur_until_s": 1.0,
+  "duration_s": 41.6,
+  "source_duration_s": 38.6,
+  "source_has_audio": false,
+  "source_mean_volume_db": null,
+  "has_music": false,
+  "ig_mb": 28.5,
+  "tiktok_mb": 27.9,
+  "phone_replaced": {
+   "phone_box": [
+    68,
+    1332,
+    944,
+    130
+   ],
+   "phone_box_s": [
+    35.4,
+    38.6
+   ],
+   "phone_text": "Call/Text 917.843.5290 Therm The Realtor"
+  },
+  "text_fixes": {
+   "ig": [
+    {
+     "kind": "save",
+     "box": [
+      120,
+      921,
+      960,
+      1191
+     ],
+     "t": [
+      8.4,
+      12.4
+     ],
+     "text": "TAKES 30 SECONDS. NO OBLIGATION."
+    },
+    {
+     "kind": "best",
+     "box": [
+      120,
+      897,
+      960,
+      1137
+     ],
+     "t": [
+      15.4,
+      19.4
+     ],
+     "text": "LET'S MAKE YOUR PLAN."
+    }
+   ],
+   "tiktok": [
+    {
+     "kind": "cta",
+     "box": [
+      248,
+      671,
+      832,
+      780
+     ],
+     "t": [
+      3.9,
+      7.7
+     ],
+     "text": "DM ME \"HOME\""
+    },
+    {
+     "kind": "cta+save",
+     "box": [
+      78,
+      921,
+      998,
+      1324
+     ],
+     "t": [
+      8.4,
+      12.4
+     ],
+     "text": "TAKES 30 SECONDS. NO OBLIGATION. / DM ME \"HOME\""
+    },
+    {
+     "kind": "cta",
+     "box": [
+      52,
+      727,
+      1027,
+      873
+     ],
+     "t": [
+      28.1,
+      34.1
+     ],
+     "text": "DM ME \"HOME\""
+    },
+    {
+     "kind": "best",
+     "box": [
+      120,
+      897,
+      960,
+      1137
+     ],
+     "t": [
+      15.4,
+      19.4
+     ],
+     "text": "LET'S MAKE YOUR PLAN."
+    }
+   ]
+  }
+ },
+ "audio_candidates": [
+  {
+   "audio_id": "1163698629672462",
+   "title": "Big Michael Michael",
+   "artist": "Looze Cannon",
+   "type": "music",
+   "duration_ms": 175648
+  },
+  {
+   "audio_id": "1525625476063859",
+   "title": "POKITO",
+   "artist": "Daddy Yankee, Diljit Dosanjh",
+   "type": "music",
+   "duration_ms": 181826
+  },
+  {
+   "audio_id": "1515559829675823",
+   "title": "Thriller",
+   "artist": "Phase Music",
+   "type": "music",
+   "duration_ms": 358721
+  },
+  {
+   "audio_id": "789859362842100",
+   "title": "Wanna Play?",
+   "artist": "sochxngo",
+   "type": "music",
+   "duration_ms": 131866
+  },
+  {
+   "audio_id": "2205735802787934",
+   "title": "1st of Tha Month",
+   "artist": "Bone Thugs-n-Harmony",
+   "type": "music",
+   "duration_ms": 314680
+  },
+  {
+   "audio_id": "1724811595735449",
+   "title": "Here You Come, There You Go",
+   "artist": "Gracie Abrams",
+   "type": "music",
+   "duration_ms": 170582
+  },
+  {
+   "audio_id": "3208409716010233",
+   "title": "Dracula x Thriller (Remix)",
+   "artist": "gergisgood",
+   "type": "music",
+   "duration_ms": 239500
+  },
+  {
+   "audio_id": "39315973268051192",
+   "title": "Gangster Bxtch",
+   "artist": "Additup",
+   "type": "music",
+   "duration_ms": 98561
+  },
+  {
+   "audio_id": "1839266259444858",
+   "title": "Mind Playing Tricks on Me",
+   "artist": "Geto Boys",
+   "type": "music",
+   "duration_ms": 305466
+  },
+  {
+   "audio_id": "1704178287508043",
+   "title": "Halloween Dance Party",
+   "artist": "Celebrations Band",
+   "type": "music",
+   "duration_ms": 143280
+  },
+  {
+   "audio_id": "732472156062921",
+   "title": "Halloween",
+   "artist": "Kodak Black",
+   "type": "music",
+   "duration_ms": 202332
+  },
+  {
+   "audio_id": "1577625463374506",
+   "title": "Trick Or Bite Me",
+   "artist": "Ash Queen",
+   "type": "music",
+   "duration_ms": 124119
+  },
+  {
+   "audio_id": "437917182545111",
+   "title": "Trick Or Treat Begins",
+   "artist": "Jon Presstone",
+   "type": "music",
+   "duration_ms": 64249
+  },
+  {
+   "audio_id": "2159315690748090",
+   "title": "Party With The Bhoothnath",
+   "artist": "Yo Yo Honey Singh",
+   "type": "music",
+   "duration_ms": 321456
+  },
+  {
+   "audio_id": "1540918039367637",
+   "title": "Calling All the Monsters",
+   "artist": "China Anne McClain",
+   "type": "music",
+   "duration_ms": 206506
+  },
+  {
+   "audio_id": "1628493272201851",
+   "title": "Halloween 2026",
+   "artist": "The Lyrical Lanterns",
+   "type": "music",
+   "duration_ms": 174726
+  },
+  {
+   "audio_id": "843197416765198",
+   "title": "Thriller 7\"",
+   "artist": "Michael Jackson",
+   "type": "music",
+   "duration_ms": 278099
+  },
+  {
+   "audio_id": "253236286220866",
+   "title": "Vamp Anthem",
+   "artist": "Playboi Carti",
+   "type": "music",
+   "duration_ms": 124093
+  },
+  {
+   "audio_id": "1701624340510988",
+   "title": "Halloween (Special Version Cute Spooky )",
+   "artist": "numberbee",
+   "type": "music",
+   "duration_ms": 184959
+  },
+  {
+   "audio_id": "823415228294980",
+   "title": "What's New Scooby-Doo?",
+   "artist": "Simple Plan",
+   "type": "music",
+   "duration_ms": 68695
+  }
+ ]
 }
