@@ -2,5 +2,7 @@
  "id": "probe_10S6_fBJ",
  "drive_file_id": "10S6_fBJmr5ogK31QfZFjQ3YWW2g8RJG_",
  "drive_title": "58 Navajo Ave.mp4",
- "status": "probe"
+ "status": "probed",
+ "frames": "tours/probes/probe_10S6_fBJ_frames.jpg",
+ "source_duration_s": 20.6
 }
