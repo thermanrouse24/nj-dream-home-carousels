@@ -2,7 +2,8 @@
  "id": "probe_10S6_fBJ",
  "drive_file_id": "10S6_fBJmr5ogK31QfZFjQ3YWW2g8RJG_",
  "drive_title": "58 Navajo Ave.mp4",
- "status": "probed",
+ "status": "under_contract",
  "frames": "tours/probes/probe_10S6_fBJ_frames.jpg",
- "source_duration_s": 20.6
+ "source_duration_s": 20.6,
+ "note": "58 Navajo Ave, Parsippany: under contract at $799,000 per NJREN on Nov 4 2026, cover shows $30,765; not used"
 }
