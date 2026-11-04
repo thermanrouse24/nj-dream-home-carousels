@@ -11,5 +11,8 @@
  "approved_by": "Therm",
  "queued_at": "2026-10-28T01:24:18-04:00",
  "claimed_at": "2026-11-04T12:15:18.631767+00:00",
- "publish_called": false
+ "publish_called": true,
+ "result": {
+  "threads_creation_id": "17996933550103833"
+ }
 }
