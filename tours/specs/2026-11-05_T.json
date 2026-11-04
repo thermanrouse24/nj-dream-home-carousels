@@ -13,11 +13,11 @@
  "cover_price": "$1,225,000",
  "cover_price_note": "list price",
  "ig_song_wants": [
-  "Babydoll - Dominic Fike",
-  "Raindance - Dave, Tems",
-  "Material Lover - Sienna Spiro",
-  "I Just Might - Bruno Mars",
-  "Expectations - Olivia Rodrigo, Chappell Roan"
+  "Patient Zero - Taylor Swift",
+  "Nicole Kidman - Adéla",
+  "Housewife - Tate McRae",
+  "Folded - Kehlani",
+  "Babydoll - Jamie Miller"
  ],
  "status": "rendered",
  "caption_option": 3,
@@ -42,5 +42,6 @@
    "ig": [],
    "tiktok": []
   }
- }
+ },
+ "phone_checked": true
 }
