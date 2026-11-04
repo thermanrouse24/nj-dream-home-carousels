@@ -176,12 +176,62 @@ def train_svg(v, w, h):
 </svg>'''
 
 
+def lake_svg(v, w, h):
+    """Lake scene, daytime. variant 0 = midday, 1 = late afternoon (mirrored)."""
+    v = int(v) % 2
+    sky = (("#6F9BC4", "#CFE0E8"), ("#B98F6B", "#F0D6AE"))[v]
+    shore = h * 0.46
+    trees = ""
+    for (x, r, c) in ((w*0.08, h*0.14, "#2F5A3F"), (w*0.24, h*0.11, "#3D7350"), (w*0.88, h*0.13, "#2F5A3F")):
+        trees += f'<rect x="{x-6}" y="{shore-r*0.5}" width="12" height="{r*0.7}" fill="#3A2A20"/><circle cx="{x}" cy="{shore-r}" r="{r}" fill="{c}"/>'
+    flip = f' transform="translate({w},0) scale(-1,1)"' if v else ""
+    ripples = "".join(f'<rect x="{w*a}" y="{h*b}" width="{w*c}" height="4" rx="2" fill="#E8F1F4" opacity=".45"/>' for a, b, c in ((.12,.55,.2),(.48,.6,.26),(.25,.68,.18),(.62,.72,.2)))
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">
+<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{sky[0]}"/><stop offset="1" stop-color="{sky[1]}"/></linearGradient></defs>
+<rect width="{w}" height="{h}" fill="url(#sky)"/>
+<circle cx="{w*0.68}" cy="{h*0.2}" r="{h*0.08}" fill="#FFF1C9"/>
+<g{flip}>
+<path d="M0,{shore} Q{w*0.4},{shore-46} {w},{shore-14} V{shore+24} H0 Z" fill="#2F5A3F"/>
+{trees}
+<rect y="{shore}" width="{w}" height="{h*0.38}" fill="#4F86A6"/>
+{ripples}
+<path d="M0,{h*0.8} Q{w*0.5},{h*0.74} {w},{h*0.83} V{h} H0 Z" fill="#2F5A3F"/>
+<path d="M{w*0.1},{h} Q{w*0.32},{h*0.84} {w*0.72},{h*0.8} L{w*0.78},{h*0.83} Q{w*0.44},{h*0.9} {w*0.28},{h} Z" fill="#C9A577" opacity=".85"/>
+</g></svg>'''
+
+
+def trail_svg(v, w, h):
+    """Old rail-bed trail through woods, daytime: straight path, faded ties, no bench or lamp."""
+    ground = h * 0.46
+    trees = ""
+    for (x, r, c) in ((.06,.17,"#2F5A3F"),(.2,.14,"#3D7350"),(.34,.1,"#2F5A3F"),(.66,.1,"#3D7350"),(.8,.15,"#2F5A3F"),(.95,.18,"#3D7350")):
+        trees += f'<rect x="{w*x-6}" y="{ground-h*r*0.5}" width="12" height="{h*r*0.8}" fill="#3A2A20"/><circle cx="{w*x}" cy="{ground-h*r}" r="{h*r}" fill="{c}"/>'
+    ties = ""
+    for i in range(7):
+        t = i / 6
+        y = ground + (h - ground) * (t ** 1.5) * 0.96 + 6
+        hw = w * (0.03 + 0.2 * t)
+        ties += f'<rect x="{w*0.5-hw}" y="{y}" width="{hw*2}" height="{3+9*t}" fill="#7A6146" opacity=".65"/>'
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">
+<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6F9BC4"/><stop offset="1" stop-color="#CFE0E8"/></linearGradient></defs>
+<rect width="{w}" height="{h}" fill="url(#sky)"/>
+<path d="M0,{ground} H{w} V{h} H0 Z" fill="#2F5A3F"/>
+{trees}
+<path d="M{w*0.47},{ground} L{w*0.53},{ground} L{w*0.8},{h} L{w*0.2},{h} Z" fill="#C9A577"/>
+{ties}
+</svg>'''
+
+
 def render_scene(kind, variant, out_png, w=920, h=560):
     from home_scenes import HOME_KINDS, home_svg
     if kind in HOME_KINDS:
         svg = home_svg(kind, variant, w, h)
     elif kind == "park":
         svg = park_svg(variant, w, h)
+    elif kind == "lake":
+        svg = lake_svg(variant, w, h)
+    elif kind == "trail":
+        svg = trail_svg(variant, w, h)
     elif kind == "train":
         svg = train_svg(variant, w, h)
     else:

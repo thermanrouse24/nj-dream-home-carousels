@@ -18,13 +18,13 @@
  "slides": [
   {
    "type": "cover",
-   "eyebrow": "Moving to Roxbury?",
+   "eyebrow": "Moving to Roxbury? Stop doing this:",
    "lines": [
-    "STOP DRIVING",
-    "~PAST THESE",
-    "~3 OUTDOOR SPOTS"
+    "SPENDING SATURDAY",
+    "~INSIDE. GO TO",
+    "~THESE 3 SPOTS"
    ],
-   "sub": "A lake path, a state park and an old rail line, all in or next to Roxbury.",
+   "sub": "A lake park, a state park and an old rail line, all in or next to Roxbury.",
    "source": "Roxbury Township; Trail Conference; NJ Fish & Wildlife"
   },
   {
@@ -34,12 +34,12 @@
    "title": "Horseshoe Lake Complex",
    "meta": "72 Eyland Ave, Succasunna",
    "chips": [
-    "Lake path",
+    "1.7-mile path",
     "Playground",
     "Courts"
    ],
-   "body": "Walk the lake path, or bring a ball for the fields and courts. There's a playground and picnic tables too.",
-   "scene": "park",
+   "body": "Walk the paved 1.7-mile path, or bring a ball for the fields and courts. There's a playground and picnic areas too.",
+   "scene": "lake",
    "variant": 0,
    "source": "Roxbury Township"
   },
@@ -55,7 +55,7 @@
     "Canal history"
    ],
    "body": "It sits on Lake Hopatcong's southwestern shore. You can still see remnants of the Morris Canal in the park.",
-   "scene": "park",
+   "scene": "lake",
    "variant": 1,
    "source": "Wikipedia; Lake Hopatcong Historical Museum"
   },
@@ -71,8 +71,8 @@
     "Old rail line"
    ],
    "body": "A former rail line runs north about 2.5 miles from the parking area. Trails aren't marked, so bring a map. Check hunting season dates first.",
-   "scene": "park",
-   "variant": 2,
+   "scene": "trail",
+   "variant": 0,
    "source": "NY-NJ Trail Conference"
   },
   {
@@ -97,8 +97,8 @@
    "source": "Roxbury Township; Trail Conference; NJ Fish & Wildlife"
   }
  ],
- "caption": "In and around Roxbury: a lake path, a state park and an old rail line you can walk. Which one are you trying first?\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #RoxburyNJ #MorrisCountyNJ\n\nTherm The Realtor | eXp Realty",
- "threads_caption": "In and around Roxbury: a lake path, a state park and an old rail line you can walk. Which one are you trying first?\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "caption": "In and around Roxbury: a lake park, a state park and an old rail line you can walk. Which one are you trying first?\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #RoxburyNJ #MorrisCountyNJ\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "In and around Roxbury: a lake park, a state park and an old rail line you can walk. Which one are you trying first?\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
  "sources": [
   "https://www.roxburynj.us/341/Township-Parks-Playgrounds",
   "https://en.wikipedia.org/wiki/Hopatcong_State_Park",
