@@ -39,34 +39,31 @@ asks (`--reel`). TikTok: EVERY TikTok post (carousels, quotes, business card, ho
 
 ## Home Tour Reels (Therm's rule, Oct 24 2026)
 
-**MUSIC VIA THE INSTAGRAM AUDIO API, NO APPROVAL NEEDED (Therm, Oct 28 2026 evening; replaces the
-"Therm posts tours himself" rule below).** Every home tour gets a licensed Instagram song attached with
-the Instagram Audio API (open to third-party tools since May 2026) and posts as an **Instagram Reel at
-9:45 AM WITHOUT Therm's approval, as long as the music is attached**. How:
-1. The "Render home tour" workflow saves Instagram's current trending music (clean titles, 30 s+) in the
-   tour spec as "audio_candidates" (tours/audio_candidates.py).
-2. The daily build (Brain) picks ONE song from those candidates that fits a home tour (upbeat or warm; no
-   explicit, violent, drug, sexual, sad or religious songs; nothing political) and a backup, and sets
-   "ig_audio_id", "ig_audio" ("Title - Artist") and "ig_audio_backup" in tours/specs/<date>_T.json.
-   It lists the song in the nightly email for Therm's information only.
-3. The tour is queued right away (no reply needed): python3 publisher/enqueue.py tour tours/specs/<date>_T.json --time 09:45
-   This queues ONLY the Instagram Reel (the API can only add music to Instagram Reels). The publisher
-   attaches the song (audio_configuration) and refuses to post if neither song can be found, so a tour
-   is never posted silent. After posting it records media_audio_type (MUSIC = song attached).
-4. Facebook Reel and TikTok cannot get library music through their APIs, so they are NOT auto-posted. The
-   Execution agent picks ONE trending Facebook Reels song and ONE trending TikTok sound (this week's lists,
-   clean, different from the Instagram song) and sends Therm the post kit:
-   python3 tours/handoff.py tours/specs/<date>_T.json --time 09:45 --fb-song "<Title - Artist>" --tiktok-song "<Title - Artist>"
-   (email with both song names, both videos and captions, plus a 9:45 AM Calendar alert). He adds each song
-   in the app and posts (about a minute). Never bake a commercial song into a video file.
-5. Content Log status for T: "Auto-queued 9:45 AM (no approval needed): IG Reel + <song>".
+**TOURS NEED THERM'S APPROVAL (Therm, Nov 4 2026; replaces the Oct 28 2026 "no approval needed" rule).** A tour
+is slot T in the nightly approval email. APPROVE T or APPROVE ALL posts it; SKIP T or no reply means no post, ever.
+enqueue.py refuses a tour without --approved <Gmail message id of his reply>.
+
+**TOUR MUSIC (Therm, Nov 4 2026, after the Nov 4 Springfield Reel's song was so bad he archived it).** Every song is a
+real, currently trending HIP HOP, R&B or POP song by a known artist that clients will enjoy, clean. Take it from charts
+updated in the last 14 days (Billboard Hot R&B/Hip-Hop Songs, Hot 100, Pop Airplay, TikTok Creative Center). Never film
+scores, instrumentals, stock or library music, oldies, covers, sound-alikes or unknown artists. Never an auto-picked song.
+How:
+1. The Brain lists 5 songs in the spec as "ig_song_wants" (["Title - Artist", ...]) before the render.
+2. The "Render home tour" workflow looks them up on Instagram (tours/audio_candidates.py) and saves the exact matches as
+   "audio_candidates". The Brain sets "ig_audio_id", "ig_audio" ("Title - Artist") and "ig_audio_backup" from those.
+3. The approval email names the song. FIX T: song <name> changes it.
+4. After his approval: python3 publisher/enqueue.py tour tours/specs/<date>_T.json --time 09:45 --approved <message id>
+   (Instagram Reel with the song; the publisher refuses to post if the song can't be found).
+5. Facebook Reel and TikTok cannot get library music through their APIs. After approval the Execution agent sends the post kit
+   (tours/handoff.py) with ONE trending Facebook song and ONE trending TikTok sound, same music rule.
+   Never bake a commercial song into a video file.
 6. Audio API details that matter (fixed Oct 29 2026 after the Plainsboro Reel posted with ORIGINAL_SOUND):
    audio_volume and video_volume must be 1 to 100 (0 is out of range and the song was dropped; a silent
    tour uses video_volume 1); Reels with a song are created with video_url first (the only form in Meta's
    Audio API docs), resumable upload only as fallback; the publisher checks the audio id is still
    available before posting and re-reads media_audio_type for up to 2 minutes after publishing.
 Compliance note kept in the email: a tour of another broker's listing still needs that broker's written OK
-(N.J.A.C. 11:5-6.1(n)); Therm chose to auto-post anyway (Oct 28 2026).
+(N.J.A.C. 11:5-6.1(n)); approving T means it is his listing or he has that OK.
 
 **NO MUSIC = NO POST (Therm, Oct 28 2026).** Never post a home tour without music. make_tour.py
 records render_info.has_music (source audio louder than -50 dB); enqueue.py refuses a tour without it
@@ -79,7 +76,7 @@ Therm the post kit (cover inline, both video links, both captions, a trending-so
 Calendar event at the post time ("POST HOME TOUR NOW", pop-ups at 0 and 1 min). He posts it in the
 Instagram app (Share to Facebook on) and the TikTok app. enqueue.py tour refuses without --auto.
 
-**TOUR TEXT FIXES (Therm, Oct 29 2026).** tours/text_fix.py (run inside make_tour.py) reads the edit's burned-in text and covers: on the TikTok copy every "CLICK THE LINK IN BIO" with DM ME "HOME"; on every copy "IT ONLY TAKES 30 SECONDS TO SAVE THOUSAND(S)" with "TAKES 30 SECONDS. NO OBLIGATION." and "WE HAVE HELPED HUNDREDS OF CLIENTS / BEST IN BUSINESS" with "LET'S MAKE YOUR PLAN." render_info.text_fixes lists what was covered; check the preview.
+**TOUR TEXT FIXES (Therm, Oct 29 2026).** tours/text_fix.py (run inside make_tour.py) reads the edit's burned-in text and covers: on the TikTok copy every "CLICK THE LINK IN BIO" with DM ME "HOME"; on every copy "IT ONLY TAKES 30 SECONDS TO SAVE THOUSAND(S)" with "TAKES 30 SECONDS. NO OBLIGATION." and "WE HAVE HELPED HUNDREDS OF CLIENTS / BEST IN BUSINESS" with "LET'S MAKE YOUR PLAN." render_info.text_fixes lists what was covered; check the preview. NO SOLID BOXES (Therm, Nov 4 2026): only the old line's spot is softly blurred, the new words sit on it in the edit's own look (tall yellow letters, dark outline), and only while the old line is on screen.
 
 **THERM'S NUMBER ONLY (Therm, Oct 28 2026; repeated Oct 29 2026: on ALL tour edits remove VINNY and the 347 number, show THERM and 917).** enqueue.py refuses a tour unless render_info.phone_replaced is set or the spec has "phone_checked": true after someone looked at the preview. Every post shows Therm's name and number. The tour edits
 end with someone else's black "Call/Text 347-988-8291 Vinny" bar; make_tour.py finds that bar and covers

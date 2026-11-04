@@ -10,13 +10,14 @@ His edit template has text overlays that are wrong for some platforms or break o
     superlative. Covered on every copy with "LET'S MAKE YOUR PLAN."
 
 How: OCR (tesseract) on 4 frames a second finds those lines and where/when they show; the boxes are
-merged over time and a clean replacement box is overlaid only while the original text is on screen.
-The rest of his edit is untouched.
+merged over time. Only that spot is softly blurred, with the new wording on top in the edit's own look
+(tall yellow letters, dark outline), and only while the original text is on screen. No solid boxes
+(Therm, Nov 4 2026: the black boxes sat on top of his edit). The rest of his edit is untouched.
 
 Usage (testing): python3 tours/text_fix.py IN.mp4 OUT_ig.mp4 OUT_tiktok.mp4
 """
 import json, os, re, subprocess, sys, tempfile
-from PIL import Image, ImageDraw, ImageFont, ImageOps
+from PIL import Image, ImageDraw, ImageFilter, ImageFont, ImageOps
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -111,30 +112,40 @@ def scan(src):
             if e["kind"] == "best" and y1 - y0 < 240:   # 2-line claim; OCR sometimes reads only line 1
                 y1 = min(H, y0 + 240)      # (Nov 1 2026: "Work with the best in business." showed under the IG box)
         e["box"] = [int(x0), int(y0), int(x1), int(y1)]
-        e["t0"] = max(0.0, e["t0"] - 0.35); e["t1"] = e["t1"] + 0.4
+        e["t0"] = max(0.0, e["t0"] - 0.25); e["t1"] = e["t1"] + 0.25   # OCR samples every 0.25 s
     return events
 
 
+FEATHER = 26       # px the blur fades out around the box, so there is no hard edge on his footage
+
+
 def patch_png(texts, w, h, out):
-    """One solid box; each replacement text on its own line (DM line in yellow)."""
+    """Transparent picture with only the new words, in the style of the edit's own text."""
     img = Image.new("RGBA", (w, h), (0, 0, 0, 0))
     d = ImageDraw.Draw(img)
-    d.rounded_rectangle((0, 0, w - 1, h - 1), radius=min(28, h // 4), fill=(0, 0, 0, 255))
     n = len(texts)
-    size = int(h * 0.6 / n)
-    while size > 18:
-        f = ImageFont.truetype(os.path.join(ROOT, "fonts", "Montserrat-ExtraBold.ttf"), size)
-        bbs = [d.textbbox((0, 0), t, font=f) for t in texts]
-        if max(b[2] - b[0] for b in bbs) <= w - 50 and sum(b[3] - b[1] for b in bbs) + 24 * (n - 1) <= h - 24:
+    size = min(92, int(h * 0.8 / n))
+    while True:
+        f = ImageFont.truetype(os.path.join(ROOT, "fonts", "Anton-Regular.ttf"), size)
+        sw = max(3, size // 13)
+        bbs = [d.textbbox((0, 0), t, font=f, stroke_width=sw) for t in texts]
+        if size <= 20 or (max(b[2] - b[0] for b in bbs) <= w - 30 and sum(b[3] - b[1] for b in bbs) + 14 * (n - 1) <= h - 12):
             break
         size -= 2
-    total = sum(b[3] - b[1] for b in bbs) + 24 * (n - 1)
+    total = sum(b[3] - b[1] for b in bbs) + 14 * (n - 1)
     y = (h - total) / 2
     for t, b in zip(texts, bbs):
-        d.text(((w - (b[2] - b[0])) / 2 - b[0], y - b[1]), t, font=f,
-               fill=(255, 226, 92, 255) if t.startswith("DM") else (255, 255, 255, 255))
-        y += b[3] - b[1] + 24
+        d.text(((w - (b[2] - b[0])) / 2 - b[0], y - b[1]), t, font=f, fill=(255, 244, 150, 255),
+               stroke_width=sw, stroke_fill=(15, 15, 15, 255))
+        y += b[3] - b[1] + 14
     img.save(out)
+
+
+def feather_png(w, h, out):
+    """White box with soft edges: where the blur shows."""
+    m = Image.new("L", (w, h), 0)
+    ImageDraw.Draw(m).rectangle((FEATHER, FEATHER, w - 1 - FEATHER, h - 1 - FEATHER), fill=255)
+    m.filter(ImageFilter.GaussianBlur(FEATHER / 2)).save(out)
 
 
 def merge(events):
@@ -182,14 +193,22 @@ def apply(src, events, platform, out):
     if not use:
         return src, []
     tmp = tempfile.mkdtemp()
-    inputs, fc, prev = [], f"[0:v]scale={W}:{H},setsar=1[b0];", "b0"
+    inputs, fc, prev, n = [], f"[0:v]scale={W}:{H},setsar=1[b0];", "b0", 1
     for i, e in enumerate(use):
         x0, y0, x1, y1 = e["box"]
-        png = os.path.join(tmp, f"p{i}.png")
-        patch_png(e["texts"], x1 - x0, y1 - y0, png)
-        inputs += ["-i", png]
-        fc += f"[{prev}][{i + 1}:v]overlay={x0}:{y0}:enable='between(t,{e['t0']:.2f},{e['t1']:.2f})'[b{i + 1}];"
-        prev = f"b{i + 1}"
+        # the blur reaches FEATHER px past the box, so nothing of the old graphic peeks out at its edges
+        bx0, by0, bx1, by1 = max(0, x0 - FEATHER), max(0, y0 - FEATHER), min(W, x1 + FEATHER), min(H, y1 + FEATHER)
+        bw, bh = (bx1 - bx0) & ~1, (by1 - by0) & ~1
+        mask, words = os.path.join(tmp, f"m{i}.png"), os.path.join(tmp, f"p{i}.png")
+        feather_png(bw, bh, mask)
+        patch_png(e["texts"], x1 - x0, y1 - y0, words)
+        inputs += ["-loop", "1", "-i", mask, "-i", words]
+        on = f"enable='between(t,{e['t0']:.2f},{e['t1']:.2f})'"
+        fc += (f"[{prev}]split[k{i}][c{i}];[c{i}]crop={bw}:{bh}:{bx0}:{by0},boxblur=34:3,format=yuva420p[g{i}];"
+               f"[{n}:v]format=gray[a{i}];[g{i}][a{i}]alphamerge[s{i}];"
+               f"[k{i}][s{i}]overlay={bx0}:{by0}:shortest=1:{on}[h{i}];"
+               f"[h{i}][{n + 1}:v]overlay={x0}:{y0}:{on}[b{i + 1}];")
+        prev, n = f"b{i + 1}", n + 2
     fc = fc[:-(len(prev) + 3)] + "[v]"
     run(["ffmpeg", "-y", "-loglevel", "error", "-i", src, *inputs, "-filter_complex", fc, "-map", "[v]", "-map", "0:a?",
          "-c:v", "libx264", "-preset", "medium", "-crf", "17", "-pix_fmt", "yuv420p", "-c:a", "copy", out])

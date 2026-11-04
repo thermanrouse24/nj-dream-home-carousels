@@ -155,9 +155,14 @@ def tour(a):
     spec = json.load(open(os.path.join(ROOT, a.spec)))
     if spec.get("status") != "rendered":
         sys.exit(f"tour {spec.get('id')} is not rendered yet (status {spec.get('status')})")
-    # Therm's rule (Oct 28 2026, evening): every tour gets a song through the Instagram Audio API and
-    # posts as an Instagram Reel WITHOUT his approval, as long as the music is attached. Only the
-    # Instagram Reel can carry API music, so only it is queued; Facebook and TikTok stay in his post kit.
+    # Therm (Nov 4 2026): NO tour is queued without his reply. --approved must name the Gmail message id
+    # of that reply. Only the Instagram Reel can carry API music, so only it is queued; Facebook and
+    # TikTok stay in his post kit.
+    if not (a.approved or "").strip():
+        sys.exit(f"tour {spec.get('id')}: not queued. Tours need Therm's reply (Nov 4 2026). "
+                 "Pass --approved <Gmail message id of his APPROVE reply>.")
+    if not spec.get("ig_audio_id"):   # no "auto" song: he approves the exact song (Nov 4 2026)
+        sys.exit(f"tour {spec.get('id')}: no approved song (ig_audio_id). Tours never post with an auto-picked song.")
     # Therm (Oct 28-29 2026): every tour shows THERM 917.843.5290, never Vinny / 347-988-8291.
     # make_tour.py covers the edit's Call/Text bar; if it found no bar, someone must have LOOKED at the
     # preview and confirmed only Therm's name/number shows ("phone_checked": true in the spec).
@@ -173,8 +178,8 @@ def tour(a):
         return [{"id": f"{date}_T_ig_reel", "platform": "instagram", "type": "reel",
                  "publish_at": at(date, a.time), "media": [spec["ig_url"]], "caption": spec["caption"],
                  "tour": spec["id"], "has_music": True, "ig_audio_id": spec.get("ig_audio_id"),
-                 "ig_audio": spec.get("ig_audio") or "auto",
-                 "ig_audio_backup": spec.get("ig_audio_backup") or "auto",
+                 "ig_audio": spec.get("ig_audio"), "ig_audio_backup": spec.get("ig_audio_backup"),
+                 "approval_message_id": a.approved.strip(),
                  "audio_volume": spec.get("audio_volume", 100),
                  "video_volume": spec.get("video_volume", 1 if not spec.get("render_info", {}).get("source_has_audio") else 30)}]
     # Older rule (Oct 28 2026 morning): no API music -> Therm posts it himself from a post kit.
@@ -212,6 +217,7 @@ def main():
     q.add_argument("--time", required=True); q.add_argument("--text", required=True)
     k = sub.add_parser("card"); k.add_argument("--date", required=True); k.add_argument("--time", default="07:15")
     tr = sub.add_parser("tour"); tr.add_argument("spec"); tr.add_argument("--date"); tr.add_argument("--time", default="09:45")
+    tr.add_argument("--approved", default="", help="Gmail message id of Therm's APPROVE reply (required)")
     tr.add_argument("--auto", action="store_true", help="only if Therm explicitly asks to auto-post a tour that already has music")
     for s in (c, q, k, tr):
         s.add_argument("--platforms", default=",".join(ALL)); s.add_argument("--replace", action="store_true")
