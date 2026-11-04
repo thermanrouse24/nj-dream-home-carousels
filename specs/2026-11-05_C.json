@@ -1,0 +1,68 @@
+{
+ "id": "2026-11-05_C_clocks",
+ "tag": "BUYER *TIMELINE*",
+ "style": "notebook",
+ "hook": 17,
+ "lesson": "Hormozi 2027 strategy video, numbered process (Use for us #2)",
+ "story_plan": {
+  "type": "multi",
+  "frames": [
+   1,
+   3,
+   5
+  ]
+ },
+ "music": {
+  "ig_audio": "Material Lover - Sienna Spiro",
+  "ig_audio_source": "https://www.officialcharts.com/charts/official-hip-hop-and-r-and-b-singles-chart/",
+  "ig_audio_backup": "I Just Might - Bruno Mars",
+  "tiktok": "auto"
+ },
+ "source": "N.J.A.C. 11:5-6.2; CFPB",
+ "slides": [
+  {
+   "type": "cover",
+   "eyebrow": "Everyone gets this wrong:",
+   "lines": [
+    "THE HOUSE HUNT",
+    "ISN'T THE RACE.",
+    "~THESE 4 CLOCKS",
+    "~ARE."
+   ],
+   "sub": "6 years in real estate taught me to watch them. Miss attorney review and you can lose your chance to change the deal.",
+   "source": "N.J.A.C. 11:5-6.2; CFPB; Therm"
+  },
+  {
+   "type": "text",
+   "title": "1. Your offer",
+   "body": "Finding a home takes 2 to 4 weeks on average in NJ. Once you pick one, making the offer takes [[24 hours or less]]. Know your budget before you tour.",
+   "source": "Therm's NJ timeline"
+  },
+  {
+   "type": "text",
+   "title": "2. Attorney review",
+   "body": "It can take 24+ hours, but [[3 days is the deadline]]. Weekends and legal holidays don't count. Then it's binding unless an attorney disapproves. Talk to a real estate attorney about your situation.",
+   "source": "N.J.A.C. 11:5-6.2"
+  },
+  {
+   "type": "text",
+   "title": "3. Loan Estimate",
+   "body": "After you apply, your lender has [[3 business days]] to send it. Use it to compare lenders side by side. Talk to a licensed lender for your numbers.",
+   "source": "CFPB"
+  },
+  {
+   "type": "text",
+   "title": "4. Closing Disclosure",
+   "body": "You must get it at least [[3 business days before closing]]. Check it against your Loan Estimate. If it hasn't come, ask your lender right away.",
+   "source": "CFPB"
+  }
+ ],
+ "caption": "Everyone gets this wrong: the house hunt isn't the race. These 4 clocks are.\n\nYour offer, attorney review, your Loan Estimate and your Closing Disclosure. Swipe for how long each one takes.\n\nTalk to a licensed lender for your numbers. Talk to a real estate attorney about your situation.\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #AttorneyReview #NJHomeBuyer\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "Everyone gets this wrong: the house hunt isn't the race. These 4 clocks are: your offer, attorney review, your Loan Estimate and your Closing Disclosure.\n\nTalk to a licensed lender for your numbers. Talk to a real estate attorney about your situation.\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://law.cornell.edu/regulations/new-jersey/N-J-A-C-11-5-6-2",
+  "https://www.consumerfinance.gov/ask-cfpb/what-is-a-loan-estimate-en-1995/",
+  "https://consumerfinance.gov/ask-cfpb/what-should-i-do-if-i-do-not-get-a-closing-disclosure-three-days-before-my-mortgage-closing-en-1911",
+  "Therm's confirmed timeline facts"
+ ]
+}
