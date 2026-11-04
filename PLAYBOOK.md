@@ -5,6 +5,16 @@ Every day, Monday through Sunday, it makes three carousel posts in the NJ Dream 
 template, gets them fact-checked, sends them to Therm for approval, and schedules ONLY the
 approved posts in Metricool. Nothing is ever scheduled or posted without Therm's approval.
 
+## Team roles (Therm, Nov 4 2026; these win over any older line in this file)
+
+- **Brain** picks the content across the board: carousel topics and hooks, the home tour, quote topics, and all music.
+- **Designer** writes the copy (slides, captions, quote wording) and designs everything: slides, story frames, motion slides, quote cards and the tour render. Therm's 3 tour captions are never rewritten.
+- **Researcher** checks the facts in the Designer's copy and removes anything it can't confirm.
+- **Brain + Execution review together before anything goes to Therm or out to deployment.** Brain checks the content against what it picked. Execution checks the finished files, frames, rules and that it can post. If either one fails it, the Designer fixes it and both review again. Any FIX from Therm goes through the same review.
+- **Execution** sends the approval email and, only after Therm's reply, queues the posts.
+
+Where this file says the Brain writes copy, the Designer now does.
+
 ## RESET (Therm, Nov 3 2026): this section overrides anything below that disagrees
 
 1. TOUR CAPTIONS ARE FOR TOURS ONLY. The 3 approved captions in tours/captions.json go on home tour
