@@ -278,5 +278,13 @@
  ],
  "ig_audio_id": "1358715284711534",
  "ig_audio": "Crossing the Marigold Bridge - Michael Giacchino",
- "ig_audio_backup": "What A Wonderful World - Louis Armstrong"
+ "ig_audio_backup": "What A Wonderful World - Louis Armstrong",
+ "handoff": {
+  "time": "09:45",
+  "song": {
+   "instagram": "Crossing the Marigold Bridge - Michael Giacchino",
+   "facebook": "Hold On, We're Going Home - Drake, Majid Jordan",
+   "tiktok": "Paper Moon Static - Marnie Cusk"
+  }
+ }
 }
