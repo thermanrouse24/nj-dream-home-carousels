@@ -14,7 +14,9 @@
  "ig_audio_backup": "What A Wonderful World - Louis Armstrong",
  "audio_volume": 100,
  "video_volume": 1,
- "status": "queued",
+ "status": "publishing",
  "approved_by": "Therm",
- "queued_at": "2026-11-03T21:24:57-05:00"
+ "queued_at": "2026-11-03T21:24:57-05:00",
+ "claimed_at": "2026-11-04T14:45:00.000147+00:00",
+ "publish_called": false
 }
