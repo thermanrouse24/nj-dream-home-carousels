@@ -1,1 +1,8 @@
-{"id":"probe_1USNBIgB","drive_file_id":"1USNBIgBZPO5p2WQ9D7J-lmk-KzNOzS87","drive_title":"1880 Long Ter Union $1,049,000 5 BR 5.1 BA","status":"probe"}
+{
+ "id": "probe_1USNBIgB",
+ "drive_file_id": "1USNBIgBZPO5p2WQ9D7J-lmk-KzNOzS87",
+ "drive_title": "1880 Long Ter Union $1,049,000 5 BR 5.1 BA",
+ "status": "probed",
+ "frames": "tours/probes/probe_1USNBIgB_frames.jpg",
+ "source_duration_s": 35.4
+}
