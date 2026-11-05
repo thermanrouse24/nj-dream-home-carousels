@@ -1,0 +1,112 @@
+{
+ "id": "2026-11-06_B_local",
+ "tag": "LOCAL *SPOTS*",
+ "hook": 8,
+ "lesson": "",
+ "story_plan": {
+  "type": "multi",
+  "frames": [
+   1,
+   2,
+   3
+  ]
+ },
+ "music": {
+  "ig_audio": "Stupid Song - Olivia Rodrigo",
+  "ig_audio_source": "https://en.wikipedia.org/wiki/List_of_Billboard_Hot_100_top-ten_singles_in_2026",
+  "ig_audio_backup": "Save Your Tears - The Weeknd",
+  "tiktok": "auto"
+ },
+ "source": "NJ Transit, Mount Arlington Station (Nov. 2026)",
+ "slides": [
+  {
+   "type": "cover",
+   "eyebrow": "Paying to park at your train station?",
+   "lines": [
+    "THIS IS WHY",
+    "YOU'RE STILL",
+    "~PAYING TO PARK",
+    "~AT THE TRAIN"
+   ],
+   "sub": "One Morris County station has 281 parking spots and no parking fee. There's one catch.",
+   "source": "NJ Transit, Mount Arlington Station (Nov. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "1",
+   "kind": "Train",
+   "title": "2 train lines",
+   "meta": "Mount Arlington Station, Howard Blvd",
+   "chips": [
+    "NJ Transit",
+    "Morristown Line",
+    "Montclair-Boonton"
+   ],
+   "body": "Mount Arlington is on both lines, with limited service. Through Nov. 14, weekday Midtown Direct trains go to Hoboken. Check the timetable for your hours.",
+   "scene": "train",
+   "variant": 0,
+   "source": "NJ Transit, Mount Arlington Station (Nov. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "2",
+   "kind": "Parking",
+   "title": "281 spots, no fee",
+   "meta": "Lot 1, Route 80 and Howard Blvd",
+   "chips": [
+    "No fee",
+    "Residents or not",
+    "No overnight"
+   ],
+   "body": "NJ Transit's lot has 274 standard and 7 accessible spaces, with no fee for anyone. The catch: no overnight parking.",
+   "scene": "train",
+   "variant": 1,
+   "source": "NJ Transit, Mount Arlington Station (Nov. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "3",
+   "kind": "Getting there",
+   "title": "Right off I-80",
+   "meta": "I-80 exit 30, Howard Blvd",
+   "chips": [
+    "Exit 30",
+    "1 ticket machine",
+    "Bike racks"
+   ],
+   "body": "The station sits at the Howard Boulevard exit. There's no ticket agent, just one machine in the plaza by the tunnel.",
+   "scene": "train",
+   "variant": 2,
+   "source": "NJ Transit, Mount Arlington Station (Nov. 2026)"
+  },
+  {
+   "type": "route",
+   "eyebrow": "Plan the route",
+   "title": "Your commute",
+   "stops": [
+    {
+     "name": "Off I-80",
+     "where": "Exit 30"
+    },
+    {
+     "name": "Free lot",
+     "where": "Howard Blvd"
+    },
+    {
+     "name": "Train platform",
+     "where": "Mount Arlington Station"
+    }
+   ],
+   "tip": "Before you make an offer, drive from the house to the station at rush hour.",
+   "source": "NJ Transit, Mount Arlington Station (Nov. 2026)"
+  }
+ ],
+ "caption": "Mount Arlington's train station has 281 parking spots and no parking fee. Just no overnight parking. Would you drive a little farther for free parking?\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #MountArlingtonNJ #MorrisCountyNJ\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "Mount Arlington's train station has 281 parking spots and no parking fee. Just no overnight parking. Would you drive a little farther for free parking?\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://www.njtransit.com/station/mount-arlington-station",
+  "https://en.wikipedia.org/wiki/Mount_Arlington_station",
+  "https://content.njtransit.com/pdf/schedules/rail/BNTN",
+  "https://villagegreennj.com/infrastructure/njtransit-from-oct-11-nov-14-all-midtown-direct-trains-will-operate-to-from-hoboken/"
+ ]
+}
