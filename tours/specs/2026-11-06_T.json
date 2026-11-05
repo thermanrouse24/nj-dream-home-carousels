@@ -19,8 +19,126 @@
   "One Dance - Drake",
   "Sure Thing - Miguel"
  ],
- "status": "new",
+ "status": "rendered",
  "caption_option": 1,
  "caption": "WHY KEEP RENTING ⁉️\n\nWHEN YOU COULD OWN 🔑\n\nWHO'S NEXT? 👀🔥\n\n👀👀🚨 YOU HAVE TO SEE THIS ONE 🔥🔥\n\nWATCH TILL THE END ☝🏾\n\nHere's how I help my buyers:\n✔️ Know their numbers before they shop 💰\n✔️ Skip the mistakes that cost first-time buyers\n✔️ Keep the whole process simple and low-stress 😌\n\nBuying a home isn't luck. It's a plan.\n\n_____\n\n🔥 HOW TO GET STARTED (3 EASY STEPS):\n\n✅ Step 1: Tap the LINK IN MY BIO and fill out the quick form\n⏱️ About 30 seconds, no obligation\n\n✅ Step 2: I reach out within 24 hours 📲\nWe'll set up your free buyer consultation\n\n✅ Step 3: We find the RIGHT home, I negotiate for you 💪🏾\n...and we protect your budget the whole way 💸\n\nCLICK THE LINK IN MY BIO ✅ CLICK THE LINK IN MY BIO ✅\n\n#NJRealEstate #NJRealtor #NJHomes #FirstTimeHomeBuyer\n\nTherm The Realtor | eXp Realty",
- "tiktok_caption": "WHY KEEP RENTING ⁉️\n\nWHEN YOU COULD OWN 🔑\n\nWHO'S NEXT? 👀🔥\n\n👀👀🚨 YOU HAVE TO SEE THIS ONE 🔥🔥\n\nWATCH TILL THE END ☝🏾\n\nHere's how I help my buyers:\n✔️ Know their numbers before they shop 💰\n✔️ Skip the mistakes that cost first-time buyers\n✔️ Keep the whole process simple and low-stress 😌\n\nBuying a home isn't luck. It's a plan.\n\n_____\n\n🔥 HOW TO GET STARTED (3 EASY STEPS):\n\n✅ Step 1: DM me \"HOME\" and I'll send you the quick form\n⏱️ About 30 seconds, no obligation\n\n✅ Step 2: I reach out within 24 hours 📲\nWe'll set up your free buyer consultation\n\n✅ Step 3: We find the RIGHT home, I negotiate for you 💪🏾\n...and we protect your budget the whole way 💸\n\nDM me \"HOME\" to get started. ✅ DM ME \"HOME\" ✅\n\n#NJRealEstate #NJRealtor #NJHomes #FirstTimeHomeBuyer\n\nTherm The Realtor | eXp Realty"
+ "tiktok_caption": "WHY KEEP RENTING ⁉️\n\nWHEN YOU COULD OWN 🔑\n\nWHO'S NEXT? 👀🔥\n\n👀👀🚨 YOU HAVE TO SEE THIS ONE 🔥🔥\n\nWATCH TILL THE END ☝🏾\n\nHere's how I help my buyers:\n✔️ Know their numbers before they shop 💰\n✔️ Skip the mistakes that cost first-time buyers\n✔️ Keep the whole process simple and low-stress 😌\n\nBuying a home isn't luck. It's a plan.\n\n_____\n\n🔥 HOW TO GET STARTED (3 EASY STEPS):\n\n✅ Step 1: DM me \"HOME\" and I'll send you the quick form\n⏱️ About 30 seconds, no obligation\n\n✅ Step 2: I reach out within 24 hours 📲\nWe'll set up your free buyer consultation\n\n✅ Step 3: We find the RIGHT home, I negotiate for you 💪🏾\n...and we protect your budget the whole way 💸\n\nDM me \"HOME\" to get started. ✅ DM ME \"HOME\" ✅\n\n#NJRealEstate #NJRealtor #NJHomes #FirstTimeHomeBuyer\n\nTherm The Realtor | eXp Realty",
+ "ig_url": "https://github.com/thermanrouse24/nj-dream-home-carousels/releases/download/tours/2026-11-06_T_union_ig.mp4",
+ "tiktok_url": "https://github.com/thermanrouse24/nj-dream-home-carousels/releases/download/tours/2026-11-06_T_union_tiktok.mp4",
+ "cover": "tours/previews/2026-11-06_T_union_cover.jpg",
+ "preview": "tours/previews/2026-11-06_T_union_preview.jpg",
+ "render_info": {
+  "text_until_s": 1.0,
+  "blur_until_s": 1.0,
+  "duration_s": 38.4,
+  "source_duration_s": 35.4,
+  "source_has_audio": false,
+  "source_mean_volume_db": null,
+  "has_music": false,
+  "ig_mb": 27.0,
+  "tiktok_mb": 26.6,
+  "phone_replaced": {
+   "phone_box": [
+    68,
+    1332,
+    944,
+    130
+   ],
+   "phone_box_s": [
+    32.4,
+    35.4
+   ],
+   "phone_text": "Call/Text 917.843.5290 Therm The Realtor"
+  },
+  "text_fixes": {
+   "ig": [
+    {
+     "kind": "save",
+     "box": [
+      50,
+      885,
+      960,
+      1171
+     ],
+     "t": [
+      8.5,
+      11.5
+     ],
+     "text": "TAKES 30 SECONDS. NO OBLIGATION."
+    },
+    {
+     "kind": "best",
+     "box": [
+      120,
+      884,
+      960,
+      1124
+     ],
+     "t": [
+      13.5,
+      16.2
+     ],
+     "text": "LET'S MAKE YOUR PLAN."
+    }
+   ],
+   "tiktok": [
+    {
+     "kind": "cta",
+     "box": [
+      70,
+      668,
+      832,
+      814
+     ],
+     "t": [
+      4.0,
+      7.8
+     ],
+     "text": "DM ME \"HOME\""
+    },
+    {
+     "kind": "cta+save",
+     "box": [
+      50,
+      885,
+      999,
+      1321
+     ],
+     "t": [
+      8.5,
+      11.5
+     ],
+     "text": "TAKES 30 SECONDS. NO OBLIGATION. / DM ME \"HOME\""
+    },
+    {
+     "kind": "cta",
+     "box": [
+      52,
+      736,
+      1027,
+      882
+     ],
+     "t": [
+      22.8,
+      28.8
+     ],
+     "text": "DM ME \"HOME\""
+    },
+    {
+     "kind": "best",
+     "box": [
+      120,
+      884,
+      960,
+      1124
+     ],
+     "t": [
+      13.5,
+      16.2
+     ],
+     "text": "LET'S MAKE YOUR PLAN."
+    }
+   ]
+  }
+ }
 }
