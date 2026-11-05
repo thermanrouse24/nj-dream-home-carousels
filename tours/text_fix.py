@@ -186,7 +186,8 @@ def apply(src, events, platform, out):
             if e["kind"] == "best" and kb[1] < b[1] + 240:   # OCR misread line 2 of the claim as a CTA:
                 continue                                       # it is part of the claim, so cover it too
             if b[1] < kb[1] < b[3]:
-                b[3] = kb[1] - 4
+                # kb is padded; a 2-line "save" box's dark bottom edge can sit inside that padding (Nov 5 2026: ghost text)
+                b[3] = kb[1] + (20 if e["kind"] == "save" else -4)
             elif b[1] < kb[3] < b[3]:
                 b[1] = kb[3] + 4
     use = merge([e for e in use if e["box"][3] - e["box"][1] > 40])

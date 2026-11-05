@@ -176,6 +176,44 @@ def train_svg(v, w, h):
 </svg>'''
 
 
+def parking_svg(v, w, h):
+    """Open-air commuter parking lot: painted spaces, parked cars, a P sign."""
+    cars = ""
+    for i, c in enumerate(("#8FA3B5", "#B5583F", "#C9CFC8", "#4F6F5A", "#D9B26B")):
+        x = w * (0.1 + 0.17 * i)
+        cars += (f'<rect x="{x}" y="{h*0.56}" width="{w*0.12}" height="{h*0.15}" rx="16" fill="{c}"/>'
+                 f'<rect x="{x+w*0.02}" y="{h*0.585}" width="{w*0.08}" height="{h*0.05}" rx="6" fill="#2A3549"/>'
+                 f'<circle cx="{x+w*0.025}" cy="{h*0.71}" r="11" fill="#1B2C23"/><circle cx="{x+w*0.095}" cy="{h*0.71}" r="11" fill="#1B2C23"/>')
+    lines = "".join(f'<rect x="{w*(0.085+0.17*i)}" y="{h*0.54}" width="6" height="{h*0.26}" fill="#E8E2D2"/>' for i in range(6))
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">
+<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6F9BC4"/><stop offset="1" stop-color="#E3D9BF"/></linearGradient></defs>
+<rect width="{w}" height="{h}" fill="url(#sky)"/>
+<rect x="0" y="{h*0.42}" width="{w}" height="{h*0.1}" fill="#2F5A3F"/>
+<rect x="0" y="{h*0.5}" width="{w}" height="{h*0.5}" fill="#4A4A48"/>
+{lines}{cars}
+<rect x="{w*0.875}" y="{h*0.2}" width="10" height="{h*0.42}" fill="#1B2C23"/>
+<rect x="{w*0.825}" y="{h*0.08}" width="{w*0.12}" height="{w*0.12}" rx="12" fill="#2A5AA8"/>
+<text x="{w*0.885}" y="{h*0.08+w*0.092}" font-family="Montserrat,Arial,sans-serif" font-weight="800" font-size="{w*0.085}" fill="#FFFFFF" text-anchor="middle">P</text>
+</svg>'''
+
+
+def highway_svg(v, w, h):
+    """Interstate with a green exit sign (Therm's local place cards; no real sign reproduced)."""
+    dashes = "".join(f'<polygon points="{w*0.5-2-i*3},{h*(0.5+0.1*i)} {w*0.5+2+i*3},{h*(0.5+0.1*i)} {w*0.5+3+i*4},{h*(0.56+0.11*i)} {w*0.5-3-i*4},{h*(0.56+0.11*i)}" fill="#F1E6C9"/>' for i in range(5))
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">
+<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6F9BC4"/><stop offset="1" stop-color="#E3D9BF"/></linearGradient></defs>
+<rect width="{w}" height="{h}" fill="url(#sky)"/>
+<path d="M0,{h*0.5} Q{w*0.25},{h*0.34} {w*0.5},{h*0.46} T{w},{h*0.42} V{h*0.56} H0 Z" fill="#2F5A3F"/>
+<rect x="0" y="{h*0.5}" width="{w}" height="{h*0.5}" fill="#3D7350"/>
+<polygon points="{w*0.46},{h*0.5} {w*0.54},{h*0.5} {w*0.95},{h} {w*0.05},{h}" fill="#4A4A48"/>
+{dashes}
+<rect x="{w*0.68}" y="{h*0.38}" width="10" height="{h*0.28}" fill="#1B2C23"/><rect x="{w*0.88}" y="{h*0.38}" width="10" height="{h*0.28}" fill="#1B2C23"/>
+<rect x="{w*0.64}" y="{h*0.08}" width="{w*0.3}" height="{h*0.32}" rx="10" fill="#1F6B45" stroke="#FFFFFF" stroke-width="4"/>
+<text x="{w*0.79}" y="{h*0.21}" font-family="Montserrat,Arial,sans-serif" font-weight="800" font-size="{h*0.075}" fill="#FFFFFF" text-anchor="middle">EXIT 30</text>
+<text x="{w*0.79}" y="{h*0.33}" font-family="Montserrat,Arial,sans-serif" font-weight="600" font-size="{h*0.055}" fill="#FFFFFF" text-anchor="middle">Howard Blvd</text>
+</svg>'''
+
+
 def lake_svg(v, w, h):
     """Lake scene, daytime. variant 0 = midday, 1 = late afternoon (mirrored)."""
     v = int(v) % 2
@@ -234,6 +272,10 @@ def render_scene(kind, variant, out_png, w=920, h=560):
         svg = trail_svg(variant, w, h)
     elif kind == "train":
         svg = train_svg(variant, w, h)
+    elif kind == "parking":
+        svg = parking_svg(variant, w, h)
+    elif kind == "highway":
+        svg = highway_svg(variant, w, h)
     else:
         svg = storefront_svg(kind if kind in SIGN else "default", variant, w, h)
     png = cairosvg.svg2png(bytestring=svg.encode(), output_width=w * 2, output_height=h * 2)

@@ -23,10 +23,10 @@
    "type": "cover",
    "eyebrow": "Paying to park at your train station?",
    "lines": [
-    "THIS IS WHY",
-    "YOU'RE STILL",
-    "~PAYING TO PARK",
-    "~AT THE TRAIN"
+    "THIS IS WHY YOU'RE",
+    "STILL PAYING:",
+    "~YOU HAVEN'T SEEN",
+    "~THESE 281 SPOTS"
    ],
    "sub": "One Morris County station has 281 parking spots and no parking fee. There's one catch.",
    "source": "NJ Transit, Mount Arlington Station (Nov. 2026)"
@@ -42,10 +42,10 @@
     "Morristown Line",
     "Montclair-Boonton"
    ],
-   "body": "Mount Arlington is on both lines, with limited service. Through Nov. 14, weekday Midtown Direct trains go to Hoboken. Check the timetable for your hours.",
+   "body": "Mount Arlington is on both lines, with limited service. Through Nov. 14, NJ Transit plans to run weekday Midtown Direct trains to Hoboken. Check the timetable.",
    "scene": "train",
    "variant": 0,
-   "source": "NJ Transit, Mount Arlington Station (Nov. 2026)"
+   "source": "NJ Transit, Mount Arlington Station; Village Green (Nov. 2026)"
   },
   {
    "type": "place",
@@ -59,8 +59,8 @@
     "No overnight"
    ],
    "body": "NJ Transit's lot has 274 standard and 7 accessible spaces, with no fee for anyone. The catch: no overnight parking.",
-   "scene": "train",
-   "variant": 1,
+   "scene": "parking",
+   "variant": 0,
    "source": "NJ Transit, Mount Arlington Station (Nov. 2026)"
   },
   {
@@ -75,9 +75,9 @@
     "Bike racks"
    ],
    "body": "The station sits at the Howard Boulevard exit. There's no ticket agent, just one machine in the plaza by the tunnel.",
-   "scene": "train",
-   "variant": 2,
-   "source": "NJ Transit, Mount Arlington Station (Nov. 2026)"
+   "scene": "highway",
+   "variant": 0,
+   "source": "NJ Transit, Mount Arlington Station; Wikipedia (Nov. 2026)"
   },
   {
    "type": "route",
