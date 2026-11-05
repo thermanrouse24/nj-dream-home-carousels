@@ -191,9 +191,9 @@ def parking_svg(v, w, h):
 <rect x="0" y="{h*0.42}" width="{w}" height="{h*0.1}" fill="#2F5A3F"/>
 <rect x="0" y="{h*0.5}" width="{w}" height="{h*0.5}" fill="#4A4A48"/>
 {lines}{cars}
-<rect x="{w*0.875}" y="{h*0.2}" width="10" height="{h*0.42}" fill="#1B2C23"/>
-<rect x="{w*0.825}" y="{h*0.08}" width="{w*0.12}" height="{w*0.12}" rx="12" fill="#2A5AA8"/>
-<text x="{w*0.885}" y="{h*0.08+w*0.092}" font-family="Montserrat,Arial,sans-serif" font-weight="800" font-size="{w*0.085}" fill="#FFFFFF" text-anchor="middle">P</text>
+<rect x="{w*0.875}" y="{h*0.3}" width="10" height="{h*0.32}" fill="#1B2C23"/>
+<rect x="{w*0.825}" y="{h*0.17}" width="{w*0.12}" height="{w*0.12}" rx="12" fill="#2A5AA8"/>
+<text x="{w*0.885}" y="{h*0.17+w*0.092}" font-family="Montserrat,Arial,sans-serif" font-weight="800" font-size="{w*0.085}" fill="#FFFFFF" text-anchor="middle">P</text>
 </svg>'''
 
 
@@ -207,10 +207,10 @@ def highway_svg(v, w, h):
 <rect x="0" y="{h*0.5}" width="{w}" height="{h*0.5}" fill="#3D7350"/>
 <polygon points="{w*0.46},{h*0.5} {w*0.54},{h*0.5} {w*0.95},{h} {w*0.05},{h}" fill="#4A4A48"/>
 {dashes}
-<rect x="{w*0.68}" y="{h*0.38}" width="10" height="{h*0.28}" fill="#1B2C23"/><rect x="{w*0.88}" y="{h*0.38}" width="10" height="{h*0.28}" fill="#1B2C23"/>
-<rect x="{w*0.64}" y="{h*0.08}" width="{w*0.3}" height="{h*0.32}" rx="10" fill="#1F6B45" stroke="#FFFFFF" stroke-width="4"/>
-<text x="{w*0.79}" y="{h*0.21}" font-family="Montserrat,Arial,sans-serif" font-weight="800" font-size="{h*0.075}" fill="#FFFFFF" text-anchor="middle">EXIT 30</text>
-<text x="{w*0.79}" y="{h*0.33}" font-family="Montserrat,Arial,sans-serif" font-weight="600" font-size="{h*0.055}" fill="#FFFFFF" text-anchor="middle">Howard Blvd</text>
+<rect x="{w*0.68}" y="{h*0.46}" width="10" height="{h*0.2}" fill="#1B2C23"/><rect x="{w*0.88}" y="{h*0.46}" width="10" height="{h*0.2}" fill="#1B2C23"/>
+<rect x="{w*0.64}" y="{h*0.16}" width="{w*0.3}" height="{h*0.3}" rx="10" fill="#1F6B45" stroke="#FFFFFF" stroke-width="4"/>
+<text x="{w*0.79}" y="{h*0.28}" font-family="Montserrat,Arial,sans-serif" font-weight="800" font-size="{h*0.075}" fill="#FFFFFF" text-anchor="middle">EXIT 30</text>
+<text x="{w*0.79}" y="{h*0.39}" font-family="Montserrat,Arial,sans-serif" font-weight="600" font-size="{h*0.055}" fill="#FFFFFF" text-anchor="middle">Howard Blvd</text>
 </svg>'''
 
 
