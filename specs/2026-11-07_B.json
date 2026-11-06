@@ -22,9 +22,9 @@
    "eyebrow": "Living in Morris Plains?",
    "lines": [
     "YOU DON'T NEED",
-    "A RESERVATION.",
-    "~YOU NEED THESE",
-    "~3 PIZZA SPOTS"
+    "A BIG NIGHT OUT.",
+    "~YOU NEED 1 STREET",
+    "~AND 3 PIZZA SPOTS"
    ],
    "sub": "All 3 are on Speedwell Ave. Swipe for the addresses.",
    "source": "Slice; Uber Eats (Nov. 2026)"
@@ -40,7 +40,7 @@
     "Calzones",
     "Open Sat 10 AM"
    ],
-   "body": "A pizzeria and restaurant on the south end of Speedwell Ave. Pies come in 12-, 14- and 16-inch sizes.",
+   "body": "A pizzeria and restaurant, and the first stop on Speedwell Ave. Pies come in 12-, 14- and 16-inch sizes.",
    "scene": "pizza",
    "variant": 0,
    "source": "Uber Eats, Mario's Brick Oven & Restaurant (Nov. 2026)"
