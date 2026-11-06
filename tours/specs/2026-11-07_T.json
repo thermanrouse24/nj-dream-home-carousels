@@ -6,7 +6,7 @@
  "address": "318 Halsey Rd",
  "town": "Parsippany",
  "county": "Morris",
- "price": "",
+ "price": "$949,999",
  "beds": "5",
  "baths": "4",
  "cover_facts": "43 Mins to NYC | 5 Beds | 4 Baths",
@@ -42,5 +42,13 @@
    "ig": [],
    "tiktok": []
   }
+ },
+ "phone_checked": true,
+ "listing": {
+  "status": "active (latest indexed data)",
+  "list_price": "$949,999",
+  "broker": "H P Realty",
+  "mls": "GSMLS 4046289",
+  "url": "https://www.zillow.com/homedetails/318-Halsey-Rd-Parsippany-NJ-07054/39474170_zpid/"
  }
 }

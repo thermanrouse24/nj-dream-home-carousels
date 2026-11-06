@@ -1,0 +1,109 @@
+{
+ "id": "2026-11-07_B_local",
+ "tag": "LOCAL *SPOTS*",
+ "hook": 26,
+ "lesson": "",
+ "story_plan": {
+  "type": "single",
+  "frames": [
+   1
+  ]
+ },
+ "music": {
+  "ig_audio": "Midnight Sun - Zara Larsson",
+  "ig_audio_source": "https://ca.billboard.com/charts/hot-100/2026-11-07",
+  "ig_audio_backup": "Risk It All - Bruno Mars",
+  "tiktok": "auto"
+ },
+ "source": "Slice; Uber Eats (Nov. 2026)",
+ "slides": [
+  {
+   "type": "cover",
+   "eyebrow": "Living in Morris Plains?",
+   "lines": [
+    "YOU DON'T NEED",
+    "A RESERVATION.",
+    "~YOU NEED THESE",
+    "~3 PIZZA SPOTS"
+   ],
+   "sub": "All 3 are on Speedwell Ave. Swipe for the addresses.",
+   "source": "Slice; Uber Eats (Nov. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "1",
+   "kind": "Pizza",
+   "title": "Mario's Brick Oven",
+   "meta": "196 Speedwell Ave",
+   "chips": [
+    "Pizza + pasta",
+    "Calzones",
+    "Open Sat 10 AM"
+   ],
+   "body": "A pizzeria and restaurant on the south end of Speedwell Ave. Pies come in 12-, 14- and 16-inch sizes.",
+   "scene": "pizza",
+   "variant": 0,
+   "source": "Uber Eats, Mario's Brick Oven & Restaurant (Nov. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "2",
+   "kind": "Pizza",
+   "title": "Annabella's",
+   "meta": "401 Speedwell Ave",
+   "chips": [
+    "Grandma pie",
+    "Gluten-free",
+    "Order ahead"
+   ],
+   "body": "Grandma, Drunken Grandma and Grandpa pies are on the menu, plus a 12-inch gluten-free cheese pizza.",
+   "scene": "pizza",
+   "variant": 1,
+   "source": "Slice, Annabella's Pizzeria & Restaurant (Nov. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "3",
+   "kind": "Pizza",
+   "title": "Tony's Pizza",
+   "meta": "668 Speedwell Ave",
+   "chips": [
+    "Sicilian",
+    "Grandma pie",
+    "Rice balls"
+   ],
+   "body": "The menu has an upside-down Sicilian, a grandma pie and a cauliflower-crust option.",
+   "scene": "pizza",
+   "variant": 2,
+   "source": "Slice, Tony's Pizza Morris Plains (Nov. 2026)"
+  },
+  {
+   "type": "route",
+   "eyebrow": "Plan the route",
+   "title": "One street, 3 stops",
+   "stops": [
+    {
+     "name": "Mario's Brick Oven",
+     "where": "196 Speedwell Ave"
+    },
+    {
+     "name": "Annabella's",
+     "where": "401 Speedwell Ave"
+    },
+    {
+     "name": "Tony's Pizza",
+     "where": "668 Speedwell Ave"
+    }
+   ],
+   "tip": "Touring homes here? Check how far each house is from Speedwell Ave. That's your takeout run.",
+   "source": "Slice; Uber Eats (Nov. 2026)"
+  }
+ ],
+ "caption": "Three pizza spots in Morris Plains, all on Speedwell Ave. Which pie are you ordering first?\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #MorrisPlainsNJ #MorrisCountyNJ\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "Three pizza spots in Morris Plains, all on Speedwell Ave. Which pie are you ordering first?\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://www.ubereats.com/store/marios-brick-oven-%26-restaurant/bZQSDELCQ8Cnu2vnd9Bsaw/77f0b239-11fb-4d9f-919d-36c559c4f484/985440b1-ea57-4fb1-9f06-d6abd9720c54",
+  "https://slicelife.com/restaurants/nj/morris-plains/07950/annabella-s-pizzeria-restaurant/menu",
+  "https://slicelife.com/restaurants/nj/morris-plains/07950/tony-s-pizza-morris-plains/menu"
+ ]
+}
