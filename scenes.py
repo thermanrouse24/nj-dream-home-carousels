@@ -273,7 +273,7 @@ def mill_svg(v, w, h):
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">
 <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6F9BC4"/><stop offset="1" stop-color="#E3D9BF"/></linearGradient></defs>
 <rect width="{w}" height="{h}" fill="url(#sky)"/>
-<circle cx="{w*0.78}" cy="{h*0.18}" r="{h*0.07}" fill="#FFF1C9"/>
+<circle cx="{w*0.6}" cy="{h*0.2}" r="{h*0.07}" fill="#FFF1C9"/>
 <path d="M0,{ground} Q{w*0.4},{ground-30} {w},{ground-8} V{h} H0 Z" fill="#2F5A3F"/>
 {trees}
 <rect x="{bx}" y="{by+h*0.06}" width="{bw}" height="{ground-by-h*0.06}" fill="#B8AE9C"/>

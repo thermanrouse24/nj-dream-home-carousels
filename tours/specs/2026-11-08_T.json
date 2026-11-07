@@ -140,5 +140,18 @@
     }
    ]
   }
- }
+ },
+ "ig_audio_id": "",
+ "ig_audio": "",
+ "ig_audio_backup": "",
+ "phone_checked": true,
+ "listing": {
+  "status": "active (checked Nov 7 2026)",
+  "list_price": "$699,500",
+  "broker": "RE/MAX First Realty II",
+  "mls": "GSMLS 4048765",
+  "url": "https://bryan.homefront.com/homes/nj/plainfield/property/409-john-street-aa3c7915-8954-3850-90bb-753fe856d8d7",
+  "note": "Earlier listed at $748,500 (Mar 2026); the edit's $26,198 cover figure was 3.5% of that, so cover_price is left blank."
+ },
+ "audio_note": "Instagram audio API returned no match for any of the 5 chart songs (library tracks only). Needs FIX T: song or a manual post."
 }
