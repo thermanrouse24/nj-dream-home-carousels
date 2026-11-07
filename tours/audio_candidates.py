@@ -22,7 +22,8 @@ for p in sorted(glob.glob(os.path.join(here, "specs", "*_T.json"))):
     wants, cands = s.get("ig_song_wants") or [], []
     for want in wants:
         title, _, artist = want.partition(" - ")
-        res, _, _ = ig_audio.search(tok, ig, want.replace(" - ", " "))
+        res, variant, errs = ig_audio.search(tok, ig, want.replace(" - ", " "))
+        print(f"  {want}: {len(res)} results via {variant}; first: {[(r.get('title'), r.get('artist')) for r in res[:3]]}; errors: {errs}")
         first = (artist.split(",")[0].split("&")[0].strip() or title).lower()
         cands += [r for r in res if ig_audio.clean(r) and title.strip().lower() in (r.get("title") or "").lower()
                   and first in (r.get("artist") or "").lower()][:1]
