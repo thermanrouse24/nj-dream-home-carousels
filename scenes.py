@@ -260,6 +260,36 @@ def trail_svg(v, w, h):
 </svg>'''
 
 
+def mill_svg(v, w, h):
+    """Old stone grist mill by a stream with a wooden water wheel, daytime (generic, not a real building)."""
+    ground = h * 0.62
+    trees = ""
+    for (x, r, c) in ((.07,.16,"#2F5A3F"),(.2,.12,"#3D7350"),(.86,.17,"#2F5A3F"),(.97,.12,"#3D7350")):
+        trees += f'<rect x="{w*x-6}" y="{ground-h*r*0.5}" width="12" height="{h*r*0.8}" fill="#3A2A20"/><circle cx="{w*x}" cy="{ground-h*r}" r="{h*r}" fill="{c}"/>'
+    bx, bw, by = w*0.3, w*0.36, h*0.3
+    stones = "".join(f'<rect x="{bx+12+(i%5)*bw/5.2+(8 if (i//5)%2 else 0)}" y="{by+h*0.08+(i//5)*h*0.055}" width="{bw/6}" height="{h*0.04}" rx="5" fill="#9C9384" opacity=".55"/>' for i in range(20))
+    cx, cy, R = bx-w*0.02, ground-h*0.05, h*0.17
+    spokes = "".join(f'<line x1="{cx}" y1="{cy}" x2="{cx+R*__import__("math").cos(a*0.5236)}" y2="{cy+R*__import__("math").sin(a*0.5236)}" stroke="#5A3F2A" stroke-width="6"/>' for a in range(12))
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">
+<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6F9BC4"/><stop offset="1" stop-color="#E3D9BF"/></linearGradient></defs>
+<rect width="{w}" height="{h}" fill="url(#sky)"/>
+<circle cx="{w*0.78}" cy="{h*0.18}" r="{h*0.07}" fill="#FFF1C9"/>
+<path d="M0,{ground} Q{w*0.4},{ground-30} {w},{ground-8} V{h} H0 Z" fill="#2F5A3F"/>
+{trees}
+<rect x="{bx}" y="{by+h*0.06}" width="{bw}" height="{ground-by-h*0.06}" fill="#B8AE9C"/>
+{stones}
+<polygon points="{bx-14},{by+h*0.07} {bx+bw/2},{by-h*0.1} {bx+bw+14},{by+h*0.07}" fill="#5A3F2A"/>
+<rect x="{bx+bw*0.4}" y="{ground-h*0.16}" width="{bw*0.2}" height="{h*0.16}" fill="#3A2A20"/>
+<rect x="{bx+bw*0.12}" y="{by+h*0.12}" width="{bw*0.16}" height="{h*0.08}" fill="#2A3549"/>
+<rect x="{bx+bw*0.72}" y="{by+h*0.12}" width="{bw*0.16}" height="{h*0.08}" fill="#2A3549"/>
+<path d="M0,{h*0.8} Q{w*0.3},{h*0.74} {w*0.6},{h*0.82} T{w},{h*0.8} V{h} H0 Z" fill="#4F86A6"/>
+<rect x="{w*0.1}" y="{h*0.86}" width="{w*0.16}" height="4" rx="2" fill="#E8F1F4" opacity=".5"/><rect x="{w*0.55}" y="{h*0.9}" width="{w*0.2}" height="4" rx="2" fill="#E8F1F4" opacity=".5"/>
+<circle cx="{cx}" cy="{cy}" r="{R}" fill="none" stroke="#6B4A30" stroke-width="14"/>
+{spokes}
+<circle cx="{cx}" cy="{cy}" r="14" fill="#3A2A20"/>
+</svg>'''
+
+
 def render_scene(kind, variant, out_png, w=920, h=560):
     from home_scenes import HOME_KINDS, home_svg
     if kind in HOME_KINDS:
@@ -270,6 +300,8 @@ def render_scene(kind, variant, out_png, w=920, h=560):
         svg = lake_svg(variant, w, h)
     elif kind == "trail":
         svg = trail_svg(variant, w, h)
+    elif kind == "mill":
+        svg = mill_svg(variant, w, h)
     elif kind == "train":
         svg = train_svg(variant, w, h)
     elif kind == "parking":

@@ -1,0 +1,116 @@
+{
+ "id": "2026-11-08_B_local",
+ "tag": "LOCAL *SPOTS*",
+ "hook": 2,
+ "lesson": "",
+ "story_plan": {
+  "type": "multi",
+  "frames": [
+   1,
+   2,
+   3,
+   4
+  ]
+ },
+ "music": {
+  "ig_audio": "I Just Might - Bruno Mars",
+  "ig_audio_source": "https://ca.billboard.com/charts/hot-100/2026-11-07",
+  "ig_audio_backup": "Hate That I Made You Love Me - Ariana Grande",
+  "tiktok": "auto"
+ },
+ "source": "Morris County Park Commission; Washington Township Land Trust (Nov. 2026)",
+ "slides": [
+  {
+   "type": "cover",
+   "eyebrow": "Moving to Long Valley?",
+   "lines": [
+    "HERE'S THE TRUTH",
+    "ABOUT YOUR",
+    "~WEEKENDS:",
+    "~THEY'RE OUTSIDE"
+   ],
+   "sub": "823 acres, a 16.5-mile trail and a mill from 1750. Swipe for all 3.",
+   "source": "Morris County Park Commission; Washington Township Land Trust (Nov. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "1",
+   "kind": "Park",
+   "title": "Schooley's Mountain County Park",
+   "meta": "91 East Springtown Rd",
+   "chips": [
+    "823 acres",
+    "Sunrise to sunset",
+    "George Lake"
+   ],
+   "body": "A county park with trails, a lodge and boathouse on George Lake, and a lookout up the mountain.",
+   "scene": "lake",
+   "variant": 0,
+   "source": "Morris County Park Commission, morrisparks.net; Washington Twp. Recreation (Nov. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "2",
+   "kind": "Trail",
+   "title": "Columbia Trail",
+   "meta": "Long Valley section",
+   "chips": [
+    "16.5 miles",
+    "Open daily",
+    "Bikes OK"
+   ],
+   "body": "A stone dust trail for hiking and biking. Leashed pets are welcome. It runs from western Morris County into Hunterdon County.",
+   "scene": "trail",
+   "variant": 0,
+   "source": "Morris County Park Commission, morrisparks.net (Nov. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "3",
+   "kind": "History",
+   "title": "Obadiah LaTourette Mill",
+   "meta": "12 East Mill Rd",
+   "chips": [
+    "Built 1750",
+    "Being restored",
+    "Center of town"
+   ],
+   "body": "A 1750 grist and saw mill in the center of Long Valley. The Washington Township Land Trust is restoring it.",
+   "scene": "mill",
+   "variant": 0,
+   "source": "Washington Township Land Trust, wtlt.org; LVVA (Nov. 2026)"
+  },
+  {
+   "type": "route",
+   "eyebrow": "Plan the day",
+   "title": "3 stops, one town",
+   "stops": [
+    {
+     "name": "Schooley's Mountain Park",
+     "where": "91 East Springtown Rd"
+    },
+    {
+     "name": "Columbia Trail",
+     "where": "Long Valley section"
+    },
+    {
+     "name": "Obadiah LaTourette Mill",
+     "where": "12 East Mill Rd"
+    }
+   ],
+   "tip": "NJ has 4 Washington Townships. Long Valley's is in Morris County, so add the county to your search.",
+   "source": "Morris County Park Commission; Washington Township Land Trust (Nov. 2026)"
+  }
+ ],
+ "caption": "Long Valley has a mountain park, a 16.5-mile trail and a mill from 1750. Which one would you visit first?\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #LongValleyNJ #MorrisCountyNJ\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "Long Valley has a mountain park, a 16.5-mile trail and a mill from 1750. Which one would you visit first?\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://www.morrisparks.net/parks_trails/schooleys-mountain-county-park/",
+  "https://recreation.wtmorris.org/index.php/parks-fields/trails",
+  "https://www.morrisparks.net/parks_trails/columbia-trail/",
+  "https://wtlt.org/?p=3684",
+  "https://lvva.org/attractions/",
+  "https://www.wtmorris.org/index.php/home/about",
+  "https://www.nj.gov/nj/gov/county/localgov.shtml"
+ ]
+}
