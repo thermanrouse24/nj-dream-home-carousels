@@ -28,7 +28,7 @@ RULES = {
     # kind: (regex on the OCR'd line, replacement text, platforms it applies to)
     "cta": (r"LINK|L1NK|IN.?BIO|INIB|CLICK|CLIGK|GLICK", 'DM ME "HOME"', {"tiktok"}),
     "save": (r"SECOND|SECO|THOUSAND|SAVE", "TAKES 30 SECONDS. NO OBLIGATION.", {"ig", "tiktok"}),
-    "best": (r"HUNDRED|CLIENT|BUSINESS|USINESS|BEST IN|HELPED", "LET'S MAKE YOUR PLAN.", {"ig", "tiktok"}),
+    "best": (r"HUNDRED|CLIENT|BUSINESS|USINESS|SINESS|BEST IN|HELPED|ELPED", "LET'S MAKE YOUR PLAN.", {"ig", "tiktok"}),
 }
 KEEP = r"PRE.?APPROVAL|SCHEDULE|SHOWING|NEED|INFORMATION|DREAM HOME|WHY RENT|OWN"   # fine everywhere
 
@@ -45,7 +45,9 @@ def ocr_lines(img):
     import pytesseract
     out = []
     g = img.convert("L")
-    for v in (g, ImageOps.invert(g)):
+    # 3rd pass: white text only (Nov 7 2026: on a bright bedroom shot the thin white claim line
+    # "We have helped hundreds of clients" was missed by the first two passes and showed for ~0.8 s)
+    for v in (g, ImageOps.invert(g), g.point(lambda p: 255 if p > 235 else 0)):
         d = pytesseract.image_to_data(v, config="--psm 11", output_type=pytesseract.Output.DICT)
         words = [(d["text"][i].strip().upper(), d["left"][i], d["top"][i], d["width"][i], d["height"][i])
                  for i in range(len(d["text"])) if d["text"][i].strip() and float(d["conf"][i]) > 20
