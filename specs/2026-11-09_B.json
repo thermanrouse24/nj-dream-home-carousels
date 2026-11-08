@@ -10,9 +10,9 @@
   ]
  },
  "music": {
-  "ig_audio": "I Just Might - Bruno Mars",
+  "ig_audio": "Dracula - Tame Impala & JENNIE",
   "ig_audio_source": "https://ca.billboard.com/charts/hot-100/2026-11-07",
-  "ig_audio_backup": "Midnight Sun - Zara Larsson",
+  "ig_audio_backup": "Earrings - Malcolm Todd",
   "tiktok": "auto"
  },
  "source": "NJ Transit; Borough of Mountain Lakes; National Park Service (Nov. 2026)",
@@ -23,10 +23,10 @@
    "lines": [
     "THE PART THEY",
     "NEVER SHOW YOU:",
-    "~A 1912 STATION",
-    "~AND 2 MORE STOPS"
+    "~451 HOMES FROM",
+    "~ONE 1910s PLAN"
    ],
-   "sub": "All 3 are a short walk from the train station. Swipe for what they are and where to find them.",
+   "sub": "Plus 2 more stops, all a short walk apart. Swipe for what they are and where to find them.",
    "source": "NJ Transit; Borough of Mountain Lakes; National Park Service (Nov. 2026)"
   },
   {
@@ -43,7 +43,7 @@
    "body": "Built by the Lackawanna railroad in 1912. NJ Transit trains still stop here on weekdays.",
    "scene": "train",
    "variant": 0,
-   "source": "NJ Transit station page; NJ Historic Trust (Nov. 2026)"
+   "source": "NJ Transit; NJ Historic Trust; Wikipedia (Nov. 2026)"
   },
   {
    "type": "place",
