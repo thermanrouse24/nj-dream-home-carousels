@@ -1,0 +1,118 @@
+{
+ "id": "2026-11-09_B_local",
+ "tag": "LOCAL *SPOTS*",
+ "hook": 6,
+ "lesson": "",
+ "story_plan": {
+  "type": "single",
+  "frames": [
+   1
+  ]
+ },
+ "music": {
+  "ig_audio": "I Just Might - Bruno Mars",
+  "ig_audio_source": "https://ca.billboard.com/charts/hot-100/2026-11-07",
+  "ig_audio_backup": "Midnight Sun - Zara Larsson",
+  "tiktok": "auto"
+ },
+ "source": "NJ Transit; Borough of Mountain Lakes; National Park Service (Nov. 2026)",
+ "slides": [
+  {
+   "type": "cover",
+   "eyebrow": "Moving to Mountain Lakes?",
+   "lines": [
+    "THE PART THEY",
+    "NEVER SHOW YOU:",
+    "~A 1912 STATION",
+    "~AND 2 MORE STOPS"
+   ],
+   "sub": "All 3 are a short walk from the train station. Swipe for what they are and where to find them.",
+   "source": "NJ Transit; Borough of Mountain Lakes; National Park Service (Nov. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "1",
+   "kind": "Train",
+   "title": "Mountain Lakes Station",
+   "meta": "Midvale Rd",
+   "chips": [
+    "Built 1912",
+    "Montclair-Boonton Line",
+    "Ticket machine"
+   ],
+   "body": "Built by the Lackawanna railroad in 1912. NJ Transit trains still stop here on weekdays.",
+   "scene": "train",
+   "variant": 0,
+   "source": "NJ Transit station page; NJ Historic Trust (Nov. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "2",
+   "kind": "Library",
+   "title": "Mountain Lakes Public Library",
+   "meta": "9 Elm Rd",
+   "chips": [
+    "Makerspace",
+    "Events calendar",
+    "MAIN member"
+   ],
+   "body": "The town library is a short walk from the station lots. It has a makerspace and an events calendar.",
+   "scene": "library",
+   "variant": 1,
+   "source": "LibraryLinkNJ; Mountain Lakes Public Library (Nov. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "3",
+   "kind": "History",
+   "title": "Mountain Lakes Historic District",
+   "meta": "Most of the borough",
+   "chips": [
+    "National Register",
+    "Planned in 1910s",
+    "451 Hapgood homes"
+   ],
+   "body": "Woods in 1910, a planned town about 10 years later. 451 Hapgood homes still stand.",
+   "scene": "home",
+   "variant": 0,
+   "source": "NPS NRIS 05000963; Borough of Mountain Lakes (Nov. 2026)"
+  },
+  {
+   "type": "route",
+   "eyebrow": "Plan the morning",
+   "title": "3 stops, one town",
+   "stops": [
+    {
+     "name": "Mountain Lakes Station",
+     "where": "Midvale Rd"
+    },
+    {
+     "name": "Public Library",
+     "where": "9 Elm Rd"
+    },
+    {
+     "name": "Historic District",
+     "where": "Boulevard"
+    }
+   ],
+   "tip": "Non-residents pay $100 a year to park at the station. Evenings and weekends: 3 hours, no permit.",
+   "source": "NJ Transit, Mountain Lakes station page (Nov. 2026)"
+  }
+ ],
+ "caption": "Mountain Lakes has a train station from 1912, a library on Elm Road and a whole historic district planned in the 1910s. Which one would you check out first?\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #MountainLakesNJ #MorrisCountyNJ\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "Mountain Lakes has a train station from 1912, a library on Elm Road and a whole historic district planned in the 1910s. Which one would you check out first?\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://www.njtransit.com/station/mountain-lakes-station",
+  "https://www.nj.gov/dca/njht/funded/sitedetails/Mountain_Lakes_Train_Station.shtml",
+  "https://librarylinknj.org/library/2753",
+  "https://mountainlakesmakerspace.substack.com/p/upcoming-events-a51",
+  "https://npgallery.nps.gov/AssetDetail/89f4346b-efb0-4d69-9001-9711f7d851e9",
+  "https://mountainlakes.gov/?p=1104",
+  "https://mountainlakes.gov/?p=3864",
+  "https://en.wikipedia.org/wiki/Mountain_Lakes_station",
+  "https://libraryc.org/mtnlakeslibrary",
+  "https://library.mtnlakes.org/?p=269",
+  "https://mountainlakes.gov/committees-and-commissions/historic-preservation-committee/national-and-state-historic-district/",
+  "https://mountainlakes.gov/about-mountain-lakes/historic-walking-tour/"
+ ]
+}

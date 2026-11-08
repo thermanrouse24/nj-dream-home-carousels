@@ -21,12 +21,12 @@
  ],
  "status": "rendered",
  "listing": {
-  "status": "active (checked Nov 8 2026)",
+  "status": "active per Pinn Realty IDX page (undated) on Nov 8 2026; Coldwell Banker showed Active at $1,125,000 (updated May 26 2026); Nest Seekers shows inactive. Not 100% confirmed: check GSMLS before approving.",
   "list_price": "$1,099,000",
   "broker": "Keller Williams City Views Realty",
   "mls": "GSMLS 4042473",
   "url": "https://pinnrealty.realgeeks.com/property/4042473/",
-  "note": "$38,465 = 3.5% of $1,099,000 (FHA-style down payment)."
+  "note": "$38,465 = 3.5% of $1,099,000. Sold May 2025 for $680,000, rebuilt since."
  },
  "song_chart": "https://ca.billboard.com/charts/hot-100/2026-11-07",
  "caption_option": 1,
@@ -149,5 +149,6 @@
     }
    ]
   }
- }
+ },
+ "audio_note": "Instagram audio API returned no match for any of the 5 chart songs (5th day in a row). Needs FIX T: song <name>."
 }
