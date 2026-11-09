@@ -1,0 +1,69 @@
+{
+ "id": "2026-11-10_C_gift",
+ "tag": "DOWN PAYMENT *HELP*",
+ "style": "cartoon",
+ "hook": 25,
+ "lesson": "Alex Hormozi, My Actual Social Media Strategy For 2027, one buyer action per slide (Use for us #5)",
+ "story_plan": {
+  "type": "single",
+  "frames": [
+   1
+  ]
+ },
+ "music": {
+  "ig_audio": "Expectations - Olivia Rodrigo & Chappell Roan",
+  "ig_audio_source": "https://ca.billboard.com/charts/hot-100/2026-11-07",
+  "ig_audio_backup": "Hate That I Made You Love Me - Ariana Grande",
+  "tiktok": "auto"
+ },
+ "source": "Fannie Mae Selling Guide (Nov. 2026)",
+ "slides": [
+  {
+   "type": "cover",
+   "scene": "savings",
+   "variant": 0,
+   "eyebrow": "If you only remember one thing:",
+   "lines": [
+    "GIFT MONEY",
+    "NEEDS A",
+    "~PAPER TRAIL"
+   ],
+   "sub": "Family help with your down payment is allowed. Here are 4 things lenders check before they count it.",
+   "source": "Fannie Mae Selling Guide (Nov. 2026)"
+  },
+  {
+   "type": "text",
+   "eyebrow": "Check 1",
+   "title": "Who gave it",
+   "body": "On a Fannie Mae loan, the gift can come from a relative, a fiancé, a domestic partner or someone with a long-standing family-like bond. FHA has its own donor list. Ask your lender.",
+   "source": "Fannie Mae Selling Guide B3-4.3-04 (Nov. 2026)"
+  },
+  {
+   "type": "text",
+   "eyebrow": "Check 2",
+   "title": "The gift letter",
+   "body": "The donor signs it. It lists the gift amount, the donor's name, address, phone number and relationship to you, and says you don't have to pay it back.",
+   "source": "Fannie Mae Selling Guide B3-4.3-04 (Nov. 2026)"
+  },
+  {
+   "type": "text",
+   "eyebrow": "Check 3",
+   "title": "How the money moved",
+   "body": "Lenders want to see the transfer. For example: the donor's check and your deposit slip, or a transfer straight to the closing agent.",
+   "source": "Fannie Mae Selling Guide B3-4.3-04 (Nov. 2026)"
+  },
+  {
+   "type": "stat",
+   "label": "LARGE DEPOSIT",
+   "value": "50%",
+   "body": "On a Fannie Mae purchase, one deposit over 50% of your monthly qualifying income may need proof of where it came from. Talk to a licensed lender for your numbers.",
+   "source": "Fannie Mae Selling Guide B3-4.2-02 (Nov. 2026)"
+  }
+ ],
+ "caption": "If you only remember one thing about gift money for your down payment: it needs a paper trail.\n\nWho gave it, the gift letter, how the money moved and the large deposit rule. Swipe for what lenders check.\n\nTalk to a licensed lender for your numbers.\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #DownPayment #GiftFunds\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "If you only remember one thing about gift money for your down payment: it needs a paper trail.\n\nLenders check who gave it, the gift letter, how the money moved and any large deposits.\n\nTalk to a licensed lender for your numbers.\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://selling-guide.fanniemae.com/Selling-Guide/Origination-thru-Closing/Subpart-B3-Underwriting-Borrowers/Chapter-B3-4-Asset-Assessment/Section-B3-4-3-Verification-of-Non-Depository-Assets/1032991211/B3-4-3-04-Personal-Gifts-09-06-2023.htm",
+  "https://selling-guide.fanniemae.com/Selling-Guide/Origination-thru-Closing/Subpart-B3-Underwriting-Borrowers/Chapter-B3-4-Asset-Assessment/Section-B3-4-2-Verification-of-Depository-Assets/1032990181/B3-4-2-02-Depository-Accounts-12-14-2022.htm"
+ ]
+}

@@ -1,0 +1,114 @@
+{
+ "id": "2026-11-10_B_local",
+ "tag": "LOCAL *SPOTS*",
+ "hook": 3,
+ "lesson": "",
+ "story_plan": {
+  "type": "multi",
+  "frames": [
+   1,
+   2,
+   3,
+   4
+  ]
+ },
+ "music": {
+  "ig_audio": "Midnight Sun - Zara Larsson",
+  "ig_audio_source": "https://ca.billboard.com/charts/hot-100/2026-11-07",
+  "ig_audio_backup": "Risk It All - Bruno Mars",
+  "tiktok": "auto"
+ },
+ "source": "Overflow Coffee Co.; Toast; Garden State Circle; The Montclair Girl; NJ Transit (Nov. 2026)",
+ "slides": [
+  {
+   "type": "cover",
+   "eyebrow": "Moving to Montville?",
+   "lines": [
+    "THIS WILL CHANGE",
+    "HOW YOU SEE",
+    "~SATURDAY",
+    "~MORNINGS"
+   ],
+   "sub": "3 coffee and bakery stops in one township. Swipe for where to find them.",
+   "source": "Overflow Coffee Co.; Toast; Garden State Circle; The Montclair Girl; NJ Transit (Nov. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "1",
+   "kind": "Coffee",
+   "title": "Overflow Coffee Co.",
+   "meta": "9 Main Rd",
+   "chips": [
+    "Nitro cold brew",
+    "Toasts till 2 PM",
+    "Closed Sundays"
+   ],
+   "body": "A newer coffee shop on Main Road. Espresso drinks and pastries, plus a kitchen for plates and toasts until 2 PM.",
+   "scene": "coffee",
+   "variant": 0,
+   "source": "overflowcoffee.cafe; The Montclair Girl (Sept. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "2",
+   "kind": "Coffee",
+   "title": "Cafe Club",
+   "meta": "67 Boonton Ave",
+   "chips": [
+    "Italian coffee",
+    "Panini",
+    "Closed Mondays"
+   ],
+   "body": "An Italian-style coffee shop with cappuccino and panini. Sit inside or on the patio.",
+   "scene": "coffee",
+   "variant": 1,
+   "source": "Cafe Club on Toast; Garden State Circle (Nov. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "3",
+   "kind": "Bakery",
+   "title": "Landauer Cafe",
+   "meta": "632 Main Rd, Towaco",
+   "chips": [
+    "German-style baked goods",
+    "Locally owned",
+    "Closed Mondays"
+   ],
+   "body": "A cafe and bakery on Main Road in the Towaco section, known for German-style baked goods.",
+   "scene": "bakery",
+   "variant": 2,
+   "source": "Garden State Circle, Morris County cafe guide (Nov. 2026)"
+  },
+  {
+   "type": "route",
+   "eyebrow": "Plan the morning",
+   "title": "3 stops, one township",
+   "stops": [
+    {
+     "name": "Overflow Coffee Co.",
+     "where": "Main Rd"
+    },
+    {
+     "name": "Cafe Club",
+     "where": "Boonton Ave"
+    },
+    {
+     "name": "Landauer Cafe",
+     "where": "Main Rd, Towaco"
+    }
+   ],
+   "tip": "Towaco has its own NJ Transit station on the Montclair-Boonton Line.",
+   "source": "NJ Transit, Montclair-Boonton Line (Nov. 2026)"
+  }
+ ],
+ "caption": "Montville has a newer coffee shop on Main Road, an Italian-style cafe on Boonton Avenue and a German-style bakery in Towaco. Which one are you trying first?\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #MontvilleNJ #MorrisCountyNJ\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "Montville has a newer coffee shop on Main Road, an Italian-style cafe on Boonton Avenue and a German-style bakery in Towaco. Which one are you trying first?\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://www.overflowcoffee.cafe/",
+  "https://www.themontclairgirl.com/new-businesses-montclair-north-jersey-fall-2026/",
+  "https://www.toasttab.com/local/order/cafe-club-67-boonton-ave",
+  "https://gardenstatecircle.com/guides/cafes-morris-county-nj/",
+  "https://www.njtransit.com/abc_montclair_boonton_line"
+ ]
+}
