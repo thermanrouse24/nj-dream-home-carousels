@@ -2,7 +2,8 @@
  "id": "probe_1cQhHnjz",
  "drive_file_id": "1cQhHnjz8PpWtACFzWcidKKPNBk8FbyYU",
  "drive_title": "314 Madison Hill Rd, Clark | $1,299,900 | 5 Beds | 5.5 Baths",
- "status": "probed",
+ "status": "probed_used",
  "frames": "tours/probes/probe_1cQhHnjz_frames.jpg",
- "source_duration_s": 31.7
+ "source_duration_s": 31.7,
+ "read": "Cover: 42 Mins to NYC | 5 Beds | 5.1 Baths, $45,497 (= 3.5% of $1,299,900, down payment). Ends with Vinny 347 bar."
 }
