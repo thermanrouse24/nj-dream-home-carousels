@@ -1,7 +1,7 @@
 {
  "id": "2026-11-10_B_local",
  "tag": "LOCAL *SPOTS*",
- "hook": 3,
+ "hook": 7,
  "lesson": "",
  "story_plan": {
   "type": "multi",
@@ -24,10 +24,10 @@
    "type": "cover",
    "eyebrow": "Moving to Montville?",
    "lines": [
-    "THIS WILL CHANGE",
-    "YOUR SATURDAY:",
-    "~3 LOCAL STOPS,",
-    "~NOT A CHAIN"
+    "NEVER SPEND",
+    "YOUR 1ST SATURDAY",
+    "~AT A CHAIN.",
+    "~TRY THESE 3"
    ],
    "sub": "2 coffee shops and a bakery, all open Saturday. Swipe for where to find them.",
    "source": "Overflow Coffee Co.; Toast; Garden State Circle; The Montclair Girl; NJ Transit (Nov. 2026)"
