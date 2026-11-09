@@ -141,5 +141,17 @@
     }
    ]
   }
- }
+ },
+ "listing": {
+  "status": "Active per Coldwell Banker IDX page (MLS data Nov 8 2026) on Nov 9 2026; listed 9/28/2026 at $1,349,900, reduced to $1,299,900 on 10/21/2026",
+  "list_price": "$1,299,900",
+  "broker": "Not confirmed: Coldwell Banker page shows 'Listed by Real...' (truncated; likely Real Broker NJ). Check GSMLS 4055409.",
+  "mls": "GSMLS 4055409",
+  "url": "https://www.coldwellbankerhomes.com/nj/clark-township/314-madison-hill-rd/pid_73968131/",
+  "note": "$45,497 = 3.5% of $1,299,900 ($45,496.50). Clark has no train station; Rahway to NY Penn is about 41 min by train, so 42 Mins to NYC is train time from a nearby station, not door to door. County: Union (njparcels Block 52 Lot 7)."
+ },
+ "ig_audio": "",
+ "ig_audio_id": "",
+ "ig_audio_backup": "",
+ "music_note": "Instagram audio lookup found none of the 5 wanted chart songs (Nov 9 2026 run). Needs FIX T: song <name>."
 }

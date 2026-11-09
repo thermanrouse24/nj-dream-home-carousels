@@ -24,11 +24,12 @@
    "variant": 0,
    "eyebrow": "If you only remember one thing:",
    "lines": [
-    "GIFT MONEY",
-    "NEEDS A",
+    "LENDERS MAY",
+    "NOT COUNT IT",
+    "~WITHOUT A",
     "~PAPER TRAIL"
    ],
-   "sub": "Family help with your down payment is allowed. Here are 4 things lenders check before they count it.",
+   "sub": "Here are the 4 things lenders check first.",
    "source": "Fannie Mae Selling Guide (Nov. 2026)"
   },
   {
@@ -56,12 +57,12 @@
    "type": "stat",
    "label": "LARGE DEPOSIT",
    "value": "50%",
-   "body": "On a Fannie Mae purchase, one deposit over 50% of your monthly qualifying income may need proof of where it came from. Talk to a licensed lender for your numbers.",
+   "body": "On a Fannie Mae purchase loan, a single deposit over 50% of your monthly qualifying income may need proof of where it came from. Talk to a licensed lender for your numbers.",
    "source": "Fannie Mae Selling Guide B3-4.2-02 (Nov. 2026)"
   }
  ],
- "caption": "If you only remember one thing about gift money for your down payment: it needs a paper trail.\n\nWho gave it, the gift letter, how the money moved and the large deposit rule. Swipe for what lenders check.\n\nTalk to a licensed lender for your numbers.\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #DownPayment #GiftFunds\n\nTherm The Realtor | eXp Realty",
- "threads_caption": "If you only remember one thing about gift money for your down payment: it needs a paper trail.\n\nLenders check who gave it, the gift letter, how the money moved and any large deposits.\n\nTalk to a licensed lender for your numbers.\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "caption": "If you only remember one thing about gift money for your down payment: lenders may not count it without a paper trail.\n\nWho gave it, the gift letter, how the money moved and the large deposit rule. Swipe for what lenders check.\n\nTalk to a licensed lender for your numbers.\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #DownPayment #GiftFunds\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "If you only remember one thing about gift money for your down payment: lenders may not count it without a paper trail.\n\nLenders check who gave it, the gift letter, how the money moved and any large deposits.\n\nTalk to a licensed lender for your numbers.\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
  "sources": [
   "https://selling-guide.fanniemae.com/Selling-Guide/Origination-thru-Closing/Subpart-B3-Underwriting-Borrowers/Chapter-B3-4-Asset-Assessment/Section-B3-4-3-Verification-of-Non-Depository-Assets/1032991211/B3-4-3-04-Personal-Gifts-09-06-2023.htm",
   "https://selling-guide.fanniemae.com/Selling-Guide/Origination-thru-Closing/Subpart-B3-Underwriting-Borrowers/Chapter-B3-4-Asset-Assessment/Section-B3-4-2-Verification-of-Depository-Assets/1032990181/B3-4-2-02-Depository-Accounts-12-14-2022.htm"
