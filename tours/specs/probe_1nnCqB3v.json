@@ -2,5 +2,7 @@
  "id": "probe_1nnCqB3v",
  "drive_file_id": "1nnCqB3vRvgTYE681tnb9wPRrXystrDpP",
  "drive_title": "1466 Lamberts Mill Rd, Scotch Plains |$1,499,000 | 5 Beds | 5 Baths",
- "status": "probe"
+ "status": "probed",
+ "frames": "tours/probes/probe_1nnCqB3v_frames.jpg",
+ "source_duration_s": 30.6
 }
