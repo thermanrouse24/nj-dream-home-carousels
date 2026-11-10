@@ -2,7 +2,8 @@
  "id": "probe_1nnCqB3v",
  "drive_file_id": "1nnCqB3vRvgTYE681tnb9wPRrXystrDpP",
  "drive_title": "1466 Lamberts Mill Rd, Scotch Plains |$1,499,000 | 5 Beds | 5 Baths",
- "status": "probed",
+ "status": "probed_used",
  "frames": "tours/probes/probe_1nnCqB3v_frames.jpg",
- "source_duration_s": 30.6
+ "source_duration_s": 30.6,
+ "read": "Cover: 45 Mins to NYC | 5 Beds | 5 Baths, $52,465 (= 3.5% of $1,499,000, down payment). Ends with Vinny 347 bar."
 }
