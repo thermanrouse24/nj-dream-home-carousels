@@ -162,8 +162,17 @@ def park_svg(v, w, h):
 
 
 def train_svg(v, w, h):
+    """Train at a platform. variant 0 = dusk, 1 = daytime, 2 = daytime with a small stone depot beside the track."""
+    top, bot = {0: ("#2A3549", "#8A6A4A"), 1: ("#6F9BC4", "#E3D9BF"), 2: ("#7FA6C9", "#EADFC6")}.get(v, ("#2A3549", "#8A6A4A"))
+    depot = ""
+    if v == 2:
+        depot = (f'<rect x="{w*0.03}" y="{h*0.42}" width="{w*0.2}" height="{h*0.33}" fill="#9A8F80"/>'
+                 + "".join(f'<rect x="{w*0.03}" y="{h*(0.46+0.07*i)}" width="{w*0.2}" height="3" fill="#7C7266"/>' for i in range(4))
+                 + f'<polygon points="{w*0.01},{h*0.43} {w*0.13},{h*0.3} {w*0.25},{h*0.43}" fill="#5A3B2E"/>'
+                 + f'<rect x="{w*0.1}" y="{h*0.56}" width="{w*0.06}" height="{h*0.19}" fill="#3B2A22"/>'
+                 + f'<rect x="{w*0.045}" y="{h*0.5}" width="{w*0.04}" height="{h*0.08}" fill="#FFE7B8"/>')
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">
-<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2A3549"/><stop offset="1" stop-color="#8A6A4A"/></linearGradient></defs>
+<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{top}"/><stop offset="1" stop-color="{bot}"/></linearGradient></defs>
 <rect width="{w}" height="{h}" fill="url(#sky)"/>
 <rect x="0" y="{h*0.2}" width="{w}" height="14" fill="#1B2C23"/>
 <g fill="#1B2C23">{''.join(f'<rect x="{x}" y="{h*0.2}" width="10" height="{h*0.5}"/>' for x in range(40, int(w), 180))}</g>
@@ -173,6 +182,7 @@ def train_svg(v, w, h):
 <circle cx="{w*0.37}" cy="{h*0.66}" r="16" fill="#FFE7B8"/><circle cx="{w*0.63}" cy="{h*0.66}" r="16" fill="#FFE7B8"/>
 <rect x="0" y="{h*0.75}" width="{w}" height="{h*0.25}" fill="#3A3530"/>
 <rect x="0" y="{h*0.75}" width="{w}" height="10" fill="{PAL['bronze']}"/>
+{depot}
 </svg>'''
 
 

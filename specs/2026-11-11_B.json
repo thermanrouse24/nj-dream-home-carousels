@@ -1,0 +1,111 @@
+{
+ "id": "2026-11-11_B_local",
+ "tag": "LOCAL *SPOTS*",
+ "hook": 1,
+ "lesson": "",
+ "story_plan": {
+  "type": "single",
+  "frames": [
+   1
+  ]
+ },
+ "music": {
+  "ig_audio": "Babydoll - Dominic Fike",
+  "ig_audio_source": "https://creativedisc.com/2026/11/billboard-hot-100-07-november-2026/",
+  "ig_audio_backup": "Earrings - Malcolm Todd",
+  "tiktok": "auto"
+ },
+ "source": "NJ Transit station pages; Wikipedia (Nov. 2026)",
+ "slides": [
+  {
+   "type": "cover",
+   "eyebrow": "Nobody talks about this, but...",
+   "lines": [
+    "LONG HILL",
+    "HAS",
+    "~3 TRAIN",
+    "~STATIONS"
+   ],
+   "sub": "Gillette, Stirling and Millington, all in one Morris County township. Swipe for how parking works at each.",
+   "source": "NJ Transit station pages; Wikipedia (Nov. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "1",
+   "kind": "Train",
+   "title": "Gillette",
+   "meta": "Valley Rd and Long Hill Rd",
+   "chips": [
+    "82 permit spaces",
+    "$330 a year",
+    "Free on weekends"
+   ],
+   "body": "On the Gladstone Branch since 1872. You get a platform shelter, one ticket machine and bike racks.",
+   "scene": "train",
+   "variant": 1,
+   "source": "NJ Transit, Gillette Station; Wikipedia (Nov. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "2",
+   "kind": "Train",
+   "title": "Stirling",
+   "meta": "Central Ave and Main St",
+   "chips": [
+    "39 permit spaces",
+    "$280 a year",
+    "Free on weekends"
+   ],
+   "body": "Two small permit lots, one at Central Ave and Elm St, one at Railroad Ave and Main Ave. There's one ticket machine in the shelter.",
+   "scene": "parking",
+   "variant": 0,
+   "source": "NJ Transit, Stirling Station (Nov. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "3",
+   "kind": "Train",
+   "title": "Millington",
+   "meta": "Division Ave, near Valley Rd",
+   "chips": [
+    "114 spaces",
+    "$5 a day",
+    "Free on weekends"
+   ],
+   "body": "A 1901 stone station on the National Register of Historic Places. There's a cafe inside now, and the ticket machine is right outside it.",
+   "scene": "train",
+   "variant": 2,
+   "source": "NJ Transit, Millington Station; Wikipedia (Nov. 2026)"
+  },
+  {
+   "type": "route",
+   "eyebrow": "Plan the commute",
+   "title": "3 stops, one branch line",
+   "stops": [
+    {
+     "name": "Gillette",
+     "where": "Valley Rd"
+    },
+    {
+     "name": "Stirling",
+     "where": "Central Ave"
+    },
+    {
+     "name": "Millington",
+     "where": "Division Ave"
+    }
+   ],
+   "tip": "Parking is free at all 3 from 3 PM Friday to 8 PM Sunday. Check NJ Transit alerts first.",
+   "source": "NJ Transit station pages (Nov. 2026)"
+  }
+ ],
+ "caption": "Long Hill Township has 3 train stations on the Gladstone Branch: Gillette, Stirling and Millington. Each one handles parking a little differently. Which stop would you start from?\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #LongHillNJ #MorrisCountyNJ\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "Long Hill Township has 3 train stations on the Gladstone Branch: Gillette, Stirling and Millington. Each one handles parking a little differently. Which stop would you start from?\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://www.njtransit.com/station/gillette-station",
+  "https://www.njtransit.com/station/stirling-station",
+  "https://www.njtransit.com/station/millington-station",
+  "https://en.wikipedia.org/wiki/Gillette_station",
+  "https://en.wikipedia.org/wiki/Millington_station"
+ ]
+}
