@@ -166,11 +166,21 @@ def train_svg(v, w, h):
     top, bot = {0: ("#2A3549", "#8A6A4A"), 1: ("#6F9BC4", "#E3D9BF"), 2: ("#7FA6C9", "#EADFC6")}.get(v, ("#2A3549", "#8A6A4A"))
     depot = ""
     if v == 2:
-        depot = (f'<rect x="{w*0.03}" y="{h*0.42}" width="{w*0.2}" height="{h*0.33}" fill="#9A8F80"/>'
-                 + "".join(f'<rect x="{w*0.03}" y="{h*(0.46+0.07*i)}" width="{w*0.2}" height="3" fill="#7C7266"/>' for i in range(4))
-                 + f'<polygon points="{w*0.01},{h*0.43} {w*0.13},{h*0.3} {w*0.25},{h*0.43}" fill="#5A3B2E"/>'
-                 + f'<rect x="{w*0.1}" y="{h*0.56}" width="{w*0.06}" height="{h*0.19}" fill="#3B2A22"/>'
-                 + f'<rect x="{w*0.045}" y="{h*0.5}" width="{w*0.04}" height="{h*0.08}" fill="#FFE7B8"/>')
+        x0, dw, y0, dh = w*0.06, w*0.16, h*0.44, h*0.31
+        stones = ""
+        rows = 6
+        for r in range(rows):
+            ry = y0 + r*dh/rows
+            off = 0 if r % 2 == 0 else dw/8
+            cx = x0 - off
+            while cx < x0 + dw:
+                sx, ex = max(cx, x0), min(cx + dw/4, x0 + dw)
+                stones += f'<rect x="{sx+2}" y="{ry+2}" width="{ex-sx-4}" height="{dh/rows-4}" rx="4" fill="#A39886"/>'
+                cx += dw/4
+        depot = (f'<rect x="{x0}" y="{y0}" width="{dw}" height="{dh}" fill="#6E6556"/>' + stones
+                 + f'<polygon points="{x0-w*0.015},{y0+2} {x0+dw/2},{h*0.31} {x0+dw+w*0.015},{y0+2}" fill="#5A3B2E"/>'
+                 + f'<rect x="{x0+dw*0.55}" y="{y0+dh*0.42}" width="{dw*0.28}" height="{dh*0.58}" rx="4" fill="#3B2A22"/>'
+                 + f'<rect x="{x0+dw*0.12}" y="{y0+dh*0.3}" width="{dw*0.26}" height="{dh*0.24}" fill="#FFE7B8"/>')
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">
 <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{top}"/><stop offset="1" stop-color="{bot}"/></linearGradient></defs>
 <rect width="{w}" height="{h}" fill="url(#sky)"/>
@@ -201,7 +211,7 @@ def parking_svg(v, w, h):
 <rect x="0" y="{h*0.42}" width="{w}" height="{h*0.1}" fill="#2F5A3F"/>
 <rect x="0" y="{h*0.5}" width="{w}" height="{h*0.5}" fill="#4A4A48"/>
 {lines}{cars}
-<rect x="{w*0.875}" y="{h*0.3}" width="10" height="{h*0.32}" fill="#1B2C23"/>
+<rect x="{w*0.875}" y="{h*0.3}" width="10" height="{h*0.22}" fill="#1B2C23"/>
 <rect x="{w*0.825}" y="{h*0.17}" width="{w*0.12}" height="{w*0.12}" rx="12" fill="#2A5AA8"/>
 <text x="{w*0.885}" y="{h*0.17+w*0.092}" font-family="Montserrat,Arial,sans-serif" font-weight="800" font-size="{w*0.085}" fill="#FFFFFF" text-anchor="middle">P</text>
 </svg>'''
