@@ -142,5 +142,17 @@
     }
    ]
   }
+ },
+ "ig_audio": "",
+ "ig_audio_id": "",
+ "ig_audio_backup": "",
+ "music_note": "Instagram audio lookup found none of the 5 wanted chart songs (Nov 10 2026 run; only 'Animal (Instrumental) - Baegod' came back, not allowed). Needs FIX T: song <name>.",
+ "listing": {
+  "status": "Active (newjerseyrealestatenetwork.com IDX, data updated Nov 10 2026); reduced from $1,599,000 to $1,499,000 on 10/13/2026",
+  "list_price": "$1,499,000",
+  "broker": "Corcoran Sawyer Smith",
+  "mls": "GSMLS 4051364",
+  "url": "https://www.newjerseyrealestatenetwork.com/property-search/detail/32/4051364/1466-lamberts-mill-rd-scotch-plains-twp-nj-07076/",
+  "note": "$52,465 = 3.5% of $1,499,000. 4 full + 1 half baths. 45 Mins to NYC is best-case off-peak from Fanwood/Westfield (Raritan Valley Line); most peak trips transfer at Newark."
  }
 }
