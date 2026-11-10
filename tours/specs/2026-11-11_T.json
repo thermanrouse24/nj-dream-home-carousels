@@ -20,9 +20,127 @@
   "Animal - KATSEYE"
  ],
  "song_chart": "https://creativedisc.com/2026/11/billboard-hot-100-07-november-2026/ (Billboard Hot 100 dated Nov 7 2026; also https://ca.billboard.com/charts/hot-100/2026-11-07)",
- "status": "new",
+ "status": "rendered",
  "caption_option": 3,
  "caption": "STOP SCROLLING 📲\n\nSTART TOURING 🔑\n\nCOULD THIS BE YOURS? 👀🔥\n\n🚨 TAKE A LOOK AT THIS ONE ☝🏾🔥\n\nWhen you work with me:\n✔️ You know what you can afford before you fall in love 💰\n✔️ You avoid the traps that slow buyers down\n✔️ You get a smooth, stress-free process from offer to keys 😌\n\nReal estate is a strategy. Let's build yours.\n\n_____\n\n🔥 GET STARTED IN 3 SIMPLE STEPS:\n\n✅ Step 1: Tap the LINK IN MY BIO and fill out the EZ form\n⏱️ 30 seconds, no strings attached\n\n✅ Step 2: Expect a call or text from me within 24 hours 📲\nWe'll schedule your personal buyer consultation\n\n✅ Step 3: We find the RIGHT fit, negotiate hard 💪🏾\n...and keep more money in your pocket 💸\n\nCLICK THE LINK IN MY BIO ✅ CLICK THE LINK IN MY BIO ✅\n\n#NJRealEstate #NJRealtor #NJHomes #FirstTimeHomeBuyer\n\nTherm The Realtor | eXp Realty",
  "tiktok_caption": "STOP SCROLLING 📲\n\nSTART TOURING 🔑\n\nCOULD THIS BE YOURS? 👀🔥\n\n🚨 TAKE A LOOK AT THIS ONE ☝🏾🔥\n\nWhen you work with me:\n✔️ You know what you can afford before you fall in love 💰\n✔️ You avoid the traps that slow buyers down\n✔️ You get a smooth, stress-free process from offer to keys 😌\n\nReal estate is a strategy. Let's build yours.\n\n_____\n\n🔥 GET STARTED IN 3 SIMPLE STEPS:\n\n✅ Step 1: DM me \"HOME\" and I'll send you the EZ form\n⏱️ 30 seconds, no strings attached\n\n✅ Step 2: Expect a call or text from me within 24 hours 📲\nWe'll schedule your personal buyer consultation\n\n✅ Step 3: We find the RIGHT fit, negotiate hard 💪🏾\n...and keep more money in your pocket 💸\n\nDM me \"HOME\" to get started. ✅ DM ME \"HOME\" ✅\n\n#NJRealEstate #NJRealtor #NJHomes #FirstTimeHomeBuyer\n\nTherm The Realtor | eXp Realty",
- "cover_facts_note": "Edit's cover reads 5 Baths; listing (GSMLS 4051364) has 4 full + 1 half, so corrected to 4.5."
+ "cover_facts_note": "Edit's cover reads 5 Baths; listing (GSMLS 4051364) has 4 full + 1 half, so corrected to 4.5.",
+ "ig_url": "https://github.com/thermanrouse24/nj-dream-home-carousels/releases/download/tours/2026-11-11_T_scotch-plains_ig.mp4",
+ "tiktok_url": "https://github.com/thermanrouse24/nj-dream-home-carousels/releases/download/tours/2026-11-11_T_scotch-plains_tiktok.mp4",
+ "cover": "tours/previews/2026-11-11_T_scotch-plains_cover.jpg",
+ "preview": "tours/previews/2026-11-11_T_scotch-plains_preview.jpg",
+ "render_info": {
+  "text_until_s": 1.0,
+  "blur_until_s": 1.0,
+  "duration_s": 33.6,
+  "source_duration_s": 30.6,
+  "source_has_audio": false,
+  "source_mean_volume_db": null,
+  "has_music": false,
+  "ig_mb": 29.2,
+  "tiktok_mb": 28.8,
+  "phone_replaced": {
+   "phone_box": [
+    0,
+    1331,
+    1080,
+    131
+   ],
+   "phone_box_s": [
+    27.9,
+    30.6
+   ],
+   "phone_text": "Call/Text 917.843.5290 Therm The Realtor"
+  },
+  "text_fixes": {
+   "ig": [
+    {
+     "kind": "save+save",
+     "box": [
+      50,
+      885,
+      960,
+      1201
+     ],
+     "t": [
+      8.2,
+      11.5
+     ],
+     "text": "TAKES 30 SECONDS. NO OBLIGATION."
+    },
+    {
+     "kind": "best",
+     "box": [
+      120,
+      880,
+      960,
+      1120
+     ],
+     "t": [
+      11.8,
+      13.8
+     ],
+     "text": "LET'S MAKE YOUR PLAN."
+    }
+   ],
+   "tiktok": [
+    {
+     "kind": "cta",
+     "box": [
+      247,
+      657,
+      864,
+      803
+     ],
+     "t": [
+      4.2,
+      7.8
+     ],
+     "text": "DM ME \"HOME\""
+    },
+    {
+     "kind": "cta+save+save",
+     "box": [
+      50,
+      885,
+      999,
+      1351
+     ],
+     "t": [
+      8.2,
+      11.5
+     ],
+     "text": "TAKES 30 SECONDS. NO OBLIGATION. / DM ME \"HOME\""
+    },
+    {
+     "kind": "cta",
+     "box": [
+      44,
+      738,
+      1030,
+      884
+     ],
+     "t": [
+      19.0,
+      23.2
+     ],
+     "text": "DM ME \"HOME\""
+    },
+    {
+     "kind": "best",
+     "box": [
+      120,
+      880,
+      960,
+      1120
+     ],
+     "t": [
+      11.8,
+      13.8
+     ],
+     "text": "LET'S MAKE YOUR PLAN."
+    }
+   ]
+  }
+ }
 }
