@@ -141,5 +141,17 @@
     }
    ]
   }
- }
+ },
+ "ig_audio": "",
+ "ig_audio_id": "",
+ "ig_audio_backup": "",
+ "music_note": "Instagram audio lookup found none of the 5 wanted chart songs (Nov 11 2026 run). Needs FIX T: song <name>.",
+ "listing": {
+  "status": "Active (newjerseyrealestatenetwork.com, page read Nov 11 2026; listing data last updated 10/21/2026)",
+  "list_price": "$799,000",
+  "broker": "Home Access Realty",
+  "mls": "2770291M",
+  "url": "https://www.newjerseyrealestatenetwork.com/property-search/detail/186/2770291M/9-eugene-boulevard-sayreville-nj-08872/"
+ },
+ "cover_facts_note": "43 Mins to NYC is as read on Therm's edit. NJ Transit weekday trains from South Amboy to NY Penn run about 52 to 61 min; drive time not verified."
 }
