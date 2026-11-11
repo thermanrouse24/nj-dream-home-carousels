@@ -2,7 +2,8 @@
  "id": "probe_1Gt_atBC",
  "drive_file_id": "1Gt_atBC7X-7B8kUUbpBb0ssgMB7abzuQ",
  "drive_title": "9 Eugene Blvd. Syreville | $799,000 | 4 Beds | 3 Baths ",
- "status": "probed",
+ "status": "probed_used",
  "frames": "tours/probes/probe_1Gt_atBC_frames.jpg",
- "source_duration_s": 31.9
+ "source_duration_s": 31.9,
+ "read": "Cover: 43 Mins to NYC | 4 Beds | 3 Baths, $27,965 (= 3.5% of $799,000, down payment). Ends with Vinny 347 bar."
 }
