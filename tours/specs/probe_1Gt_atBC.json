@@ -2,5 +2,7 @@
  "id": "probe_1Gt_atBC",
  "drive_file_id": "1Gt_atBC7X-7B8kUUbpBb0ssgMB7abzuQ",
  "drive_title": "9 Eugene Blvd. Syreville | $799,000 | 4 Beds | 3 Baths ",
- "status": "probe"
+ "status": "probed",
+ "frames": "tours/probes/probe_1Gt_atBC_frames.jpg",
+ "source_duration_s": 31.9
 }
