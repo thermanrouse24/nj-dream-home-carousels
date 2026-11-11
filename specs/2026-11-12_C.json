@@ -1,0 +1,68 @@
+{
+ "id": "2026-11-12_C_walkthrough",
+ "tag": "BUYER *CHECKLIST*",
+ "style": "notebook",
+ "hook": 3,
+ "lesson": "Alex Hormozi, My Actual Social Media Strategy For 2027, one buyer action per slide (Use for us #5)",
+ "story_plan": {
+  "type": "multi",
+  "frames": [
+   1,
+   2,
+   4
+  ]
+ },
+ "music": {
+  "ig_audio": "Nicole Kidman - Adéla",
+  "ig_audio_source": "https://en.wikipedia.org/wiki/List_of_Billboard_Hot_100_top-ten_singles_in_2026",
+  "ig_audio_backup": "Housewife - Tate McRae",
+  "tiktok": "auto"
+ },
+ "source": "HUD; CFPB; Freddie Mac",
+ "slides": [
+  {
+   "type": "cover",
+   "eyebrow": "This will change how you see it:",
+   "lines": [
+    "THE FINAL",
+    "WALK-THROUGH",
+    "~IS YOUR LAST",
+    "~CHANCE TO CHECK"
+   ],
+   "sub": "It's your last look before the sale is final. Ask to do it about 24 hours before closing. Here's my 4-point checklist.",
+   "source": "HUD, Closing the Deal; Freddie Mac"
+  },
+  {
+   "type": "text",
+   "title": "1. Agreed repairs",
+   "body": "Make sure [[everything the seller agreed to fix]] was fixed. Your agent can walk through it with you and check each one.",
+   "source": "CFPB; Freddie Mac"
+  },
+  {
+   "type": "text",
+   "title": "2. What stays, what goes",
+   "body": "Anything the seller agreed to leave [[is still there]]. Anything they agreed to take is gone, and the seller has fully moved out.",
+   "source": "CFPB; HUD; Freddie Mac"
+  },
+  {
+   "type": "text",
+   "title": "3. The house itself",
+   "body": "Check the walls, ceilings, [[mechanical systems]], plumbing, windows and roof. An empty house can show things the furniture hid.",
+   "source": "HUD, Closing the Deal"
+  },
+  {
+   "type": "text",
+   "title": "4. Anything new",
+   "body": "Look for [[damage since the inspection]]. If something's wrong, let your agent and the seller know before you sign. The seller may fix it or offer a credit. Talk to a real estate attorney about your situation.",
+   "source": "HUD; CFPB"
+  }
+ ],
+ "caption": "The final walk-through is your last chance to check the house before the sale is final.\n\nLook at the agreed repairs, what stays and what goes, the house itself, and any new damage. Swipe for the 4-point checklist.\n\nTalk to a real estate attorney about your situation.\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #FinalWalkThrough #NJHomeBuyer\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "The final walk-through is your last chance to check the house before the sale is final.\n\nCheck the agreed repairs, what stays and what goes, the house itself, and any new damage.\n\nTalk to a real estate attorney about your situation.\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://www.huduser.gov/portal/portal/sites/default/files/pdf/Closing-the-Deal.pdf",
+  "https://www.consumerfinance.gov/owning-a-home/close/close-the-deal/",
+  "https://myhome.freddiemac.com/blog/homebuying/5-steps-before-closing",
+  "https://myhome.freddiemac.com/buying/closing-your-loan-when-buying"
+ ]
+}

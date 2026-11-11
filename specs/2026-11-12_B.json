@@ -1,0 +1,111 @@
+{
+ "id": "2026-11-12_B_local",
+ "tag": "LOCAL *SPOTS*",
+ "hook": 29,
+ "lesson": "",
+ "story_plan": {
+  "type": "single",
+  "frames": [
+   1
+  ]
+ },
+ "music": {
+  "ig_audio": "Patient Zero - Taylor Swift",
+  "ig_audio_source": "https://en.wikipedia.org/wiki/List_of_Billboard_Hot_100_top-ten_singles_in_2026",
+  "ig_audio_backup": "Bby Wow - Karol G, Judeline & Rusowsky",
+  "tiktok": "auto"
+ },
+ "source": "Mendham Borough 2026 Community Guide; Mendham Township (Nov. 2026)",
+ "slides": [
+  {
+   "type": "cover",
+   "eyebrow": "Moving to the Mendhams?",
+   "lines": [
+    "YOU'RE PROBABLY",
+    "PAYING FOR WHAT",
+    "~A LIBRARY CARD",
+    "~COVERS"
+   ],
+   "sub": "2 towns, 2 libraries and one holiday day downtown. Swipe for all 3.",
+   "source": "Mendham Borough 2026 Community Guide; Mendham Township (Nov. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "1",
+   "kind": "Library",
+   "title": "Mendham Borough Library",
+   "meta": "10 Hilltop Rd, Mendham",
+   "chips": [
+    "Open 6 days",
+    "Sat 10 AM to 2 PM",
+    "Museum passes"
+   ],
+   "body": "Free or discounted museum tickets, plus e-books and streaming on Libby and Hoopla.",
+   "scene": "library",
+   "variant": 0,
+   "source": "Mendham Borough 2026 Community Guide"
+  },
+  {
+   "type": "place",
+   "num": "2",
+   "kind": "Library",
+   "title": "Mendham Township Library",
+   "meta": "2 W Main St, Brookside",
+   "chips": [
+    "Municipal Building",
+    "Kids chess club",
+    "Local history talk"
+   ],
+   "body": "Babies Morning Out, a kids chess club and a Nov. 19 local history talk are on its calendar.",
+   "scene": "library",
+   "variant": 1,
+   "source": "LibraryLinkNJ; Burbio library calendar (Nov. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "3",
+   "kind": "Event",
+   "title": "The Holly Trail",
+   "meta": "Downtown to Borough Park gazebo",
+   "chips": [
+    "Sat., Dec. 5",
+    "11 AM to 5 PM",
+    "Tree lighting"
+   ],
+   "body": "Mendham Borough's annual Holly Trail fills downtown and ends with a tree lighting at the gazebo. Photos with Santa are free, but you need a reservation.",
+   "scene": "park",
+   "variant": 2,
+   "source": "Mendham Borough 2026 Community Guide"
+  },
+  {
+   "type": "route",
+   "eyebrow": "Before you tour",
+   "title": "2 towns, one name",
+   "stops": [
+    {
+     "name": "Borough Library",
+     "where": "Hilltop Rd"
+    },
+    {
+     "name": "Township Library",
+     "where": "W Main St, Brookside"
+    },
+    {
+     "name": "Holly Trail",
+     "where": "Downtown"
+    }
+   ],
+   "tip": "Mendham Borough and Mendham Township are 2 separate towns. Check which one a home is in.",
+   "source": "NJ.gov municipality list; Mendham Township (Nov. 2026)"
+  }
+ ],
+ "caption": "The Mendhams have 2 libraries, one in the Borough and one in Brookside, plus the Holly Trail downtown on Dec. 5. Which one would you check out first?\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #MendhamNJ #MorrisCountyNJ\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "The Mendhams have 2 libraries, one in the Borough and one in Brookside, plus the Holly Trail downtown on Dec. 5. Which one would you check out first?\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://www.mendhamnj.org/documents/RECREATION%20BOOKLET%20FINAL%20WEB%20VERSION%202026.pdf",
+  "https://librarylinknj.org/library/2687",
+  "https://www.burbio.com/states/New-Jersey/Brookside/mendham-township-library",
+  "https://www.mendhamtownship.org/node/4146",
+  "https://www.nj.gov/cgi-bin/infobank/munisearch.pl?county=Morris"
+ ]
+}
