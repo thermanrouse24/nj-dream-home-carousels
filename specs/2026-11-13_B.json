@@ -3,7 +3,15 @@
  "tag": "LOCAL *SPOTS*",
  "hook": 4,
  "lesson": "",
- "story_plan": {"type": "multi", "frames": [1, 2, 3, 4]},
+ "story_plan": {
+  "type": "multi",
+  "frames": [
+   1,
+   2,
+   3,
+   4
+  ]
+ },
  "music": {
   "ig_audio": "Midnight Sun - Zara Larsson",
   "ig_audio_source": "https://ca.billboard.com/charts/hot-100/2026-11-14",
@@ -15,8 +23,13 @@
   {
    "type": "cover",
    "eyebrow": "Moving to Butler?",
-   "lines": ["HERE'S A SECRET:", "YOUR NEXT FREE", "~SATURDAY STARTS", "~ON MAIN ST"],
-   "sub": "A landmark from 1888, a park from about 1903 and a library card. Swipe for all 3.",
+   "lines": [
+    "HERE'S A SECRET:",
+    "YOUR NEXT FREE",
+    "~SATURDAY STARTS",
+    "~ON MAIN ST"
+   ],
+   "sub": "A landmark from 1888, a park from about 1903 and the local library. Swipe for all 3.",
    "source": "Borough of Butler; Butler Museum (Nov. 2026)"
   },
   {
@@ -25,8 +38,12 @@
    "kind": "Museum",
    "title": "Butler Museum",
    "meta": "221 Main St, Butler",
-   "chips": ["Free admission", "1st and 3rd Sat.", "10 AM to 2 PM"],
-   "body": "It's inside the red 1888 railroad station, listed on the State and National Registers. Next open day: Sat., Nov. 21.",
+   "chips": [
+    "Free admission",
+    "1st and 3rd Sat.",
+    "10 AM to 2 PM"
+   ],
+   "body": "It's inside Butler's red 1888 train station, now on the State and National Registers of Historic Places. Next open day: Sat., Nov. 21.",
    "scene": "train",
    "variant": 0,
    "source": "Borough of Butler, Butler Museum page (Nov. 2026)"
@@ -36,12 +53,16 @@
    "num": "2",
    "kind": "Park",
    "title": "Butler Borough Park",
-   "meta": "High St and Park Pl, Butler",
-   "chips": ["Since about 1903", "Bandstand", "Holiday lights"],
-   "body": "Stone House Brook runs through it, with footbridges, war memorials, an iron fountain and a holiday light display.",
+   "meta": "High St to Park Pl, Butler",
+   "chips": [
+    "Since about 1903",
+    "Bandstand",
+    "Holiday lights"
+   ],
+   "body": "Stone House Brook runs through it, with a footbridge, war memorials, an iron fountain and holiday lights in December.",
    "scene": "park",
    "variant": 1,
-   "source": "Butler Museum, \"Butler Borough Park\" history"
+   "source": "Butler Museum park history; Butler Council minutes (Dec. 2025)"
   },
   {
    "type": "place",
@@ -49,31 +70,47 @@
    "kind": "Library",
    "title": "Butler Public Library",
    "meta": "1 Ace Rd, Butler",
-   "chips": ["Story time", "Toddler time", "Book club"],
-   "body": "Weekly story time and toddler time, plus a book club. Check the calendar before you go.",
+   "chips": [
+    "Story time",
+    "Toddler time",
+    "Book club"
+   ],
+   "body": "Tuesday story time, toddler time and the Page Turners book club. Check the library calendar before you go.",
    "scene": "library",
    "variant": 2,
-   "source": "Burbio library calendar (Nov. 2026)"
+   "source": "Borough of Butler; Burbio library calendar (Nov. 2026)"
   },
   {
    "type": "route",
    "eyebrow": "Before you tour",
-   "title": "One afternoon in Butler",
+   "title": "One Saturday in Butler",
    "stops": [
-    {"name": "Butler Museum", "where": "Main St"},
-    {"name": "Borough Park", "where": "High St"},
-    {"name": "Library", "where": "Ace Rd"}
+    {
+     "name": "Butler Museum",
+     "where": "Main St"
+    },
+    {
+     "name": "Borough Park",
+     "where": "High St"
+    },
+    {
+     "name": "Library",
+     "where": "Ace Rd"
+    }
    ],
-   "tip": "Butler's old train station is a museum now. Time your drive to work at rush hour before you make an offer.",
-   "source": "Wikipedia, Butler station (NYS&W)"
+   "tip": "The old station is a museum now, so there's no train. Test your rush-hour drive before you offer.",
+   "source": "Wikipedia, Butler station (NYS&W); Borough of Butler"
   }
  ],
- "caption": "Butler's red 1888 train station is now a free museum on Main St, open the 1st and 3rd Saturday of each month. Add the borough park and the library and you've got an easy afternoon. Which stop would you hit first?\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #ButlerNJ #MorrisCountyNJ\n\nTherm The Realtor | eXp Realty",
- "threads_caption": "Butler's red 1888 train station is now a free museum on Main St, open the 1st and 3rd Saturday of each month. Add the borough park and the library and you've got an easy afternoon. Which stop would you hit first?\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "caption": "Butler's red 1888 train station is now a free museum on Main St, open the 1st and 3rd Saturday of each month, 10 AM to 2 PM. Add the borough park and the library and you've got an easy Saturday. Which stop would you hit first?\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #ButlerNJ #MorrisCountyNJ\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "Butler's red 1888 train station is now a free museum on Main St, open the 1st and 3rd Saturday of each month, 10 AM to 2 PM. Add the borough park and the library and you've got an easy Saturday. Which stop would you hit first?\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
  "sources": [
   "https://www.butlerborough.com/cn/webpage.cfm?tpid=17694",
   "https://en.wikipedia.org/wiki/Butler_station_(New_York,_Susquehanna_and_Western_Railway)",
   "https://www.butlerborough.com/documents/Museum%20Stories/Butler%20Borough%20Park.pdf",
-  "https://www.burbio.com/states/New-Jersey/Butler/butler-public-library"
+  "https://www.butlerborough.com/uppages/DEC%2016%20Council%20Regular%20Minutes.pdf",
+  "https://www.burbio.com/states/New-Jersey/Butler/butler-public-library",
+  "https://www.butlerborough.com/cn/webpage.cfm?tpid=3588",
+  "https://en.wikipedia.org/wiki/Butler,_New_Jersey"
  ]
 }

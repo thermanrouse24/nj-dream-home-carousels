@@ -142,5 +142,17 @@
     }
    ]
   }
- }
+ },
+ "ig_audio": "",
+ "ig_audio_id": "",
+ "ig_audio_backup": "",
+ "music_note": "Instagram audio lookup found none of the 5 wanted chart songs (Nov 12 2026 run). Needs FIX T: song <name>.",
+ "listing": {
+  "status": "Active (Houzeo and DeFalco Realty pages read Nov 12 2026; price drop to $1,075,000 on Nov 2 2026)",
+  "list_price": "$1,075,000",
+  "broker": "Better Homes & Gardens RE Maturo",
+  "mls": "2702728R",
+  "url": "https://www.houzeo.com/homes/6-king-arthurs-ct-edison-nj-08820/hzid_32107c00"
+ },
+ "cover_facts_note": "50 Mins to NYC as read on Therm's edit. NJ Transit Edison station to NY Penn about 46 to 58 min (rome2rio, not NJT primary)."
 }
