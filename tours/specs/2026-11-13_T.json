@@ -21,8 +21,126 @@
   "Hate That I Made You Love Me - Ariana Grande"
  ],
  "song_chart": "https://ca.billboard.com/charts/hot-100/2026-11-14 (Billboard Hot 100, week of Nov 14 2026)",
- "status": "new",
+ "status": "rendered",
  "caption_option": 2,
  "caption": "🏠 STILL PAYING YOUR LANDLORD'S MORTGAGE?\n\nTHEN I ONLY HAVE ONE QUESTION 🙋🏾‍♂️\n\nWHY NOT YOUR OWN ⁉️\n\n👀🚨 THIS ONE IS A MUST SEE 🔥🔥\n\nWhat I do for my clients:\n✔️ Build a game plan before the first showing 📋\n✔️ Catch the costly mistakes early\n✔️ Make buying feel easy, not overwhelming 😌\n\nIt's not just a house. It's your next move.\n\n_____\n\n🔥 READY? HERE'S HOW IT WORKS (3 STEPS):\n\n✅ Step 1: Tap the LINK IN MY BIO and complete the FREE form\n⏱️ Takes 30 seconds, zero commitment\n\n✅ Step 2: I'll contact you within 24 hours 📲\nWe'll book your one-on-one buyer consultation\n\n✅ Step 3: We line you up with the RIGHT home and I fight for your best deal 💪🏾💸\n\nCLICK THE LINK IN MY BIO ✅ CLICK THE LINK IN MY BIO ✅\n\n#NJRealEstate #NJRealtor #NewJerseyHomes #HomeTour\n\nTherm The Realtor | eXp Realty",
- "tiktok_caption": "🏠 STILL PAYING YOUR LANDLORD'S MORTGAGE?\n\nTHEN I ONLY HAVE ONE QUESTION 🙋🏾‍♂️\n\nWHY NOT YOUR OWN ⁉️\n\n👀🚨 THIS ONE IS A MUST SEE 🔥🔥\n\nWhat I do for my clients:\n✔️ Build a game plan before the first showing 📋\n✔️ Catch the costly mistakes early\n✔️ Make buying feel easy, not overwhelming 😌\n\nIt's not just a house. It's your next move.\n\n_____\n\n🔥 READY? HERE'S HOW IT WORKS (3 STEPS):\n\n✅ Step 1: DM me \"HOME\" and I'll send you the FREE form\n⏱️ Takes 30 seconds, zero commitment\n\n✅ Step 2: I'll contact you within 24 hours 📲\nWe'll book your one-on-one buyer consultation\n\n✅ Step 3: We line you up with the RIGHT home and I fight for your best deal 💪🏾💸\n\nDM me \"HOME\" to get started. ✅ DM ME \"HOME\" ✅\n\n#NJRealEstate #NJRealtor #NewJerseyHomes #HomeTour\n\nTherm The Realtor | eXp Realty"
+ "tiktok_caption": "🏠 STILL PAYING YOUR LANDLORD'S MORTGAGE?\n\nTHEN I ONLY HAVE ONE QUESTION 🙋🏾‍♂️\n\nWHY NOT YOUR OWN ⁉️\n\n👀🚨 THIS ONE IS A MUST SEE 🔥🔥\n\nWhat I do for my clients:\n✔️ Build a game plan before the first showing 📋\n✔️ Catch the costly mistakes early\n✔️ Make buying feel easy, not overwhelming 😌\n\nIt's not just a house. It's your next move.\n\n_____\n\n🔥 READY? HERE'S HOW IT WORKS (3 STEPS):\n\n✅ Step 1: DM me \"HOME\" and I'll send you the FREE form\n⏱️ Takes 30 seconds, zero commitment\n\n✅ Step 2: I'll contact you within 24 hours 📲\nWe'll book your one-on-one buyer consultation\n\n✅ Step 3: We line you up with the RIGHT home and I fight for your best deal 💪🏾💸\n\nDM me \"HOME\" to get started. ✅ DM ME \"HOME\" ✅\n\n#NJRealEstate #NJRealtor #NewJerseyHomes #HomeTour\n\nTherm The Realtor | eXp Realty",
+ "ig_url": "https://github.com/thermanrouse24/nj-dream-home-carousels/releases/download/tours/2026-11-13_T_edison_ig.mp4",
+ "tiktok_url": "https://github.com/thermanrouse24/nj-dream-home-carousels/releases/download/tours/2026-11-13_T_edison_tiktok.mp4",
+ "cover": "tours/previews/2026-11-13_T_edison_cover.jpg",
+ "preview": "tours/previews/2026-11-13_T_edison_preview.jpg",
+ "render_info": {
+  "text_until_s": 1.0,
+  "blur_until_s": 1.0,
+  "duration_s": 36.4,
+  "source_duration_s": 33.4,
+  "source_has_audio": false,
+  "source_mean_volume_db": null,
+  "has_music": false,
+  "ig_mb": 31.9,
+  "tiktok_mb": 31.4,
+  "phone_replaced": {
+   "phone_box": [
+    0,
+    1331,
+    1080,
+    131
+   ],
+   "phone_box_s": [
+    30.0,
+    33.4
+   ],
+   "phone_text": "Call/Text 917.843.5290 Therm The Realtor"
+  },
+  "text_fixes": {
+   "ig": [
+    {
+     "kind": "save",
+     "box": [
+      50,
+      885,
+      960,
+      1180
+     ],
+     "t": [
+      8.8,
+      13.2
+     ],
+     "text": "TAKES 30 SECONDS. NO OBLIGATION."
+    },
+    {
+     "kind": "best",
+     "box": [
+      120,
+      898,
+      960,
+      1138
+     ],
+     "t": [
+      14.8,
+      19.0
+     ],
+     "text": "LET'S MAKE YOUR PLAN."
+    }
+   ],
+   "tiktok": [
+    {
+     "kind": "cta",
+     "box": [
+      248,
+      661,
+      852,
+      807
+     ],
+     "t": [
+      4.2,
+      7.2
+     ],
+     "text": "DM ME \"HOME\""
+    },
+    {
+     "kind": "cta+save",
+     "box": [
+      45,
+      885,
+      1043,
+      1306
+     ],
+     "t": [
+      8.8,
+      13.2
+     ],
+     "text": "TAKES 30 SECONDS. NO OBLIGATION. / DM ME \"HOME\""
+    },
+    {
+     "kind": "cta+best",
+     "box": [
+      120,
+      898,
+      960,
+      1138
+     ],
+     "t": [
+      14.8,
+      19.0
+     ],
+     "text": "LET'S MAKE YOUR PLAN. / DM ME \"HOME\""
+    },
+    {
+     "kind": "cta",
+     "box": [
+      52,
+      729,
+      1027,
+      875
+     ],
+     "t": [
+      23.8,
+      28.0
+     ],
+     "text": "DM ME \"HOME\""
+    }
+   ]
+  }
+ }
 }
