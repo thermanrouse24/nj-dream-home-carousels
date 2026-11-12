@@ -2,7 +2,8 @@
  "id": "probe_18es9IdB",
  "drive_file_id": "18es9IdBav5btLV45PO3xLvOn8LhWeJVs",
  "drive_title": "6 King Arthurs Ct. | $1,098,000 | 4 Beds | 3 Baths .mp4",
- "status": "probed",
+ "status": "probed_used",
  "frames": "tours/probes/probe_18es9IdB_frames.jpg",
- "source_duration_s": 33.4
+ "source_duration_s": 33.4,
+ "read": "Cover: 50 Mins to NYC | 4 Beds | 3 Baths, $38,430 (= 3.5% of $1,098,000, down payment). Ends with Vinny 347 bar. Address from file name; town Edison (MLS 2702728R)."
 }
