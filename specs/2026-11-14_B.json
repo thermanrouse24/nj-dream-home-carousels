@@ -60,9 +60,9 @@
     "Eggs Benedict"
    ],
    "body": "The sit-down stop. Pancakes, French toast, eggs Benedict and an omelette station that runs all day.",
-   "scene": "brunch",
+   "scene": "default",
    "variant": 1,
-   "source": "Uber Eats, Florham Park Diner store page; MapQuest (Nov. 2026)"
+   "source": "Uber Eats and MapQuest, Florham Park Diner (Nov. 2026)"
   },
   {
    "type": "place",
@@ -76,7 +76,7 @@
     "Free parking"
    ],
    "body": "The slow stop. The hotel's bar and kitchen runs a breakfast buffet on weekend mornings and calls itself a spot for guests and locals.",
-   "scene": "coffee",
+   "scene": "brunch",
    "variant": 2,
    "source": "Archer Hotel, AKB page (Nov. 2026)"
   },
