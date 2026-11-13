@@ -1,0 +1,114 @@
+{
+ "id": "2026-11-14_B_local",
+ "tag": "LOCAL *SPOTS*",
+ "hook": 28,
+ "lesson": "",
+ "story_plan": {
+  "type": "multi",
+  "frames": [
+   1,
+   2,
+   3,
+   4
+  ]
+ },
+ "music": {
+  "ig_audio": "I Just Might - Bruno Mars",
+  "ig_audio_source": "https://ca.billboard.com/charts/hot-100",
+  "ig_audio_backup": "Stupid Song - Olivia Rodrigo",
+  "tiktok": "auto"
+ },
+ "source": "Archer Hotel; Uber Eats store pages; Morris County (Nov. 2026)",
+ "slides": [
+  {
+   "type": "cover",
+   "eyebrow": "Moving to Florham Park?",
+   "lines": [
+    "STOP SCROLLING IF",
+    "YOU CARE ABOUT",
+    "~TAYLOR HAM,",
+    "~EGG & CHEESE"
+   ],
+   "sub": "Three Saturday breakfast stops in one Morris County town. Swipe to see them.",
+   "source": "Archer Hotel; Uber Eats store pages; Morris County (Nov. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "1",
+   "kind": "Bagels",
+   "title": "Florham Park Bagels",
+   "meta": "186 Columbia Tpke, Florham Park",
+   "chips": [
+    "Sat. 6 AM to 2:30 PM",
+    "Taylor ham, egg & cheese",
+    "Crumb cake"
+   ],
+   "body": "The early stop. The Taylor ham, egg and cheese is the most-liked item on its Uber Eats page, and there's crumb cake for the road.",
+   "scene": "bakery",
+   "variant": 0,
+   "source": "Uber Eats, Florham Park Bagels store page (Nov. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "2",
+   "kind": "Diner",
+   "title": "Florham Park Diner",
+   "meta": "182 Ridgedale Ave, Florham Park",
+   "chips": [
+    "Opens 7 AM",
+    "Pancakes",
+    "Eggs Benedict"
+   ],
+   "body": "The sit-down stop. Pancakes, French toast, eggs Benedict and an omelette station that runs all day.",
+   "scene": "brunch",
+   "variant": 1,
+   "source": "Uber Eats, Florham Park Diner store page; MapQuest (Nov. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "3",
+   "kind": "Weekend buffet",
+   "title": "AKB at Archer Hotel",
+   "meta": "130 Park Ave, Florham Park",
+   "chips": [
+    "Sat. & Sun. 7 to 11 AM",
+    "Buffet $20 adults",
+    "Free parking"
+   ],
+   "body": "The slow stop. The hotel's bar and kitchen runs a breakfast buffet on weekend mornings and calls itself a spot for guests and locals.",
+   "scene": "coffee",
+   "variant": 2,
+   "source": "Archer Hotel, AKB page (Nov. 2026)"
+  },
+  {
+   "type": "route",
+   "eyebrow": "Before you tour",
+   "title": "One Saturday in Florham Park",
+   "stops": [
+    {
+     "name": "Florham Park Bagels",
+     "where": "Columbia Tpke"
+    },
+    {
+     "name": "Florham Park Diner",
+     "where": "Ridgedale Ave"
+    },
+    {
+     "name": "AKB at Archer",
+     "where": "Park Ave"
+    }
+   ],
+   "tip": "Tour on Saturday. Then drive your commute on a weekday morning before you offer.",
+   "source": "Archer Hotel; Uber Eats store pages; Morris County (Nov. 2026)"
+  }
+ ],
+ "caption": "Saturday breakfast in Florham Park: a bagel shop, a diner and a weekend buffet. Where are you getting your Taylor ham, egg and cheese?\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #FlorhamParkNJ #MorrisCountyNJ\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "Saturday breakfast in Florham Park: a bagel shop, a diner and a weekend buffet. Where are you getting your Taylor ham, egg and cheese?\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://www.ubereats.com/store/florham-park-bagels/YmRgxG_vSmaC0iP5pCGG_w",
+  "https://Ubereats.com/store/florham-park-diner/MPhjrafORNyfOLrApP5xGA",
+  "https://phoenix.aws.mapquest.com/us/new-jersey/florham-park-diner-920770",
+  "https://archerhotel.com/florham-park/akb",
+  "https://www.morriscountynj.gov/files/sharedassets/public/departments/office-of-emergency-mngmt/section-9.12-borough-of-florham-park.pdf"
+ ]
+}
