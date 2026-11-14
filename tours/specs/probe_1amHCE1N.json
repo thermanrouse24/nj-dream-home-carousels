@@ -2,7 +2,8 @@
  "id": "probe_1amHCE1N",
  "drive_file_id": "1amHCE1NgOvJSYX5wW6k3_SEm2BRYTIHv",
  "drive_title": "85 Pine Brook Rd, Montville | $1,299,000 | 6 Beds | 4.2 Baths ",
- "status": "probed",
+ "status": "probed_used",
  "frames": "tours/probes/probe_1amHCE1N_frames.jpg",
- "source_duration_s": 41.1
+ "source_duration_s": 41.1,
+ "read": "Cover: 42 Mins to NYC | 6 Beds | 4.2 Baths, $45,465 (3.5% of $1,299,000). Town Montville from file name."
 }
