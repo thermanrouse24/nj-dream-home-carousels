@@ -1,0 +1,114 @@
+{
+ "id": "2026-11-15_B_local",
+ "tag": "LOCAL *SPOTS*",
+ "hook": 27,
+ "lesson": "",
+ "story_plan": {
+  "type": "full",
+  "frames": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ]
+ },
+ "music": {
+  "ig_audio": "Mr. Know It All - Teddy Swims",
+  "ig_audio_source": "https://ca.billboard.com/charts/hot-100/2026-11-14",
+  "ig_audio_backup": "Risk It All - Bruno Mars",
+  "tiktok": "auto"
+ },
+ "source": "U.S. Fish & Wildlife Service, Great Swamp NWR (Nov. 2026)",
+ "slides": [
+  {
+   "type": "cover",
+   "eyebrow": "Moving to Harding Township?",
+   "lines": [
+    "THE PROBLEM ISN'T",
+    "YOUR WEEKEND.",
+    "~IT'S 11.5 MILES",
+    "~YOU HAVEN'T WALKED"
+   ],
+   "sub": "One wildlife refuge. 3 ways to see it.",
+   "source": "U.S. Fish & Wildlife Service, Great Swamp NWR (Nov. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "1",
+   "kind": "Visitor center",
+   "title": "Helen C. Fenske Visitor Center",
+   "meta": "32 Pleasant Plains Rd, Harding Twp",
+   "chips": [
+    "Open 10 AM to 4 PM",
+    "Closed Mon. & Wed.",
+    "Daily wildlife hotspot"
+   ],
+   "body": "Start here. Learn the refuge's history and see where wildlife is showing up today.",
+   "scene": "park",
+   "variant": 0,
+   "source": "U.S. Fish & Wildlife Service, Great Swamp NWR (Nov. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "2",
+   "kind": "Boardwalks",
+   "title": "Wildlife Observation Center",
+   "meta": "220 Long Hill Rd, Harding Twp",
+   "chips": [
+    "Open sunrise to sunset",
+    "Boardwalks",
+    "Observation blinds"
+   ],
+   "body": "The walking stop. Walk the boardwalks and watch from the blinds. No pets on the boardwalks or trails.",
+   "scene": "trail",
+   "variant": 0,
+   "source": "U.S. Fish & Wildlife Service, Great Swamp NWR (Nov. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "3",
+   "kind": "Wildlife drive",
+   "title": "Pleasant Plains Road",
+   "meta": "Pleasant Plains Rd, Harding Twp",
+   "chips": [
+    "Mostly unpaved",
+    "Bikes allowed",
+    "View from your car"
+   ],
+   "body": "The slow stop. Drive it slowly and look for wildlife from your car. Or bring your bike.",
+   "scene": "park",
+   "variant": 1,
+   "source": "U.S. Fish & Wildlife Service, Great Swamp NWR (Nov. 2026)"
+  },
+  {
+   "type": "route",
+   "eyebrow": "Before you tour",
+   "title": "One Saturday in Harding",
+   "stops": [
+    {
+     "name": "Fenske Visitor Center",
+     "where": "Pleasant Plains Rd"
+    },
+    {
+     "name": "Observation Center",
+     "where": "Long Hill Rd"
+    },
+    {
+     "name": "Wildlife drive",
+     "where": "Pleasant Plains Rd"
+    }
+   ],
+   "tip": "Near the swamp? Check the home's flood zone on FEMA's free map before you offer.",
+   "source": "U.S. Fish & Wildlife Service; FEMA Flood Map Service Center (Nov. 2026)"
+  }
+ ],
+ "caption": "Part of the Great Swamp is right in Harding Township. Start at the visitor center, walk the boardwalks, then take the slow drive down Pleasant Plains Road. Have you been?\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #HardingNJ #MorrisCountyNJ\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "Part of the Great Swamp is right in Harding Township. Start at the visitor center, walk the boardwalks, then take the slow drive down Pleasant Plains Road. Have you been?\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://fws.gov/refuge/great-swamp/visit-us/locations/great-swamp-national-wildlife-refuge",
+  "https://www.fws.gov/sites/default/files/documents/2024-03/great-swamp-nwr-overhead-map-and-all-trails-map_updated-25march2024.pdf",
+  "https://msc.fema.gov/portal/resources/faq"
+ ]
+}
