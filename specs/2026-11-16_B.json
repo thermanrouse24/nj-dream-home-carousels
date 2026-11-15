@@ -1,0 +1,110 @@
+{
+ "id": "2026-11-16_B_local",
+ "tag": "LOCAL *SPOTS*",
+ "hook": 2,
+ "lesson": "",
+ "story_plan": {
+  "type": "single",
+  "frames": [
+   1
+  ]
+ },
+ "music": {
+  "ig_audio": "Animal - KATSEYE",
+  "ig_audio_source": "https://creativedisc.com/2026/11/billboard-hot-100-14-november-2026/",
+  "ig_audio_backup": "Risk It All - Bruno Mars",
+  "tiktok": "auto"
+ },
+ "source": "Slice restaurant pages (Nov. 2026)",
+ "slides": [
+  {
+   "type": "cover",
+   "eyebrow": "Moving to East Hanover?",
+   "lines": [
+    "HERE'S THE TRUTH",
+    "ABOUT PIZZA",
+    "~NIGHT IN EAST",
+    "~HANOVER"
+   ],
+   "sub": "3 spots on 2 roads, and all 3 make a grandma pie. Swipe for the list.",
+   "source": "Slice restaurant pages (Nov. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "1",
+   "kind": "Pizza",
+   "title": "Lazio's Pizzeria",
+   "meta": "33 Ridgedale Ave, East Hanover",
+   "chips": [
+    "Grandma pie",
+    "Chicken parm",
+    "Sun. to Thu. pickup deal"
+   ],
+   "body": "The easy weeknight call. Cheese pizza is a top seller, and the grandma pie is a thin, hand-stretched pan pie with San Marzano tomatoes.",
+   "scene": "pizza",
+   "variant": 0,
+   "source": "Slice, Lazio's Pizzeria & Family Restaurant page (Nov. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "2",
+   "kind": "Brick oven",
+   "title": "Avellino Wood Fired Brick Oven",
+   "meta": "445 Ridgedale Ave, East Hanover",
+   "chips": [
+    "Wood-fired oven",
+    "Focaccia pizza",
+    "Grandma pie"
+   ],
+   "body": "Same road, different crust. Square focaccia, grandma pies and brick oven wings with long hots.",
+   "scene": "pizza",
+   "variant": 1,
+   "source": "Slice, Avellino Wood Fired Brick Oven page (Nov. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "3",
+   "kind": "Pizza",
+   "title": "The Godfather of East Hanover",
+   "meta": "200 Route 10, East Hanover",
+   "chips": [
+    "Margherita",
+    "Wings",
+    "Paninis"
+   ],
+   "body": "The Route 10 stop. The Margherita pizza is one of its house favorites, with wings and paninis if not everyone wants a slice.",
+   "scene": "pizza",
+   "variant": 2,
+   "source": "Slice, The Godfather of East Hanover page (Nov. 2026)"
+  },
+  {
+   "type": "route",
+   "eyebrow": "Before you tour",
+   "title": "One pizza night in East Hanover",
+   "stops": [
+    {
+     "name": "Lazio's Pizzeria",
+     "where": "Ridgedale Ave"
+    },
+    {
+     "name": "Avellino",
+     "where": "Ridgedale Ave"
+    },
+    {
+     "name": "The Godfather",
+     "where": "Route 10"
+    }
+   ],
+   "tip": "Tour on a weeknight. Then drive Ridgedale Ave and Route 10 at rush hour before you offer.",
+   "source": "Slice restaurant pages (Nov. 2026)"
+  }
+ ],
+ "caption": "Pizza night in East Hanover: grandma pies on Ridgedale Ave and Route 10, plus a Margherita at The Godfather. Which one are you ordering first?\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #EastHanoverNJ #MorrisCountyNJ\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "Pizza night in East Hanover: grandma pies on Ridgedale Ave and Route 10, plus a Margherita at The Godfather. Which one are you ordering first?\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://slicelife.com/restaurants/nj/east-hanover/07936/lazio-pizza-deli/menu",
+  "https://slicelife.com/restaurants/nj/east-hanover/07936/avellino-pizza-grille/menu",
+  "https://slicelife.com/restaurants/nj/east-hanover/07936/the-godfather-brick-oven-pizzeria/menu",
+  "https://www.morriscountynj.gov/files/sharedassets/public/v/1/departments/office-of-emergency-mngmt/section-9.11-township-of-east-hanover.pdf"
+ ]
+}

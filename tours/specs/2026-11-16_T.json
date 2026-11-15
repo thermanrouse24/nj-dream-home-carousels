@@ -99,5 +99,12 @@
     }
    ]
   }
- }
+ },
+ "listing_status": "Active $1,199,000 (reduced from $1,295,000 on 11/08/2026; listed 09/22/2026), Terrie O'Connor Realtors-Wyckoff; listing shows 5 bed / 3.5 bath (edit cover says 3.1). Checked Nov 15 2026.",
+ "listing_source": "https://www.homes.com/property/38-28-brookside-ave-fair-lawn-nj-unit-1x/2tt6vnnj5rp45/",
+ "town_source": "https://njparcels.com/property/0217/2327/13",
+ "song_note": "Instagram lookup returned no audio_candidates for the 5 chart songs; no song set. Needs FIX T: song <name>.",
+ "ig_audio_id": "",
+ "ig_audio": "",
+ "ig_audio_backup": ""
 }
