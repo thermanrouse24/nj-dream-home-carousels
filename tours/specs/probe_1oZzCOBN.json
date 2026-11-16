@@ -2,7 +2,8 @@
  "id": "probe_1oZzCOBN",
  "drive_file_id": "1oZzCOBNFSSydAxfSmeElcP7B4199rNuG",
  "drive_title": "BF97A74A-1339-493C-973F-E121DE3F387A.mp4",
- "status": "probed",
+ "status": "needs_name",
  "frames": "tours/probes/probe_1oZzCOBN_frames.jpg",
- "source_duration_s": 32.7
+ "source_duration_s": 32.7,
+ "read": "Probed Nov 16 2026: cover reads SINGLE FAMILY HOME, 36 Mins to NYC | 4 Beds | 2 Baths, $48,965; New Construction. No town or address on any frame. Ask Therm to rename the file 'Address, Town'."
 }

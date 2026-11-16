@@ -2,7 +2,8 @@
  "id": "probe_1VERhN9l",
  "drive_file_id": "1VERhN9lb25B5Qayn6dyHdv5jkpvzvH8i",
  "drive_title": "3E9E908C-B357-4D70-96CD-ADAF00277FFA.mp4",
- "status": "probed",
+ "status": "needs_name",
  "frames": "tours/probes/probe_1VERhN9l_frames.jpg",
- "source_duration_s": 38.8
+ "source_duration_s": 38.8,
+ "read": "Probed Nov 16 2026: cover reads MULTI-FAMILY HOME, 10 Mins to NYC | 6 Beds | 4.1 Baths, $38,500; New Construction. No town or address on any frame. Ask Therm to rename the file 'Address, Town'."
 }
