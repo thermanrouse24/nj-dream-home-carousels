@@ -1,0 +1,109 @@
+{
+ "id": "2026-11-17_B_local",
+ "tag": "LOCAL *SPOTS*",
+ "hook": 12,
+ "lesson": "",
+ "story_plan": {
+  "type": "single",
+  "frames": [
+   1
+  ]
+ },
+ "music": {
+  "ig_audio": "Risk It All - Bruno Mars",
+  "ig_audio_source": "https://ca.billboard.com/charts/hot-100/2026-11-14",
+  "ig_audio_backup": "Housewife - Tate McRae",
+  "tiktok": "auto"
+ },
+ "source": "Morris Township, Convent Train Station (Nov. 2026)",
+ "slides": [
+  {
+   "type": "cover",
+   "eyebrow": "Commuting from Convent Station?",
+   "lines": [
+    "PAYING THE",
+    "$5 METER DAILY",
+    "~COSTS MORE",
+    "~THAN YOU THINK"
+   ],
+   "sub": "Live in Morris Township? Here's how $5 a day stacks up against a yearly permit.",
+   "source": "Morris Township, Convent Train Station (Nov. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "1",
+   "kind": "Train",
+   "title": "Convent Station",
+   "meta": "62 Old Turnpike Rd, Morris Township",
+   "chips": [
+    "Morristown Line",
+    "Office weekdays",
+    "1 ticket machine"
+   ],
+   "body": "Convent Station is on NJ Transit's Morristown Line. The ticket office is open weekdays, 6 AM to 1:30 PM. On weekends, use the ticket machine or the NJ Transit app.",
+   "scene": "train",
+   "variant": 0,
+   "source": "NJ Transit, Convent Station; Morris Township (Nov. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "2",
+   "kind": "Daily parking",
+   "title": "$5 a day",
+   "meta": "Township meters at the station",
+   "chips": [
+    "Every day",
+    "Pay by phone",
+    "Zone 10701"
+   ],
+   "body": "Daily meters cost $5, weekends and holidays included. Pay at the pay station, or use mPay2Park (zone 10701) for an extra $0.30.",
+   "scene": "parking",
+   "variant": 0,
+   "source": "Morris Township, Convent Train Station (Nov. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "3",
+   "kind": "Permit",
+   "title": "$345 a year",
+   "meta": "Township Clerk, 50 Woodland Ave",
+   "chips": [
+    "Residents $345",
+    "Non-residents $690",
+    "Check only"
+   ],
+   "body": "A resident permit is $345 a year, July to June. That's 69 days at the meter. Non-residents pay $690. A permit doesn't guarantee a space.",
+   "scene": "parking",
+   "variant": 1,
+   "source": "Morris Township, Resident & Non-Resident Permit Parking (Nov. 2026)"
+  },
+  {
+   "type": "route",
+   "eyebrow": "Plan the commute",
+   "title": "Your Convent Station morning",
+   "stops": [
+    {
+     "name": "Clerk's office",
+     "where": "Woodland Ave"
+    },
+    {
+     "name": "Station lot",
+     "where": "Old Turnpike Rd"
+    },
+    {
+     "name": "Train platform",
+     "where": "Convent Station"
+    }
+   ],
+   "tip": "Before you make an offer, drive from the house to the station at rush hour. Meter spaces aren't guaranteed, so see how early the lot fills.",
+   "source": "Morris Township, Convent Train Station (Nov. 2026)"
+  }
+ ],
+ "caption": "Commuting from Convent Station? Daily parking is $5. A Morris Township resident permit is $345 a year, about 69 days at the meter. Would you buy the permit or pay as you go?\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #MorrisTownshipNJ #MorrisCountyNJ\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "Commuting from Convent Station? Daily parking is $5. A Morris Township resident permit is $345 a year, about 69 days at the meter. Would you buy the permit or pay as you go?\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://morristwp.com/571/Convent-Station",
+  "https://morristwp.com/863",
+  "https://njtransit.com/station/convent-station"
+ ]
+}

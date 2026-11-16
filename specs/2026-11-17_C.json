@@ -1,0 +1,72 @@
+{
+ "id": "2026-11-17_C_rentown",
+ "tag": "RENT *VS. BUY*",
+ "style": "cartoon",
+ "hook": 5,
+ "lesson": "Alex Hormozi, My Actual Social Media Strategy For 2027, tension cover: rent vs. own, middle answer on the slides (Use for us #1)",
+ "story_plan": {
+  "type": "multi",
+  "frames": [
+   1,
+   4,
+   5
+  ]
+ },
+ "music": {
+  "ig_audio": "Hate That I Made You Love Me - Ariana Grande",
+  "ig_audio_source": "https://ca.billboard.com/charts/hot-100/2026-11-14",
+  "ig_audio_backup": "Stupid Song - Olivia Rodrigo",
+  "tiktok": "auto"
+ },
+ "source": "NJ Division of Taxation (Nov. 2026)",
+ "slides": [
+  {
+   "type": "cover",
+   "scene": "taxes",
+   "variant": 1,
+   "eyebrow": "Here's what actually happens",
+   "lines": [
+    "AT TAX TIME",
+    "WHEN YOU RENT",
+    "~VS. OWN",
+    "~IN NJ"
+   ],
+   "sub": "6 years in real estate taught me these 3.",
+   "source": "NJ Division of Taxation (Nov. 2026); Therm, confirmed Oct 22 2026 (6 years)"
+  },
+  {
+   "type": "text",
+   "eyebrow": "Number 1: renters",
+   "title": "18% of your rent",
+   "body": "On your NJ return, 18% of the rent you paid on your main home counts as property taxes. Deduct it, up to $15,000, or take the $50 credit. Not both.",
+   "source": "NJ Division of Taxation, Property Tax Deduction/Credit (updated 3/23/26)"
+  },
+  {
+   "type": "text",
+   "eyebrow": "Number 2: owners",
+   "title": "Up to $15,000",
+   "body": "Owners deduct the property taxes they actually paid on their main home, up to $15,000. Same rule: the deduction or the $50 credit, not both.",
+   "source": "NJ Division of Taxation, Property Tax Deduction/Credit (updated 3/23/26)"
+  },
+  {
+   "type": "stat",
+   "label": "ANCHOR FOR HOMEOWNERS",
+   "value": "$1,500",
+   "body": "For 2025, homeowners with income up to $150,000 could get $1,500. Renters under 65 with income up to $150,000 could get $450.",
+   "source": "NJ Treasury, ANCHOR benefit amounts (Nov. 2026)"
+  },
+  {
+   "type": "text",
+   "eyebrow": "Do the math",
+   "title": "Rent $2,500 a month?",
+   "body": "That's $30,000 a year. 18% of that is $5,400, and it counts as property taxes on your NJ return. Compare it with the tax bill on the homes you like.",
+   "source": "NJ Division of Taxation (Nov. 2026); example math"
+  }
+ ],
+ "caption": "Here's what actually happens at tax time when you rent vs. own in New Jersey.\n\nRenters: 18% of your rent counts as property taxes on your NJ return. Owners: you deduct the taxes you paid, up to $15,000. For 2025, ANCHOR paid $1,500 to homeowners with income up to $150,000 and $450 to renters under 65.\n\nPut both in your rent vs. buy math. Talk to a tax professional about your own return.\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #NJPropertyTax #RentVsBuy\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "Here's what actually happens at tax time when you rent vs. own in New Jersey.\n\nRenters: 18% of your rent counts as property taxes on your NJ return. Owners deduct the taxes they paid, up to $15,000.\n\nTalk to a tax professional about your own return.\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://nj.gov/treasury/taxation/njit35.shtml",
+  "https://www.nj.gov/treasury/taxation/anchor/calculated.shtml"
+ ]
+}
