@@ -99,5 +99,12 @@
     }
    ]
   }
- }
+ },
+ "listing_status": "Active $1,299,000 (reduced from $1,400,000 on 10/6/2026; listed 9/2/2026), Keller Williams Prosperity Realty (MLS 26032235); 4 beds, 4 full + 1 half baths; checked Nov 16 2026",
+ "listing_source": "https://www.newjerseyrealestatenetwork.com/property-search/detail/96/26032235/2-25-kenneth-avenue-fair-lawn-nj-07410/",
+ "town_source": "https://washington.homefront.com/homes/nj/fair-lawn/property/2-25-kenneth-avenue-c80c14e3-617a-3ebb-ad56-d229ee8c0768",
+ "song_note": "Instagram lookup returned no audio_candidates for the 5 chart songs; no song set. Needs FIX T: song <name>.",
+ "ig_audio_id": "",
+ "ig_audio": "",
+ "ig_audio_backup": ""
 }
