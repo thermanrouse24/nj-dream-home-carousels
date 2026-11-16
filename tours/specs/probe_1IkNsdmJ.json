@@ -2,7 +2,8 @@
  "id": "probe_1IkNsdmJ",
  "drive_file_id": "1IkNsdmJfk9_TOowKVdpDUSyNUpxgeYCz",
  "drive_title": "2-25 Kenneth Ave | $ 1,299,000.mp4",
- "status": "probed",
+ "status": "probed_used",
  "frames": "tours/probes/probe_1IkNsdmJ_frames.jpg",
- "source_duration_s": 35.3
+ "source_duration_s": 35.3,
+ "read": "Cover: SINGLE FAMILY HOME, Fully Renovated, 33 Mins to NYC | 4 Beds | 4.1 Baths, $45,465 (3.5% of $1,299,000). Town Fair Lawn from address search."
 }
