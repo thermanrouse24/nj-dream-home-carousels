@@ -24,14 +24,14 @@
    "type": "cover",
    "scene": "taxes",
    "variant": 1,
-   "eyebrow": "Here's what actually happens",
+   "eyebrow": "After 6 years, here's what happens",
    "lines": [
     "AT TAX TIME",
     "WHEN YOU RENT",
     "~VS. OWN",
     "~IN NJ"
    ],
-   "sub": "6 years in real estate taught me these 3.",
+   "sub": "Owners got $1,500. Renters got $450.",
    "source": "NJ Division of Taxation (Nov. 2026); Therm, confirmed Oct 22 2026 (6 years)"
   },
   {
@@ -50,7 +50,7 @@
   },
   {
    "type": "stat",
-   "label": "ANCHOR FOR HOMEOWNERS",
+   "label": "NUMBER 3: ANCHOR",
    "value": "$1,500",
    "body": "For 2025, homeowners with income up to $150,000 could get $1,500. Renters under 65 with income up to $150,000 could get $450.",
    "source": "NJ Treasury, ANCHOR benefit amounts (Nov. 2026)"
@@ -59,7 +59,7 @@
    "type": "text",
    "eyebrow": "Do the math",
    "title": "Rent $2,500 a month?",
-   "body": "That's $30,000 a year. 18% of that is $5,400, and it counts as property taxes on your NJ return. Compare it with the tax bill on the homes you like.",
+   "body": "That's $30,000 a year. 18% of it, $5,400, counts as property taxes on your NJ return. Compare it with each home's tax bill. Talk to a tax professional.",
    "source": "NJ Division of Taxation (Nov. 2026); example math"
   }
  ],
