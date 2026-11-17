@@ -2,5 +2,7 @@
  "id": "probe_1EAgyw6A",
  "drive_file_id": "1EAgyw6AKK5g8sIJO09zD6w4PX9KluFnm",
  "drive_title": "24 W 19th St, Bayonne | $1,100,000 | 6 Beds|4.1 Baths",
- "status": "probe"
+ "status": "probed",
+ "frames": "tours/probes/probe_1EAgyw6A_frames.jpg",
+ "source_duration_s": 38.8
 }
