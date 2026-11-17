@@ -99,5 +99,12 @@
     }
    ]
   }
- }
+ },
+ "listing_status": "Active per Compass (listed 9/24/2026 at $1,200,000, reduced Oct 9 and Oct 20 to $1,100,000; Zillow still shows $1,150,000), Keller Williams Realty, MLS 260019334; new construction 2-family, 6 beds, 4 full + 1 half baths; checked Nov 17 2026",
+ "listing_source": "https://www.compass.com/listing/24-west-19th-street-bayonne-nj-07002/598998048452226929/",
+ "commute_note": "'10 Mins to NYC' is Therm's cover text; Researcher: about 10 min drive to Staten Island via Bayonne Bridge is plausible, but Lower Manhattan by light rail + PATH is roughly 30 to 40 min door to door.",
+ "song_note": "Instagram lookup returned no audio_candidates for the 5 chart songs; no song set. Needs FIX T: song <name>.",
+ "ig_audio_id": "",
+ "ig_audio": "",
+ "ig_audio_backup": ""
 }
