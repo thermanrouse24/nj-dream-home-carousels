@@ -2,7 +2,8 @@
  "id": "probe_1EAgyw6A",
  "drive_file_id": "1EAgyw6AKK5g8sIJO09zD6w4PX9KluFnm",
  "drive_title": "24 W 19th St, Bayonne | $1,100,000 | 6 Beds|4.1 Baths",
- "status": "probed",
+ "status": "probed_used",
  "frames": "tours/probes/probe_1EAgyw6A_frames.jpg",
- "source_duration_s": 38.8
+ "source_duration_s": 38.8,
+ "read": "Cover: MULTI - FAMILY HOME, New Construction, 10 Mins to NYC | 6 Beds | 4.1 Baths, $38,500 (3.5% of $1,100,000). Town Bayonne from file name."
 }

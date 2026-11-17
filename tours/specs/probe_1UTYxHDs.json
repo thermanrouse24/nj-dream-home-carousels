@@ -2,7 +2,8 @@
  "id": "probe_1UTYxHDs",
  "drive_file_id": "1UTYxHDsWxPiN7DfGMqxfr1R8ho4HZ13T",
  "drive_title": "81FAB652-4AEB-496E-ABD8-873CDFFA27C1.mp4",
- "status": "probed",
+ "status": "needs_name",
  "frames": "tours/probes/probe_1UTYxHDs_frames.jpg",
- "source_duration_s": 37.8
+ "source_duration_s": 37.8,
+ "read": "No address, sign or street name readable in the frames (camera file name). Needs renaming 'Address, Town'."
 }
