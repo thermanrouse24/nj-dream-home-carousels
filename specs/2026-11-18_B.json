@@ -1,0 +1,115 @@
+{
+ "id": "2026-11-18_B_local",
+ "tag": "LOCAL *SPOTS*",
+ "hook": 6,
+ "lesson": "",
+ "story_plan": {
+  "type": "multi",
+  "frames": [
+   1,
+   2,
+   3,
+   4
+  ]
+ },
+ "music": {
+  "ig_audio": "Nowhere Fast - Lucky Daye",
+  "ig_audio_source": "https://www.yahoo.com/entertainment/music/articles/ella-langley-wham-mariah-carey-165903152.html",
+  "ig_audio_backup": "Santa Tell Me - Ariana Grande",
+  "tiktok": "auto"
+ },
+ "source": "NJ Natural Lands Trust; Mount Olive Public Library (Nov. 2026)",
+ "slides": [
+  {
+   "type": "cover",
+   "eyebrow": "Moving to Mount Olive?",
+   "lines": [
+    "THIS IS THE PART",
+    "THEY NEVER SHOW YOU:",
+    "~A 299-ACRE",
+    "~BOG PRESERVE"
+   ],
+   "sub": "Plus a big town park and a library that lends museum passes. Here are the 3 stops.",
+   "source": "NJ Natural Lands Trust, Budd Lake Bog Preserve page (Nov. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "1",
+   "kind": "Park",
+   "title": "Turkey Brook Park",
+   "meta": "30 Flanders Rd, Budd Lake",
+   "chips": [
+    "Dog park",
+    "Perimeter paths",
+    "Tennis + basketball"
+   ],
+   "body": "Sports fields, a playground, outdoor workout gear and a dog park. The rec department runs town events here, like the tree lighting.",
+   "scene": "park",
+   "variant": 0,
+   "source": "NJ Realtors, Town Feature: Mount Olive Township; NJ Playgrounds, Turkey Brook Park"
+  },
+  {
+   "type": "place",
+   "num": "2",
+   "kind": "Nature preserve",
+   "title": "Budd Lake Bog Preserve",
+   "meta": "Off Sand Shore Rd, Budd Lake",
+   "chips": [
+    "299 acres",
+    "Bird watching",
+    "Limited parking"
+   ],
+   "body": "A black spruce and tamarack bog at the north end of Budd Lake, the largest naturally formed lake in NJ. The trails are unimproved, so bring boots.",
+   "scene": "park",
+   "variant": 1,
+   "source": "NJ Natural Lands Trust, Budd Lake Bog Preserve; Raritan Headwaters, Budd Lake"
+  },
+  {
+   "type": "place",
+   "num": "3",
+   "kind": "Library",
+   "title": "Mount Olive Public Library",
+   "meta": "202 Flanders-Drakestown Rd, Flanders",
+   "chips": [
+    "Museum passes",
+    "3D printing",
+    "Sat. 10 to 4"
+   ],
+   "body": "Got a library card and you're 18 or older? Borrow a free museum pass for 3 days. The list includes the Intrepid and the Morris Museum.",
+   "scene": "library",
+   "variant": 2,
+   "source": "Mount Olive Public Library, Museum Passes and About Us pages (Nov. 2026)"
+  },
+  {
+   "type": "route",
+   "eyebrow": "Before you tour",
+   "title": "One Saturday in Mount Olive",
+   "stops": [
+    {
+     "name": "Turkey Brook Park",
+     "where": "Flanders Rd"
+    },
+    {
+     "name": "Budd Lake Bog",
+     "where": "Sand Shore Rd"
+    },
+    {
+     "name": "Mount Olive Library",
+     "where": "Flanders-Drakestown Rd"
+    }
+   ],
+   "tip": "Between showings, drive Route 46 past Budd Lake at the time you'd actually leave for work.",
+   "source": "NJ Natural Lands Trust; Raritan Headwaters; Mount Olive Public Library"
+  }
+ ],
+ "caption": "Mount Olive has a big town park, a 299-acre bog preserve at Budd Lake, and a library that lends museum passes. Which one are you hitting first?\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #MountOliveNJ #MorrisCountyNJ\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "Mount Olive has a big town park, a 299-acre bog preserve at Budd Lake, and a library that lends museum passes. Which one are you hitting first?\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://deptest.nj.gov/njnlt/?p=504",
+  "https://www.raritanheadwaters.org/budd-lake/",
+  "https://consumer.njrealtor.com/2024/11/08/town-feature-mount-olive-township/",
+  "https://www.njplaygrounds.com/?p=10945",
+  "https://mopl.org/museum-passes",
+  "https://mopl.org/about-us"
+ ]
+}
