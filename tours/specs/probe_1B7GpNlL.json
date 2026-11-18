@@ -2,7 +2,8 @@
  "id": "probe_1B7GpNlL",
  "drive_file_id": "1B7GpNlLqauwBVKrXbXm_vPklX1GFLNqh",
  "drive_title": "AE80A505-5175-424E-A9CA-F6B598013791.mp4",
- "status": "probed",
+ "status": "needs_name",
  "frames": "tours/probes/probe_1B7GpNlL_frames.jpg",
- "source_duration_s": 37.8
+ "source_duration_s": 37.8,
+ "read": "Probed Nov 18 2026: cover reads 58 MINUTES TO NYC | 4 Bedrooms | 2.5 Bathrooms | SINGLE Family, $31,465. House number 62 on the porch post; no street or town on any frame. Ask Therm to rename the file 'Address, Town'."
 }
