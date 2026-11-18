@@ -1,0 +1,64 @@
+{
+ "id": "2026-11-19_C_taxrate",
+ "tag": "PROPERTY *TAXES*",
+ "style": "notebook",
+ "hook": 1,
+ "lesson": "",
+ "story_plan": {
+  "type": "single",
+  "frames": [
+   1
+  ]
+ },
+ "music": {
+  "ig_audio": "Here You Come, There You Go - Gracie Abrams",
+  "ig_audio_source": "https://www.spectrum-pulse.ca/blog/billboard-breakdown-hot-100-november-14-2026",
+  "ig_audio_backup": "stupid song - Olivia Rodrigo",
+  "tiktok": "auto"
+ },
+ "source": "NJ Division of Taxation, 2025 General and Effective Tax Rates",
+ "slides": [
+  {
+   "type": "cover",
+   "eyebrow": "No one talks about this, but:",
+   "lines": [
+    "CRANFORD'S 7.248",
+    "TAX RATE",
+    "~ISN'T BASED ON",
+    "~THE PRICE"
+   ],
+   "sub": "Every NJ town has 2 tax rates. Here's the one to use when you compare towns.",
+   "source": "NJ Division of Taxation, 2025 tax rates"
+  },
+  {
+   "type": "text",
+   "title": "1. The general rate",
+   "body": "This is the tax per [[$100 of assessed value]]. Your bill uses it, times the assessment. When assessments are far below today's prices, it looks huge. Cranford's 2025 general rate: 7.248.",
+   "source": "NJ Division of Taxation, Property Tax Statistics"
+  },
+  {
+   "type": "text",
+   "title": "2. The effective rate",
+   "body": "This one shows the rate as if every town were assessed at full market value. It's the rate to [[compare towns]] with, not to figure a bill. Cranford's 2025 effective rate: 2.106.",
+   "source": "NJ Division of Taxation, 2025 tax rates"
+  },
+  {
+   "type": "text",
+   "title": "3. Do the rough math",
+   "body": "A $500,000 home x 2.106% = [[about $10,530 a year]]. Putting the general rate on the price gives you $36,240, which is way off.",
+   "source": "Math from NJ Division of Taxation 2025 rates"
+  },
+  {
+   "type": "text",
+   "title": "4. Check the real bill",
+   "body": "Rates get you close. Before you offer, ask for the [[home's actual tax bill]] and its assessment. Talk to a licensed lender for your numbers.",
+   "source": "NJ Division of Taxation"
+  }
+ ],
+ "caption": "No one talks about this, but every NJ town has 2 property tax rates. Cranford's 2025 general rate is 7.248. Its effective rate is 2.106. Your bill uses the general rate times the assessed value, not the price.\n\nThe effective rate is the one to compare towns with. Then ask for the home's actual tax bill before you offer.\n\nTalk to a licensed lender for your numbers.\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #NJPropertyTax #CranfordNJ\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "No one talks about this, but every NJ town has 2 property tax rates. Cranford's 2025 general rate is 7.248. Its effective rate is 2.106, and that's the one to compare towns with.\n\nTalk to a licensed lender for your numbers.\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://www.nj.gov/njbonds/treasury/taxation/pdf/lpt/gtr/2025taxrates.pdf",
+  "https://www.nj.gov/treasury/taxation/lpt/statdata.shtml"
+ ]
+}

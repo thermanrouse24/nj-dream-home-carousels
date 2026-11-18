@@ -1,0 +1,116 @@
+{
+ "id": "2026-11-19_B_local",
+ "tag": "LOCAL *SPOTS*",
+ "hook": 26,
+ "lesson": "",
+ "story_plan": {
+  "type": "multi",
+  "frames": [
+   1,
+   3,
+   5
+  ]
+ },
+ "music": {
+  "ig_audio": "Dracula - Tame Impala & JENNIE",
+  "ig_audio_source": "https://www.spectrum-pulse.ca/blog/billboard-breakdown-hot-100-november-14-2026",
+  "ig_audio_backup": "BbY WOW - Karol G, Judeline & rusowsky",
+  "tiktok": "auto"
+ },
+ "source": "The Montclair Girl (May 2026); NJ 101.5 (May 2026); Francesca's Bakery",
+ "slides": [
+  {
+   "type": "cover",
+   "eyebrow": "Moving to Pequannock?",
+   "lines": [
+    "YOU DON'T NEED",
+    "THE CITY.",
+    "~YOU NEED THESE",
+    "~3 STOPS"
+   ],
+   "sub": "Two bake shops and a coffee spot full of books, on 2 roads in town.",
+   "source": "The Montclair Girl (May 14, 2026); NJ 101.5 (May 11, 2026)"
+  },
+  {
+   "type": "place",
+   "num": "1",
+   "kind": "Bake shop",
+   "title": "Defying Gravitea",
+   "meta": "211 Newark Pompton Tpke",
+   "chips": [
+    "Gluten-free",
+    "Dairy-free",
+    "Brunch menu"
+   ],
+   "body": "A scratch kitchen with a gluten-free and dairy-free menu. The owner turned her family's Italian recipes into GF and DF versions, and a full brunch menu launched in 2026.",
+   "scene": "bakery",
+   "variant": 0,
+   "source": "The Montclair Girl (May 14, 2026); OpenTable"
+  },
+  {
+   "type": "place",
+   "num": "2",
+   "kind": "Coffee + books",
+   "title": "Chapters & Coffee",
+   "meta": "445 Route 23 South, Pompton Plains",
+   "chips": [
+    "Opened May 2026",
+    "Specialty lattes",
+    "Books to read"
+   ],
+   "body": "Coffee, tea and shelves of books. The lattes have book-themed names, like The Story Teller, a cookie butter latte with vanilla cold foam.",
+   "scene": "coffee",
+   "variant": 1,
+   "source": "NJ 101.5 (May 11, 2026)"
+  },
+  {
+   "type": "place",
+   "num": "3",
+   "kind": "Bakery",
+   "title": "Francesca's Bakery",
+   "meta": "Newark Pompton Tpke, Pequannock",
+   "chips": [
+    "Made from scratch",
+    "No preservatives",
+    "Custom cakes"
+   ],
+   "body": "Baked goods and custom cakes made by hand from scratch, with no added preservatives. The bakery says most of its ingredients come from local farmers.",
+   "scene": "bakery",
+   "variant": 2,
+   "source": "Francesca's Bakery website"
+  },
+  {
+   "type": "route",
+   "eyebrow": "Before you tour",
+   "title": "One Saturday in Pequannock",
+   "stops": [
+    {
+     "name": "Defying Gravitea",
+     "where": "Newark Pompton Tpke"
+    },
+    {
+     "name": "Francesca's Bakery",
+     "where": "Newark Pompton Tpke"
+    },
+    {
+     "name": "Chapters & Coffee",
+     "where": "Route 23 South"
+    }
+   ],
+   "tip": "There's no train station in town. Lincoln Park station is nearby. Time that drive at rush hour.",
+   "source": "NJ Transit Montclair-Boonton timetable; Morris County"
+  }
+ ],
+ "caption": "Pequannock has a gluten-free bake shop, a bakery that bakes from scratch, and a coffee shop full of books. Which one's your first stop?\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #PequannockNJ #MorrisCountyNJ\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "Pequannock has a gluten-free bake shop, a bakery that bakes from scratch, and a coffee shop full of books. Which one's your first stop?\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://www.themontclairgirl.com/?p=255507",
+  "https://opentable.com.au/r/defying-gravitea-pequannock-township",
+  "https://nj1015.com/chapters-coffee-pompton-plains/",
+  "https://www.francescasbakery.com/",
+  "https://thelocalgirl.com/?p=225541",
+  "https://wanderlog.com/place/details/3420602/francescas-bakery",
+  "https://www.morriscountynj.gov/files/sharedassets/public/departments/office-of-emergency-mngmt/section-9.32-township-of-pequannock.pdf",
+  "https://content.njtransit.com/pdf/schedules/rail/BNTN"
+ ]
+}
