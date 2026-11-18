@@ -27,13 +27,13 @@
     "~ISN'T BASED ON",
     "~THE PRICE"
    ],
-   "sub": "Every NJ town has 2 tax rates. Here's the one to use when you compare towns.",
+   "sub": "Use it on a $500K home and your estimate is off by more than $25,000. Here's the rate to use.",
    "source": "NJ Division of Taxation, 2025 tax rates"
   },
   {
    "type": "text",
    "title": "1. The general rate",
-   "body": "This is the tax per [[$100 of assessed value]]. Your bill uses it, times the assessment. When assessments are far below today's prices, it looks huge. Cranford's 2025 general rate: 7.248.",
+   "body": "This is the tax per [[$100 of assessed value]]. Your bill is this rate times the assessed value, divided by 100. Where assessments trail today's prices, it looks huge. Cranford's 2025 general rate: 7.248.",
    "source": "NJ Division of Taxation, Property Tax Statistics"
   },
   {

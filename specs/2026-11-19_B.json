@@ -24,11 +24,11 @@
    "eyebrow": "Moving to Pequannock?",
    "lines": [
     "YOU DON'T NEED",
-    "THE CITY.",
-    "~YOU NEED THESE",
-    "~3 STOPS"
+    "A CITY TRIP",
+    "~FOR SATURDAY.",
+    "~THESE 3 ARE IN TOWN"
    ],
-   "sub": "Two bake shops and a coffee spot full of books, on 2 roads in town.",
+   "sub": "A gluten-free kitchen, a from-scratch bakery and a coffee shop with books, 2 roads apart.",
    "source": "The Montclair Girl (May 14, 2026); NJ 101.5 (May 11, 2026)"
   },
   {
@@ -58,7 +58,7 @@
     "Specialty lattes",
     "Books to read"
    ],
-   "body": "Coffee, tea and shelves of books. The lattes have book-themed names, like The Story Teller, a cookie butter latte with vanilla cold foam.",
+   "body": "Coffee, tea and books to read. The lattes have book-themed names, like The Story Teller, a cookie butter latte with vanilla cold foam.",
    "scene": "coffee",
    "variant": 1,
    "source": "NJ 101.5 (May 11, 2026)"
@@ -68,10 +68,10 @@
    "num": "3",
    "kind": "Bakery",
    "title": "Francesca's Bakery",
-   "meta": "Newark Pompton Tpke, Pequannock",
+   "meta": "156 Newark Pompton Tpke",
    "chips": [
     "Made from scratch",
-    "No preservatives",
+    "No added preservatives",
     "Custom cakes"
    ],
    "body": "Baked goods and custom cakes made by hand from scratch, with no added preservatives. The bakery says most of its ingredients come from local farmers.",
@@ -98,11 +98,11 @@
     }
    ],
    "tip": "There's no train station in town. Lincoln Park station is nearby. Time that drive at rush hour.",
-   "source": "NJ Transit Montclair-Boonton timetable; Morris County"
+   "source": "NJ Transit Montclair-Boonton timetable (3/15/26)"
   }
  ],
- "caption": "Pequannock has a gluten-free bake shop, a bakery that bakes from scratch, and a coffee shop full of books. Which one's your first stop?\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #PequannockNJ #MorrisCountyNJ\n\nTherm The Realtor | eXp Realty",
- "threads_caption": "Pequannock has a gluten-free bake shop, a bakery that bakes from scratch, and a coffee shop full of books. Which one's your first stop?\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "caption": "Pequannock has a gluten-free bake shop, a from-scratch bakery, and a coffee shop with books to read. Which one's your first stop?\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #PequannockNJ #MorrisCountyNJ\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "Pequannock has a gluten-free bake shop, a from-scratch bakery, and a coffee shop with books to read. Which one's your first stop?\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
  "sources": [
   "https://www.themontclairgirl.com/?p=255507",
   "https://opentable.com.au/r/defying-gravitea-pequannock-township",
