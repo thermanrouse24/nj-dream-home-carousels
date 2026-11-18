@@ -105,7 +105,8 @@ def main():
             info = json.loads(sh([sys.executable, os.path.join(HERE, "make_tour.py"), src, prefix,
                                   "--town", spec["town"], "--county", spec["county"],
                                   "--price", spec.get("cover_price", ""), "--facts", spec.get("cover_facts", ""),
-                                  "--price-note", spec.get("cover_price_note", "")]).strip().splitlines()[-1])
+                                  "--price-note", spec.get("cover_price_note", "")]
+                                 + (["--force-block"] if spec.get("force_cover_block") else [])).strip().splitlines()[-1])
             for kind in ("ig", "tiktok"):
                 sh(["gh", "release", "upload", TAG, f"{prefix}_{kind}.mp4", "--clobber", "--repo", REPO])
             os.makedirs(os.path.join(HERE, "previews"), exist_ok=True)

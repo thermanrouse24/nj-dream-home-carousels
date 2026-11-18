@@ -382,6 +382,7 @@ def main():
     ap.add_argument("--price", default="", help="the price shown on the edit's cover, e.g. $37,625 (redrawn in the title style)")
     ap.add_argument("--facts", default="", help="the edit's facts line, e.g. '5 Beds | 5 Baths'")
     ap.add_argument("--price-note", default="", help="what the price is, e.g. 'down payment'")
+    ap.add_argument("--force-block", action="store_true", help="edit has no SINGLE FAMILY / HOME label but its cover block sits in BLOCK_BOX: redraw it anyway")
     ap.add_argument("--panel", action="store_true", help="solid forest-green panel instead of the blurred band")
     a = ap.parse_args()
     dur, has_audio = probe(a.src)
@@ -402,6 +403,8 @@ def main():
         until = BLUR_SECONDS
     # the new text never outlasts the blur under it
     text_until = min(TEXT_SECONDS, BLUR_SECONDS)
+    if until is None and box and a.force_block:   # Nov 18 2026: cover block without the label (spec force_cover_block)
+        until = BLUR_SECONDS
     if until is None:        # no SINGLE FAMILY / HOME label found: title at the top, nothing blurred
         box, until = None, TITLE_SECONDS
     title_overlay(a.town, a.county, ov, box, a.price.strip() or None, a.facts.strip() or None,

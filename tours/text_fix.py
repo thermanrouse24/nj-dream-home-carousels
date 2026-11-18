@@ -28,6 +28,8 @@ RULES = {
     # kind: (regex on the OCR'd line, replacement text, platforms it applies to)
     "cta": (r"LINK|L1NK|IN.?BIO|INIB|CLICK|CLIGK|GLICK", 'DM ME "HOME"', {"tiktok"}),
     "save": (r"SECOND|SECO|THOUSAND|SAVE", "TAKES 30 SECONDS. NO OBLIGATION.", {"ig", "tiktok"}),
+    # Nov 18 2026 (Middletown edit): a second, white "Call/Text 347 - 988 - 8291" box under the black bar
+    "phone": (r"347|988.{0,3}8291|8291|VINNY", "CALL/TEXT 917.843.5290", {"ig", "tiktok"}),
     "best": (r"HUNDRED|CLIENT|BUSINESS|USINESS|SINESS|BEST IN|HELPED|ELPED", "LET'S MAKE YOUR PLAN.", {"ig", "tiktok"}),
 }
 KEEP = r"PRE.?APPROVAL|SCHEDULE|SHOWING|NEED|INFORMATION|DREAM HOME|WHY RENT|OWN"   # fine everywhere
