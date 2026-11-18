@@ -17,7 +17,6 @@
   "hate that i made you love me - Ariana Grande",
   "stupid song - Olivia Rodrigo",
   "Dracula - Tame Impala & JENNIE",
-  "Nowhere Fast - Lucky Daye",
   "Here You Come, There You Go - Gracie Abrams"
  ],
  "song_chart": "https://www.spectrum-pulse.ca/blog/billboard-breakdown-hot-100-november-14-2026 (Billboard Hot 100 dated Nov 14 2026)",
@@ -199,5 +198,6 @@
    ]
   }
  },
- "force_cover_block": true
+ "force_cover_block": true,
+ "tour_check_notes": "Nov 18 checker: caption 1 exact; cover OK; old 'CLICK THE LINK IN BIO' faint under NJ DREAM HOME in first second; edit's own '62 MINUTES TO NYC' shows from 1.0 s; old letters peek at edges of LET'S MAKE YOUR PLAN patch 17.8-18.5 s; 347 number covered."
 }
