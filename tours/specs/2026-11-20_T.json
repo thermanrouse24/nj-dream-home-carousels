@@ -21,8 +21,168 @@
   "Dracula - Tame Impala & JENNIE"
  ],
  "song_chart": "https://www.spectrum-pulse.ca/blog/billboard-breakdown-hot-100-november-21-2026 (Billboard Hot 100 dated Nov 21 2026)",
- "status": "new",
+ "status": "rendered",
  "caption_option": 2,
  "caption": "🏠 STILL PAYING YOUR LANDLORD'S MORTGAGE?\n\nTHEN I ONLY HAVE ONE QUESTION 🙋🏾‍♂️\n\nWHY NOT YOUR OWN ⁉️\n\n👀🚨 THIS ONE IS A MUST SEE 🔥🔥\n\nWhat I do for my clients:\n✔️ Build a game plan before the first showing 📋\n✔️ Catch the costly mistakes early\n✔️ Make buying feel easy, not overwhelming 😌\n\nIt's not just a house. It's your next move.\n\n_____\n\n🔥 READY? HERE'S HOW IT WORKS (3 STEPS):\n\n✅ Step 1: Tap the LINK IN MY BIO and complete the FREE form\n⏱️ Takes 30 seconds, zero commitment\n\n✅ Step 2: I'll contact you within 24 hours 📲\nWe'll book your one-on-one buyer consultation\n\n✅ Step 3: We line you up with the RIGHT home and I fight for your best deal 💪🏾💸\n\nCLICK THE LINK IN MY BIO ✅ CLICK THE LINK IN MY BIO ✅\n\n#NJRealEstate #NJRealtor #NewJerseyHomes #HomeTour\n\nTherm The Realtor | eXp Realty",
- "tiktok_caption": "🏠 STILL PAYING YOUR LANDLORD'S MORTGAGE?\n\nTHEN I ONLY HAVE ONE QUESTION 🙋🏾‍♂️\n\nWHY NOT YOUR OWN ⁉️\n\n👀🚨 THIS ONE IS A MUST SEE 🔥🔥\n\nWhat I do for my clients:\n✔️ Build a game plan before the first showing 📋\n✔️ Catch the costly mistakes early\n✔️ Make buying feel easy, not overwhelming 😌\n\nIt's not just a house. It's your next move.\n\n_____\n\n🔥 READY? HERE'S HOW IT WORKS (3 STEPS):\n\n✅ Step 1: DM me \"HOME\" and I'll send you the FREE form\n⏱️ Takes 30 seconds, zero commitment\n\n✅ Step 2: I'll contact you within 24 hours 📲\nWe'll book your one-on-one buyer consultation\n\n✅ Step 3: We line you up with the RIGHT home and I fight for your best deal 💪🏾💸\n\nDM me \"HOME\" to get started. ✅ DM ME \"HOME\" ✅\n\n#NJRealEstate #NJRealtor #NewJerseyHomes #HomeTour\n\nTherm The Realtor | eXp Realty"
+ "tiktok_caption": "🏠 STILL PAYING YOUR LANDLORD'S MORTGAGE?\n\nTHEN I ONLY HAVE ONE QUESTION 🙋🏾‍♂️\n\nWHY NOT YOUR OWN ⁉️\n\n👀🚨 THIS ONE IS A MUST SEE 🔥🔥\n\nWhat I do for my clients:\n✔️ Build a game plan before the first showing 📋\n✔️ Catch the costly mistakes early\n✔️ Make buying feel easy, not overwhelming 😌\n\nIt's not just a house. It's your next move.\n\n_____\n\n🔥 READY? HERE'S HOW IT WORKS (3 STEPS):\n\n✅ Step 1: DM me \"HOME\" and I'll send you the FREE form\n⏱️ Takes 30 seconds, zero commitment\n\n✅ Step 2: I'll contact you within 24 hours 📲\nWe'll book your one-on-one buyer consultation\n\n✅ Step 3: We line you up with the RIGHT home and I fight for your best deal 💪🏾💸\n\nDM me \"HOME\" to get started. ✅ DM ME \"HOME\" ✅\n\n#NJRealEstate #NJRealtor #NewJerseyHomes #HomeTour\n\nTherm The Realtor | eXp Realty",
+ "ig_url": "https://github.com/thermanrouse24/nj-dream-home-carousels/releases/download/tours/2026-11-20_T_wayne_ig.mp4",
+ "tiktok_url": "https://github.com/thermanrouse24/nj-dream-home-carousels/releases/download/tours/2026-11-20_T_wayne_tiktok.mp4",
+ "cover": "tours/previews/2026-11-20_T_wayne_cover.jpg",
+ "preview": "tours/previews/2026-11-20_T_wayne_preview.jpg",
+ "render_info": {
+  "text_until_s": 1.0,
+  "blur_until_s": 2.5,
+  "duration_s": 35.5,
+  "source_duration_s": 32.5,
+  "source_has_audio": false,
+  "source_mean_volume_db": null,
+  "has_music": false,
+  "ig_mb": 30.7,
+  "tiktok_mb": 30.6,
+  "phone_replaced": {
+   "phone_box": [
+    164,
+    1324,
+    879,
+    144
+   ],
+   "phone_box_s": [
+    30.6,
+    32.5
+   ],
+   "phone_text": "Call/Text 917.843.5290 Therm The Realtor"
+  },
+  "text_fixes": {
+   "ig": [
+    {
+     "kind": "save",
+     "box": [
+      50,
+      1497,
+      960,
+      1857
+     ],
+     "t": [
+      14.8,
+      18.5
+     ],
+     "text": "TAKES 30 SECONDS. NO OBLIGATION."
+    },
+    {
+     "kind": "phone",
+     "box": [
+      120,
+      1512,
+      960,
+      1715
+     ],
+     "t": [
+      30.2,
+      32.5
+     ],
+     "text": "CALL/TEXT 917.843.5290"
+    },
+    {
+     "kind": "best+best",
+     "box": [
+      120,
+      1295,
+      960,
+      1639
+     ],
+     "t": [
+      18.8,
+      22.0
+     ],
+     "text": "LET'S MAKE YOUR PLAN."
+    }
+   ],
+   "tiktok": [
+    {
+     "kind": "cta",
+     "box": [
+      158,
+      1434,
+      929,
+      1580
+     ],
+     "t": [
+      4.8,
+      8.5
+     ],
+     "text": "DM ME \"HOME\""
+    },
+    {
+     "kind": "cta",
+     "box": [
+      202,
+      1510,
+      947,
+      1611
+     ],
+     "t": [
+      10.8,
+      14.5
+     ],
+     "text": "DM ME \"HOME\""
+    },
+    {
+     "kind": "cta",
+     "box": [
+      87,
+      790,
+      991,
+      924
+     ],
+     "t": [
+      26.5,
+      29.8
+     ],
+     "text": "DM ME \"HOME\""
+    },
+    {
+     "kind": "save",
+     "box": [
+      50,
+      1497,
+      960,
+      1857
+     ],
+     "t": [
+      14.8,
+      18.5
+     ],
+     "text": "TAKES 30 SECONDS. NO OBLIGATION."
+    },
+    {
+     "kind": "phone",
+     "box": [
+      120,
+      1512,
+      960,
+      1715
+     ],
+     "t": [
+      30.2,
+      32.5
+     ],
+     "text": "CALL/TEXT 917.843.5290"
+    },
+    {
+     "kind": "best+best",
+     "box": [
+      120,
+      1295,
+      960,
+      1639
+     ],
+     "t": [
+      18.8,
+      22.0
+     ],
+     "text": "LET'S MAKE YOUR PLAN."
+    }
+   ]
+  }
+ }
 }
