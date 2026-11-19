@@ -336,7 +336,6 @@ def museum_svg(v, w, h):
 <polygon points="{bx+bw*0.36},{by+h*0.04} {bx+bw/2},{by-h*0.04} {bx+bw*0.64},{by+h*0.04}" fill="#F5ECD7"/>
 {win}
 <rect x="{tx-40}" y="{by+h*0.12}" width="80" height="{h*0.12}" fill="#FFD98A"/>
-{tree}
 {cols}
 <rect x="{tx-26}" y="{ground-h*0.16}" width="52" height="{h*0.16}" fill="#1F352D"/>
 <circle cx="{tx}" cy="{ground-h*0.11}" r="15" fill="none" stroke="#2F5A3F" stroke-width="8"/><circle cx="{tx}" cy="{ground-h*0.11+15}" r="4" fill="#B5533C"/>
