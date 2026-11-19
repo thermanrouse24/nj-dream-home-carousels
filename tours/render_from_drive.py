@@ -102,6 +102,7 @@ def main():
             src = os.path.join(tmp, "source.mp4")
             download(spec["drive_file_id"], src)
             prefix = os.path.join(tmp, sid)
+            os.environ["TEXT_FIX_OVERRIDES"] = json.dumps(spec.get("text_fix_overrides", {}))
             info = json.loads(sh([sys.executable, os.path.join(HERE, "make_tour.py"), src, prefix,
                                   "--town", spec["town"], "--county", spec["county"],
                                   "--price", spec.get("cover_price", ""), "--facts", spec.get("cover_facts", ""),

@@ -230,6 +230,14 @@ def fix(src):
     except ImportError:
         return src, src, {"error": "pytesseract not installed: text not fixed"}
     events = scan(src)
+    # per-tour box fixes from the spec ("text_fix_overrides": {"save": {"y0": 1525}}), passed by render_from_drive.py
+    # in TEXT_FIX_OVERRIDES (Nov 19 2026: the Wayne save box cut through the edit's own CONSULTATION line)
+    import json as _json
+    ov = _json.loads(os.environ.get("TEXT_FIX_OVERRIDES") or "{}")
+    for e in events:
+        for k, i in (("x0", 0), ("y0", 1), ("x1", 2), ("y1", 3)):
+            if k in ov.get(e["kind"], {}):
+                e["box"][i] = int(ov[e["kind"]][k])
     tmp = tempfile.mkdtemp()
     ig, ig_info = apply(src, events, "ig", os.path.join(tmp, "ig.mp4"))
     tk, tk_info = apply(src, events, "tiktok", os.path.join(tmp, "tk.mp4"))
