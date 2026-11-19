@@ -1,0 +1,113 @@
+{
+ "id": "2026-11-20_B_local",
+ "tag": "LOCAL *SPOTS*",
+ "hook": 25,
+ "lesson": "",
+ "story_plan": {
+  "type": "single",
+  "frames": [
+   1
+  ]
+ },
+ "music": {
+  "ig_audio": "All I Want For Christmas Is You - Mariah Carey",
+  "ig_audio_source": "https://www.spectrum-pulse.ca/blog/billboard-breakdown-hot-100-november-21-2026",
+  "ig_audio_backup": "Underneath the Tree - Kelly Clarkson",
+  "tiktok": "auto"
+ },
+ "source": "Arts Council of Princeton; Morven Museum & Garden; Princeton University (2026)",
+ "slides": [
+  {
+   "type": "cover",
+   "eyebrow": "If you only remember one thing",
+   "lines": [
+    "PRINCETON HAS",
+    "3 WEEKEND PLANS",
+    "~FOR $20 OR",
+    "~LESS EACH"
+   ],
+   "sub": "A free holiday market, a museum full of decorated trees and a student dance show. All open Sat. Nov. 21 and Sun. Nov. 22.",
+   "source": "Arts Council of Princeton; Morven Museum & Garden; Princeton University (2026)"
+  },
+  {
+   "type": "place",
+   "num": "1",
+   "kind": "Holiday market",
+   "title": "Artist Winter Village",
+   "meta": "Hinds Plaza, Witherspoon St",
+   "chips": [
+    "Free to visit",
+    "Noon to 6 PM",
+    "Sat. + Sun."
+   ],
+   "body": "Local artists and makers sell gifts from little chalets, run by the Arts Council of Princeton. More vendors join on the weekend.",
+   "scene": "chalets",
+   "variant": 0,
+   "source": "Arts Council of Princeton (Week 2, Nov. 19 to 22, 2026)"
+  },
+  {
+   "type": "place",
+   "num": "2",
+   "kind": "Museum",
+   "title": "Festival of Trees at Morven",
+   "meta": "55 Stockton St",
+   "chips": [
+    "21st season",
+    "10 AM to 4 PM",
+    "Adults $15"
+   ],
+   "body": "See trees and mantels decorated by 17 community partners, then vote for your favorite. It runs through Jan. 10.",
+   "scene": "museum",
+   "variant": 1,
+   "source": "Morven Museum & Garden, morven.org (2026)"
+  },
+  {
+   "type": "place",
+   "num": "3",
+   "kind": "Dance show",
+   "title": "Princeton Dance Festival",
+   "meta": "Berlind Theatre, 91 University Pl",
+   "chips": [
+    "Sat. 2 + 8 PM",
+    "Sun. 2 PM",
+    "$20, students $10"
+   ],
+   "body": "More than 50 Princeton students perform new and repertory dance works. Sunday's 2 PM show is a relaxed performance, so it's OK to move around or make sounds.",
+   "scene": "theater",
+   "variant": 2,
+   "source": "Princeton University events (2026); New Jersey Stage (Nov. 17, 2026)"
+  },
+  {
+   "type": "route",
+   "eyebrow": "Before you tour",
+   "title": "One weekend in Princeton",
+   "stops": [
+    {
+     "name": "Winter Village",
+     "where": "Witherspoon St"
+    },
+    {
+     "name": "Morven",
+     "where": "Stockton St"
+    },
+    {
+     "name": "Dance Festival",
+     "where": "University Pl"
+    }
+   ],
+   "tip": "The market opens at noon, so tour homes in the morning. Then park in the Spring Street Garage.",
+   "source": "Arts Council of Princeton (2026)"
+  }
+ ],
+ "caption": "Princeton has a free holiday market, a museum full of decorated trees and a student dance show this weekend. Which one are you picking?\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #PrincetonNJ #MercerCountyNJ\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "Princeton has a free holiday market, a museum full of decorated trees and a student dance show this weekend. Which one are you picking?\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://artscouncilofprinceton.org/venue/hinds-plaza",
+  "https://happeningnext.com/event/artist-winter-village-week-2-eid3a0e4x0660",
+  "https://www.morven.org/festivaloftrees",
+  "https://morven.org/tickets",
+  "https://www.princeton.edu/events/2026/2026-princeton-dance-festival",
+  "https://www.newjerseystage.com/articles3/2026/11/17/events-this-week-in-new-jersey-from-november-17-23-2026/",
+  "https://www.yahoo.com/lifestyle/articles/100-n-j-weekend-events-165217507.html"
+ ]
+}

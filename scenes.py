@@ -6,7 +6,7 @@ a train platform), drawn from scratch. They never depict or claim to be the actu
 Every scene carries a small "ILLUSTRATION" tag.
 
 Usage from Python:  render_scene(kind, variant, out_png, w=920, h=560)
-kind:    LOCAL places only: coffee | brunch | bakery | pizza | market | library | park | train | events | default
+kind:    LOCAL places only: coffee | brunch | bakery | pizza | market | library | park | train | chalets | museum | theater | default
          HOME-BUYING topics: home | savings | keys | documents | calendar | inspection | taxes (see home_scenes.py)
 variant: 0, 1, 2 (changes awning/facade colors so three cards in a row look different)
 """
@@ -310,6 +310,100 @@ def mill_svg(v, w, h):
 </svg>'''
 
 
+def museum_svg(v, w, h):
+    """Generic stately old house museum at winter dusk, a lit decorated tree in the center window
+    and a wreath on the door (generic, not a real building)."""
+    ground = h * 0.74
+    bx, bw, by = w*0.2, w*0.6, h*0.3
+    win = ""
+    for i, x in enumerate((0.08, 0.27, 0.6, 0.79)):
+        for y in (0.12, 0.42):
+            win += f'<rect x="{bx+bw*x}" y="{by+h*y}" width="{bw*0.13}" height="{h*0.12}" fill="#FFD98A"/><line x1="{bx+bw*(x+0.065)}" y1="{by+h*y}" x2="{bx+bw*(x+0.065)}" y2="{by+h*(y+0.12)}" stroke="#4A3428" stroke-width="4"/>'
+    cols = "".join(f'<rect x="{bx+bw*x}" y="{by+h*0.04}" width="{bw*0.035}" height="{ground-by-h*0.04}" fill="#F5ECD7"/>' for x in (0.39, 0.47, 0.53, 0.61))
+    tx, ty = bx+bw*0.5, by+h*0.13
+    tree = (f'<polygon points="{tx},{ty} {tx-28},{ty+52} {tx+28},{ty+52}" fill="#2F5A3F"/>'
+            f'<circle cx="{tx-10}" cy="{ty+30}" r="4" fill="#B5533C"/><circle cx="{tx+12}" cy="{ty+40}" r="4" fill="#E1B785"/><circle cx="{tx+2}" cy="{ty+18}" r="4" fill="#FFF1C9"/>')
+    snow = "".join(f'<circle cx="{w*x}" cy="{h*y}" r="3" fill="#F5ECD7" opacity=".8"/>' for x, y in ((.06,.1),(.15,.3),(.3,.08),(.85,.12),(.93,.34),(.72,.06),(.5,.05),(.1,.55),(.9,.6)))
+    trees = "".join(f'<polygon points="{w*x},{ground-h*r} {w*x-h*r*0.35},{ground} {w*x+h*r*0.35},{ground}" fill="#1E3A2A"/>' for x, r in ((.07,.32),(.14,.24),(.88,.3),(.95,.22)))
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">
+<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1B2438"/><stop offset="1" stop-color="#6B4F3A"/></linearGradient></defs>
+<rect width="{w}" height="{h}" fill="url(#sky)"/>
+{snow}
+<rect x="0" y="{ground}" width="{w}" height="{h-ground}" fill="#E8E4DA"/>
+{trees}
+<rect x="{bx}" y="{by}" width="{bw}" height="{ground-by}" fill="#E3D9BF"/>
+<polygon points="{bx-16},{by+4} {bx+bw/2},{by-h*0.12} {bx+bw+16},{by+4}" fill="#3A2A20"/>
+<polygon points="{bx+bw*0.36},{by+h*0.04} {bx+bw/2},{by-h*0.04} {bx+bw*0.64},{by+h*0.04}" fill="#F5ECD7"/>
+{win}
+<rect x="{tx-40}" y="{by+h*0.12}" width="80" height="{h*0.12}" fill="#FFD98A"/>
+{tree}
+{cols}
+<rect x="{tx-26}" y="{ground-h*0.16}" width="52" height="{h*0.16}" fill="#1F352D"/>
+<circle cx="{tx}" cy="{ground-h*0.11}" r="15" fill="none" stroke="#2F5A3F" stroke-width="8"/><circle cx="{tx}" cy="{ground-h*0.11+15}" r="4" fill="#B5533C"/>
+<rect x="{w*0.42}" y="{ground}" width="{w*0.16}" height="{h-ground}" fill="#C9C1B0"/>
+<polygon points="{w*0.13},{h*0.36} {w*0.04},{h*0.9} {w*0.22},{h*0.9}" fill="#2F5A3F"/>
+<rect x="{w*0.125}" y="{h*0.9}" width="{w*0.012}" height="{h*0.05}" fill="#3A2A20"/>
+<polygon points="{w*0.13},{h*0.31} {w*0.137},{h*0.345} {w*0.123},{h*0.345}" fill="#FFD98A"/>
+<circle cx="{w*0.13}" cy="{h*0.33}" r="9" fill="#FFD98A"/>
+{"".join(f'<circle cx="{w*x}" cy="{h*y}" r="6" fill="{c}"/>' for x, y, c in ((.11,.5,"#B5533C"),(.15,.56,"#FFF1C9"),(.09,.66,"#E1B785"),(.17,.7,"#B5533C"),(.12,.78,"#FFF1C9"),(.07,.84,"#B5533C"),(.19,.83,"#E1B785"),(.14,.62,"#E1B785")))}
+<polygon points="{w*0.87},{h*0.42} {w*0.8},{h*0.9} {w*0.94},{h*0.9}" fill="#3D7350"/>
+{"".join(f'<circle cx="{w*x}" cy="{h*y}" r="5" fill="{c}"/>' for x, y, c in ((.86,.55,"#FFF1C9"),(.89,.65,"#B5533C"),(.84,.74,"#E1B785"),(.9,.82,"#FFF1C9"),(.83,.85,"#B5533C")))}
+</svg>'''
+
+
+def chalets_svg(v, w, h):
+    """Generic outdoor holiday market: three small wooden chalets with string lights on a plaza at dusk
+    (generic, not a real market)."""
+    ground = h * 0.7
+    huts = ""
+    for i, (x, col) in enumerate(((0.06, "#6B4A30"), (0.37, "#5A3F2A"), (0.68, "#6B4A30"))):
+        bx, bw = w*x, w*0.26
+        huts += (f'<rect x="{bx}" y="{ground-h*0.3}" width="{bw}" height="{h*0.3}" fill="{col}"/>'
+                 f'<polygon points="{bx-14},{ground-h*0.29} {bx+bw/2},{ground-h*0.5} {bx+bw+14},{ground-h*0.29}" fill="#F5ECD7"/>'
+                 f'<rect x="{bx+bw*0.12}" y="{ground-h*0.22}" width="{bw*0.76}" height="{h*0.12}" fill="#FFD98A"/>'
+                 f'<rect x="{bx+bw*0.06}" y="{ground-h*0.1}" width="{bw*0.88}" height="{h*0.03}" fill="#3A2A20"/>'
+                 + "".join(f'<rect x="{bx+bw*(0.16+k*0.18)}" y="{ground-h*0.155}" width="{bw*0.12}" height="{h*0.05}" rx="4" fill="{c}"/>' for k, c in enumerate(("#B5533C", "#2F5A3F", "#E1B785", "#1F352D"))))
+    bulbs = "".join(f'<circle cx="{w*k/24}" cy="{h*0.12 + h*0.06*abs(((k % 8) - 4)/4)}" r="6" fill="#FFE7B8"/>' for k in range(25))
+    snow = "".join(f'<circle cx="{w*x}" cy="{h*y}" r="3" fill="#F5ECD7" opacity=".8"/>' for x, y in ((.1,.3),(.25,.06),(.4,.28),(.58,.08),(.75,.3),(.9,.1),(.95,.34)))
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">
+<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2A3549"/><stop offset="1" stop-color="#C98B5A"/></linearGradient></defs>
+<rect width="{w}" height="{h}" fill="url(#sky)"/>
+{snow}
+<path d="M0,{h*0.12} Q{w*0.25},{h*0.2} {w*0.5},{h*0.12} T{w},{h*0.12}" stroke="#16201A" stroke-width="3" fill="none"/>
+{bulbs}
+<rect x="0" y="{ground}" width="{w}" height="{h-ground}" fill="#9C9384"/>
+{"".join(f'<rect x="{w*k/8}" y="{ground}" width="2" height="{h-ground}" fill="#7E7668"/>' for k in range(1, 8))}
+{huts}
+</svg>'''
+
+
+def theater_svg(v, w, h):
+    """Generic stage with red curtains, a spotlight and dancers' silhouettes (generic, no real theater or people)."""
+    floor = h * 0.78
+    curt = ""
+    for i in range(6):
+        curt += f'<rect x="{i*w*0.035}" y="0" width="{w*0.035}" height="{h}" fill="{"#8E2F25" if i % 2 else "#A63A2E"}"/>'
+        curt += f'<rect x="{w-(i+1)*w*0.035}" y="0" width="{w*0.035}" height="{h}" fill="{"#8E2F25" if i % 2 else "#A63A2E"}"/>'
+    val = "".join(f'<path d="M{w*x},{h*0.0} q{w*0.05},{h*0.12} {w*0.1},0" fill="#8E2F25"/>' for x in (0.2,0.3,0.4,0.5,0.6,0.7))
+    def dancer(x, flip):
+        s = -1 if flip else 1
+        return (f'<g fill="#16201A"><circle cx="{x}" cy="{floor-h*0.36}" r="{h*0.035}"/>'
+                f'<path d="M{x-10},{floor-h*0.32} L{x+10},{floor-h*0.32} L{x+6},{floor-h*0.16} L{x-6},{floor-h*0.16} Z"/>'
+                f'<path d="M{x-6},{floor-h*0.17} L{x-30*s},{floor} M{x+6},{floor-h*0.17} L{x+40*s},{floor-h*0.08}" stroke="#16201A" stroke-width="12" stroke-linecap="round"/>'
+                f'<path d="M{x-8},{floor-h*0.3} L{x-55*s},{floor-h*0.42} M{x+8},{floor-h*0.3} L{x+50*s},{floor-h*0.2}" stroke="#16201A" stroke-width="10" stroke-linecap="round"/></g>')
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">
+<rect width="{w}" height="{h}" fill="#13241A"/>
+<polygon points="{w*0.45},0 {w*0.55},0 {w*0.75},{floor} {w*0.25},{floor}" fill="#FFF1C9" opacity=".22"/>
+<rect x="0" y="{floor}" width="{w}" height="{h-floor}" fill="#5A3F2A"/>
+<ellipse cx="{w*0.5}" cy="{floor+6}" rx="{w*0.25}" ry="{h*0.04}" fill="#FFF1C9" opacity=".35"/>
+{dancer(w*0.42, False)}
+{dancer(w*0.6, True)}
+{curt}
+<rect x="0" y="0" width="{w}" height="{h*0.06}" fill="#8E2F25"/>
+{val}
+</svg>'''
+
+
 def render_scene(kind, variant, out_png, w=920, h=560):
     from home_scenes import HOME_KINDS, home_svg
     if kind in HOME_KINDS:
@@ -322,6 +416,12 @@ def render_scene(kind, variant, out_png, w=920, h=560):
         svg = trail_svg(variant, w, h)
     elif kind == "mill":
         svg = mill_svg(variant, w, h)
+    elif kind == "museum":
+        svg = museum_svg(variant, w, h)
+    elif kind == "chalets":
+        svg = chalets_svg(variant, w, h)
+    elif kind == "theater":
+        svg = theater_svg(variant, w, h)
     elif kind == "train":
         svg = train_svg(variant, w, h)
     elif kind == "parking":
