@@ -2,5 +2,7 @@
  "id": "probe_1dFTm8jm",
  "drive_file_id": "1dFTm8jmkCD3LXfj4DE6uCDM-95oqWp9b",
  "drive_title": "11-17 Harisson Dr. $1,250,000.mp4",
- "status": "probe"
+ "status": "probed",
+ "frames": "tours/probes/probe_1dFTm8jm_frames.jpg",
+ "source_duration_s": 43.8
 }
