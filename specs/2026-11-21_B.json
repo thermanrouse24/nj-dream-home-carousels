@@ -24,12 +24,12 @@
    "type": "cover",
    "eyebrow": "This is why you're still driving to NYC",
    "lines": [
-    "A 1926 THEATER,",
-    "A RIVER PARK",
-    "~AND A TRAIN STATION",
-    "~ON ONE WALK"
+    "RED BANK HAS A",
+    "1,568-SEAT THEATER",
+    "~3 BLOCKS FROM",
+    "~THE TRAIN"
    ],
-   "sub": "Downtown Red Bank puts a show, the Navesink River and the train within a few blocks. Park once and walk it.",
+   "sub": "And a park on the Navesink River is on the same walk. Park once and see all 3.",
    "source": "thebasie.org; njtransit.com; redbanknj.org (2026)"
   },
   {
@@ -83,7 +83,7 @@
   {
    "type": "route",
    "eyebrow": "Before you tour",
-   "title": "One walk in Red Bank",
+   "title": "Red Bank on foot",
    "stops": [
     {
      "name": "Red Bank Station",
@@ -98,12 +98,12 @@
      "where": "W Front St"
     }
    ],
-   "tip": "Walk Monmouth St from the station to the Basie, then head north to the river on Front St.",
+   "tip": "Walk Monmouth St from the station to the Basie, then head north to the river at W Front St.",
    "source": "njtransit.com; thebasie.org; redbanknj.org (2026)"
   }
  ],
- "caption": "Red Bank is easy to see on foot. Start at the train station, walk Monmouth Street to the Count Basie Center, then head up to the river. Could you see yourself living this close to a show?\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #RedBankNJ #MonmouthCountyNJ\n\nTherm The Realtor | eXp Realty",
- "threads_caption": "Red Bank is easy to see on foot. Start at the train station, walk Monmouth Street to the Count Basie Center, then head up to the river. Could you see yourself living this close to a show?\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "caption": "Red Bank is easy to see on foot. Start at the train station, walk Monmouth Street to the Count Basie Center, then head north to the river. Could you see yourself living this close to a show?\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #RedBankNJ #MonmouthCountyNJ\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "Red Bank is easy to see on foot. Start at the train station, walk Monmouth Street to the Count Basie Center, then head north to the river. Could you see yourself living this close to a show?\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
  "sources": [
   "https://thebasie.org/gettinghere/",
   "https://thebasie.org/rentals-tech/",
