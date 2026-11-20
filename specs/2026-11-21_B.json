@@ -1,0 +1,115 @@
+{
+ "id": "2026-11-21_B_local",
+ "tag": "LOCAL *SPOTS*",
+ "hook": 8,
+ "lesson": "",
+ "story_plan": {
+  "type": "multi",
+  "frames": [
+   1,
+   2,
+   3,
+   4
+  ]
+ },
+ "music": {
+  "ig_audio": "I Just Might - Bruno Mars",
+  "ig_audio_source": "https://ca.billboard.com/charts/hot-100/2026-11-21",
+  "ig_audio_backup": "Midnight Sun - Zara Larsson",
+  "tiktok": "auto"
+ },
+ "source": "thebasie.org; redbanknj.org; njtransit.com (2026)",
+ "slides": [
+  {
+   "type": "cover",
+   "eyebrow": "This is why you're still driving to NYC",
+   "lines": [
+    "A 1926 THEATER,",
+    "A RIVER PARK",
+    "~AND A TRAIN STATION",
+    "~ON ONE WALK"
+   ],
+   "sub": "Downtown Red Bank puts a show, the Navesink River and the train within a few blocks. Park once and walk it.",
+   "source": "thebasie.org; njtransit.com; redbanknj.org (2026)"
+  },
+  {
+   "type": "place",
+   "num": "1",
+   "kind": "Theater",
+   "title": "Count Basie Center for the Arts",
+   "meta": "99 Monmouth St",
+   "chips": [
+    "Opened 1926",
+    "1,568 seats",
+    "Box office Sat. noon to 5"
+   ],
+   "body": "It opened as the Carlton in 1926. It's named for Count Basie, who was born in Red Bank.",
+   "scene": "theater",
+   "variant": 0,
+   "source": "thebasie.org (Getting Here, Rentals); redbank.org"
+  },
+  {
+   "type": "place",
+   "num": "2",
+   "kind": "Park",
+   "title": "Riverside Gardens Park",
+   "meta": "W Front St, on the Navesink",
+   "chips": [
+    "2 acres",
+    "Free",
+    "Boardwalk"
+   ],
+   "body": "A small riverfront park with a boardwalk, a sensory garden and a stage for free shows in season. It's an easy stop between dinner and a show.",
+   "scene": "park",
+   "variant": 1,
+   "source": "Borough of Red Bank, redbanknj.org; redbank.org"
+  },
+  {
+   "type": "place",
+   "num": "3",
+   "kind": "Train",
+   "title": "Red Bank Station",
+   "meta": "Bridge Ave at Monmouth St",
+   "chips": [
+    "NJ Transit",
+    "North Jersey Coast Line",
+    "3 blocks to the Basie"
+   ],
+   "body": "North Jersey Coast Line trains stop here. The Basie says it's about 3 blocks away, so you can ride in and walk.",
+   "scene": "train",
+   "variant": 2,
+   "source": "njtransit.com (Red Bank Station); thebasie.org"
+  },
+  {
+   "type": "route",
+   "eyebrow": "Before you tour",
+   "title": "One walk in Red Bank",
+   "stops": [
+    {
+     "name": "Red Bank Station",
+     "where": "Bridge Ave"
+    },
+    {
+     "name": "Count Basie Center",
+     "where": "Monmouth St"
+    },
+    {
+     "name": "Riverside Gardens",
+     "where": "W Front St"
+    }
+   ],
+   "tip": "Walk Monmouth St from the station to the Basie, then head north to the river on Front St.",
+   "source": "njtransit.com; thebasie.org; redbanknj.org (2026)"
+  }
+ ],
+ "caption": "Red Bank is easy to see on foot. Start at the train station, walk Monmouth Street to the Count Basie Center, then head up to the river. Could you see yourself living this close to a show?\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #RedBankNJ #MonmouthCountyNJ\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "Red Bank is easy to see on foot. Start at the train station, walk Monmouth Street to the Count Basie Center, then head up to the river. Could you see yourself living this close to a show?\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://thebasie.org/gettinghere/",
+  "https://thebasie.org/rentals-tech/",
+  "https://www.redbank.org/?p=426",
+  "https://www.redbank.org/?p=4316",
+  "https://www.redbanknj.org/191",
+  "https://njtransit.com/station/red-bank-station"
+ ]
+}
