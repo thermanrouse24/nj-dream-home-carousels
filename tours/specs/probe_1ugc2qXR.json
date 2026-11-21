@@ -2,5 +2,7 @@
  "id": "probe_1ugc2qXR",
  "drive_file_id": "1ugc2qXR4VuAd4DVjPJgkPmxUkhQqIH39",
  "drive_title": "143 Brahma Ave Bridgewater NJ $1,299,000 5BR 5BA.mp4",
- "status": "probe"
+ "status": "probed",
+ "frames": "tours/probes/probe_1ugc2qXR_frames.jpg",
+ "source_duration_s": 46.6
 }
