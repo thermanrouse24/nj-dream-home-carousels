@@ -47,5 +47,9 @@
    "tiktok": []
   }
  },
- "force_cover_block": true
+ "force_cover_block": true,
+ "phone_checked": true,
+ "ig_audio_id": "",
+ "ig_audio": "",
+ "ig_audio_backup": ""
 }
