@@ -1,0 +1,116 @@
+{
+ "id": "2026-11-22_B_local",
+ "tag": "LOCAL *SPOTS*",
+ "hook": 4,
+ "lesson": "",
+ "story_plan": {
+  "type": "multi",
+  "frames": [
+   1,
+   2,
+   4
+  ]
+ },
+ "music": {
+  "ig_audio": "I Just Might - Bruno Mars",
+  "ig_audio_source": "https://ca.billboard.com/charts/hot-100/2026-11-21",
+  "ig_audio_backup": "Midnight Sun - Zara Larsson",
+  "tiktok": "auto"
+ },
+ "source": "thelocalgirl.com (Jul 2026); OpenTable; getsauce.com (2026)",
+ "slides": [
+  {
+   "type": "cover",
+   "eyebrow": "Here's a secret you wish you knew sooner",
+   "lines": [
+    "ONE RIDGEWOOD",
+    "CAFE HAS A",
+    "~FAMILY COFFEE",
+    "~FARM SINCE 1966"
+   ],
+   "sub": "It's 1 of 3 coffee stops on Chestnut and Broad. Park once and try all 3.",
+   "source": "OpenTable, Rey Sol listing (2026); thelocalgirl.com (Jul 2026)"
+  },
+  {
+   "type": "place",
+   "num": "1",
+   "kind": "Coffee",
+   "title": "Rey Sol Coffee",
+   "meta": "22 Chestnut St",
+   "chips": [
+    "Family farm in Colombia",
+    "Roasts 3 times a week",
+    "All-day breakfast"
+   ],
+   "body": "The family's coffee farm in Balboa, Colombia dates to 1966. The cafe says it roasts its beans right in the shop three times a week.",
+   "scene": "coffee",
+   "variant": 0,
+   "source": "OpenTable, Rey Sol listing (2026); ABC7 Localish (2021)"
+  },
+  {
+   "type": "place",
+   "num": "2",
+   "kind": "Cafe",
+   "title": "Zen Haus Cafe",
+   "meta": "9 S Broad St",
+   "chips": [
+    "Espresso and lattes",
+    "Sun. 9 AM to 3 PM",
+    "Closed Mondays"
+   ],
+   "body": "A South Broad Street cafe with espresso, caramel lattes and savory bites. On Sunday it closes at 3 PM, so go early.",
+   "scene": "coffee",
+   "variant": 1,
+   "source": "Zen Haus Cafe ordering site, getsauce.com (Jun 2026)"
+  },
+  {
+   "type": "place",
+   "num": "3",
+   "kind": "Coffee",
+   "title": "American Bulldog Coffee Roasters",
+   "meta": "31 N Broad St",
+   "chips": [
+    "Freshly roasted coffee",
+    "Bakery items",
+    "Soups and sandwiches"
+   ],
+   "body": "Its coffee is roasted in Chestnut Ridge, NY. The menu adds bakery items, soups and sandwiches.",
+   "scene": "coffee",
+   "variant": 2,
+   "source": "MapQuest listing; thelocalgirl.com (2024; Jul 2026)"
+  },
+  {
+   "type": "route",
+   "eyebrow": "Before you tour",
+   "title": "Ridgewood on foot",
+   "stops": [
+    {
+     "name": "Rey Sol Coffee",
+     "where": "Chestnut St"
+    },
+    {
+     "name": "Zen Haus Cafe",
+     "where": "S Broad St"
+    },
+    {
+     "name": "American Bulldog",
+     "where": "N Broad St"
+    }
+   ],
+   "tip": "Start on Chestnut St, then walk Broad St from south to north. On a Sunday, get to Zen Haus before 3 PM.",
+   "source": "Village of Ridgewood code, ecode360; getsauce.com (2026)"
+  }
+ ],
+ "caption": "Ridgewood makes an easy coffee walk. Start on Chestnut Street, then head over to Broad Street. The family behind one of these cafes has grown coffee in Colombia since 1966. Which one would you try first?\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #RidgewoodNJ #BergenCountyNJ\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "Ridgewood makes an easy coffee walk. Start on Chestnut Street, then head over to Broad Street. The family behind one of these cafes has grown coffee in Colombia since 1966. Which one would you try first?\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://thelocalgirl.com/bergen/best-coffee-shops-bergen-county-nj/",
+  "https://www.opentable.co.uk/r/rey-sol-coffee-ridgewood",
+  "https://abc7.com/localish/seed-to-cup-colombian-coffee-brews-in-nj/10280283/",
+  "https://www.getsauce.com/order/site/zen-haus-cafe/",
+  "https://startpage.mapquest.com/us/new-jersey/american-bulldog-coffee-roasters-365543424",
+  "https://thelocalgirl.com/bergen/best-breakfast-spots-ridgewood-new-jersey/",
+  "https://www.mapquest.com/us/new-jersey/rey-sol-coffee-425398889",
+  "https://ecode360.com/6695607"
+ ]
+}
