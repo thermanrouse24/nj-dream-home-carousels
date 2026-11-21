@@ -2,7 +2,8 @@
  "id": "probe_1NOVwIAY",
  "drive_file_id": "1NOVwIAYwG0yEPsQZN6BLFeS_1jicwz-Y",
  "drive_title": "0435D1B0-622B-4AC3-9ED4-626F15BF51FB.mp4",
- "status": "probed",
+ "status": "duplicate",
  "frames": "tours/probes/probe_1NOVwIAY_frames.jpg",
- "source_duration_s": 29.2
+ "source_duration_s": 29.2,
+ "note": "Same home as 2026-11-19_T (167 Crestview Dr, Middletown, $799,999, 5 BR 2 BA): cover reads $799,999 / FULLY RENOVATED / MIDDLETOWN, NJ / 70 MINUTES TO NYC / 5 BEDROOMS | 2 BATHROOMS. Skipped Nov 21 2026 run."
 }
