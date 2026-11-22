@@ -19,14 +19,14 @@
  "slides": [
   {
    "type": "cover",
-   "eyebrow": "For your next Sunday",
+   "eyebrow": "This will change how you see Sunday",
    "lines": [
     "NEW TO WESTFIELD?",
     "3 BRUNCH STOPS,",
-    "~ONE WITH CARROT",
+    "~1 HAS CARROT",
     "~CAKE PANCAKES"
    ],
-   "sub": "Two of them open by 7:30 AM on Sunday.",
+   "sub": "Two of them open by 7:30 AM. Swipe for all 3, plus a map.",
    "source": "turningpointrestaurants.com (2026); Uber Eats (2026); addamstavern.com (2026)"
   },
   {
@@ -54,9 +54,9 @@
    "chips": [
     "Opens 7 AM",
     "Pancakes, French toast",
-    "Sun. until 2:45 PM"
+    "Breakfast sandwiches"
    ],
-   "body": "A classic diner on East Broad Street. The menu has pancakes, French toast and breakfast sandwiches.",
+   "body": "A classic diner on East Broad Street, open from 7 AM. Pancakes and French toast are on the menu.",
    "scene": "brunch",
    "variant": 1,
    "source": "Uber Eats, Vicki's Diner (2026)"
@@ -83,19 +83,19 @@
    "title": "Your Westfield brunch map",
    "stops": [
     {
+     "name": "Turning Point",
+     "where": "Central Ave"
+    },
+    {
      "name": "Vicki's Diner",
      "where": "E Broad St"
     },
     {
      "name": "Addams Tavern",
      "where": "Elm St"
-    },
-    {
-     "name": "Turning Point",
-     "where": "Central Ave"
     }
    ],
-   "tip": "Touring on a weekend? Grab brunch first, then see the streets on a Sunday morning.",
+   "tip": "Touring on a Sunday? Grab brunch first, then walk the streets near your showings.",
    "source": "turningpointrestaurants.com (2026); Uber Eats (2026); addamstavern.com (2026)"
   }
  ],
