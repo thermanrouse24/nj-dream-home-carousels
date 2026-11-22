@@ -1,0 +1,111 @@
+{
+ "id": "2026-11-23_B_local",
+ "tag": "LOCAL *SPOTS*",
+ "hook": 3,
+ "lesson": "",
+ "story_plan": {
+  "type": "single",
+  "frames": [
+   1
+  ]
+ },
+ "music": {
+  "ig_audio": "Lush Life - Zara Larsson",
+  "ig_audio_source": "https://ca.billboard.com/charts/hot-100/2026-11-21",
+  "ig_audio_backup": "Babydoll - Dominic Fike",
+  "tiktok": "auto"
+ },
+ "source": "turningpointrestaurants.com (2026); addamstavern.com (2026); Uber Eats (2026)",
+ "slides": [
+  {
+   "type": "cover",
+   "eyebrow": "For your next Sunday",
+   "lines": [
+    "NEW TO WESTFIELD?",
+    "3 BRUNCH STOPS,",
+    "~ONE WITH CARROT",
+    "~CAKE PANCAKES"
+   ],
+   "sub": "Two of them open by 7:30 AM on Sunday.",
+   "source": "turningpointrestaurants.com (2026); Uber Eats (2026); addamstavern.com (2026)"
+  },
+  {
+   "type": "place",
+   "num": "1",
+   "kind": "Brunch",
+   "title": "Turning Point",
+   "meta": "137 Central Ave",
+   "chips": [
+    "Open 7 days",
+    "7:30 AM to 3 PM",
+    "Online waitlist"
+   ],
+   "body": "Breakfast, brunch and lunch, with seasonal specials. You can join the waitlist online before you head over.",
+   "scene": "brunch",
+   "variant": 0,
+   "source": "turningpointrestaurants.com (2026)"
+  },
+  {
+   "type": "place",
+   "num": "2",
+   "kind": "Diner",
+   "title": "Vicki's Diner",
+   "meta": "110 E Broad St",
+   "chips": [
+    "Opens 7 AM",
+    "Pancakes, French toast",
+    "Sun. until 2:45 PM"
+   ],
+   "body": "A classic diner on East Broad Street. The menu has pancakes, French toast and breakfast sandwiches.",
+   "scene": "brunch",
+   "variant": 1,
+   "source": "Uber Eats, Vicki's Diner (2026)"
+  },
+  {
+   "type": "place",
+   "num": "3",
+   "kind": "Brunch",
+   "title": "Addams Tavern",
+   "meta": "115 Elm St",
+   "chips": [
+    "Carrot cake pancakes",
+    "Short rib hash",
+    "Opens 11 AM weekends"
+   ],
+   "body": "A New American spot with wood-fired dishes and vaulted ceilings. Its brunch menu has carrot cake pancakes.",
+   "scene": "brunch",
+   "variant": 2,
+   "source": "addamstavern.com (2026)"
+  },
+  {
+   "type": "route",
+   "eyebrow": "Before you tour",
+   "title": "Your Westfield brunch map",
+   "stops": [
+    {
+     "name": "Vicki's Diner",
+     "where": "E Broad St"
+    },
+    {
+     "name": "Addams Tavern",
+     "where": "Elm St"
+    },
+    {
+     "name": "Turning Point",
+     "where": "Central Ave"
+    }
+   ],
+   "tip": "Touring on a weekend? Grab brunch first, then see the streets on a Sunday morning.",
+   "source": "turningpointrestaurants.com (2026); Uber Eats (2026); addamstavern.com (2026)"
+  }
+ ],
+ "caption": "Three Westfield brunch stops. Two open by 7:30 AM on Sunday, and one has carrot cake pancakes. Which one are you trying first?\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #WestfieldNJ #UnionCountyNJ\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "Three Westfield brunch stops. Two open by 7:30 AM on Sunday, and one has carrot cake pancakes. Which one are you trying first?\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://turningpointrestaurants.com/location/westfield",
+  "https://www.ubereats.com/store/vickis-diner/fgBwsElRWJ6oMJ0oqxd-cA/ebad70c1-3ae1-513f-a151-1e174bba58e7/41c2f323-d450-5619-9a7d-e29eafcb060b",
+  "https://www.mapquest.com/us/new-jersey/vickis-diner-777690",
+  "https://addamstavern.com/",
+  "https://addamstavern.com/menu/brunch"
+ ]
+}
