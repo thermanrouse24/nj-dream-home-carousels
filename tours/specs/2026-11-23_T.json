@@ -12,7 +12,7 @@
  "cover_facts": "Fully Renovated | 4 Beds | 2.5 Baths",
  "cover_price": "",
  "cover_price_note": "",
- "cover_note": "Edit's cover (probe Nov 22 2026) reads $1,199,000 / FULLY RENOVATED / TINTON FALLS, NJ / 64 MINUTES TO NYC / 4 BEDROOMS | 2.5 BATHROOMS. File has a camera name; no street address on screen. Researcher Nov 22 2026: likely 387 Riverdale Ave W, Tinton Falls (MLS 22634935), Active, listed by eXp Realty (agent Alfred Oliva), price cut from $1,199,000 to $1,150,000, so the $1,199,000 is out of date and left off the redrawn cover. '64 minutes to NYC' could not be verified (no rail station in town; Red Bank NJCL ~1h31 to Penn), so the facts line uses 'Fully Renovated' from the edit instead.",
+ "cover_note": "Edit's cover (probe Nov 22 2026) reads $1,199,000 / FULLY RENOVATED / TINTON FALLS, NJ / 64 MINUTES TO NYC / 4 BEDROOMS | 2.5 BATHROOMS. File has a camera name; no street address on screen. Researcher Nov 22 2026: likely 387 Riverdale Ave W, Tinton Falls (MLS 22634935), Active, listed by eXp Realty (agent Alfred Oliva), price cut from $1,199,000 to $1,150,000, so the $1,199,000 is out of date and left off the redrawn cover. '64 minutes to NYC' could not be verified (no rail station in town; Red Bank NJCL ~1h31 to Penn), so the facts line uses 'Fully Renovated' from the edit instead. Frame check Nov 22 2026: the edit's own burned-in cover ($1,199,000 / 64 MINUTES TO NYC) shows from about 1 s to 3 s, after the redrawn title; it is Therm's edit and was not re-cut.",
  "ig_song_wants": [
   "Lush Life - Zara Larsson",
   "Stupid Song - Olivia Rodrigo",
@@ -47,5 +47,9 @@
   }
  },
  "listing_status": "Likely 387 Riverdale Ave W, Tinton Falls NJ 07724 (MLS 22634935): Active, eXp Realty (Alfred Oliva), $1,150,000 after a $49K drop from $1,199,000, added Nov 7 2026; match by price, 4 bd / 2.5 ba and 'renovated top to bottom' wording, not proven. Checked Nov 22 2026.",
- "listing_source": "https://midland.homefront.com/homes/nj/tinton-falls/property/387-riverdale-avenue-w-eec083da-f407-387c-ae84-4c67114b8767"
+ "listing_source": "https://midland.homefront.com/homes/nj/tinton-falls/property/387-riverdale-avenue-w-eec083da-f407-387c-ae84-4c67114b8767",
+ "phone_checked": true,
+ "ig_audio_id": "",
+ "ig_audio": "",
+ "ig_audio_backup": ""
 }
