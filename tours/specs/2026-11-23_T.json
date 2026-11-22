@@ -3,16 +3,16 @@
  "date": "2026-11-23",
  "drive_file_id": "1hLg-8xziQ6oEvvzTrixgwpTVKLv4C1E1",
  "drive_title": "8F49066C-993A-4328-9C3D-CC6A8379D553.mp4",
- "address": "",
+ "address": "387 Riverdale Ave W (likely match, not proven)",
  "town": "Tinton Falls",
  "county": "Monmouth",
- "price": "$1,199,000",
+ "price": "$1,150,000 (if 387 Riverdale Ave W)",
  "beds": "4",
  "baths": "2.5",
- "cover_facts": "64 Mins to NYC | 4 Beds | 2.5 Baths",
- "cover_price": "$1,199,000",
- "cover_price_note": "list price",
- "cover_note": "Edit's cover (probe Nov 22 2026) reads $1,199,000 / FULLY RENOVATED / TINTON FALLS, NJ / 64 MINUTES TO NYC / 4 BEDROOMS | 2.5 BATHROOMS. File has a camera name; no street address on screen.",
+ "cover_facts": "Fully Renovated | 4 Beds | 2.5 Baths",
+ "cover_price": "",
+ "cover_price_note": "",
+ "cover_note": "Edit's cover (probe Nov 22 2026) reads $1,199,000 / FULLY RENOVATED / TINTON FALLS, NJ / 64 MINUTES TO NYC / 4 BEDROOMS | 2.5 BATHROOMS. File has a camera name; no street address on screen. Researcher Nov 22 2026: likely 387 Riverdale Ave W, Tinton Falls (MLS 22634935), Active, listed by eXp Realty (agent Alfred Oliva), price cut from $1,199,000 to $1,150,000, so the $1,199,000 is out of date and left off the redrawn cover. '64 minutes to NYC' could not be verified (no rail station in town; Red Bank NJCL ~1h31 to Penn), so the facts line uses 'Fully Renovated' from the edit instead.",
  "ig_song_wants": [
   "Lush Life - Zara Larsson",
   "Stupid Song - Olivia Rodrigo",
@@ -22,7 +22,7 @@
  ],
  "song_chart": "https://ca.billboard.com/charts/hot-100/2026-11-21 (Billboard Hot 100 dated Nov 21 2026)",
  "force_cover_block": true,
- "status": "rendered",
+ "status": "new",
  "caption_option": 2,
  "caption": "🏠 STILL PAYING YOUR LANDLORD'S MORTGAGE?\n\nTHEN I ONLY HAVE ONE QUESTION 🙋🏾‍♂️\n\nWHY NOT YOUR OWN ⁉️\n\n👀🚨 THIS ONE IS A MUST SEE 🔥🔥\n\nWhat I do for my clients:\n✔️ Build a game plan before the first showing 📋\n✔️ Catch the costly mistakes early\n✔️ Make buying feel easy, not overwhelming 😌\n\nIt's not just a house. It's your next move.\n\n_____\n\n🔥 READY? HERE'S HOW IT WORKS (3 STEPS):\n\n✅ Step 1: Tap the LINK IN MY BIO and complete the FREE form\n⏱️ Takes 30 seconds, zero commitment\n\n✅ Step 2: I'll contact you within 24 hours 📲\nWe'll book your one-on-one buyer consultation\n\n✅ Step 3: We line you up with the RIGHT home and I fight for your best deal 💪🏾💸\n\nCLICK THE LINK IN MY BIO ✅ CLICK THE LINK IN MY BIO ✅\n\n#NJRealEstate #NJRealtor #NewJerseyHomes #HomeTour\n\nTherm The Realtor | eXp Realty",
  "tiktok_caption": "🏠 STILL PAYING YOUR LANDLORD'S MORTGAGE?\n\nTHEN I ONLY HAVE ONE QUESTION 🙋🏾‍♂️\n\nWHY NOT YOUR OWN ⁉️\n\n👀🚨 THIS ONE IS A MUST SEE 🔥🔥\n\nWhat I do for my clients:\n✔️ Build a game plan before the first showing 📋\n✔️ Catch the costly mistakes early\n✔️ Make buying feel easy, not overwhelming 😌\n\nIt's not just a house. It's your next move.\n\n_____\n\n🔥 READY? HERE'S HOW IT WORKS (3 STEPS):\n\n✅ Step 1: DM me \"HOME\" and I'll send you the FREE form\n⏱️ Takes 30 seconds, zero commitment\n\n✅ Step 2: I'll contact you within 24 hours 📲\nWe'll book your one-on-one buyer consultation\n\n✅ Step 3: We line you up with the RIGHT home and I fight for your best deal 💪🏾💸\n\nDM me \"HOME\" to get started. ✅ DM ME \"HOME\" ✅\n\n#NJRealEstate #NJRealtor #NewJerseyHomes #HomeTour\n\nTherm The Realtor | eXp Realty",
@@ -45,5 +45,7 @@
    "ig": [],
    "tiktok": []
   }
- }
+ },
+ "listing_status": "Likely 387 Riverdale Ave W, Tinton Falls NJ 07724 (MLS 22634935): Active, eXp Realty (Alfred Oliva), $1,150,000 after a $49K drop from $1,199,000, added Nov 7 2026; match by price, 4 bd / 2.5 ba and 'renovated top to bottom' wording, not proven. Checked Nov 22 2026.",
+ "listing_source": "https://midland.homefront.com/homes/nj/tinton-falls/property/387-riverdale-avenue-w-eec083da-f407-387c-ae84-4c67114b8767"
 }
