@@ -2,7 +2,8 @@
  "id": "probe_1hLg-8xz",
  "drive_file_id": "1hLg-8xziQ6oEvvzTrixgwpTVKLv4C1E1",
  "drive_title": "8F49066C-993A-4328-9C3D-CC6A8379D553.mp4",
- "status": "probed",
+ "status": "probed_used",
  "frames": "tours/probes/probe_1hLg-8xz_frames.jpg",
- "source_duration_s": 35.9
+ "source_duration_s": 35.9,
+ "note": "Cover reads $1,199,000 / FULLY RENOVATED / TINTON FALLS, NJ / 64 MINUTES TO NYC / 4 BEDROOMS | 2.5 BATHROOMS. Used for 2026-11-23 T."
 }
