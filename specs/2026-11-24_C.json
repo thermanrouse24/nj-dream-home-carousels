@@ -1,0 +1,74 @@
+{
+ "id": "2026-11-24_C_ratelock",
+ "tag": "MORTGAGE *101*",
+ "style": "cartoon",
+ "hook": 2,
+ "lesson": "",
+ "story_plan": {
+  "type": "multi",
+  "frames": [
+   1,
+   2,
+   4
+  ]
+ },
+ "music": {
+  "ig_audio": "Mr. Know It All - Teddy Swims",
+  "ig_audio_source": "https://www.spectrum-pulse.ca/blog/billboard-breakdown-hot-100-november-21-2026",
+  "ig_audio_backup": "stupid song - Olivia Rodrigo",
+  "tiktok": "auto"
+ },
+ "source": "CFPB (Nov. 2026)",
+ "slides": [
+  {
+   "type": "cover",
+   "scene": "calendar",
+   "variant": 0,
+   "eyebrow": "Here's the truth about mortgage rates",
+   "lines": [
+    "RATES CAN",
+    "MOVE DAILY.",
+    "~LOCKS USUALLY",
+    "~RUN 30-60 DAYS"
+   ],
+   "sub": "How to check yours, and what can still change it.",
+   "source": "CFPB, What's a lock-in or a rate lock (reviewed May 2023)"
+  },
+  {
+   "type": "stat",
+   "label": "COMMON LOCK PERIODS",
+   "value": "30-60 DAYS",
+   "body": "Mortgage rates can change daily, sometimes hourly. Locks usually run 30, 45 or 60 days, sometimes longer. Close in time and your rate holds, if your application doesn't change.",
+   "source": "CFPB, What's a lock-in or a rate lock (reviewed May 2023)"
+  },
+  {
+   "type": "text",
+   "eyebrow": "Number 1",
+   "title": "Check page 1 of your Loan Estimate",
+   "body": "The Rate Lock line at the top says Yes or No. If it's locked, it shows the date and time the lock ends. Some lenders lock with the Loan Estimate. Some don't.",
+   "source": "CFPB Loan Estimate guide (2017); CFPB Loan Estimate page (Oct. 2025)"
+  },
+  {
+   "type": "text",
+   "eyebrow": "Number 2",
+   "title": "A lock isn't a freeze",
+   "body": "If your loan amount, credit score or verified income changes, your locked rate can change too. So can a new loan type, down payment or appraisal value.",
+   "source": "CFPB, What's a lock-in or a rate lock (reviewed May 2023)"
+  },
+  {
+   "type": "text",
+   "eyebrow": "Number 3",
+   "title": "Ask before you lock",
+   "body": "What happens if closing runs late and the lock ends? Extending it can be expensive. Ask about any lock fee too. Talk to a licensed lender for your numbers.",
+   "source": "CFPB (2023); Federal Reserve, A Consumer's Guide to Mortgage Lock-Ins"
+  }
+ ],
+ "caption": "Here's the truth about mortgage rates: they can change daily, sometimes hourly. A rate lock holds yours, usually for 30, 45 or 60 days, sometimes longer.\n\nCheck the top of page 1 of your Loan Estimate to see if your rate is locked and when the lock ends. A change in your loan amount, credit score or verified income can still change it.\n\nAsk what happens if closing runs late. Talk to a licensed lender for your numbers.\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #RateLock #MortgageTips\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "Here's the truth about mortgage rates: they can change daily, sometimes hourly. A rate lock holds yours, usually for 30, 45 or 60 days.\n\nCheck page 1 of your Loan Estimate to see if it's locked and when the lock ends.\n\nTalk to a licensed lender for your numbers.\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://www.consumerfinance.gov/ask-cfpb/what-is-a-lock-in-rate-en-143/",
+  "https://files.consumerfinance.gov/f/documents/201707_cfpb_KBYO_Guide-Loan-Estimate-and-Closing-Disclosure-forms.pdf",
+  "https://www.consumerfinance.gov/owning-a-home/loan-estimate/",
+  "https://www.federalreserve.gov/pubs/lockins/default.htm"
+ ]
+}

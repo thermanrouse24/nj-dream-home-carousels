@@ -1,0 +1,111 @@
+{
+ "id": "2026-11-24_B_local",
+ "tag": "LOCAL *SPOTS*",
+ "hook": 28,
+ "lesson": "",
+ "story_plan": {
+  "type": "single",
+  "frames": [
+   1
+  ]
+ },
+ "music": {
+  "ig_audio": "Midnight Sun - Zara Larsson",
+  "ig_audio_source": "https://www.spectrum-pulse.ca/blog/billboard-breakdown-hot-100-november-21-2026",
+  "ig_audio_backup": "Housewife - Tate McRae",
+  "tiktok": "auto"
+ },
+ "source": "essexcountyparks.org (Nov. 2026)",
+ "slides": [
+  {
+   "type": "cover",
+   "eyebrow": "Stop scrolling if you love a good walk",
+   "lines": [
+    "NEW TO VERONA?",
+    "3 OUTDOOR STOPS,",
+    "~1 HAS A",
+    "~13-ACRE LAKE"
+   ],
+   "sub": "Two of them are on Fairview Ave. Swipe for all 3, plus a map.",
+   "source": "essexcountyparks.org (Nov. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "1",
+   "kind": "County park",
+   "title": "Verona Park",
+   "meta": "Bloomfield Ave & Lakeside Ave",
+   "chips": [
+    "54 acres",
+    "13-acre lake",
+    "Olmsted Brothers plan"
+   ],
+   "body": "A lakeside county park with walking paths, a playground and a 1.2-mile fitness course. Boat rentals are closed for the season.",
+   "scene": "park",
+   "variant": 0,
+   "source": "essexcountyparks.org, Verona Park (Nov. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "2",
+   "kind": "Nature preserve",
+   "title": "Hilltop Reservation",
+   "meta": "255 Fairview Ave",
+   "chips": [
+    "284 acres",
+    "Lenape Trail section",
+    "Dog park 8 AM to 6 PM"
+   ],
+   "body": "A county preserve on the Second Watchung Mountain, shared with Cedar Grove and North Caldwell. Short trails run along the ridge.",
+   "scene": "park",
+   "variant": 1,
+   "source": "essexcountyparks.org, Hilltop Reservation (Nov. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "3",
+   "kind": "Trail",
+   "title": "West Essex Trail",
+   "meta": "Fairview Ave access",
+   "chips": [
+    "Just under 3 miles",
+    "Old rail line",
+    "Peckman River trestle"
+   ],
+   "body": "An old Erie-Lackawanna rail line turned walking trail. It links Verona, Cedar Grove and Little Falls.",
+   "scene": "park",
+   "variant": 2,
+   "source": "essexcountyparks.org, West Essex Trail (Nov. 2026)"
+  },
+  {
+   "type": "route",
+   "eyebrow": "Before you tour",
+   "title": "Your Verona outdoor map",
+   "stops": [
+    {
+     "name": "Verona Park",
+     "where": "Bloomfield Ave"
+    },
+    {
+     "name": "Hilltop Reservation",
+     "where": "Fairview Ave"
+    },
+    {
+     "name": "West Essex Trail",
+     "where": "Fairview Ave"
+    }
+   ],
+   "tip": "Seeing homes near Fairview Ave? Two of these are on that street, so take a walk between showings.",
+   "source": "essexcountyparks.org (Nov. 2026)"
+  }
+ ],
+ "caption": "Three Verona outdoor stops. Verona Park has a 13-acre lake, and the other two are on Fairview Ave. Which one would you walk first?\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #VeronaNJ #EssexCountyNJ\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "Three Verona outdoor stops. Verona Park has a 13-acre lake, and the other two are on Fairview Ave. Which one would you walk first?\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://www.essexcountyparks.org/parks/verona-park",
+  "https://essexcountyparks.org/parks/verona-park/about",
+  "https://essexcountyparks.org/parks/hilltop-reservation",
+  "https://essexcountyparks.org/parks/hilltop-reservation/about",
+  "https://essexcountyparks.org/parks/west-essex-trail/about"
+ ]
+}
