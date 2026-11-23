@@ -24,14 +24,14 @@
    "type": "cover",
    "scene": "calendar",
    "variant": 0,
-   "eyebrow": "Here's the truth about mortgage rates",
+   "eyebrow": "Here's the truth about rate locks",
    "lines": [
-    "RATES CAN",
-    "MOVE DAILY.",
-    "~LOCKS USUALLY",
-    "~RUN 30-60 DAYS"
+    "YOUR LOCKED RATE",
+    "CAN STILL",
+    "~CHANGE BEFORE",
+    "~CLOSING"
    ],
-   "sub": "How to check yours, and what can still change it.",
+   "sub": "3 things to check. Start with your Loan Estimate.",
    "source": "CFPB, What's a lock-in or a rate lock (reviewed May 2023)"
   },
   {
@@ -63,8 +63,8 @@
    "source": "CFPB (2023); Federal Reserve, A Consumer's Guide to Mortgage Lock-Ins"
   }
  ],
- "caption": "Here's the truth about mortgage rates: they can change daily, sometimes hourly. A rate lock holds yours, usually for 30, 45 or 60 days, sometimes longer.\n\nCheck the top of page 1 of your Loan Estimate to see if your rate is locked and when the lock ends. A change in your loan amount, credit score or verified income can still change it.\n\nAsk what happens if closing runs late. Talk to a licensed lender for your numbers.\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #RateLock #MortgageTips\n\nTherm The Realtor | eXp Realty",
- "threads_caption": "Here's the truth about mortgage rates: they can change daily, sometimes hourly. A rate lock holds yours, usually for 30, 45 or 60 days.\n\nCheck page 1 of your Loan Estimate to see if it's locked and when the lock ends.\n\nTalk to a licensed lender for your numbers.\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "caption": "Here's the truth about rate locks: your locked rate can still change before closing. Rates can change daily, sometimes hourly, and a lock usually runs 30, 45 or 60 days, sometimes longer.\n\nCheck the top of page 1 of your Loan Estimate to see if your rate is locked and when the lock ends. A change in your loan amount, credit score or verified income can still change it.\n\nAsk what happens if closing runs late. Talk to a licensed lender for your numbers.\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #RateLock #MortgageTips\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "Here's the truth about rate locks: your locked rate can still change before closing. Rates can change daily, sometimes hourly, and a lock usually runs 30, 45 or 60 days.\n\nCheck page 1 of your Loan Estimate to see if it's locked and when the lock ends.\n\nTalk to a licensed lender for your numbers.\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
  "sources": [
   "https://www.consumerfinance.gov/ask-cfpb/what-is-a-lock-in-rate-en-143/",
   "https://files.consumerfinance.gov/f/documents/201707_cfpb_KBYO_Guide-Loan-Estimate-and-Closing-Disclosure-forms.pdf",
