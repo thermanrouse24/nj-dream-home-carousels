@@ -12,7 +12,7 @@
  "cover_facts": "New Construction | 3.5 Baths",
  "cover_price": "$1,499,999",
  "cover_price_note": "list price",
- "cover_note": "Edit's cover (probe) reads $1,499,999 / NEW CONSTRUCTION / MIDDLETOWN, NJ / 58 MINUTES TO NYC / ? BEDROOMS | 3.5 BATHROOMS; bedroom count unreadable, so it is left off. 58 minutes to NYC left off until verified.",
+ "cover_note": "Edit's cover (probe) reads $1,499,999 / NEW CONSTRUCTION / MIDDLETOWN, NJ / 58 MINUTES TO NYC / ? BEDROOMS | 3.5 BATHROOMS; bedroom count unreadable, so it is left off. 58 minutes to NYC left off until verified. Frame check Nov 23 2026: redrawn cover clean at 0.5 s; the edit's own burned-in cover ($1,499,999 / 58 MINUTES TO NYC / 5? BEDROOMS) shows about 1 s to 3 s (Therm's edit, not re-cut); end frame is the business card; no other name or number seen. Researcher: 58 min to NYC works only by Seastreak ferry (NJ Transit Middletown to Penn 71 to 81 min).",
  "ig_song_wants": [
   "Housewife - Tate McRae",
   "Dracula - Tame Impala & JENNIE",
@@ -45,5 +45,11 @@
    "ig": [],
    "tiktok": []
   }
- }
+ },
+ "phone_checked": true,
+ "ig_audio_id": "",
+ "ig_audio": "",
+ "ig_audio_backup": "",
+ "listing_status": "Not confirmed. Closest candidate 25 Dakarla Dr, Middletown 07748 (MLS 22631019), Active at $1,499,999, new construction, Imperial Realty Properties, but it shows 5 beds / 4 baths, not 3.5; match low confidence. Checked Nov 23 2026.",
+ "listing_source": "https://www.newjerseyrealestatenetwork.com/property-search/detail/187/22631019/25-dakarla-dr-middletown-nj-07748/"
 }
