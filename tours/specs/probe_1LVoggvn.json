@@ -2,5 +2,7 @@
  "id": "probe_1LVoggvn",
  "drive_file_id": "1LVoggvnJf2N46Z-IeTHIZKIFqqE4QZvT",
  "drive_title": "C28A826D-53B0-4489-B3EF-8C1C881DA630.mp4",
- "status": "probe"
+ "status": "probed",
+ "frames": "tours/probes/probe_1LVoggvn_frames.jpg",
+ "source_duration_s": 32.3
 }
