@@ -2,7 +2,8 @@
  "id": "probe_1LVoggvn",
  "drive_file_id": "1LVoggvnJf2N46Z-IeTHIZKIFqqE4QZvT",
  "drive_title": "C28A826D-53B0-4489-B3EF-8C1C881DA630.mp4",
- "status": "probed",
+ "status": "probed_used",
  "frames": "tours/probes/probe_1LVoggvn_frames.jpg",
- "source_duration_s": 32.3
+ "source_duration_s": 32.3,
+ "note": "Cover reads $789,900 / NEW CONSTRUCTION / WHARTON BORO, NJ / 49 MINUTES TO NYC / 4 BEDROOMS | 2.2 BATHROOMS. Used for 2026-11-25 T."
 }
