@@ -3,7 +3,7 @@
  "date": "2026-11-25",
  "drive_file_id": "1LVoggvnJf2N46Z-IeTHIZKIFqqE4QZvT",
  "drive_title": "C28A826D-53B0-4489-B3EF-8C1C881DA630.mp4",
- "address": "",
+ "address": "74 Langdon Ave",
  "town": "Wharton",
  "county": "Morris",
  "price": "$789,900",
@@ -12,7 +12,7 @@
  "cover_facts": "New Construction | 4 Beds | 2.2 Baths",
  "cover_price": "$789,900",
  "cover_price_note": "list price",
- "cover_note": "Edit's cover (probe) reads $789,900 / NEW CONSTRUCTION / WHARTON BORO, NJ / 49 MINUTES TO NYC / 4 BEDROOMS | 2.2 BATHROOMS. 49 minutes to NYC left off the redrawn cover until verified.",
+ "cover_note": "Edit's cover (probe) reads $789,900 / NEW CONSTRUCTION / WHARTON BORO, NJ / 49 MINUTES TO NYC / 4 BEDROOMS | 2.2 BATHROOMS. 49 minutes to NYC left off the redrawn cover until verified. Frame check Nov 24 2026: redrawn cover clean at 0.5 s; the edit's own burned-in cover ($789,900 / WHARTON BORO, NJ / 49 MINUTES TO NYC / 4 BEDROOMS | 2.2 BATHROOMS) shows from about 1 s (Therm's edit, not re-cut); end frame is the business card; no other name or number seen. House number 74 visible on the porch. Researcher: 49 min to NYC is plausible by car off-peak only (Dover to Port Authority about 48 min, rome2rio); NJ Transit from Dover is about 1 h 28 min.",
  "ig_song_wants": [
   "Housewife - Tate McRae",
   "Stupid Song - Olivia Rodrigo",
@@ -45,5 +45,11 @@
    "ig": [],
    "tiktok": []
   }
- }
+ },
+ "phone_checked": true,
+ "ig_audio_id": "",
+ "ig_audio": "",
+ "ig_audio_backup": "",
+ "listing_status": "Active at $789,900 (26 days on market, page updated Nov 24 2026), MLS 4062097, 74 Langdon Ave, Wharton Boro 07885, Morris County; 4 beds, 2 full + 2 half baths, built 2026. Listing brokerage: Realty Executives Exceptional. Checked Nov 24 2026.",
+ "listing_source": "https://www.newjerseyrealestatenetwork.com/property-search/detail/32/4062097/74-langdon-ave-wharton-boro-nj-07885/"
 }

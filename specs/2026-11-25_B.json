@@ -1,0 +1,114 @@
+{
+ "id": "2026-11-25_B_local",
+ "tag": "LOCAL *SPOTS*",
+ "hook": 27,
+ "lesson": "",
+ "story_plan": {
+  "type": "multi",
+  "frames": [
+   1,
+   2,
+   4,
+   5
+  ]
+ },
+ "music": {
+  "ig_audio": "Babydoll - Dominic Fike",
+  "ig_audio_source": "https://ca.billboard.com/charts/hot-100/2026-11-21 (Billboard Hot 100, Nov 21 2026)",
+  "ig_audio_backup": "Stupid Song - Olivia Rodrigo",
+  "tiktok": "auto"
+ },
+ "source": "slicelife.com; landlpizzametuchen.com; woodstacknj.com (Nov. 2026)",
+ "slides": [
+  {
+   "type": "cover",
+   "eyebrow": "The problem isn't you. It's too many menus.",
+   "lines": [
+    "PIZZA NIGHT",
+    "IN METUCHEN",
+    "~STARTS WITH",
+    "~THESE 3"
+   ],
+   "sub": "Two are on Main St. One bakes in ovens imported from Italy. Swipe for all 3.",
+   "source": "slicelife.com; landlpizzametuchen.com; woodstacknj.com (Nov. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "1",
+   "kind": "Pizza",
+   "title": "Antonio's Brick Oven Pizza",
+   "meta": "453 Main St",
+   "chips": [
+    "Brick oven",
+    "Slices for pickup"
+   ],
+   "body": "A brick oven pizzeria on Main St. It sells pizza by the slice for pickup, plus delivery.",
+   "scene": "pizza",
+   "variant": 0,
+   "source": "slicelife.com (Nov. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "2",
+   "kind": "Pizza",
+   "title": "L&L Pizza & Pasta",
+   "meta": "205 Main St",
+   "chips": [
+    "New York style",
+    "Open 7 days",
+    "Gluten-free pizza"
+   ],
+   "body": "A New York style pizza shop on Main St, with homemade pasta and Italian dishes too.",
+   "scene": "pizza",
+   "variant": 1,
+   "source": "landlpizzametuchen.com; slicelife.com (Nov. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "3",
+   "kind": "Pizza + kitchen",
+   "title": "Wood Stack Pizza + Kitchen",
+   "meta": "259 Lake Ave",
+   "chips": [
+    "Ovens from Italy",
+    "Gluten-free crust",
+    "Closed Mondays"
+   ],
+   "body": "A sit-down pizza and Italian kitchen. Its pizzas cook at 900 degrees in ovens imported from Italy.",
+   "scene": "pizza",
+   "variant": 2,
+   "source": "woodstacknj.com; toasttab.com (Nov. 2026)"
+  },
+  {
+   "type": "route",
+   "eyebrow": "Before you tour",
+   "title": "Your Metuchen pizza map",
+   "stops": [
+    {
+     "name": "Antonio's Brick Oven Pizza",
+     "where": "Main St"
+    },
+    {
+     "name": "L&L Pizza & Pasta",
+     "where": "Main St"
+    },
+    {
+     "name": "Wood Stack Pizza + Kitchen",
+     "where": "Lake Ave"
+    }
+   ],
+   "tip": "Touring near the train? Metuchen station is on Main St too, on NJ Transit's Northeast Corridor Line.",
+   "source": "njtransit.com (Nov. 2026)"
+  }
+ ],
+ "caption": "Pizza night in Metuchen? Two of these are on Main St, and one bakes in ovens imported from Italy. Which one would you order from first?\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #MetuchenNJ #MiddlesexCountyNJ\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "Pizza night in Metuchen? Two of these are on Main St, and one bakes in ovens imported from Italy. Which one would you order from first?\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://slicelife.com/restaurants/nj/metuchen/08840/antonio-s-brick-oven-pizza/menu",
+  "https://www.landlpizzametuchen.com/",
+  "https://www.slicelife.com/restaurants/nj/metuchen/08840/l-l-pizza-pasta/menu/",
+  "https://woodstacknj.com/wood-stack/locations/metuchen-nj/dinner-menu/",
+  "https://www.toasttab.com/local/order/wood-stack-pizza-kitchen-metuchen/r-ca78472d-00f5-40e0-92db-882004b33da2",
+  "https://www.njtransit.com/station/metuchen-station"
+ ]
+}
