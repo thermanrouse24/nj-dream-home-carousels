@@ -2,7 +2,8 @@
  "id": "probe_1LtmcSPg",
  "drive_file_id": "1LtmcSPgttM5qvjTo6tG5EcOwrizpLm9E",
  "drive_title": "20D5E041-C60E-43D9-968B-9BC9214DEF66.mp4",
- "status": "probed",
+ "status": "probed_used",
  "frames": "tours/probes/probe_1LtmcSPg_frames.jpg",
- "source_duration_s": 32.6
+ "source_duration_s": 32.6,
+ "note": "Cover reads DOWNPAYMENT $27,965 / FULLY RENOVATED / SOUTH AMBOY, NJ / 43 MINUTES TO NYC / ? BEDROOMS | 3 BATHROOMS. Used for 2026-11-26 T."
 }
