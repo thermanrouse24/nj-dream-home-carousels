@@ -1,0 +1,111 @@
+{
+ "id": "2026-11-26_B_local",
+ "tag": "LOCAL *SPOTS*",
+ "hook": 30,
+ "lesson": "",
+ "story_plan": {
+  "type": "single",
+  "frames": [
+   1
+  ]
+ },
+ "music": {
+  "ig_audio": "Santa Tell Me - Ariana Grande",
+  "ig_audio_source": "https://www.spectrum-pulse.ca/blog/billboard-breakdown-hot-100-november-28-2026 (Billboard Hot 100 dated Nov 28 2026)",
+  "ig_audio_backup": "Dracula - Tame Impala & JENNIE",
+  "tiktok": "auto"
+ },
+ "source": "downtownsomerville.org; visitsomersetnj.org; feverup.com (Nov. 2026)",
+ "slides": [
+  {
+   "type": "cover",
+   "eyebrow": "Stuck on weekend plans? Listen.",
+   "lines": [
+    "SOMERVILLE",
+    "HAS 3 PLANS",
+    "~FOR THIS",
+    "~WEEKEND"
+   ],
+   "sub": "One comes with free gift wrapping. Another is free to walk in. Swipe for all 3.",
+   "source": "downtownsomerville.org; visitsomersetnj.org (Nov. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "1",
+   "kind": "Sat., Nov. 28",
+   "title": "Small Business Saturday",
+   "meta": "Downtown, welcome tent on Division St",
+   "chips": [
+    "11 AM to 5 PM",
+    "Free gift wrapping",
+    "Live music"
+   ],
+   "body": "Shop downtown with a deal guide covering 50+ businesses. Show proof of purchase from a participating shop to earn raffle tickets.",
+   "scene": "market",
+   "variant": 0,
+   "source": "downtownsomerville.org (updated Nov. 18, 2026); Yahoo/Courier News (Nov. 23, 2026)"
+  },
+  {
+   "type": "place",
+   "num": "2",
+   "kind": "Sun., Nov. 29",
+   "title": "Somerville Arts Holiday Art Show",
+   "meta": "Verve, 18 E Main St",
+   "chips": [
+    "11 AM to 5 PM",
+    "Free",
+    "15+ artists"
+   ],
+   "body": "A holiday art show and fundraiser with work from more than 15 artists, plus music.",
+   "scene": "museum",
+   "variant": 1,
+   "source": "visitsomersetnj.org (Nov. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "3",
+   "kind": "Sat., Nov. 28",
+   "title": "Candlelight: Tribute to Michael Jackson",
+   "meta": "W Main St",
+   "chips": [
+    "8:45 PM",
+    "Tickets on Fever"
+   ],
+   "body": "A candlelit tribute concert of Michael Jackson songs. Tickets are sold online through Fever.",
+   "scene": "theater",
+   "variant": 2,
+   "source": "feverup.com (Nov. 2026)"
+  },
+  {
+   "type": "route",
+   "eyebrow": "Plan your weekend",
+   "title": "Your Somerville weekend map",
+   "stops": [
+    {
+     "name": "Small Business Saturday",
+     "where": "Division St"
+    },
+    {
+     "name": "Holiday Art Show",
+     "where": "E Main St"
+    },
+    {
+     "name": "Candlelight concert",
+     "where": "W Main St"
+    }
+   ],
+   "tip": "Somerville station is on NJ Transit's Raritan Valley Line. Driving? Use public parking.",
+   "source": "njtransit.com; downtownsomerville.org (Nov. 2026)"
+  }
+ ],
+ "caption": "Stuck on Thanksgiving weekend plans? Somerville has 3. Small Business Saturday has free gift wrapping on Division St, and the holiday art show on Sunday is free to walk in. Which one are you going to?\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #SomervilleNJ #SomersetCountyNJ\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "Stuck on Thanksgiving weekend plans? Somerville has 3. Small Business Saturday has free gift wrapping, and Sunday's holiday art show is free to walk in. Which one are you going to?\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://downtownsomerville.org/event/small-business-saturday-3/",
+  "https://www.yahoo.com/lifestyle/articles/somerville-goes-big-small-business-095430977.html",
+  "https://visitsomersetnj.org/events/",
+  "https://visitsomersetnj.org/holiday-events/",
+  "https://feverup.com/en/somerville-nj-us/candlelight",
+  "https://njtransit.com/press-releases/officials-mark-completion-rebuilt-somerville-station"
+ ]
+}
