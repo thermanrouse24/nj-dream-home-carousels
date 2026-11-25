@@ -2,5 +2,7 @@
  "id": "probe_1LtmcSPg",
  "drive_file_id": "1LtmcSPgttM5qvjTo6tG5EcOwrizpLm9E",
  "drive_title": "20D5E041-C60E-43D9-968B-9BC9214DEF66.mp4",
- "status": "probe"
+ "status": "probed",
+ "frames": "tours/probes/probe_1LtmcSPg_frames.jpg",
+ "source_duration_s": 32.6
 }
