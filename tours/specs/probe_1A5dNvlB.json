@@ -2,7 +2,8 @@
  "id": "probe_1A5dNvlB",
  "drive_file_id": "1A5dNvlB3kv6ShlPHt0_dwbGuyv86I9Jh",
  "drive_title": "FA0A5F09-4377-4EA6-9A0F-5B042BF77F5B.mp4",
- "status": "probed",
+ "status": "duplicate",
  "frames": "tours/probes/probe_1A5dNvlB_frames.jpg",
- "source_duration_s": 33.9
+ "source_duration_s": 33.9,
+ "note": "Cover reads DOWNPAYMENT $25,515 / NEW CONSTRUCTION / WAYNE TWP, NJ / 34 MINUTES TO NYC / 4 BEDROOMS | 2 BATHROOMS: same house as the 2026-11-20 T tour ($729,000; $25,515 = 3.5%). Skipped."
 }
