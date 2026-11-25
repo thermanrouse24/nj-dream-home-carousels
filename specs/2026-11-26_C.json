@@ -22,14 +22,14 @@
  "slides": [
   {
    "type": "cover",
-   "eyebrow": "Here's what actually happens when you call me:",
+   "eyebrow": "6 years in real estate. Here's what actually happens when you call me:",
    "lines": [
     "FROM FIRST CALL",
     "TO KEYS",
     "~IN 4 STEPS"
    ],
-   "sub": "Step 3 takes 2 to 4 weeks on average in NJ. Here's the whole path.",
-   "source": "Therm, confirmed Oct 22 2026"
+   "sub": "Finding the home takes 2 to 4 weeks on average in NJ. Step 4 starts a 3-business-day clock.",
+   "source": "Therm, confirmed Oct 22 2026; N.J.A.C. 11:5-6.2"
   },
   {
    "type": "text",
@@ -52,12 +52,12 @@
   {
    "type": "text",
    "title": "4. Attorney review to keys",
-   "body": "Once the signed contract is delivered, the attorneys have [[3 business days]] to review it. Weekends and legal holidays don't count. Then inspection, appraisal and closing.",
+   "body": "After the signed contract is delivered, attorneys have [[3 business days]] to review it, not counting weekends or legal holidays. Then inspection, appraisal and closing. Talk to a real estate attorney about your situation.",
    "source": "N.J.A.C. 11:5-6.2 (NJ Real Estate Commission)"
   }
  ],
- "caption": "Here's what actually happens when you call me, from the first call to your keys.\n\n1. A free consultation: budget, towns, commute.\n2. Preapproval with a licensed lender.\n3. Search and offer. Finding a home in NJ takes 2 to 4 weeks on average, and the offer goes in within 24 hours.\n4. Attorney review (3 business days), inspection, appraisal and closing.\n\nTalk to a licensed lender for your numbers.\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #NJHomeBuying #BuyerTips\n\nTherm The Realtor | eXp Realty",
- "threads_caption": "Here's what actually happens when you call me: a free consultation, preapproval with a licensed lender, the search (2 to 4 weeks on average in NJ), an offer within 24 hours, then attorney review, inspection, appraisal and closing.\n\nTalk to a licensed lender for your numbers.\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "caption": "Here's what actually happens when you call me, from the first call to your keys.\n\n1. A free consultation: budget, towns, commute.\n2. Preapproval with a licensed lender.\n3. Search and offer. Finding a home in NJ takes 2 to 4 weeks on average, and the offer goes in within 24 hours.\n4. Attorney review (3 business days), inspection, appraisal and closing.\n\nTalk to a licensed lender for your numbers.\nTalk to a real estate attorney about your situation.\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #NJHomeBuying #BuyerTips\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "Here's what actually happens when you call me: a free consultation, preapproval with a licensed lender, the search (2 to 4 weeks on average in NJ), an offer within 24 hours, then attorney review, inspection, appraisal and closing.\n\nTalk to a licensed lender for your numbers.\nTalk to a real estate attorney about your situation.\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
  "sources": [
   "Therm, confirmed timeline facts (2 to 4 weeks to find a home; offer in 24 hours or less)",
   "https://law.cornell.edu/regulations/new-jersey/N-J-A-C-11-5-6-2"

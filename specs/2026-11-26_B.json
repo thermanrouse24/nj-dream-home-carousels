@@ -19,12 +19,12 @@
  "slides": [
   {
    "type": "cover",
-   "eyebrow": "Stuck on weekend plans? Listen.",
+   "eyebrow": "No Thanksgiving weekend plans? Listen.",
    "lines": [
     "SOMERVILLE",
     "HAS 3 PLANS",
-    "~FOR THIS",
-    "~WEEKEND"
+    "~BEFORE THIS",
+    "~WEEKEND ENDS"
    ],
    "sub": "One comes with free gift wrapping. Another is free to walk in. Swipe for all 3.",
    "source": "downtownsomerville.org; visitsomersetnj.org (Nov. 2026)"
@@ -48,6 +48,21 @@
   {
    "type": "place",
    "num": "2",
+   "kind": "Sat., Nov. 28",
+   "title": "Candlelight: Tribute to Michael Jackson",
+   "meta": "W Main St",
+   "chips": [
+    "8:45 PM",
+    "Tickets on Fever"
+   ],
+   "body": "A candlelit tribute concert of Michael Jackson songs. Tickets are sold online through Fever.",
+   "scene": "theater",
+   "variant": 0,
+   "source": "feverup.com (Nov. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "3",
    "kind": "Sun., Nov. 29",
    "title": "Somerville Arts Holiday Art Show",
    "meta": "Verve, 18 E Main St",
@@ -58,23 +73,8 @@
    ],
    "body": "A holiday art show and fundraiser with work from more than 15 artists, plus music.",
    "scene": "museum",
-   "variant": 1,
-   "source": "visitsomersetnj.org (Nov. 2026)"
-  },
-  {
-   "type": "place",
-   "num": "3",
-   "kind": "Sat., Nov. 28",
-   "title": "Candlelight: Tribute to Michael Jackson",
-   "meta": "W Main St",
-   "chips": [
-    "8:45 PM",
-    "Tickets on Fever"
-   ],
-   "body": "A candlelit tribute concert of Michael Jackson songs. Tickets are sold online through Fever.",
-   "scene": "theater",
    "variant": 2,
-   "source": "feverup.com (Nov. 2026)"
+   "source": "visitsomersetnj.org (Nov. 2026)"
   },
   {
    "type": "route",
@@ -86,12 +86,12 @@
      "where": "Division St"
     },
     {
-     "name": "Holiday Art Show",
-     "where": "E Main St"
-    },
-    {
      "name": "Candlelight concert",
      "where": "W Main St"
+    },
+    {
+     "name": "Holiday Art Show",
+     "where": "E Main St"
     }
    ],
    "tip": "Somerville station is on NJ Transit's Raritan Valley Line. Driving? Use public parking.",
