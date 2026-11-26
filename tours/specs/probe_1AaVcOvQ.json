@@ -2,7 +2,8 @@
  "id": "probe_1AaVcOvQ",
  "drive_file_id": "1AaVcOvQnC6hBi-e2SmuzyOTcIsxIe3fa",
  "drive_title": "5CAF0E6F-FB99-44EB-878F-5B75000EFC2E.mp4",
- "status": "probed",
+ "status": "duplicate",
  "frames": "tours/probes/probe_1AaVcOvQ_frames.jpg",
- "source_duration_s": 33.7
+ "source_duration_s": 33.7,
+ "note": "Cover reads DOWNPAYMENT $27,647 / NEW CONSTRUCTION / WHARTON BORO, NJ / 49 MINUTES TO NYC / 4 BEDROOMS | 2.2 BATHROOMS: same house as the 2026-11-25 T tour (74 Langdon Ave, $789,900; $27,647 = 3.5%). Skipped."
 }

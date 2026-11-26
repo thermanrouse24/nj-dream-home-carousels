@@ -2,7 +2,8 @@
  "id": "probe_17WyVKzi",
  "drive_file_id": "17WyVKzitG82W8rJKFwdKuN7MxDcIvv1a",
  "drive_title": "E9CF3C77-FF2D-4631-8FB7-4FE109AB8717.mp4",
- "status": "probed",
+ "status": "duplicate",
  "frames": "tours/probes/probe_17WyVKzi_frames.jpg",
- "source_duration_s": 29.6
+ "source_duration_s": 29.6,
+ "note": "Cover reads DOWNPAYMENT $31,500 / NEW CONSTRUCTION / PARSIPPANY, NJ / 43 MINUTES TO NYC / 5 BEDROOMS | 4 BATHROOMS, house number 318: same house as the 2026-11-07 T tour (318 Halsey, Parsippany). Skipped."
 }

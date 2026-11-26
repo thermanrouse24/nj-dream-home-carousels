@@ -2,7 +2,8 @@
  "id": "probe_19AME61s",
  "drive_file_id": "19AME61smRH9Wb0MW8_BUcs8cO_1KthZF",
  "drive_title": "B6B44F5F-580B-40B8-8AB6-6F8C05C87848.mp4",
- "status": "probed",
+ "status": "probed_used",
  "frames": "tours/probes/probe_19AME61s_frames.jpg",
- "source_duration_s": 31.3
+ "source_duration_s": 31.3,
+ "note": "Cover reads DOWNPAYMENT $31,150 / FULLY RENOVATED / MONTVILLE, NJ / 37 MINUTES TO NYC / 4 BEDROOMS | 3 BATHROOMS. Used for 2026-11-27 T."
 }
