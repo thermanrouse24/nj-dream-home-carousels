@@ -1,0 +1,113 @@
+{
+ "id": "2026-11-28_B_local",
+ "tag": "LOCAL *SPOTS*",
+ "hook": 6,
+ "lesson": "",
+ "story_plan": {
+  "type": "single",
+  "frames": [
+   1
+  ]
+ },
+ "music": {
+  "ig_audio": "Last Christmas - Wham!",
+  "ig_audio_source": "https://www.officialcharts.com/charts/billboard-hot-100-chart/ (Billboard Hot 100, 25 Nov - 1 Dec 2026)",
+  "ig_audio_backup": "Hate That I Made You Love Me - Ariana Grande",
+  "tiktok": "auto"
+ },
+ "source": "nps.gov/pagr (Nov. 2026)",
+ "slides": [
+  {
+   "type": "cover",
+   "eyebrow": "This is the part they never show you:",
+   "lines": [
+    "PATERSON HAS",
+    "A NATIONAL PARK",
+    "~WITH A",
+    "~WATERFALL"
+   ],
+   "sub": "And it's free. Swipe for 3 free stops in Paterson.",
+   "source": "nps.gov/pagr (Nov. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "1",
+   "kind": "National park",
+   "title": "Paterson Great Falls",
+   "meta": "72 McBride Ave Ext",
+   "chips": [
+    "Free",
+    "No pass needed",
+    "Ranger tours"
+   ],
+   "body": "Paterson was founded in 1792 as America's first planned industrial city, built around these falls on the Passaic River.",
+   "scene": "park",
+   "variant": 0,
+   "source": "nps.gov/pagr (Nov. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "2",
+   "kind": "Museum",
+   "title": "The Paterson Museum",
+   "meta": "2 Market St",
+   "chips": [
+    "Free entry",
+    "Mon-Fri",
+    "$2 suggested"
+   ],
+   "body": "It's inside the old Rogers Locomotive Works. See John P. Holland's early submarines and Colt firearms.",
+   "scene": "museum",
+   "variant": 0,
+   "source": "patersonmuseum.com (Nov. 2026)"
+  },
+  {
+   "type": "place",
+   "num": "3",
+   "kind": "Library",
+   "title": "Danforth Memorial Library",
+   "meta": "250 Broadway",
+   "chips": [
+    "Opened 1905",
+    "Historic register",
+    "Open Mon-Sat"
+   ],
+   "body": "Paterson's main public library opened in 1905 and is on the National Register of Historic Places.",
+   "scene": "library",
+   "variant": 2,
+   "source": "patersonpl.org (Nov. 2026); NRHP #84002782"
+  },
+  {
+   "type": "route",
+   "eyebrow": "Plan your day",
+   "title": "Your free Paterson day",
+   "stops": [
+    {
+     "name": "Paterson Great Falls",
+     "where": "McBride Ave"
+    },
+    {
+     "name": "The Paterson Museum",
+     "where": "Market St"
+    },
+    {
+     "name": "Danforth Memorial Library",
+     "where": "Broadway"
+    }
+   ],
+   "tip": "Looking at homes in Paterson? NJ Transit's Main Line stops at Paterson station.",
+   "source": "njtransit.com (Nov. 2026)"
+  }
+ ],
+ "caption": "Paterson has a national park with a waterfall, and it's free.\nThe museum and the library are free to walk into, too. The museum is open weekdays.\nWhich one would you see first?\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #PatersonNJ #PassaicCountyNJ\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "Paterson has a national park with a waterfall, and it's free. The museum and the library are free to walk into, too. Which one would you see first?\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://www.nps.gov/pagr/planyourvisit/fees.htm",
+  "https://nps.gov/pagr/planyourvisit/hours.htm",
+  "https://www.nps.gov/pagr",
+  "https://patersonmuseum.com/",
+  "https://patersonpl.org/our-locations/",
+  "https://en.wikipedia.org/wiki/Danforth_Memorial_Library",
+  "https://www.njtransit.com/press-releases/nj-transit-awarded-federal-grant-study-transit-oriented-development-paterson"
+ ]
+}
