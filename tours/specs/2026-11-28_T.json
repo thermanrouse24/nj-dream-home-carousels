@@ -13,11 +13,11 @@
  "cover_price": "$40,215",
  "cover_price_note": "down payment",
  "ig_song_wants": [
-  "I Just Might - Bruno Mars",
-  "Housewife - Tate McRae",
-  "Midnight Sun - Zara Larsson",
-  "Mr. Know It All - Teddy Swims",
-  "Hate That I Made You Love Me - Ariana Grande"
+  "Stupid Song - Olivia Rodrigo",
+  "Babydoll - Dominic Fike",
+  "Dracula - Tame Impala & JENNIE",
+  "Expectations - Olivia Rodrigo & Chappell Roan",
+  "Housewife - Tate McRae"
  ],
  "song_chart": "https://www.officialcharts.com/charts/billboard-hot-100-chart/ (Billboard Hot 100, 25 Nov - 1 Dec 2026) and https://creativedisc.com/2026/11/billboard-hot-100-21-november-2026/ (Billboard Hot 100 week ending Nov 21 2026)",
  "status": "rendered",
@@ -51,5 +51,12 @@
  "listing_source": "https://mattquinnsellshomes.realgeeks.com/property/22626655/",
  "ig_audio_id": "",
  "ig_audio": "",
- "ig_audio_backup": ""
+ "ig_audio_backup": "",
+ "ig_song_wants_first_try": [
+  "I Just Might - Bruno Mars",
+  "Housewife - Tate McRae",
+  "Midnight Sun - Zara Larsson",
+  "Mr. Know It All - Teddy Swims",
+  "Hate That I Made You Love Me - Ariana Grande"
+ ]
 }

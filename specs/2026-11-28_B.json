@@ -22,11 +22,11 @@
    "eyebrow": "This is the part they never show you:",
    "lines": [
     "PATERSON HAS",
-    "A NATIONAL PARK",
-    "~WITH A",
-    "~WATERFALL"
+    "3 STOPS THAT",
+    "~COST $0 TO",
+    "~WALK INTO"
    ],
-   "sub": "And it's free. Swipe for 3 free stops in Paterson.",
+   "sub": "One has a waterfall. One has early submarines. Swipe for your free Paterson day.",
    "source": "nps.gov/pagr (Nov. 2026)"
   },
   {
@@ -41,7 +41,7 @@
     "Ranger tours"
    ],
    "body": "Paterson was founded in 1792 as America's first planned industrial city, built around these falls on the Passaic River.",
-   "scene": "park",
+   "scene": "lake",
    "variant": 0,
    "source": "nps.gov/pagr (Nov. 2026)"
   },
@@ -57,7 +57,7 @@
     "$2 suggested"
    ],
    "body": "It's inside the old Rogers Locomotive Works. See John P. Holland's early submarines and Colt firearms.",
-   "scene": "museum",
+   "scene": "mill",
    "variant": 0,
    "source": "patersonmuseum.com (Nov. 2026)"
   },
@@ -99,8 +99,8 @@
    "source": "njtransit.com (Nov. 2026)"
   }
  ],
- "caption": "Paterson has a national park with a waterfall, and it's free.\nThe museum and the library are free to walk into, too. The museum is open weekdays.\nWhich one would you see first?\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #PatersonNJ #PassaicCountyNJ\n\nTherm The Realtor | eXp Realty",
- "threads_caption": "Paterson has a national park with a waterfall, and it's free. The museum and the library are free to walk into, too. Which one would you see first?\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "caption": "Paterson has 3 stops that cost $0 to walk into.\nOne has a waterfall in a national park. One has early submarines. The museum is open weekdays.\nWhich one would you see first?\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #PatersonNJ #PassaicCountyNJ\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "Paterson has 3 stops that cost $0 to walk into. One has a waterfall in a national park. One has early submarines. Which one would you see first?\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
  "sources": [
   "https://www.nps.gov/pagr/planyourvisit/fees.htm",
   "https://nps.gov/pagr/planyourvisit/hours.htm",
