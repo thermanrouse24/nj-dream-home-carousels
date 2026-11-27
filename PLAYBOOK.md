@@ -318,7 +318,7 @@ Slot B layout (approved design): slide 1 `cover` (never reveal the place names o
 `place` cards (fields: num, kind e.g. "Coffee", title, meta = street address, chips = up to 3
 SHORT sourced facts like "Open daily", body, scene, variant). Every place card shows an image:
 Therm's own photo when one exists in Place Photos ("photo"), otherwise an original illustrated
-scene drawn by scenes.py ("scene": coffee | brunch | bakery | pizza | market | library | park |
+scene drawn by scenes.py ("scene": coffee | brunch | bakery | pizza | market | library | park | waterfall |
 train | default; "variant": 0, 1, 2, different on each card). Drawn scenes are labeled
 "ILLUSTRATION" automatically and never claim to show the actual business; slide 5 `route` (the 3 stops with street names,
 plus a one-sentence buyer tip, "source" kept); slide 6 `cta`. Photos: use "photo" ONLY with a photo from Therm's Google Drive folder "Reel Brain > Carousel

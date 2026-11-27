@@ -403,12 +403,42 @@ def theater_svg(v, w, h):
 </svg>'''
 
 
+def waterfall_svg(v, w, h):
+    """Wide waterfall dropping over a rocky cliff into a river gorge, daytime, with a footbridge (generic, not a real place)."""
+    top, pool = h * 0.34, h * 0.78
+    trees = ""
+    for (x, r, c) in ((.06,.11,"#2F5A3F"),(.17,.08,"#3D7350"),(.83,.1,"#3D7350"),(.95,.12,"#2F5A3F")):
+        trees += f'<rect x="{w*x-5}" y="{top-h*r*0.4}" width="10" height="{h*r*0.6}" fill="#3A2A20"/><circle cx="{w*x}" cy="{top-h*r}" r="{h*r}" fill="{c}"/>'
+    streaks = "".join(f'<rect x="{w*0.3+i*w*0.4/14}" y="{top+6+(i%3)*8}" width="{w*0.012}" height="{pool-top-30-(i%4)*10}" rx="4" fill="#FFFFFF" opacity="{.35+(i%3)*.15}"/>' for i in range(14))
+    foam = "".join(f'<circle cx="{w*0.3+i*w*0.4/9}" cy="{pool-4}" r="{h*0.035+(i%2)*6}" fill="#F4F8FA" opacity=".9"/>' for i in range(10))
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">
+<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6F9BC4"/><stop offset="1" stop-color="#CFE0E8"/></linearGradient>
+<linearGradient id="fall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8FC1DA"/><stop offset="1" stop-color="#D9EDF5"/></linearGradient></defs>
+<rect width="{w}" height="{h}" fill="url(#sky)"/>
+<circle cx="{w*0.78}" cy="{h*0.14}" r="{h*0.07}" fill="#FFF1C9"/>
+<path d="M0,{top} H{w*0.3} V{pool} H0 Z" fill="#6E5E50"/>
+<path d="M{w*0.7},{top} H{w} V{pool} H{w*0.7} Z" fill="#6E5E50"/>
+<g fill="#5A4C40" opacity=".8"><rect x="{w*0.04}" y="{top+h*0.1}" width="{w*0.12}" height="{h*0.05}" rx="6"/><rect x="{w*0.14}" y="{top+h*0.24}" width="{w*0.1}" height="{h*0.05}" rx="6"/>
+<rect x="{w*0.76}" y="{top+h*0.13}" width="{w*0.12}" height="{h*0.05}" rx="6"/><rect x="{w*0.84}" y="{top+h*0.28}" width="{w*0.1}" height="{h*0.05}" rx="6"/></g>
+<rect x="{w*0.3}" y="{top}" width="{w*0.4}" height="{pool-top}" fill="url(#fall)"/>
+{streaks}
+<rect x="0" y="{top-8}" width="{w}" height="14" fill="#2F5A3F"/>
+{trees}
+<rect x="0" y="{pool}" width="{w}" height="{h-pool}" fill="#4A86A8"/>
+{foam}
+<g stroke="#F5ECD7" stroke-width="3" opacity=".6"><line x1="{w*0.1}" y1="{h*0.9}" x2="{w*0.24}" y2="{h*0.9}"/><line x1="{w*0.72}" y1="{h*0.94}" x2="{w*0.88}" y2="{h*0.94}"/></g>
+
+</svg>'''
+
+
 def render_scene(kind, variant, out_png, w=920, h=560):
     from home_scenes import HOME_KINDS, home_svg
     if kind in HOME_KINDS:
         svg = home_svg(kind, variant, w, h)
     elif kind == "park":
         svg = park_svg(variant, w, h)
+    elif kind == "waterfall":
+        svg = waterfall_svg(variant, w, h)
     elif kind == "lake":
         svg = lake_svg(variant, w, h)
     elif kind == "trail":
