@@ -2,5 +2,7 @@
  "id": "probe_1iK1cJB3",
  "drive_file_id": "1iK1cJB3Phifn2SsBEoH3AwnE9oYmamY_",
  "drive_title": "7AC05ED0-D715-44DD-BF23-FF63E492A1F5.mp4",
- "status": "probe"
+ "status": "probed",
+ "frames": "tours/probes/probe_1iK1cJB3_frames.jpg",
+ "source_duration_s": 32.9
 }
