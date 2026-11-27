@@ -2,7 +2,8 @@
  "id": "probe_17XLLv4z",
  "drive_file_id": "17XLLv4zb-gfDusyrbaYQu4GvWuc5VcAv",
  "drive_title": "ABCCA9EA-3911-43DD-9381-FA1A84B2DB7B.mp4",
- "status": "probed",
+ "status": "duplicate",
  "frames": "tours/probes/probe_17XLLv4z_frames.jpg",
- "source_duration_s": 29.1
+ "source_duration_s": 29.1,
+ "note": "Cover reads NEW CONSTRUCTION / $25,515 / WAYNE TWP ,NJ / 30 MINUTES TO NYC / 4 BEDROOMS | 2 BATHROOMS. $25,515 = 3.5% of $729,000: same Wayne new-construction home as the 2026-11-20 tour (9D0E1A2F). Skipped."
 }

@@ -2,7 +2,8 @@
  "id": "probe_1_wDueM_",
  "drive_file_id": "1_wDueM_7H_opbWHcV1CfiI8mqodxunkE",
  "drive_title": "20EE0748-2C6A-4038-80EF-E1E3BBC1580B.mp4",
- "status": "probed",
+ "status": "probed_used",
  "frames": "tours/probes/probe_1_wDueM__frames.jpg",
- "source_duration_s": 34.3
+ "source_duration_s": 34.3,
+ "note": "Cover reads NEW CONSTRUCTION / $40,215 / MIDDLETOWN ,NJ / 60 MINUTES TO NYC / 5 BEDROOMS | 3.1 BATHROOMS. Used for 2026-11-28 T."
 }
