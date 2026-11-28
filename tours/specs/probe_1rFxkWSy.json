@@ -2,7 +2,8 @@
  "id": "probe_1rFxkWSy",
  "drive_file_id": "1rFxkWSyGDNnz6jYArGqjh4SvaEFXvaTb",
  "drive_title": "2FECBF1A-057C-452F-AEAA-520C9A456849.mp4",
- "status": "probed",
+ "status": "probed_used",
  "frames": "tours/probes/probe_1rFxkWSy_frames.jpg",
- "source_duration_s": 29.1
+ "source_duration_s": 29.1,
+ "note": "Cover reads NEW CONSTRUCTION / $63,950 / FAIR LAWN, NJ / 30 MINUTES TO NYC / 5 BEDROOMS | 4 BATHROOMS. $63,950 = 5% of $1,279,000. White house with dark trim, not seen before. Used for 2026-11-29 T."
 }

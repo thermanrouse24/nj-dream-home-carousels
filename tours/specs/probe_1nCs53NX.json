@@ -2,7 +2,8 @@
  "id": "probe_1nCs53NX",
  "drive_file_id": "1nCs53NX76HgMMDmm4bryjHvJRG0s5YFV",
  "drive_title": "EC8A67FC-7C1D-41C7-B88B-B54A4472C48B.mp4",
- "status": "probed",
+ "status": "duplicate",
  "frames": "tours/probes/probe_1nCs53NX_frames.jpg",
- "source_duration_s": 36.9
+ "source_duration_s": 36.9,
+ "note": "Cover reads FULLY RENOVATED / $64,950 / FAIR LAWN, NJ / 30 MINUTES TO NYC / 5 BEDROOMS | 4.1 BATHROOMS. Same house as the 2026-11-17 T tour (2-25 Kenneth Ave, Fair Lawn; same exterior, kitchen and patio). $64,950 = 5% of $1,299,000. Not used."
 }
