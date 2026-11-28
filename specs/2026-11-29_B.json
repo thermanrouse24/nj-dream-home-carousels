@@ -1,0 +1,119 @@
+{
+ "id": "2026-11-29_B_local",
+ "tag": "LOCAL *SPOTS*",
+ "hook": 25,
+ "lesson": "",
+ "story_plan": {
+  "type": "multi",
+  "frames": [
+   1,
+   2,
+   4
+  ]
+ },
+ "music": {
+  "ig_audio": "Jingle Bell Rock - Bobby Helms",
+  "ig_audio_source": "https://www.officialcharts.com/charts/billboard-hot-100-chart/",
+  "ig_audio_backup": "All I Want For Christmas Is You - Mariah Carey",
+  "tiktok": "auto"
+ },
+ "source": "NPS NHL nomination; haddonfieldlibrary.org; ridepatco.org; Wikipedia; CBS Philadelphia; The Sun (2026)",
+ "slides": [
+  {
+   "type": "cover",
+   "eyebrow": "If you only remember one thing",
+   "lines": [
+    "A DINOSAUR",
+    "WAS DUG UP",
+    "~IN HADDONFIELD",
+    "~IN 1858"
+   ],
+   "sub": "The dig site is a small park today. Two more stops sit near Kings Highway.",
+   "source": "NPS NHL nomination; Wikipedia (2026)"
+  },
+  {
+   "type": "place",
+   "num": "1",
+   "kind": "Park",
+   "title": "Hadrosaurus Park",
+   "meta": "End of Maple Ave, off Grove St",
+   "chips": [
+    "Landmark since 1994",
+    "Bones found in 1838",
+    "Dug up in 1858"
+   ],
+   "body": "William Parker Foulke led the dig here in 1858. National Park Service records call it the world's first relatively complete dinosaur skeleton.",
+   "scene": "park",
+   "variant": 0,
+   "source": "npgallery.nps.gov; Wikipedia; levins.com (2026)"
+  },
+  {
+   "type": "place",
+   "num": "2",
+   "kind": "Library",
+   "title": "Haddonfield Public Library",
+   "meta": "60 N Haddon Ave",
+   "chips": [
+    "Sun 12 to 4 PM",
+    "Building from 1917",
+    "Free museum passes"
+   ],
+   "body": "It dates to 1803. Adult cardholders can reserve free passes to area museums.",
+   "scene": "library",
+   "variant": 1,
+   "source": "haddonfieldlibrary.org; Wikipedia (2026)"
+  },
+  {
+   "type": "place",
+   "num": "3",
+   "kind": "Train",
+   "title": "Haddonfield Station",
+   "meta": "Kings Hwy W & Washington Ave",
+   "chips": [
+    "PATCO",
+    "To Philadelphia",
+    "Free parking, Lot S3"
+   ],
+   "body": "PATCO trains run from here to Philadelphia and Lindenwold. The station sits right on Kings Highway.",
+   "scene": "train",
+   "variant": 2,
+   "source": "ridepatco.org (2026)"
+  },
+  {
+   "type": "route",
+   "eyebrow": "Before you tour",
+   "title": "Haddonfield on foot",
+   "stops": [
+    {
+     "name": "Haddonfield Station",
+     "where": "Kings Hwy W"
+    },
+    {
+     "name": "Public Library",
+     "where": "N Haddon Ave"
+    },
+    {
+     "name": "Hadrosaurus Park",
+     "where": "End of Maple Ave"
+    }
+   ],
+   "tip": "Walk Kings Highway to Haddon Ave for the library. The park is farther out, off Grove St, so walk or drive.",
+   "source": "ridepatco.org; haddonfieldlibrary.org; thesunpapers.com (2026)"
+  }
+ ],
+ "caption": "Three stops in Haddonfield. Start at the PATCO station, stop by the library on Haddon Avenue, then find the spot where a dinosaur was dug up in 1858. Would you take this walk on a Sunday?\n\nClick the link in my bio.\n\n#NJRealEstate #FirstTimeHomeBuyer #NewJerseyHomes #HaddonfieldNJ #CamdenCountyNJ\n\nTherm The Realtor | eXp Realty",
+ "threads_caption": "Three stops in Haddonfield. Start at the PATCO station, stop by the library on Haddon Avenue, then find the spot where a dinosaur was dug up in 1858. Would you take this walk on a Sunday?\n\nClick the link in my bio.\n\nTherm The Realtor | eXp Realty",
+ "sources": [
+  "https://npgallery.nps.gov/NRHP/GetAsset/NHLS/94001648_text",
+  "https://en.wikipedia.org/wiki/Hadrosaurus_Foulkii_Leidy_Site",
+  "https://www.cbsnews.com/amp/philadelphia/news/hadrosaurus-foulkii-bronze-sculpture-new-jersey",
+  "https://www.levins.com/maps.shtml",
+  "https://thesunpapers.com/2024/09/27/happy-birthday-haddy/",
+  "https://www.haddonfieldlibrary.org/post/updated-library-hours",
+  "https://haddonfieldlibrary.org/calendar",
+  "https://www.haddonfieldlibrary.org/museumpass",
+  "https://en.wikipedia.org/wiki/Haddonfield_Public_Library",
+  "https://www.ridepatco.org/stations/haddonfield.asp",
+  "https://www.ridepatco.org/stations/haddonfield_art.html"
+ ]
+}
