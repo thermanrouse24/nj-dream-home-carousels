@@ -20,7 +20,7 @@
   "I Just Might - Bruno Mars"
  ],
  "song_chart": "https://www.officialcharts.com/charts/billboard-hot-100-chart/ (Billboard Hot 100, 25 Nov - 1 Dec 2026)",
- "status": "new",
+ "status": "rendered",
  "force_cover_block": true,
  "cover_note": "Edit's cover (probe) reads NEW CONSTRUCTION / $63,950 / FAIR LAWN ,NJ / 30 MINUTES TO NYC / 5 BEDROOMS | 4 BATHROOMS. House number 77 visible on the porch column. Researcher Nov 28 2026: 0-77 E Amsterdam Ave, Fair Lawn, MLS 26042515, ACTIVE at $1,279,000, 5 bed / 4 bath 2026 new construction, listed by Prominent Properties Sotheby's International Realty (Tenafly). $63,950 = 5% of $1,279,000, so labeled 5% down payment. '30 minutes to NYC' left off the redrawn cover: train is about 45+ min to Penn with a Secaucus transfer; drive about 33 min with no traffic.",
  "caption_option": 2,
@@ -38,5 +38,21 @@
   "Hate That I Made You Love Me - Ariana Grande",
   "Dracula - Tame Impala & JENNIE",
   "Babydoll - Dominic Fike"
- ]
+ ],
+ "render_info": {
+  "text_until_s": 1.0,
+  "blur_until_s": 1.0,
+  "duration_s": 32.1,
+  "source_duration_s": 29.1,
+  "source_has_audio": false,
+  "source_mean_volume_db": null,
+  "has_music": false,
+  "ig_mb": 31.2,
+  "tiktok_mb": 31.1,
+  "phone_replaced": null,
+  "text_fixes": {
+   "ig": [],
+   "tiktok": []
+  }
+ }
 }
